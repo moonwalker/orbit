@@ -1,0 +1,15 @@
+{
+  "name": "orbit-ui-stylus-mixins",
+  "version": "1.0.0",
+  "description": "Stylus mixins",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "stylus",
+    "mixins"
+  ],
+  "author": "Vio <vio@moonwalker.tech>",
+  "license": "MIT"
+}
