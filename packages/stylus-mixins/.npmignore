@@ -1,0 +1,2 @@
+lib/**/*.spec.js
+lib/utils/assert.js

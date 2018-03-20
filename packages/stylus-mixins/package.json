@@ -4,12 +4,17 @@
   "description": "Stylus mixins",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest lib/.*.spec.js"
   },
   "keywords": [
     "stylus",
     "mixins"
   ],
   "author": "Vio <vio@moonwalker.tech>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^22.4.2",
+    "strip-indent": "^2.0.0",
+    "stylus": "^0.54.5"
+  }
 }
