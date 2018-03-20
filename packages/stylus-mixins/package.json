@@ -4,6 +4,9 @@
   "description": "Stylus mixins",
   "main": "lib/index.js",
   "scripts": {
+    "lint": "npm run lint:styl && npm run lint:js",
+    "lint:js": "eslint lib/**/*.js",
+    "lint:styl": "stylint lib",
     "test": "jest lib/.*.spec.js"
   },
   "keywords": [
@@ -13,8 +16,14 @@
   "author": "Vio <vio@moonwalker.tech>",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-base": "^1.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jest": "^21.15.0",
     "jest": "^22.4.2",
     "strip-indent": "^2.0.0",
+    "stylint": "^1.5.9",
     "stylus": "^0.54.5"
   }
 }

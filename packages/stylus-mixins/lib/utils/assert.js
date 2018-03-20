@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const stylus = require('stylus');
 const strip = require('strip-indent');
 
