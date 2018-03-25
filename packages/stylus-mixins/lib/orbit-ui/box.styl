@@ -1,0 +1,32 @@
+box() {
+  width: width if arguments[0] != null;
+  height: height if arguments[1] != null;
+}
+
+block(width = null, height = null) {
+  display: block;
+  box(width, height);
+}
+
+inline-block(width = null, height = null) {
+  display: inline-block;
+  box(width, height);
+}
+
+flex(width = null, height = null) {
+  display: flex;
+  box(width, height);
+}
+
+proportional-box(ratio = 1) {
+  if (!@position || @position == 'static') {
+    position: relative;
+  }
+
+  &::before {
+    block();
+    content: '';
+    padding-bottom: percentage(1 / ratio);
+  }
+}
+
