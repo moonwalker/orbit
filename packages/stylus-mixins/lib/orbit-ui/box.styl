@@ -14,6 +14,10 @@ inline-block(width = null, height = null) {
 }
 
 flex(width = null, height = null) {
+  // Skip when triggered by a property, eg: flex: 1 1 auto
+  {current-property}: arguments if current-property;
+  return if current-property;
+
   display: flex;
   box(width, height);
 }
