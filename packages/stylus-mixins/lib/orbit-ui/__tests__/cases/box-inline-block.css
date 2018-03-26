@@ -1,0 +1,16 @@
+.a {
+  display: inline-block;
+}
+.b {
+  display: inline-block;
+  width: 100px;
+}
+.c {
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+}
+.d {
+  display: inline-block;
+  height: 100%;
+}

@@ -1,2 +1,2 @@
-lib/**/*.spec.js
+lib/**/__tests__
 lib/utils/assert.js

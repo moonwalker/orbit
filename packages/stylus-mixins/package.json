@@ -7,7 +7,7 @@
     "lint": "npm run lint:styl && npm run lint:js",
     "lint:js": "eslint lib/**/*.js",
     "lint:styl": "stylint lib",
-    "test": "jest lib/.*.spec.js"
+    "test": "jest"
   },
   "keywords": [
     "stylus",

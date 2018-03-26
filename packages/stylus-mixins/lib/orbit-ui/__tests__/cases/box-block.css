@@ -1,0 +1,16 @@
+.a {
+  display: block;
+}
+.b {
+  display: block;
+  width: 100px;
+}
+.c {
+  display: block;
+  width: 100px;
+  height: 20px;
+}
+.d {
+  display: block;
+  height: 100%;
+}

@@ -1,0 +1,16 @@
+.a {
+  position: relative;
+}
+.a::before {
+  display: block;
+  content: '';
+  padding-bottom: 100%;
+}
+.b {
+  position: absolute;
+}
+.b::before {
+  display: block;
+  content: '';
+  padding-bottom: 50%;
+}

@@ -1,0 +1,16 @@
+.a {
+  display: flex;
+}
+.b {
+  display: flex;
+  width: 100px;
+}
+.c {
+  display: flex;
+  width: 100px;
+  height: 20px;
+}
+.d {
+  display: flex;
+  height: 100%;
+}
