@@ -1,9 +1,9 @@
 {
-  "name": "orbit-ui",
-  "version": "1.0.0",
+  "name": "orbit",
   "description": "Orbit UI library",
   "scripts": {
-    "test": "lerna test"
+    "lerna": "lerna",
+    "test": "lerna run test"
   },
   "keywords": [],
   "author": "Vio <vio@moonwalker.tech>",

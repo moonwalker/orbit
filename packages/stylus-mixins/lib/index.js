@@ -6,6 +6,6 @@ module.exports = (options = {}) => (style) => {
   style.include(resolve(__dirname));
 
   if (autoImport) {
-    style.import(resolve(__dirname, 'orbit-ui', 'index.styl'));
+    style.import(resolve(__dirname, 'orbit', 'index.styl'));
   }
 };

@@ -1,7 +1,7 @@
 {
-  "name": "orbit-ui-stylus-mixins",
-  "version": "1.0.0",
-  "description": "Stylus mixins",
+  "name": "@moonwalker/orbit-stylus-mixins",
+  "version": "0.0.1",
+  "description": "Stylus mixins library",
   "main": "lib/index.js",
   "scripts": {
     "lint": "npm run lint:styl && npm run lint:js",

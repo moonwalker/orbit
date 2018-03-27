@@ -7,7 +7,7 @@ const stylus = require('stylus');
 const readFile = promisify(fs.readFile);
 const compile = promisify(stylus.render);
 
-const orbitUI = require('../../');
+const orbit = require('../../');
 
 module.exports = async (testDirname, name, ...args) => {
   const [options, done] = args.length === 1 ? [{}, ...args] : [...args];
@@ -21,7 +21,7 @@ module.exports = async (testDirname, name, ...args) => {
 
     const actual = await compile(source, {
       use: [
-        orbitUI(options),
+        orbit(options),
       ],
     });
 
