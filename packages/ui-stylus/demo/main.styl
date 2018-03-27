@@ -4,21 +4,36 @@
 .demo-baseline-overlay {
   block(100%, 100%);
   position: absolute;
+  z-index: 1;
   left: 0;
   top: 0;
-  background: linear-gradient(transparent, transparent ($baseline-height - 1), rgba(magenta, 0.4) 100%) repeat-y;
-  background-size: 100% $baseline-height;
+  background: linear-gradient(transparent, transparent ($baseline-grid-height - 1), rgba(magenta, 0.2) 100%) repeat-y;
+  background-size: 100% $baseline-grid-height;
   background-position: 0 0;
   pointer-events: none;
 }
 
+.demo-title {
+  border: 0px solid $gray-dark;
+  border-bottom-width: 2px;
+  padding-bottom: s('calc(%s - %s)', $space-medium, @border-bottom-width);
+}
+
 .demo-container {
+  position: relative;
+  z-index: 2;
   max-width: 64em;
   width: 100%;
   margin: 0 auto;
   padding: $space-medium;
 }
 
-.demo-example {
+.demo-examples {
   margin: 0 0 $space-small;
+  flex();
+  align-items: center;
+
+  > * {
+    margin-right: $space-xsmall
+  }
 }

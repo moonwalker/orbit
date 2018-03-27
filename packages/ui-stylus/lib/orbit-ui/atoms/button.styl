@@ -1,0 +1,87 @@
+@require '../_variables';
+
+/*!
+ * Button
+ */
+
+.ui-button {
+  inline-block();
+  border: 0;
+  padding: $space-xsmall $space-medium;
+
+  background: $primary-color;
+  color: #fff;
+  line-height: $line-height;
+  text-align: center;
+
+  cursor: pointer;
+
+  &:hover {
+    background: lighten($primary-color, 10);
+  }
+}
+
+/*!
+ * Color variations
+ */
+.ui-button--primary {
+  background: $primary-color;
+
+  &:hover {
+    background: lighten($primary-color, 10);
+  }
+}
+
+.ui-button--secondary {
+  background: $secondary-color
+
+  &:hover {
+    background: lighten($secondary-color, 10);
+  }
+}
+
+/*! Functional */
+.ui-button--success {
+  background: $success-color;
+
+  &:hover {
+    background: lighten($success-color, 10);
+  }
+}
+
+.ui-button--info {
+  background: $info-color;
+
+  &:hover {
+    background: lighten($info-color, 10);
+  }
+}
+
+.ui-button--warning {
+  background: $warning-color;
+
+  &:hover {
+    background: lighten($warning-color, 10);
+  }
+}
+
+.ui-button--danger {
+  background: $danger-color;
+
+  &:hover {
+    background: lighten($danger-color, 10);
+  }
+}
+
+/*!
+ * Size variation
+ */
+.ui-button--small {
+  padding: $space-xsmall $space-small;
+  type-scale(small);
+}
+
+.ui-button--large {
+  padding: $space-medium $space-xlarge;
+  type-scale(large);
+}

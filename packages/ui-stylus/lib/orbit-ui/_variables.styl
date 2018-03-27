@@ -17,13 +17,35 @@ $size-xxxlarge   ?= 48px;
 
 
 // Colors
+// https://coolors.co/1e6c9f-ee4266-e8bf3a-757575-0ead69
 // -----------------------------------------------------------------------------
 
-// UI colors
-// -----------------------------------------------------------------------------
-$body-color   ?= black;
-$header-color ?= black;
-$link-color   ?= blue;
+$blue            ?= #1E6C9F;
+$green           ?= #0ead69;
+$yellow          ?= #E8BF3A;
+$red             ?= #ee4266;
+$gray            ?= #757575;
+
+// Neutrals
+$light           ?= #fff;
+$gray-dark       ?= darken($gray, 20);
+$gray-light      ?= lighten($gray, 20);
+$dark            ?= #000;
+
+// Branding
+$primary-color   ?= $blue;
+$secondary-color ?= $gray-light;
+
+// Functionals
+$success-color   ?= $green;
+$info-color      ?= $blue;
+$warning-color   ?= $yellow;
+$danger-color    ?= $red;
+
+// UI
+$body-color       ?= $gray;
+$header-color     ?= $gray-dark;
+$link-color       ?= $primary-color;
 $link-color-hover ?= lighten($link-color, 20);
 
 
