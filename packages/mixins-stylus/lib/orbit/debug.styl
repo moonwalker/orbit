@@ -1,3 +1,5 @@
+@requir '_variables';
+
 debug($color = magenta) {
   outline: 1px solid $color !important;
 
@@ -15,5 +17,27 @@ debug($color = magenta) {
 
   * * * * {
     outline: 1px solid rgba($color, 0.2) !important;
+  }
+}
+
+debug-baseline($grid-height = $baseline-grid-height, $color = rgba(magenta, 0.2)) {
+  if (!@position || @position == 'static') {
+    position: relative;
+  }
+
+  &::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, transparent ($grid-height - 1), $color 100%) repeat-y,
+      linear-gradient(90deg, transparent, transparent ($grid-height - 1), $color 100%) repeat-x;
+    background-size: 100% $grid-height, $grid-height 100%;
+    background-position: 0 0;
+    pointer-events: none;
   }
 }
