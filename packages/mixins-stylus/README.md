@@ -1,4 +1,4 @@
-# Stylus mixins
+# orbit-mixins-stylus
 
 Library of [Stylus](http://stylus-lang.com) mixins.
 
@@ -13,12 +13,12 @@ npm install --save orbit-ui-stylus-mixin
 ### Use with Webpack
 
 ```js
-const oribitUI = require('orbit-ui-stylus-mixin')
+const oribit = require('@moonwalker/orbit-mixins-stylus')
 {
   rule: /\.styl$/,
   loader: 'stylus-loader',
   options: {
-    use: orbitUI()
+    use: orbit()
   }
 }
 ```

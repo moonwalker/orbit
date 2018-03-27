@@ -1,5 +1,5 @@
 {
-  "name": "@moonwalker/orbit-stylus-mixins",
+  "name": "@moonwalker/orbit-mixins-stylus",
   "version": "0.0.1",
   "description": "Stylus mixins library",
   "main": "lib/index.js",
