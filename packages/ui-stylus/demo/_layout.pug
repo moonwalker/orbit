@@ -10,7 +10,7 @@ html(lang="en")
 
     meta(name="description", content="")
     meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
-    link(rel="stylesheet", href="base.css")
+    link(rel="stylesheet", href="main.css")
 
     title Demo #{title}
 
@@ -18,4 +18,6 @@ html(lang="en")
       link(rel="stylesheet", href=css + ".css")
 
   body
-    block content
+    span.demo-baseline-overlay
+    .demo-container
+      block content

@@ -1,0 +1,24 @@
+@require 'orbit-ui/base';
+
+// Demo
+.demo-baseline-overlay {
+  block(100%, 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(transparent, transparent ($baseline-height - 1), rgba(magenta, 0.4) 100%) repeat-y;
+  background-size: 100% $baseline-height;
+  background-position: 0 0;
+  pointer-events: none;
+}
+
+.demo-container {
+  max-width: 64em;
+  width: 100%;
+  margin: 0 auto;
+  padding: $space-medium;
+}
+
+.demo-example {
+  margin: 0 0 $space-small;
+}

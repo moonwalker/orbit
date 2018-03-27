@@ -18,7 +18,9 @@ gulp.task('html', () => {
 gulp.task('css', () => {
   gulp.src('**/[^_]*.styl', { cwd: 'demo', base: 'demo' })
     .pipe(stylus({
-      use: orbitUI()
+      use: orbitUI({
+        autoImport: false
+      })
     }))
     .pipe(print())
     .pipe(gulp.dest(OUTPUT_DIR));
