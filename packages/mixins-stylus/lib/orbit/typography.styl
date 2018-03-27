@@ -1,0 +1,14 @@
+@require './_variables';
+
+type-scale($name-or-value, $grid-height = $baseline-grid-height) {
+  if type($name-or-value) == 'unit'{
+    $size = $name-or-value;
+  } else {
+    $size = lookup('$size-' + $name-or-value);
+  }
+
+  return warn('Incorect parameter name or value for "type-scale" at "' + selector() + '"!') unless $size;
+
+  font-size: $size;
+  line-height: ceil($size / $grid-height) * $grid-height;
+}
