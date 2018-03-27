@@ -1,8 +1,40 @@
 @require 'orbit-ui/base';
 
 // Demo
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
 body {
   debug-baseline();
+}
+
+.demo-header {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  background: $blue;
+
+  &__inner {
+    margin: 0 auto;
+    max-width: $container-max-width;
+  }
+
+  &__link {
+    inline-block();
+    padding: $space-xsmall;
+    color: $light;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      color: rgba($light, 0.8);
+    }
+  }
 }
 
 .demo-title {
@@ -14,10 +46,10 @@ body {
 .demo-container {
   position: relative;
   z-index: 2;
-  max-width: 64em;
   width: 100%;
+  max-width: $container-max-width;
   margin: 0 auto;
-  padding: $space-medium;
+  padding: $space-xxxlarge $space-medium $space-medium;
 }
 
 .demo-examples {
