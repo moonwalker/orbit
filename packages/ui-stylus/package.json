@@ -1,0 +1,28 @@
+{
+  "name": "@moonwalker/orbit-ui-stylus",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "gulp serve",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "keywords": [],
+  "author": "Vio <vio@moonwalker.tech>",
+  "license": "MIT",
+  "dependencies": {
+    "@moonwalker/orbit-mixins-stylus": "^0.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-print": "^5.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-stylus": "^2.7.0",
+    "pug": "^2.0.3",
+    "stylus": "^0.54.5"
+  },
+  "peerDependencies": {
+    "stylus": "^0.54.5"
+  }
+}
