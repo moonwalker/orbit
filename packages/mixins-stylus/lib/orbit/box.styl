@@ -1,18 +1,55 @@
-box() {
-  width: width if arguments[0] != null;
-  height: height if arguments[1] != null;
+/*
+ * Box helper
+ *
+ * Set element dimentions
+ *
+ * Examples:
+ *   box(100px)
+ *   box(100%, 20px)
+ *   box(height: 20px)
+ */
+box(width = null, height = null) {
+  width: width if width != null;
+  height: height if height != null;
 }
 
+/*
+ * Display block helper
+ *
+ * Examples:
+ *   block()
+ *   block(100px)
+ *   block(100px, 20px)
+ *   block(height: 20px)
+ */
 block(width = null, height = null) {
   display: block;
   box(width, height);
 }
 
+/*
+ * Display inline-block helper
+ *
+ * Examples:
+ *   inline-block()
+ *   inline-block(100px)
+ *   inline-block(100px, 20px)
+ *   inline-block(height: 20px)
+ */
 inline-block(width = null, height = null) {
   display: inline-block;
   box(width, height);
 }
 
+/*
+ * Display flex helper
+ *
+ * Examples:
+ *   flex();
+ *   flex(100px)
+ *   inline-block(100px, 20px)
+ *   inline-block(height: 20px)
+ */
 flex(width = null, height = null) {
   // Skip when triggered by a property, eg: flex: 1 1 auto
   {current-property}: arguments if current-property;
@@ -22,6 +59,14 @@ flex(width = null, height = null) {
   box(width, height);
 }
 
+/*
+ * Proportional box helper
+ *
+ * Examples:
+ *   proportional-box()
+ *   proportional-box(200px / 100px)
+ *   proportional-box(0.5)
+ */
 proportional-box(ratio = 1) {
   if (!@position || @position == 'static') {
     position: relative;
@@ -33,4 +78,3 @@ proportional-box(ratio = 1) {
     padding-bottom: percentage(1 / ratio);
   }
 }
-
