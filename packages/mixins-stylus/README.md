@@ -1,6 +1,6 @@
 # orbit-mixins-stylus
 
-Library of [Stylus](http://stylus-lang.com) mixins.
+[Stylus](http://stylus-lang.com) mixins and utilities library.
 
 ## Setup
 

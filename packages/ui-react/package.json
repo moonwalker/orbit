@@ -1,20 +1,26 @@
 {
   "name": "@moonwalker/orbit-ui-react",
   "version": "0.0.1",
-  "description": "React integration for Orbit UI",
+  "description": "React UI components library",
+  "keywords": [
+    "css",
+    "components",
+    "reactjs"
+  ],
+  "homepage": "https://github.com/moonwalker/orbit",
+  "repository": "moonwalker/orbit",
+  "author": "Vio <vio@moonwalker.tech>",
+  "license": "MIT",
   "main": "dist/orbit-ui-react.js",
   "module": "src/index.js",
   "scripts": {
+    "prebuild": "npm run lint && npm run test",
     "build": "webpack",
     "lint": "eslint src/**/*.{js,jsx}",
+    "prepublishOnly": "npm run build",
     "start": "storybook-server -p 8081",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
-  "keywords": [
-    "reactjs"
-  ],
-  "author": "Vio <vio@moonwalker.tech>",
-  "license": "MIT",
   "dependencies": {
     "classnames": "^2.2.5",
     "prop-types": "^15.6.1"

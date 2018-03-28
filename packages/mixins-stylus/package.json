@@ -1,28 +1,34 @@
 {
   "name": "@moonwalker/orbit-mixins-stylus",
   "version": "0.0.1",
-  "description": "Stylus mixins library",
+  "description": "Stylus mixins and utilities library",
+  "keywords": [
+    "css",
+    "stylus",
+    "mixins",
+    "utilities"
+  ],
+  "homepage": "https://github.com/moonwalker/orbit",
+  "repository": "moonwalker/orbit",
+  "author": "Vio <vio@moonwalker.tech>",
+  "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
+    "prebuild": "npm run lint && npm run test",
+    "build": "echo \"Info: nothing to build\" && exit 0",
     "lint": "npm run lint:styl && npm run lint:js",
     "lint:js": "eslint lib/**/*.js",
     "lint:styl": "stylint lib",
+    "prepublishOnly": "npm run build",
     "test": "jest"
   },
-  "keywords": [
-    "stylus",
-    "mixins"
-  ],
-  "author": "Vio <vio@moonwalker.tech>",
-  "license": "MIT",
+  "repository": "moonwalker/orbit",
   "devDependencies": {
     "eslint": "^4.19.0",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-config-base": "^1.0.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jest": "^21.15.0",
     "jest": "^22.4.2",
-    "strip-indent": "^2.0.0",
     "stylint": "^1.5.9",
     "stylus": "^0.54.5"
   }

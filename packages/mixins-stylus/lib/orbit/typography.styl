@@ -1,8 +1,8 @@
 @require './_variables';
 
 type-scale($name-or-value, $grid-height = $baseline-grid-height) {
-  if type($name-or-value) == 'unit'{
-    $size = $name-or-value;
+	if type($name-or-value) == 'unit'{
+		$size = $name-or-value;
   } else {
     $size = lookup('$size-' + $name-or-value);
   }
