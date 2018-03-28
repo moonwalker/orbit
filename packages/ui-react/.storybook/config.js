@@ -1,6 +1,7 @@
 import { configure, addDecorator } from '@storybook/react';
+import { withKnobs } from '@storybook/addon-knobs';
 
-// Dynamically load all stories.js
+// Dynamically load all stories.jsx
 const req = require.context('../src', true, /stories\.jsx?$/);
 
 function loadStories() {
@@ -8,5 +9,7 @@ function loadStories() {
 }
 
 import('../node_modules/@moonwalker/orbit-ui/dist/index.css');
+
+addDecorator(withKnobs);
 
 configure(loadStories, module);
