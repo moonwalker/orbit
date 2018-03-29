@@ -9,8 +9,14 @@
  *   box(100px)
  *   box(100%, 20px)
  *   box(height: 20px)
+ *   box(cover)
  */
 box(width = null, height = null) {
+  if (length(arguments) > 0 && arguments[0] == cover) {
+    width = 100%;
+    height = 100%;
+  }
+
   width: width if width != null;
   height: height if height != null;
 }
@@ -23,6 +29,7 @@ box(width = null, height = null) {
  *   block(100px)
  *   block(100px, 20px)
  *   block(height: 20px)
+ *   block(cover)
  */
 block(width = null, height = null) {
   display: block;
@@ -39,6 +46,7 @@ block(width = null, height = null) {
  *   inline-block(100px)
  *   inline-block(100px, 20px)
  *   inline-block(height: 20px)
+ *   inline-block(cover)
  */
 inline-block(width = null, height = null) {
   display: inline-block;
@@ -53,8 +61,9 @@ inline-block(width = null, height = null) {
  * Examples:
  *   flex();
  *   flex(100px)
- *   inline-block(100px, 20px)
- *   inline-block(height: 20px)
+ *   flex(100px, 20px)
+ *   flex(height: 20px)
+ *   flex(cover)
  */
 flex(width = null, height = null) {
   // Skip when triggered by a property, eg: flex: 1 1 auto
