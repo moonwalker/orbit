@@ -13,7 +13,7 @@ import {
 
 const stories = storiesOf('Components/Atoms/Button', module);
 
-const selectKind = () => select('Type', KINDS, KIND_DEFAULT);
+const selectKind = () => select('Kind', KINDS, KIND_DEFAULT);
 const selectSize = () => select('Size', SIZES, SIZE_MEDIUM);
 
 stories.add('default', () => (

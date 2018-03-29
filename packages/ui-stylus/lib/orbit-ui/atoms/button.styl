@@ -7,7 +7,7 @@
 .ui-button {
   inline-block();
   border: 0;
-  padding: $space-xsmall $space-medium;
+  padding: $space-xxsmall $space-small;
 
   background: $primary-color;
   color: $light;
@@ -77,12 +77,21 @@
 /*!
  * Size variation
  */
+.ui-button--xsmall {
+  padding: $space-xxxsmall $space-xxsmall;
+  type-scale(xsmall);
+}
 .ui-button--small {
-  padding: $space-xsmall $space-small;
+  padding: $space-xxsmall $space-xsmall;
   type-scale(small);
 }
 
 .ui-button--large {
-  padding: $space-medium $space-xlarge;
+  padding: $space-small $space-medium;
   type-scale(large);
+}
+
+.ui-button--xlarge {
+  padding: $space-medium $space-large;
+  type-scale(xlarge);
 }

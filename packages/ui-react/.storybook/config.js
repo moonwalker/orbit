@@ -8,7 +8,7 @@ function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
 
-import('../node_modules/@moonwalker/orbit-ui/dist/index.css');
+import('../node_modules/@moonwalker/orbit-ui/dist/orbit-ui.css');
 
 addDecorator(withKnobs);
 
