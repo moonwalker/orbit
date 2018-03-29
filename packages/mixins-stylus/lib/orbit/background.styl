@@ -1,0 +1,38 @@
+/*
+ * Background helper
+ *
+ * Examples:
+ *   bg()
+ *   bg(#fff)
+ *   bg(#fff, 0.2)
+ *   bg('image.png')
+ *   bg('image.png', #fff no-repeat)
+ */
+bg() {
+  $_done = false;
+  $_length = length(arguments);
+
+  // bg(<rgba>, <unit>)
+  if ($_length == 2 && type(arguments[0]) == 'rgba' && type(arguments[1]) == 'unit' && arguments[1] <= 1) {
+    background: rgba(arguments[0], arguments[1]);
+    $_done = true;
+  }
+  return if $_done;
+
+  // bg(<rgba>)
+  if ($_length == 1 && type(arguments[0]) == 'rgba') {
+    background: arguments[0];
+    $_done = true;
+  }
+  return if $_done;
+
+  // bg(<string>, ...)
+  if ($_length > 0 && type(arguments[0]) == 'string') {
+    $_other-values = $_length > 1 ? slice(arguments, 1) : null;
+    background: url(arguments[0]) $_other-values;
+    $_done = true;
+  }
+  return if $_done;
+
+  background: none;
+}

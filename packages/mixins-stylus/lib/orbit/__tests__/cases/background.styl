@@ -1,0 +1,26 @@
+.a {
+  bg();
+}
+
+.b {
+  bg(#fff); // @stylint off
+}
+
+.c {
+  bg(#fff, 0.3); // @stylint off
+
+  $color = #fff;
+  bg($color, 0.3);
+
+  $color = rgba(0, 0, 0, 0.2);
+  bg($color, 0.3);
+}
+
+.d {
+  bg('logo.png');
+
+  $image = 'image.jpg';
+  bg($image);
+
+  bg('logo.png', red no-repeat);
+}

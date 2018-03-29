@@ -1,0 +1,16 @@
+.a {
+  background: none;
+}
+.b {
+  background: #fff;
+}
+.c {
+  background: rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.3);
+  background: rgba(0,0,0,0.3);
+}
+.d {
+  background: url("logo.png");
+  background: url("image.jpg");
+  background: url("logo.png") #f00 no-repeat;
+}
