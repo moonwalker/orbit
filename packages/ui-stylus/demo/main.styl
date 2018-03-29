@@ -1,27 +1,19 @@
 @require 'orbit-ui/base';
 
 // Demo
-html {
+html,
+body {
   height: 100%;
-}
-body {
-  min-height: 100%;
-}
-
-body {
-  debug-baseline();
 }
 
 .demo-header {
-  position: fixed;
+  fixed(left top right)
   z-index: 1000;
-  left: 0;
-  right: 0;
   background: $dark;
 
   &__inner {
     margin: 0 auto;
-    max-width: $container-max-width;
+    max-width: 64rem;
   }
 
   &__title {
@@ -44,12 +36,16 @@ body {
     }
 
     &.active::after {
-      content: '';
+      block(100%, 2px);
       absolute(left bottom);
-      box(100%, 2px);
       background: $light;
     }
   }
+}
+
+.demo-content {
+  box(cover);
+  debug-baseline(rgba($gray, 0.2));
 }
 
 .demo-title {
@@ -63,7 +59,7 @@ body {
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: $container-max-width;
+  max-width: 64rem;
   margin: 0 auto;
   padding: ($space-xxxlarge + $space-medium) $space-medium $space-medium;
 }
