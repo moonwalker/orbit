@@ -14,3 +14,8 @@
   display: inline-block;
   height: 100%;
 }
+.e:after {
+  display: block;
+  content: '';
+  width: 20%;
+}

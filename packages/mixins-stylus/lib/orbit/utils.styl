@@ -1,0 +1,6 @@
+/*
+ * Check if current selector is for a pseudo element
+ */
+is-pseudoelement() {
+  return match(':(before|after)', selector());
+}

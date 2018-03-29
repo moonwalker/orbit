@@ -1,3 +1,5 @@
+@require 'utils';
+
 /*
  * Box helper
  *
@@ -24,6 +26,8 @@ box(width = null, height = null) {
  */
 block(width = null, height = null) {
   display: block;
+  content: '' if is-pseudoelement();
+
   box(width, height);
 }
 
@@ -38,6 +42,8 @@ block(width = null, height = null) {
  */
 inline-block(width = null, height = null) {
   display: inline-block;
+  content: '' if is-pseudoelement();
+
   box(width, height);
 }
 
@@ -74,7 +80,6 @@ proportional-box(ratio = 1) {
 
   &::before {
     block();
-    content: '';
     padding-bottom: percentage(1 / ratio);
   }
 }
