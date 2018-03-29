@@ -1,0 +1,125 @@
+/*
+ * Position helper
+ *
+ * Examples:
+ *   position(right 10px)
+ *   position(top 0 left 0)
+ *   position(top left)
+ *   position(center)
+ *   position(cover)
+ *
+ */
+position() {
+  _return = false;
+
+  if current-property {
+    {current-property}: arguments;
+    _return = true;
+  }
+  return if _return;
+
+  return if length(arguments) == 0;
+
+  // position(center)
+  if (length(arguments) == 1 && arguments[0] == center) {
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    _return = true;
+  }
+  return if _return;
+
+  // position(cover)
+  if (length(arguments) == 1 && arguments[0] == cover) {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    _return = true;
+  }
+  return if _return;
+
+  // position([<anchor> <unit>])
+  i = 0;
+
+  for j in (1..4) {
+    if length(arguments) > i {
+      {arguments[i]}: arguments[i + 1] is a 'unit' ? arguments[i += 1] : 0
+      i += 1;
+    }
+  }
+}
+
+/*
+ * Absolute position helper
+ *
+ * Examples:
+ *   absolute()
+ *   absolute(right 10px)
+ *   absolute(top 0 left 0)
+ *   absolute(top left)
+ *   absolute(center)
+ *   absolute(cover)
+ */
+absolute() {
+  position: absolute;
+  position(arguments);
+}
+
+/*
+ * Fixed position helper
+ *
+ * Examples:
+ *   fixed()
+ *   fixed(right 10px)
+ *   fixed(top 0 left 0)
+ *   fixed(top left)
+ *   fixed(center)
+ *   fixed(cover)
+ */
+fixed() {
+  position: fixed;
+  position(arguments);
+}
+
+/*
+ * Relative position helper
+ *
+ * Examples:
+ *   relative()
+ *   relative(right 10px)
+ *   relative(top 0 left 0)
+ *   relative(top left)
+ */
+relative() {
+  position: relative;
+  position(arguments);
+}
+
+/*
+ * Static position helper
+ *
+ * Examples:
+ *   static()
+ *   static(right 10px)
+ *   static(top 0 left 0)
+ *   static(top left)
+ */
+static() {
+  position: static;
+  position(arguments);
+}
+
+/*
+ * Sticky position helper
+ *
+ * Examples:
+ *   sticky()
+ *   sticky(right 10px)
+ *   sticky(top 0 left 0)
+ *   sticky(top left)
+ */
+sticky() {
+  position: sticky;
+  position(arguments);
+}
