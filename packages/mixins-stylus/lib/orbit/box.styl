@@ -13,8 +13,8 @@
  */
 box(width = null, height = null) {
   if (length(arguments) > 0 && arguments[0] == cover) {
-    width = 100%;
-    height = 100%;
+    width = 100%; // @stylint off
+    height = 100%; // @stylint off
   }
 
   width: width if width != null;
