@@ -1,5 +1,7 @@
 # Orbit
 
+![CircleCI branch](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser/master.svg?style=flat-square)
+
 | Package | Description |
 |---------|-------------|
 | [orbit-ui](packages/ui) | UI Components library (CSS) |
