@@ -18,7 +18,6 @@ h2,
 h3,
 h4,
 h5 {
-  margin: $space-medium 0 $space-xsmall;
   color: $header-color;
 }
 
@@ -46,19 +45,6 @@ h6 {
   type-scale(small);
 }
 
-p {
-  margin: $space-xsmall 0 $space-medium;
-}
-
-h1, h2, h3, h4, h5, p {
-  &:first-child {
-    margin-top: 0;
-  }
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
 // Links
 // -----------------------------------------------------------------------------
 a {
@@ -73,7 +59,6 @@ a {
 // -----------------------------------------------------------------------------
 ul,
 ol {
-  margin: $space-xsmall 0 $space-medium;
   padding-left: $space-medium;
 
   &:last-child {
@@ -81,13 +66,45 @@ ol {
   }
 }
 
-dl {
-  margin: $space-xsmall 0 $space-medium;
-}
-
 blockquote {
-  margin: $space-xsmall 0 $space-medium;
+  margin: 0;
   padding-left: $space-medium;
 }
+
+// Vertical spacing
+// -----------------------------------------------------------------------------
+
+p,
+ul,
+ol,
+dl {
+  margin: $space-medium 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: $space-large 0 $space-xxsmall;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  & + {
+    p, ul, ol, dl {
+      margin-top: $space-xxxsmall;
+    }
+  }
+}
+
 
 /*! stylelint-enable no-duplicate-selectors */
