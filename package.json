@@ -2,6 +2,8 @@
   "name": "orbit",
   "description": "Orbit UI library",
   "scripts": {
+    "build": "lerna run build",
+    "lint": "lerna run lint",
     "lerna": "lerna",
     "test": "lerna run test"
   },
