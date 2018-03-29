@@ -17,15 +17,23 @@ body {
   z-index: 1000;
   left: 0;
   right: 0;
-  background: $blue;
+  background: $dark;
 
   &__inner {
     margin: 0 auto;
     max-width: $container-max-width;
   }
 
+  &__title {
+    padding: $space-xsmall $space-xsmall $space-xsmall 0;
+    font-weight: bold;
+    type-scale(medium)
+    text-decoration: none;
+  }
+
   &__link {
     inline-block();
+    relative();
     padding: $space-xsmall;
     color: $light;
     font-weight: bold;
@@ -34,10 +42,18 @@ body {
     &:hover {
       color: rgba($light, 0.8);
     }
+
+    &.active::after {
+      content: '';
+      absolute(left bottom);
+      box(100%, 2px);
+      background: $light;
+    }
   }
 }
 
 .demo-title {
+  margin: 0 0 $space-large;
   border: 0px solid $gray-dark;
   border-bottom-width: 2px;
   padding-bottom: s('calc(%s - %s)', $space-medium, @border-bottom-width);
@@ -49,7 +65,7 @@ body {
   width: 100%;
   max-width: $container-max-width;
   margin: 0 auto;
-  padding: $space-xxxlarge $space-medium $space-medium;
+  padding: ($space-xxxlarge + $space-medium) $space-medium $space-medium;
 }
 
 .demo-examples {

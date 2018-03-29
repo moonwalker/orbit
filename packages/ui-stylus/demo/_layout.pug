@@ -14,13 +14,14 @@ html(lang="en")
 
     title Demo #{title}
 
-    if css
-      link(rel="stylesheet", href=css + ".css")
+    if slug
+      link(rel="stylesheet", href=slug + ".css")
 
   body
     .demo-header
       .demo-header__inner
-        a.demo-header__link(href="base.html") Base
-        a.demo-header__link(href="buttons.html") Buttons
+        a.demo-header__title(href="base.html") Orbit UI
+        a.demo-header__link(href="base.html", class = slug === 'base' ? 'active' : '') Base
+        a.demo-header__link(href="buttons.html", class = slug === 'buttons' ? 'active' : '') Buttons
     .demo-container
       block content
