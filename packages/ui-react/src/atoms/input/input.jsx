@@ -5,18 +5,22 @@ import cx from 'classnames';
 import {
   UI_NAME,
   SIZES,
-  SIZE_MEDIUM,
+  VALID,
+  INVALID,
 } from './input.constants';
 
 export const Input = (props) => {
   const {
     className,
     size,
+    valid,
     ...restProps
   } = props;
 
   const rootClassName = cx(UI_NAME, className, {
     [`${UI_NAME}--${size}`]: size,
+    [`${UI_NAME}--${VALID}`]: valid === true,
+    [`${UI_NAME}--${INVALID}`]: valid === false,
   });
 
   return (
@@ -29,7 +33,8 @@ export const Input = (props) => {
 
 Input.defaultProps = {
   className: '',
-  size: SIZE_MEDIUM,
+  size: null,
+  valid: null,
 };
 
 Input.propTypes = {
@@ -38,4 +43,7 @@ Input.propTypes = {
 
   /* Size type */
   size: PropTypes.oneOf(SIZES),
+
+  /* Valid boolean value */
+  valid: PropTypes.bool,
 };

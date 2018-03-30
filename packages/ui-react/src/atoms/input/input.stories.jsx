@@ -20,3 +20,21 @@ stories.add('default', () => (
     placeholder="Enter text here"
   />
 ));
+
+stories.add('valid', () => (
+  <Input
+    onChange={action('Change')}
+    size={selectSize()}
+    placeholder="Enter text here"
+    valid
+  />
+));
+
+stories.add('invalid', () => (
+  <Input
+    onChange={action('Change')}
+    size={selectSize()}
+    placeholder="Enter text here"
+    valid={false}
+  />
+));
