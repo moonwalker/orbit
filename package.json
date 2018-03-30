@@ -5,6 +5,8 @@
     "build": "lerna run build",
     "lint": "lerna run lint",
     "lerna": "lerna",
+    "prepublish": "npm run build",
+    "publish": "lerna run publish -m 'chore(release): publish %s'",
     "test": "lerna run test"
   },
   "keywords": [],
