@@ -1,0 +1,39 @@
+extends _layout
+
+block vars
+  - var title = 'Inputs'
+  - var slug = 'inputs'
+
+block content
+  h1.demo-title Inputs
+
+  .demo-examples
+    input.ui-input(
+      placeholder="Username"
+    )
+
+  h2 Validation states
+
+  .demo-examples
+    input.ui-input.ui-input--valid(
+      placeholder="Username"
+      value="John"
+    )
+
+    input.ui-input.ui-input--error(
+      placeholder="Username"
+      value="John"
+    )
+
+  h3 Size variations
+
+  .demo-examples
+    input.ui-input.ui-input--small(
+      placeholder="Username"
+    )
+    input.ui-input(
+      placeholder="Username"
+    )
+    input.ui-input.ui-input--large(
+      placeholder="Username"
+    )

@@ -1,0 +1,55 @@
+@require '../_variables';
+
+
+/*!
+ * Input
+ */
+.ui-input {
+  border: 1px solid $muted-color;
+  padding: s('calc(%s - %s)', $space-xsmall, 1px);
+  color: $muted-color;
+  outline: none;
+
+  +placeholder() {
+    color: rgba(@color, 0.6);
+    line-height: $line-height;
+  }
+}
+
+/*!
+ * States
+ */
+
+/*!
+ * Focus state
+ */
+.ui-input:focus {
+  border-color: $gray;
+  color: $body-color;
+}
+
+/*!
+ * Valid state
+ */
+.ui-input--valid {
+  border-color: $success-color;
+}
+
+/*!
+ * Error state
+ */
+.ui-input--error {
+  border-color: $danger-color;
+}
+
+/*!
+ * Size variations
+ */
+.ui-input--small {
+  padding: s('calc(%s - %s)', $space-xxsmall, 1px);
+  type-scale(small);
+}
+.ui-input--large {
+  padding: s('calc(%s - %s)', $space-small, 1px);
+  type-scale(large);
+}
