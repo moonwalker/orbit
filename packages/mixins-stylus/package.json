@@ -1,6 +1,6 @@
 {
   "name": "@moonwalker/orbit-mixins-stylus",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Stylus mixins and utilities library",
   "keywords": [
     "css",
@@ -22,7 +22,6 @@
     "prepublishOnly": "npm run build",
     "test": "jest"
   },
-  "repository": "moonwalker/orbit",
   "devDependencies": {
     "eslint": "^4.19.0",
     "eslint-config-airbnb-base": "^12.1.0",
