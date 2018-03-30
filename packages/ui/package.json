@@ -10,6 +10,9 @@
   "repository": "moonwalker/orbit",
   "author": "Vio <vio@moonwalker.tech>",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "prebuild": "npm run lint && npm run test",
     "build": "rm -fr dist && gulp compile && gulp minimize",

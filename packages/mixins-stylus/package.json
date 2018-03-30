@@ -13,6 +13,9 @@
   "author": "Vio <vio@moonwalker.tech>",
   "license": "MIT",
   "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "prebuild": "npm run lint && npm run test",
     "build": "echo \"Info: nothing to build\" && exit 0",

@@ -13,6 +13,9 @@
   "license": "MIT",
   "main": "dist/orbit-ui-react.js",
   "module": "src/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "prebuild": "npm run lint && npm run test",
     "build": "webpack",
