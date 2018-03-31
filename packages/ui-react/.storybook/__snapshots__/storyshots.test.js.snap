@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Atoms/Button default 1`] = `
+<button
+  className="ui-button ui-button--medium"
+  onClick={[Function]}
+>
+  Call to action
+</button>
+`;
+
+exports[`Storyshots Components/Atoms/Button with custom content 1`] = `
+<button
+  className="ui-button ui-button--medium"
+  onClick={[Function]}
+>
+  <em
+    className="custom ui-button__content ui-button__content--medium"
+    size="medium"
+  >
+    Call
+  </em>
+  <span
+    className="ui-button__content ui-button__content--medium"
+  >
+    to action
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Atoms/Button with different icon size 1`] = `
+<button
+  className="ui-button ui-button--medium"
+  onClick={[Function]}
+>
+  <i
+    className="ui-icon ui-button__content ui-button__content--medium ui-icon--large"
+  >
+    backup
+  </i>
+  <span
+    className="ui-button__content ui-button__content--medium"
+  >
+    Call to action
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Atoms/Button with left icon 1`] = `
+<button
+  className="ui-button ui-button--medium"
+  onClick={[Function]}
+>
+  <i
+    className="ui-icon ui-button__content ui-button__content--medium ui-icon--medium"
+  >
+    backup
+  </i>
+  <span
+    className="ui-button__content ui-button__content--medium"
+  >
+    Call to action
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Atoms/Icon default 1`] = `
+<i
+  className="ui-icon ui-icon--medium"
+>
+  face
+</i>
+`;
+
+exports[`Storyshots Components/Atoms/Input default 1`] = `
+<input
+  className="ui-input ui-input--medium"
+  onChange={[Function]}
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Input invalid 1`] = `
+<input
+  className="ui-input ui-input--medium ui-input--invalid"
+  onChange={[Function]}
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Input valid 1`] = `
+<input
+  className="ui-input ui-input--medium ui-input--valid"
+  onChange={[Function]}
+  placeholder="Enter text here"
+/>
+`;

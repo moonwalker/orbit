@@ -79,7 +79,6 @@ export const Button = (props) => {
       }),
     }));
 
-
   return (
     <Component
       className={rootClassName}
