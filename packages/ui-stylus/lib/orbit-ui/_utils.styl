@@ -1,0 +1,8 @@
+$_import-cache = {};
+
+import-css($url) {
+  if not $_import-cache[$url] {
+    @import url($url);
+    $_import-cache[$url] = true;
+  }
+}

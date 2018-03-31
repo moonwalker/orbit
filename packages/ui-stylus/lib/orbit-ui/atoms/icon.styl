@@ -1,12 +1,11 @@
 @require '../_variables';
+@require '../_imports';
 
 /*!
  * Icon
  *
  * Based on https://github.com/google/material-design-icons/blob/master/iconfont/material-icons.css
  */
-
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 .ui-icon {
   inline-block($space-medium, $space-medium);
@@ -20,6 +19,7 @@
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
+  vertical-align: middle;
 
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
@@ -37,6 +37,11 @@
  * Size variations
  */
 
+.ui-icon--xsmall {
+  box($space-xsmall, $space-xsmall);
+  font-size: $space-xsmall;
+}
+
 .ui-icon--small {
   box($space-small, $space-small);
   font-size: $space-small;
@@ -45,4 +50,9 @@
 .ui-icon--large {
   box($space-large, $space-large);
   font-size: $space-large;
+}
+
+.ui-icon--xlarge {
+  box($space-xlarge, $space-xlarge);
+  font-size: $space-xlarge;
 }

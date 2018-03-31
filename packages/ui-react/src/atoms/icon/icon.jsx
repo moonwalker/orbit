@@ -5,7 +5,6 @@ import cx from 'classnames';
 import {
   UI_NAME,
   SIZES,
-  SIZE_MEDIUM,
 } from './icon.constants';
 
 export const Icon = (props) => {
@@ -32,7 +31,7 @@ export const Icon = (props) => {
 
 Icon.defaultProps = {
   className: '',
-  size: SIZE_MEDIUM,
+  size: null,
 };
 
 Icon.propTypes = {

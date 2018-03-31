@@ -1,6 +1,5 @@
 block vars
   - var tilte = ''
-  - var css = ''
 
 doctype html
 html(lang="en")
@@ -10,13 +9,9 @@ html(lang="en")
 
     meta(name="description", content="")
     meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
-    link(rel="stylesheet", href="main.css")
+    link(rel="stylesheet", href="styles/main.css")
 
-    title Demo #{title}
-
-    if slug
-      link(rel="stylesheet", href=slug + ".css")
-
+    title Demo - #{title}
   body
     .demo-header
       .demo-header__inner

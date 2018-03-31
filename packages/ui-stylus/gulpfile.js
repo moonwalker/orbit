@@ -19,8 +19,8 @@ gulp.task('css', () => {
   gulp.src('**/[^_]*.styl', { cwd: 'demo', base: 'demo' })
     .pipe(stylus({
       use: orbitUI({
-        autoImport: false
-      })
+        autoImport: false,
+      }),
     }))
     .pipe(print())
     .pipe(gulp.dest(OUTPUT_DIR));
@@ -29,13 +29,13 @@ gulp.task('css', () => {
 gulp.task('serve', ['css', 'html'], () => {
   browserSync.init({
     server: {
-      baseDir: OUTPUT_DIR
+      baseDir: OUTPUT_DIR,
     },
     watchOptions: {
-      ignoreInitials: true
+      ignoreInitials: true,
     },
     files: [OUTPUT_DIR],
-    open: false
+    open: false,
   });
 
   gulp.watch(['lib/**/*.styl', 'demo/**/*.styl'], ['css']);
