@@ -26,3 +26,80 @@ block content
     button.ui-button Normal size
     button.ui-button.ui-button--large Large size
     button.ui-button.ui-button--xlarge XLarge size
+
+  h2 With multiple children
+
+  p.
+    When adding multiple children, like an icon and text, we need to wrap the text with
+    <code>.ui-button__content</code> class to be able to horizontally space the elements.
+
+  h3 With icon on left
+  .demo-examples
+    button.ui-button.ui-button--xsmall
+      i.ui-button__content.ui-button__content--xsmall.ui-icon.ui-icon--xsmall backup
+      span.ui-button__content.ui-button__content--xsmall Call to action
+
+    button.ui-button.ui-button--small
+      i.ui-button__content.ui-button__content--samll.ui-icon.ui-icon--small backup
+      span.ui-button__content.ui-button__content--small Call to action
+
+    button.ui-button
+      i.ui-button__content.ui-icon backup
+      span.ui-button__content Call to action
+
+    button.ui-button.ui-button--large
+      i.ui-button__content.ui-button__content--large.ui-icon.ui-icon--large backup
+      span.ui-button__content.ui-button__content--large Call to action
+
+    button.ui-button.ui-button--xlarge
+      i.ui-button__content.ui-button__content--xlarge.ui-icon.ui-icon--xlarge backup
+      span.ui-button__content.ui-button__content--xlarge Call to action
+
+  h3 With icon on right
+  .demo-examples
+    button.ui-button.ui-button--xsmall
+      span.ui-button__content.ui-button__content--xsmall Call to action
+      i.ui-button__content.ui-button__content--xsmall.ui-icon.ui-icon--xsmall backup
+
+    button.ui-button.ui-button--small
+      span.ui-button__content.ui-button__content--small Call to action
+      i.ui-button__content.ui-button__content--samll.ui-icon.ui-icon--small backup
+
+    button.ui-button
+      span.ui-button__content Call to action
+      i.ui-button__content.ui-icon backup
+
+    button.ui-button.ui-button--large
+      span.ui-button__content.ui-button__content--large Call to action
+      i.ui-button__content.ui-button__content--large.ui-icon.ui-icon--large backup
+
+    button.ui-button.ui-button--xlarge
+      span.ui-button__content.ui-button__content--xlarge Call to action
+      i.ui-button__content.ui-button__content--xlarge.ui-icon.ui-icon--xlarge backup
+
+  h3 With icon on left and right
+  .demo-examples
+    button.ui-button.ui-button--xsmall
+      i.ui-button__content.ui-button__content--xsmall.ui-icon.ui-icon--xsmall keyboard_arrow_down
+      span.ui-button__content.ui-button__content--xsmall Call to action
+      i.ui-button__content.ui-button__content--xsmall.ui-icon.ui-icon--xsmall keyboard_arrow_down
+
+    button.ui-button.ui-button--small
+      i.ui-button__content.ui-button__content--samll.ui-icon.ui-icon--small keyboard_arrow_down
+      span.ui-button__content.ui-button__content--small Call to action
+      i.ui-button__content.ui-button__content--samll.ui-icon.ui-icon--small keyboard_arrow_down
+
+    button.ui-button
+      i.ui-button__content.ui-icon keyboard_arrow_down
+      span.ui-button__content Call to action
+      i.ui-button__content.ui-icon keyboard_arrow_down
+
+    button.ui-button.ui-button--large
+      i.ui-button__content.ui-button__content--large.ui-icon.ui-icon--large keyboard_arrow_down
+      span.ui-button__content.ui-button__content--large Call to action
+      i.ui-button__content.ui-button__content--large.ui-icon.ui-icon--large keyboard_arrow_down
+
+    button.ui-button.ui-button--xlarge
+      i.ui-button__content.ui-button__content--xlarge.ui-icon.ui-icon--xlarge keyboard_arrow_down
+      span.ui-button__content.ui-button__content--xlarge Call to action
+      i.ui-button__content.ui-button__content--xlarge.ui-icon.ui-icon--xlarge keyboard_arrow_down

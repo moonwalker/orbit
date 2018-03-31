@@ -5,7 +5,8 @@
  */
 
 .ui-button {
-  inline-block();
+  flex();
+  align-items: center;
   border: 0;
   padding: $space-xxsmall $space-small;
 
@@ -14,6 +15,8 @@
   line-height: $line-height;
   text-align: center;
   text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
 
   cursor: pointer;
 
@@ -21,6 +24,23 @@
     background: lighten($primary-color, 10);
     color: $light;
     text-decoration: none;
+  }
+}
+
+.ui-button__content {
+  margin: 0 $space-xxsmall;
+
+  // Collapse margins in between
+  & + & {
+    margin-left: 0;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
   }
 }
 
@@ -82,9 +102,18 @@
   padding: $space-xxxsmall $space-xxsmall;
   type-scale(xsmall);
 }
+
+.ui-button__content--xsmall {
+  margin: 0 $space-xxxsmall;
+}
+
 .ui-button--small {
   padding: $space-xxsmall $space-xsmall;
   type-scale(small);
+}
+
+.ui-button__content--small {
+  margin: 0 $space-xxxsmall;
 }
 
 .ui-button--large {
@@ -92,7 +121,15 @@
   type-scale(large);
 }
 
+.ui-button__content--large {
+  margin: 0 $space-xsmall;
+}
+
 .ui-button--xlarge {
   padding: $space-medium $space-large;
   type-scale(xlarge);
+}
+
+.ui-button__content--xlarge {
+  margin: 0 $space-small;
 }

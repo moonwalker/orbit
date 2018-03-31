@@ -19,6 +19,7 @@
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
+  vertical-align: middle;
 
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
@@ -36,6 +37,11 @@
  * Size variations
  */
 
+.ui-icon--xsmall {
+  box($space-xsmall, $space-xsmall);
+  font-size: $space-xsmall;
+}
+
 .ui-icon--small {
   box($space-small, $space-small);
   font-size: $space-small;
@@ -44,4 +50,9 @@
 .ui-icon--large {
   box($space-large, $space-large);
   font-size: $space-large;
+}
+
+.ui-icon--xlarge {
+  box($space-xlarge, $space-xlarge);
+  font-size: $space-xlarge;
 }

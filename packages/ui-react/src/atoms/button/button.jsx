@@ -7,8 +7,52 @@ import {
   KINDS,
   KIND_DEFAULT,
   SIZES,
-  SIZE_MEDIUM,
 } from './button.constants';
+
+const ButtonContent = ({ className, children }) => (
+  <span className={className}>
+    {children}
+  </span>
+);
+
+ButtonContent.defaultProps = {
+  className: '',
+  children: null,
+};
+
+ButtonContent.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.node,
+};
+
+const mergePropValue = (propName, propValue, ownProps) => {
+  if (propName === 'className') {
+    return cx(ownProps.className, propValue);
+  }
+
+  return ownProps[propName] || propValue;
+};
+
+const mergePropsToChild = (childComponent, props) =>
+  Object.entries(props).reduce((aggregator, [propName, propValue]) => ({
+    ...aggregator,
+    [propName]: mergePropValue(propName, propValue, childComponent.props),
+  }), {});
+
+const wrapChild = props => (child) => {
+  const childComponent = typeof child === 'string' ?
+    (
+      <ButtonContent>
+        {child}
+      </ButtonContent>
+    ) :
+    child;
+
+  return React.cloneElement(
+    childComponent,
+    mergePropsToChild(childComponent, props),
+  );
+};
 
 export const Button = (props) => {
   const {
@@ -25,12 +69,23 @@ export const Button = (props) => {
     [`${UI_NAME}--${size}`]: size,
   });
 
+  // Add .`{UI_NAME}__content` if there are multiple children
+  const processedChildren = typeof children === 'string' ?
+    children :
+    React.Children.map(children, wrapChild({
+      size,
+      className: cx(`${UI_NAME}__content`, {
+        [`${UI_NAME}__content--${size}`]: size,
+      }),
+    }));
+
+
   return (
     <Component
       className={rootClassName}
       {...restProps}
     >
-      {children}
+      {processedChildren}
     </Component>
   );
 };
@@ -40,7 +95,7 @@ Button.defaultProps = {
   children: null,
   as: 'button',
   kind: KIND_DEFAULT,
-  size: SIZE_MEDIUM,
+  size: null,
 };
 
 Button.propTypes = {
