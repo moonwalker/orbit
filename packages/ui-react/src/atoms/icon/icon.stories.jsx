@@ -3,14 +3,11 @@ import { storiesOf } from '@storybook/react';
 import { select } from '@storybook/addon-knobs';
 
 import { Icon } from './icon';
-import {
-  SIZES,
-  SIZE_MEDIUM,
-} from './icon.constants';
+import { SIZES } from './icon.constants';
 
 const stories = storiesOf('Components/Atoms/Icon', module);
 
-const selectSize = () => select('Size', SIZES, SIZE_MEDIUM);
+const selectSize = () => select('Size', SIZES, null);
 const selectName = () => select('Name', [
   'face',
   'search',
