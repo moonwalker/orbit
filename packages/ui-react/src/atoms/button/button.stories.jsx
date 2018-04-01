@@ -9,14 +9,13 @@ import {
   KINDS,
   KIND_DEFAULT,
   SIZES,
-  SIZE_MEDIUM,
   SIZE_LARGE,
 } from './button.constants';
 
 const stories = storiesOf('Components/Atoms/Button', module);
 
 const selectKind = () => select('Kind', KINDS, KIND_DEFAULT);
-const selectSize = () => select('Size', SIZES, SIZE_MEDIUM);
+const selectSize = () => select('Size', SIZES, null);
 
 stories.add('default', () => (
   <Button
