@@ -95,3 +95,43 @@ exports[`Storyshots Components/Atoms/Input valid 1`] = `
   placeholder="Enter text here"
 />
 `;
+
+exports[`Storyshots Components/Atoms/Spinner default 1`] = `
+<span
+  className="ui-spinner"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Spinner with custom size 1`] = `
+<span
+  className="ui-spinner ui-spinner--large"
+/>
+`;
+
+exports[`Storyshots Examples/SearchField default 1`] = `
+<div
+  style={
+    Object {
+      "margin": "0 auto",
+      "maxWidth": "380px",
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="search-field"
+  >
+    <input
+      className="ui-input search-field__input ui-input--large"
+      onChange={[Function]}
+      placeholder="Search for something"
+    />
+    <i
+      className="ui-icon search-field__icon ui-icon--large"
+    >
+      search
+    </i>
+    
+  </div>
+</div>
+`;
