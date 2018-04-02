@@ -122,16 +122,24 @@ exports[`Storyshots Examples/SearchField default 1`] = `
     className="search-field"
   >
     <input
+      aria-activedescendant={null}
+      aria-autocomplete="list"
+      aria-expanded={false}
+      autoComplete="off"
       className="ui-input search-field__input ui-input--large"
+      id="downshift-0-input"
+      onBlur={[Function]}
       onChange={[Function]}
+      onKeyDown={[Function]}
       placeholder="Search for something"
+      role="combobox"
+      value=""
     />
     <i
       className="ui-icon search-field__icon ui-icon--large"
     >
       search
     </i>
-    
   </div>
 </div>
 `;

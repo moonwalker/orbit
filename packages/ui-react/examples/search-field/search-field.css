@@ -1,0 +1,38 @@
+.search-field {
+  position: relative;
+}
+
+.search-field__input {
+  border-radius: 100px;
+  padding-left: 24px;
+  padding-right: 64px;
+}
+
+.search-field__icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-field__results {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  top: 100%;
+  border: 1px solid #eee;
+  background: #fff;
+  padding: 1rem;
+}
+
+.search-field__item {
+  padding: 0.5rem;
+}
+
+.search-field__item--selected {
+  font-weight: bold;
+}
+
+.search-field__item--highlighted {
+  background: yellow;
+}
