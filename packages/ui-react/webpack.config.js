@@ -2,6 +2,7 @@ const path = require('path');
 
 const SRC_DIR = path.join(__dirname, 'src');
 const DEST_DIR = path.join(__dirname, 'dist');
+const EXAMPLES_DIR = path.join(__dirname, 'examples');
 
 module.exports = {
   context: SRC_DIR,
@@ -24,7 +25,10 @@ module.exports = {
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',
-        include: SRC_DIR,
+        include: [
+          SRC_DIR,
+          EXAMPLES_DIR,
+        ],
       },
     ],
   },
