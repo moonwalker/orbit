@@ -4,3 +4,13 @@
 is-pseudoelement() {
   return match(':(before|after)', selector());
 }
+
+/*
+ * Wrapper for `calc()` with `s` support
+ *
+ * Examples:
+ *   scalc('100% + %s', $var)
+ */
+scalc(expression, args...) {
+  return unquote('calc(' + (expression % args) + ')');
+}
