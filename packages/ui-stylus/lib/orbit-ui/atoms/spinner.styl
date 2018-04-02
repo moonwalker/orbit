@@ -1,0 +1,47 @@
+@keyframes ui-spinner-rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ui-spinner {
+  inline-block($space-medium, $space-medium);
+  relative();
+  color: $gray-light;
+
+  &::before {
+    box-sizing: border-box;
+    block(cover);
+    absolute(cover);
+    overflow: hidden;
+    will-change: transform;
+
+    border-radius: 50%;
+    border: 3px solid currentColor;
+    border-top-color: transparent;
+    animation: ui-spinner-rotate .6s both linear infinite;
+  }
+}
+
+/*!
+ * Size variations
+ */
+.ui-spinner--small {
+  box($space-small, $space-small);
+}
+
+.ui-spinner--small::before {
+  border-width: 2px;
+}
+
+.ui-spinner--large {
+  box($space-large, $space-large);
+}
