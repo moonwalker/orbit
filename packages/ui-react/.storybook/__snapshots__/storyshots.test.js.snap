@@ -108,6 +108,30 @@ exports[`Storyshots Components/Atoms/Spinner with custom size 1`] = `
 />
 `;
 
+exports[`Storyshots Components/Atoms/Textarea default 1`] = `
+<textarea
+  className="ui-textarea ui-textarea--medium"
+  onChange={[Function]}
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Textarea invalid 1`] = `
+<textarea
+  className="ui-textarea ui-textarea--medium ui-textarea--invalid"
+  onChange={[Function]}
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Textarea valid 1`] = `
+<textarea
+  className="ui-textarea ui-textarea--medium ui-textarea--valid"
+  onChange={[Function]}
+  placeholder="Enter text here"
+/>
+`;
+
 exports[`Storyshots Examples/SearchField default 1`] = `
 <div
   style={
