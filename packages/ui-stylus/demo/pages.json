@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "base",
+    "title": "Base"
+  },
+  {
+    "slug": "button",
+    "title": "Button"
+  },
+  {
+    "slug": "input",
+    "title": "Input"
+  },
+  {
+    "slug": "label",
+    "title": "Label"
+  },
+  {
+    "slug": "select",
+    "title": "Select"
+  },
+  {
+    "slug": "textarea",
+    "title": "Textarea"
+  },
+  {
+    "slug": "icon",
+    "title": "Icon"
+  },
+  {
+    "slug": "spinner",
+    "title": "Spinner"
+  }
+]

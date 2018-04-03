@@ -17,3 +17,14 @@ stories.add('default', () => (
     />
   </div>
 ));
+
+stories.add('with predefined query', () => (
+  <div style={{ maxWidth: '380px', margin: '0 auto', padding: '1rem' }}>
+    <SearchField
+      items={items}
+      onSelect={handleOnSelect()}
+      defaultInputValue="Lo"
+      defaultIsOpen
+    />
+  </div>
+));

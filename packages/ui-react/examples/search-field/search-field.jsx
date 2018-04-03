@@ -20,7 +20,7 @@ const searchItems = (items, query) => {
   ));
 };
 
-const itemToString = item => item.name;
+const itemToString = item => (item && item.name) || '';
 
 export const SearchField = ({ items, ...restProps }) => (
   <Downshift

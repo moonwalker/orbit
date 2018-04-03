@@ -1,11 +1,15 @@
 @require '../_variables';
 
-/*!
- * Input
+/*
+ * Select
  */
-.ui-input {
+
+.ui-select {
+  appearance: none;
   border: 1px solid $muted-color;
+  border-radius: 0;
   padding: scalc('%s - %s', $space-xsmall, 1px);
+  bg($light);
   color: $muted-color;
   width: 100%;
   type-scale(medium);
@@ -24,7 +28,7 @@
 /*!
  * Focus state
  */
-.ui-input:focus {
+.ui-select:focus {
   border-color: $gray;
   color: $body-color;
 }
@@ -32,25 +36,25 @@
 /*!
  * Valid state
  */
-.ui-input--valid {
+.ui-select--valid {
   border-color: $success-color;
 }
 
 /*!
  * Invalid state
  */
-.ui-input--invalid {
+.ui-select--invalid {
   border-color: $danger-color;
 }
 
 /*!
  * Size variations
  */
-.ui-input--small {
+.ui-select--small {
   padding: scalc('%s - %s', $space-xxsmall, 1px);
   type-scale(small);
 }
-.ui-input--large {
+.ui-select--large {
   padding: scalc('%s - %s', $space-small, 1px);
   type-scale(large);
 }
