@@ -1,6 +1,3 @@
-block vars
-  - var tilte = ''
-
 doctype html
 html(lang="en")
   head
@@ -11,17 +8,19 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
     link(rel="stylesheet", href="styles/main.css")
 
-    title Demo - #{title}
+    title Demo - #{currentPage.title}
   body
     .demo-header
       .demo-header__inner
         a.demo-header__title(href="base.html") Orbit UI
-        a.demo-header__link(href="base.html", class = slug === 'base' ? 'active' : '') Base
-        a.demo-header__link(href="buttons.html", class = slug === 'buttons' ? 'active' : '') Buttons
-        a.demo-header__link(href="inputs.html", class = slug === 'inputs' ? 'active' : '') Inputs
-        a.demo-header__link(href="textarea.html", class = slug === 'textarea' ? 'active' : '') Textarea
-        a.demo-header__link(href="icons.html", class = slug === 'icons' ? 'active' : '') Icons
-        a.demo-header__link(href="spinners.html", class = slug === 'spinner' ? 'active' : '') Spinners
+
+        each page in pages
+          a.demo-header__link(
+            href= page.slug + ".html",
+            class= page.slug === currentPage.slug ? "active" : ""
+          )= page.title
+
     .demo-content
       .demo-container
+        h1.demo-title= currentPage.title
         block content

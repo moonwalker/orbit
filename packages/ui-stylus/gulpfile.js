@@ -4,12 +4,31 @@ const stylus = require('gulp-stylus');
 const pug = require('gulp-pug');
 const print = require('gulp-print').default;
 const browserSync = require('browser-sync').create();
+const through = require('through2').obj;
+
 const orbitUI = require('./');
 
 const OUTPUT_DIR = path.join(__dirname, 'dist');
+const pages = require(path.join(__dirname, 'demo/pages.json')); // eslint-disable-line import/no-dynamic-require
+
+const getPage = slug =>
+  pages.find(page => page.slug === slug);
+
+const loadPugData = (file, enc, next) => {
+  const filepath = path.parse(file.path);
+
+  // eslint-disable-next-line no-param-reassign
+  file.data = Object.assign({}, file.data, {
+    currentPage: getPage(filepath.name),
+    pages,
+  });
+
+  next(null, file);
+};
 
 gulp.task('html', () => {
   gulp.src('**/[^_]*.pug', { cwd: 'demo', base: 'demo' })
+    .pipe(through(loadPugData))
     .pipe(pug())
     .pipe(print())
     .pipe(gulp.dest(OUTPUT_DIR));
