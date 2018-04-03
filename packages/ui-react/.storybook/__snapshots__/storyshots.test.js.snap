@@ -96,6 +96,99 @@ exports[`Storyshots Components/Atoms/Input valid 1`] = `
 />
 `;
 
+exports[`Storyshots Components/Atoms/Select default 1`] = `
+<select
+  className="ui-select ui-select--medium"
+  onChange={[Function]}
+  placeholder="Enter text here"
+>
+  <option>
+    Option A
+  </option>
+  <option>
+    Option B
+  </option>
+  <option>
+    Option C
+  </option>
+</select>
+`;
+
+exports[`Storyshots Components/Atoms/Select invalid 1`] = `
+<select
+  className="ui-select ui-select--medium ui-select--invalid"
+  onChange={[Function]}
+>
+  <option>
+    Option A
+  </option>
+  <option>
+    Option B
+  </option>
+  <option>
+    Option C
+  </option>
+</select>
+`;
+
+exports[`Storyshots Components/Atoms/Select valid 1`] = `
+<select
+  className="ui-select ui-select--medium ui-select--valid"
+  onChange={[Function]}
+>
+  <option>
+    Option A
+  </option>
+  <option>
+    Option B
+  </option>
+  <option>
+    Option C
+  </option>
+</select>
+`;
+
+exports[`Storyshots Components/Atoms/Select with options attributes 1`] = `
+<select
+  className="ui-select ui-select--medium"
+  onChange={[Function]}
+>
+  <option
+    value={0}
+  >
+    Option A
+  </option>
+  <option
+    selected={true}
+    value={1}
+  >
+    Option B
+  </option>
+  <option
+    value={2}
+  >
+    Option C
+  </option>
+</select>
+`;
+
+exports[`Storyshots Components/Atoms/Select with size variation 1`] = `
+<select
+  className="ui-select ui-select--large"
+  onChange={[Function]}
+>
+  <option>
+    Option A
+  </option>
+  <option>
+    Option B
+  </option>
+  <option>
+    Option C
+  </option>
+</select>
+`;
+
 exports[`Storyshots Components/Atoms/Spinner default 1`] = `
 <span
   className="ui-spinner"
