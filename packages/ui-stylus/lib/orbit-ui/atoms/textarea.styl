@@ -3,7 +3,7 @@
 /*!
  * Input
  */
-.ui-input {
+.ui-textarea {
   border: 1px solid $muted-color;
   padding: scalc('%s - %s', $space-xsmall, 1px);
   color: $muted-color;
@@ -24,7 +24,7 @@
 /*!
  * Focus state
  */
-.ui-input:focus {
+.ui-textarea:focus {
   border-color: $gray;
   color: $body-color;
 }
@@ -32,25 +32,25 @@
 /*!
  * Valid state
  */
-.ui-input--valid {
+.ui-textarea--valid {
   border-color: $success-color;
 }
 
 /*!
  * Invalid state
  */
-.ui-input--invalid {
+.ui-textarea--invalid {
   border-color: $danger-color;
 }
 
 /*!
  * Size variations
  */
-.ui-input--small {
+.ui-textarea--small {
   padding: scalc('%s - %s', $space-xxsmall, 1px);
   type-scale(small);
 }
-.ui-input--large {
+.ui-textarea--large {
   padding: scalc('%s - %s', $space-small, 1px);
   type-scale(large);
 }

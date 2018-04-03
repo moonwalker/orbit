@@ -1,0 +1,44 @@
+extends _layout
+
+block vars
+  - var title = 'Textarea'
+  - var slug = 'textarea'
+
+block content
+  h1.demo-title Textarea
+
+  .demo-examples(style = "max-width: 280px")
+    textarea.ui-textarea(
+      placeholder="Your text here",
+    )
+
+  h2 Validation states
+
+  .demo-examples(style = "max-width: 280px")
+    textarea.ui-textarea.ui-textarea--valid(
+      placeholder="Your text here..."
+      value="John"
+    )
+
+  .demo-examples(style = "max-width: 280px")
+    textarea.ui-textarea.ui-textarea--invalid(
+      placeholder="Your text here..."
+      value="Lorem ipsum ..."
+    )
+
+  h3 Size variations
+
+  .demo-examples(style = "max-width: 280px")
+    textarea.ui-textarea.ui-textarea--small(
+      placeholder="Your text here..."
+    )
+
+  .demo-examples(style = "max-width: 280px")
+    textarea.ui-textarea(
+      placeholder="Your text here..."
+    )
+
+  .demo-examples(style = "max-width: 280px")
+    textarea.ui-textarea.ui-textarea--large(
+      placeholder="Your text here..."
+    )
