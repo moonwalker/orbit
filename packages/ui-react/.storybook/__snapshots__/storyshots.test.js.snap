@@ -96,11 +96,26 @@ exports[`Storyshots Components/Atoms/Input valid 1`] = `
 />
 `;
 
+exports[`Storyshots Components/Atoms/Label default 1`] = `
+<label
+  className="ui-label"
+>
+  Username
+</label>
+`;
+
+exports[`Storyshots Components/Atoms/Label with size variation 1`] = `
+<label
+  className="ui-label ui-label--large"
+>
+  Username
+</label>
+`;
+
 exports[`Storyshots Components/Atoms/Select default 1`] = `
 <select
   className="ui-select ui-select--medium"
   onChange={[Function]}
-  placeholder="Enter text here"
 >
   <option>
     Option A
@@ -223,6 +238,126 @@ exports[`Storyshots Components/Atoms/Textarea valid 1`] = `
   onChange={[Function]}
   placeholder="Enter text here"
 />
+`;
+
+exports[`Storyshots Examples/Contact Form default 1`] = `
+<div
+  style={
+    Object {
+      "margin": "0 auto",
+      "maxWidth": "380px",
+      "padding": "1rem",
+    }
+  }
+>
+  <form
+    className="contact-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="contact-form__field"
+    >
+      <label
+        className="ui-label contact-form__field__label"
+      >
+        First name
+      </label>
+      <input
+        className="ui-input"
+        name="firstname"
+        placeholder="First name"
+      />
+    </div>
+    <div
+      className="contact-form__field"
+    >
+      <label
+        className="ui-label contact-form__field__label"
+      >
+        Last name
+      </label>
+      <input
+        className="ui-input"
+        name="lastname"
+        placeholder="Last name"
+      />
+    </div>
+    <div
+      className="contact-form__field"
+    >
+      <label
+        className="ui-label contact-form__field__label"
+      >
+        Country
+      </label>
+      <select
+        className="ui-select"
+        name="country"
+      >
+        <option>
+          Afghanistan
+        </option>
+        <option>
+          Albania
+        </option>
+        <option>
+          Algeria
+        </option>
+        <option>
+          Andorra
+        </option>
+        <option>
+          Angola
+        </option>
+        <option>
+          Antigua and Barbuda
+        </option>
+        <option>
+          Argentina
+        </option>
+        <option>
+          Armenia
+        </option>
+        <option>
+          Aruba
+        </option>
+        <option>
+          Australia
+        </option>
+        <option>
+          Austria
+        </option>
+        <option>
+          Azerbaijan
+        </option>
+      </select>
+    </div>
+    <div
+      className="contact-form__field"
+    >
+      <label
+        className="ui-label contact-form__field__label"
+      >
+        Message
+      </label>
+      <textarea
+        className="ui-textarea"
+        name="message"
+        placeholder="Enter your message"
+        rows="5"
+      />
+    </div>
+    <div
+      className="contact-form__actions"
+    >
+      <button
+        className="ui-button"
+      >
+        Send
+      </button>
+    </div>
+  </form>
+</div>
 `;
 
 exports[`Storyshots Examples/SearchField default 1`] = `
