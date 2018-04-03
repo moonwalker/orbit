@@ -1,6 +1,8 @@
 const path = require('path');
 const gulp = require('gulp');
 const stylus = require('gulp-stylus');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
 const pug = require('gulp-pug');
 const print = require('gulp-print').default;
 const browserSync = require('browser-sync').create();
@@ -41,6 +43,9 @@ gulp.task('css', () => {
         autoImport: false,
       }),
     }))
+    .pipe(postcss([
+      autoprefixer,
+    ]))
     .pipe(print())
     .pipe(gulp.dest(OUTPUT_DIR));
 });
