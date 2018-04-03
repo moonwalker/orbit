@@ -1,0 +1,6 @@
+.a {
+  width: calc(100% - 10px);
+}
+.b {
+  width: calc(100vw - 10px + 1rem);
+}

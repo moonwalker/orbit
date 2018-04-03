@@ -4,10 +4,12 @@ import { withKnobs } from '@storybook/addon-knobs';
 import '../node_modules/@moonwalker/orbit-ui/dist/orbit-ui.css';
 
 // Dynamically load all stories.jsx
-const req = require.context('../src', true, /stories\.jsx?$/);
+const components = require.context('../src', true, /stories\.jsx?$/);
+const examples = require.context('../examples', true, /stories\.jsx?$/)
 
 function loadStories() {
-  req.keys().forEach(filename => req(filename));
+  components.keys().forEach(filename => components(filename));
+  examples.keys().forEach(filename => examples(filename));
 }
 
 
