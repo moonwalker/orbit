@@ -19,6 +19,7 @@
   "scripts": {
     "prebuild": "npm run lint && npm run test",
     "build": "webpack",
+    "build-pages": "build-storybook",
     "lint": "eslint src/**/*.{js,jsx}",
     "prepublishOnly": "npm run build",
     "start": "storybook-server -p 8081",

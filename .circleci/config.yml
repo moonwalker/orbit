@@ -22,3 +22,9 @@ jobs:
           name: Build
           command: npm run lerna -- run build
 
+      - deploy:
+          name: Deploy pages
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              npm run build-pages
+            fi
