@@ -12,6 +12,10 @@
     "title": "Input"
   },
   {
+    "slug": "select",
+    "title": "Select"
+  },
+  {
     "slug": "textarea",
     "title": "Textarea"
   },

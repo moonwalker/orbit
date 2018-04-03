@@ -1,0 +1,60 @@
+@require '../_variables';
+
+/*
+ * Select
+ */
+
+.ui-select {
+  appearance: none;
+  border: 1px solid $muted-color;
+  border-radius: 0;
+  padding: scalc('%s - %s', $space-xsmall, 1px);
+  bg($light);
+  color: $muted-color;
+  width: 100%;
+  type-scale(medium);
+  outline: none;
+
+  // Placheolder
+  +placeholder() {
+    color: rgba(@color, 0.6);
+  }
+}
+
+/*!
+ * States
+ */
+
+/*!
+ * Focus state
+ */
+.ui-select:focus {
+  border-color: $gray;
+  color: $body-color;
+}
+
+/*!
+ * Valid state
+ */
+.ui-select--valid {
+  border-color: $success-color;
+}
+
+/*!
+ * Invalid state
+ */
+.ui-select--invalid {
+  border-color: $danger-color;
+}
+
+/*!
+ * Size variations
+ */
+.ui-select--small {
+  padding: scalc('%s - %s', $space-xxsmall, 1px);
+  type-scale(small);
+}
+.ui-select--large {
+  padding: scalc('%s - %s', $space-small, 1px);
+  type-scale(large);
+}
