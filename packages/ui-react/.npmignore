@@ -1,3 +1,4 @@
 .storybook
 examples
 *stories.jsx
+storybook-static

@@ -50,7 +50,9 @@ gulp.task('css', () => {
     .pipe(gulp.dest(OUTPUT_DIR));
 });
 
-gulp.task('serve', ['css', 'html'], () => {
+gulp.task('build', ['css', 'html']);
+
+gulp.task('serve', ['build'], () => {
   browserSync.init({
     server: {
       baseDir: OUTPUT_DIR,

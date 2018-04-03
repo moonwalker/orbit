@@ -3,6 +3,7 @@
   "description": "Orbit UI library",
   "scripts": {
     "build": "lerna run build",
+    "build-pages": "./build-pages.sh",
     "lint": "lerna run lint",
     "lerna": "lerna",
     "test": "lerna run test"
@@ -11,6 +12,7 @@
   "author": "Vio <vio@moonwalker.tech>",
   "license": "MIT",
   "devDependencies": {
+    "gh-pages": "^1.1.0",
     "lerna": "2.9.1"
   }
 }
