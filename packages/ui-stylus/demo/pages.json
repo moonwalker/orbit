@@ -12,6 +12,10 @@
     "title": "Input"
   },
   {
+    "slug": "label",
+    "title": "Label"
+  },
+  {
     "slug": "select",
     "title": "Select"
   },
