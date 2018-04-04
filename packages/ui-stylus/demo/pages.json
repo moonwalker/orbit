@@ -12,6 +12,10 @@
     "title": "Button-icon"
   },
   {
+    "slug": "dropdown",
+    "title": "Dropdown"
+  },
+  {
     "slug": "icon",
     "title": "Icon"
   },
