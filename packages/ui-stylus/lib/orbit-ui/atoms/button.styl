@@ -47,7 +47,6 @@
   }
 }
 
-
 /*!
  * Kind variation
  *-----------------------------------------------------------------------------*/
@@ -99,6 +98,66 @@
     background-color: lighten(@background-color, 5);
   }
 }
+
+/*!
+ * Clear variation
+ *-----------------------------------------------------------------------------*/
+.ui-button--clear {
+  background-color: transparent;
+  color: $gray-light;
+
+  &:hover {
+    background-color: transparent;
+    color: $gray-light;
+    text-decoration: none;
+  }
+}
+
+.ui-button--clear--primary {
+  color: $primary-color;
+
+  &:hover {
+    color: lighten(@color, 5);
+  }
+}
+
+.ui-button--clear--secondary {
+  color: $secondary-color;
+
+  &:hover {
+    color: lighten(@color, 5);
+  }
+}
+
+.ui-button--clear--success {
+  color: $success-color;
+
+  &:hover {
+    color: lighten(@color, 5);
+  }
+}
+.ui-button--clear--info {
+  color: $info-color;
+
+  &:hover {
+    color: lighten(@color, 5);
+  }
+}
+.ui-button--clear--warning {
+  color: $warning-color;
+
+  &:hover {
+    color: lighten(@color, 5);
+  }
+}
+.ui-button--clear--danger {
+  color: $danger-color;
+
+  &:hover {
+    color: lighten(@color, 5);
+  }
+}
+
 
 /*!
  * Size variation
