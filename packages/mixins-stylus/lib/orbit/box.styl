@@ -1,3 +1,4 @@
+@require '_variables';
 @require 'utils';
 
 /*
@@ -90,5 +91,49 @@ proportional-box(ratio = 1) {
   &::before {
     block();
     padding-bottom: percentage(1 / ratio);
+  }
+}
+
+/*
+ * Padding based on space scale
+ *
+ * Examples:
+ *   inner-space()
+ *   inner-space($space-small)
+ *   inner-space($space-small $space-large, 2px)
+ */
+inner-space(padding-value = 0, border-width = 0) {
+  padding-values = { top: 0, right: 0, bottom: 0, left: 0 };
+
+  if (length(padding-value) == 1) {
+    padding-values['top'] = padding-value;
+    padding-values['right'] = padding-value;
+    padding-values['bottom'] = padding-value;
+    padding-values['left'] = padding-value;
+  }
+
+  if (length(padding-value) == 2) {
+    padding-values['top'] = padding-value[0];
+    padding-values['right'] = padding-value[1];
+    padding-values['bottom'] = padding-value[0];
+    padding-values['left'] = padding-value[1];
+  }
+
+  if (length(padding-value) == 3) {
+    padding-values['top'] = padding-value[0];
+    padding-values['right'] = padding-value[1];
+    padding-values['bottom'] = padding-value[2];
+    padding-values['left'] = padding-value[1];
+  }
+
+  if (length(padding-value) >= 4) {
+    padding-values['top'] = padding-value[0];
+    padding-values['right'] = padding-value[1];
+    padding-values['bottom'] = padding-value[2];
+    padding-values['left'] = padding-value[3];
+  }
+
+  for key, value in padding-values {
+    padding-{key}: border-width ? (unit(value) == unit(border-width) ? (value - border-width) : scalc('%s - %s', value, border-width)) : value;
   }
 }

@@ -1,0 +1,42 @@
+.a {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+.b {
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+}
+.c {
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+}
+.d {
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+}
+.e {
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+}
+.f {
+  padding-top: 14px;
+  padding-right: 22px;
+  padding-bottom: 22px;
+  padding-left: 14px;
+}
+.g {
+  padding-top: calc(16px - 0.2rem);
+  padding-right: calc(24px - 0.2rem);
+  padding-bottom: calc(24px - 0.2rem);
+  padding-left: calc(16px - 0.2rem);
+}

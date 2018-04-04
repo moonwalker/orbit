@@ -40,4 +40,12 @@ describe('Box', () => {
       done,
     );
   });
+
+  test('inner-space', (done) => {
+    assert(
+      __dirname,
+      'box-inner-space',
+      done,
+    );
+  });
 });

@@ -1,0 +1,24 @@
+$space-medium = 24px;
+$space-small = 16px;
+
+.a {
+  inner-space();
+}
+.b {
+  inner-space($space-small);
+}
+.c {
+  inner-space($space-small $space-medium);
+}
+.d {
+  inner-space($space-small $space-medium $space-medium);
+}
+.e {
+  inner-space($space-small $space-medium $space-medium $space-small);
+}
+.f {
+  inner-space($space-small $space-medium $space-medium $space-small, 2px);
+}
+.g {
+  inner-space($space-small $space-medium $space-medium $space-small, 0.2rem);
+}
