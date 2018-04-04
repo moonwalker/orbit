@@ -878,6 +878,62 @@ h6 + dl {
   padding-bottom: 24px;
   padding-left: 24px;
 }
+/*
+ * Dropdown menu
+ */
+.ui-dropdown {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 1000;
+  background: #fff;
+}
+/*
+ * List group
+ */
+.ui-list-group {
+  border: 1px solid #a8a8a8;
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+}
+.ui-list-group:first-child {
+  margin-top: 0;
+}
+.ui-list-group:last-child {
+  margin-bottom: 0;
+}
+.ui-list-group__item {
+  margin: 0;
+  border-top: 1px solid #a8a8a8;
+  display: block;
+/* stylelint-disable declaration-block-no-duplicate-properties */
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-top: 15px;
+/* stylelint-enable declaration-block-no-duplicate-properties */
+}
+/* stylelint-disable declaration-block-no-duplicate-properties */
+/* stylelint-enable declaration-block-no-duplicate-properties */
+.ui-list-group__item:first-child {
+  border-top: 0;
+}
+.ui-list-group__item:last-child {
+  padding-bottom: 15px;
+}
+/*
+ * Size variation
+ */
+.ui-list-group--small {
+  font-size: 13px;
+  line-height: 16px;
+}
+.ui-list-group--large {
+  font-size: 16px;
+  line-height: 16px;
+}
 html {
   height: 100%;
 }
