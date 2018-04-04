@@ -24,6 +24,10 @@
     "title": "Label"
   },
   {
+    "slug": "list-group",
+    "title": "List group"
+  },
+  {
     "slug": "select",
     "title": "Select"
   },

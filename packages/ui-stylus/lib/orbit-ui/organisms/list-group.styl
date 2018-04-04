@@ -1,0 +1,49 @@
+/*!
+ * List group
+ */
+.ui-list-group {
+  border: 1px solid $muted-color;
+  list-style: none;
+  padding: 0;
+
+  // block vertical spacing
+  margin: $space-medium 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.ui-list-group__item {
+  margin: 0;
+  border-top: 1px solid $muted-color;
+  block();
+
+  /*! stylelint-disable declaration-block-no-duplicate-properties */
+  inner-space($space-small);
+  padding-top: @padding-top - 1px;
+  /*! stylelint-enable declaration-block-no-duplicate-properties */
+
+  &:first-child {
+    border-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: @padding-bottom - 1px;
+  }
+}
+
+/*!
+ * Size variation
+ */
+.ui-list-group--small {
+  type-scale(small);
+}
+
+.ui-list-group--large {
+  type-scale(large);
+}
