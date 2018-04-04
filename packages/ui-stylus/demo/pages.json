@@ -8,6 +8,14 @@
     "title": "Button"
   },
   {
+    "slug": "button-icon",
+    "title": "Button-icon"
+  },
+  {
+    "slug": "icon",
+    "title": "Icon"
+  },
+  {
     "slug": "input",
     "title": "Input"
   },
@@ -22,10 +30,6 @@
   {
     "slug": "textarea",
     "title": "Textarea"
-  },
-  {
-    "slug": "icon",
-    "title": "Icon"
   },
   {
     "slug": "spinner",

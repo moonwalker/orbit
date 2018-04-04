@@ -5,3 +5,5 @@ export { Label } from './atoms/label/label';
 export { Select } from './atoms/select/select';
 export { Textarea } from './atoms/textarea/textarea';
 export { Spinner } from './atoms/spinner/spinner';
+
+export { ButtonIcon } from './organisms/button-icon/button-icon';

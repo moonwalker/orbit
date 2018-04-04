@@ -1,0 +1,98 @@
+@require '../_variables';
+
+/*!
+ * Button icon
+ *******************************************************************************/
+
+.ui-button-icon {
+  flex();
+  align-items: center;
+  border: 0;
+  inner-space($space-xxsmall);
+
+  background-color: transparent;
+  color: $gray;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    color: lighten(@color, 5);
+  }
+}
+
+/*!
+ * Kind variation
+ *-----------------------------------------------------------------------------*/
+
+.ui-button-icon--primary {
+  color: $primary-color;
+
+  &:hover {
+    color: lighten(@color, 5);
+  }
+}
+
+.ui-button-icon--secondary {
+  color: $secondary-color;
+
+  &:hover {
+    color: lighten(@color, 5);
+  }
+}
+
+.ui-button-icon--success {
+  color: $success-color;
+
+  &:hover {
+    color: lighten(@color, 5);
+  }
+}
+
+.ui-button-icon--info {
+  color: $info-color;
+
+  &:hover {
+    color: lighten(@color, 5);
+  }
+}
+
+.ui-button-icon--warning {
+  color: $warning-color;
+
+  &:hover {
+    color: lighten(@color, 5);
+  }
+}
+
+.ui-button-icon--danger {
+  color: $danger-color;
+
+  &:hover {
+    color: lighten(@color, 5);
+  }
+}
+
+/*!
+ * Size variation
+ *-----------------------------------------------------------------------------*/
+
+.ui-button-icon--xsmall {
+  inner-space($space-xxsmall / 2);
+}
+
+.ui-button-icon--small {
+  inner-space($space-xxsmall);
+}
+
+.ui-button-icon--large {
+  inner-space($space-xxsmall);
+}
+
+.ui-button-icon--xlarge {
+  inner-space($space-medium);
+}

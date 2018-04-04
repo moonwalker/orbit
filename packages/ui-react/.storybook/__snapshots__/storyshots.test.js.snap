@@ -258,6 +258,45 @@ exports[`Storyshots Components/Atoms/Textarea valid 1`] = `
 />
 `;
 
+exports[`Storyshots Components/Organisms/ButtonIcon default 1`] = `
+<button
+  className="ui-button-icon"
+  onClick={[Function]}
+>
+  <i
+    className="ui-icon"
+  >
+    face
+  </i>
+</button>
+`;
+
+exports[`Storyshots Components/Organisms/ButtonIcon with kind 1`] = `
+<button
+  className="ui-button-icon ui-button-icon--danger"
+  onClick={[Function]}
+>
+  <i
+    className="ui-icon"
+  >
+    face
+  </i>
+</button>
+`;
+
+exports[`Storyshots Components/Organisms/ButtonIcon with size 1`] = `
+<button
+  className="ui-button-icon ui-button-icon--large"
+  onClick={[Function]}
+>
+  <i
+    className="ui-icon ui-icon--large"
+  >
+    face
+  </i>
+</button>
+`;
+
 exports[`Storyshots Examples/Contact Form default 1`] = `
 <div
   style={
