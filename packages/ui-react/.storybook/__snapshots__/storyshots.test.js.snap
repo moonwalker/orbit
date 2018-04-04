@@ -635,35 +635,39 @@ exports[`Storyshots Examples/SearchField with predefined query 1`] = `
       </i>
     </button>
     <div
-      className="search-field__results"
+      className="ui-dropdown search-field__results"
     >
-      <div
-        className="search-field__item"
-        id="downshift-1-item-0"
-        onClick={[Function]}
-        onMouseDown={[Function]}
-        onMouseMove={[Function]}
+      <ul
+        className="ui-list-group"
       >
-        Lottie Ramirez
-      </div>
-      <div
-        className="search-field__item"
-        id="downshift-1-item-1"
-        onClick={[Function]}
-        onMouseDown={[Function]}
-        onMouseMove={[Function]}
-      >
-        Kirkland Cook
-      </div>
-      <div
-        className="search-field__item"
-        id="downshift-1-item-2"
-        onClick={[Function]}
-        onMouseDown={[Function]}
-        onMouseMove={[Function]}
-      >
-        Marcie Adkins
-      </div>
+        <li
+          className="ui-list-group__item"
+          id="downshift-1-item-0"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseMove={[Function]}
+        >
+          Lottie Ramirez
+        </li>
+        <li
+          className="ui-list-group__item"
+          id="downshift-1-item-1"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseMove={[Function]}
+        >
+          Kirkland Cook
+        </li>
+        <li
+          className="ui-list-group__item"
+          id="downshift-1-item-2"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseMove={[Function]}
+        >
+          Marcie Adkins
+        </li>
+      </ul>
     </div>
   </div>
 </div>
