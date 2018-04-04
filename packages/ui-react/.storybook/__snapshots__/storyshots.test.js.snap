@@ -271,6 +271,19 @@ exports[`Storyshots Components/Organisms/ButtonIcon default 1`] = `
 </button>
 `;
 
+exports[`Storyshots Components/Organisms/ButtonIcon with icon name 1`] = `
+<button
+  className="ui-button-icon ui-button-icon--large"
+  onClick={[Function]}
+>
+  <i
+    className="ui-icon ui-icon--large"
+  >
+    backup
+  </i>
+</button>
+`;
+
 exports[`Storyshots Components/Organisms/ButtonIcon with kind 1`] = `
 <button
   className="ui-button-icon ui-button-icon--danger"
@@ -445,7 +458,7 @@ exports[`Storyshots Examples/SearchField default 1`] = `
       value=""
     />
     <i
-      className="ui-icon search-field__icon ui-icon--large"
+      className="ui-icon search-field__icon search-field__icon--search ui-icon--large"
     >
       search
     </i>
@@ -480,11 +493,17 @@ exports[`Storyshots Examples/SearchField with predefined query 1`] = `
       role="combobox"
       value="Lo"
     />
-    <i
-      className="ui-icon search-field__icon ui-icon--large"
+    <button
+      className="ui-button-icon search-field__icon search-field__icon--clear ui-button-icon--large"
+      onClick={[Function]}
+      type="button"
     >
-      search
-    </i>
+      <i
+        className="ui-icon ui-icon--large"
+      >
+        close
+      </i>
+    </button>
     <div
       className="search-field__results"
     >

@@ -6,6 +6,7 @@ import cx from 'classnames';
 import {
   Icon,
   Input,
+  ButtonIcon,
 } from '../../src';
 
 import './search-field.css';
@@ -29,6 +30,7 @@ export const SearchField = ({ items, ...restProps }) => (
     render={({
       getInputProps,
       isOpen,
+      reset,
       inputValue,
       getItemProps,
       selectedItem,
@@ -43,11 +45,24 @@ export const SearchField = ({ items, ...restProps }) => (
           })}
         />
 
-        <Icon
-          className="search-field__icon"
-          name="search"
-          size="large"
-        />
+        {inputValue ?
+          (
+            <ButtonIcon
+              className="search-field__icon search-field__icon--clear"
+              type="button"
+              name="close"
+              size="large"
+              onClick={() => reset({ inputValue: '' })}
+            />
+          ) :
+          (
+            <Icon
+              className="search-field__icon search-field__icon--search"
+              name="search"
+              size="large"
+            />
+          )
+        }
 
         {isOpen && (
           <div className="search-field__results">

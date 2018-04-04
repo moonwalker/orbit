@@ -10,9 +10,17 @@
 
 .search-field__icon {
   position: absolute;
-  right: 12px;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.search-field__icon--search {
+  right: 16px;
+}
+
+.search-field__icon--clear {
+  right: 8px;
 }
 
 .search-field__results {
