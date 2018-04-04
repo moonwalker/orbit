@@ -9,6 +9,15 @@ exports[`Storyshots Components/Atoms/Button default 1`] = `
 </button>
 `;
 
+exports[`Storyshots Components/Atoms/Button with clear 1`] = `
+<button
+  className="ui-button ui-button--clear"
+  onClick={[Function]}
+>
+  Call to action
+</button>
+`;
+
 exports[`Storyshots Components/Atoms/Button with custom content 1`] = `
 <button
   className="ui-button"
@@ -43,6 +52,15 @@ exports[`Storyshots Components/Atoms/Button with different icon size 1`] = `
   >
     Call to action
   </span>
+</button>
+`;
+
+exports[`Storyshots Components/Atoms/Button with kind 1`] = `
+<button
+  className="ui-button ui-button--danger"
+  onClick={[Function]}
+>
+  Call to action
 </button>
 `;
 
@@ -240,6 +258,58 @@ exports[`Storyshots Components/Atoms/Textarea valid 1`] = `
 />
 `;
 
+exports[`Storyshots Components/Organisms/ButtonIcon default 1`] = `
+<button
+  className="ui-button-icon"
+  onClick={[Function]}
+>
+  <i
+    className="ui-icon"
+  >
+    face
+  </i>
+</button>
+`;
+
+exports[`Storyshots Components/Organisms/ButtonIcon with icon name 1`] = `
+<button
+  className="ui-button-icon ui-button-icon--large"
+  onClick={[Function]}
+>
+  <i
+    className="ui-icon ui-icon--large"
+  >
+    backup
+  </i>
+</button>
+`;
+
+exports[`Storyshots Components/Organisms/ButtonIcon with kind 1`] = `
+<button
+  className="ui-button-icon ui-button-icon--danger"
+  onClick={[Function]}
+>
+  <i
+    className="ui-icon"
+  >
+    face
+  </i>
+</button>
+`;
+
+exports[`Storyshots Components/Organisms/ButtonIcon with size 1`] = `
+<button
+  className="ui-button-icon ui-button-icon--large"
+  onClick={[Function]}
+>
+  <i
+    className="ui-icon ui-icon--large"
+  >
+    face
+  </i>
+</button>
+`;
+
 exports[`Storyshots Examples/Contact Form default 1`] = `
 <div
   style={
@@ -388,7 +458,7 @@ exports[`Storyshots Examples/SearchField default 1`] = `
       value=""
     />
     <i
-      className="ui-icon search-field__icon ui-icon--large"
+      className="ui-icon search-field__icon search-field__icon--search ui-icon--large"
     >
       search
     </i>
@@ -423,11 +493,17 @@ exports[`Storyshots Examples/SearchField with predefined query 1`] = `
       role="combobox"
       value="Lo"
     />
-    <i
-      className="ui-icon search-field__icon ui-icon--large"
+    <button
+      className="ui-button-icon search-field__icon search-field__icon--clear ui-button-icon--large"
+      onClick={[Function]}
+      type="button"
     >
-      search
-    </i>
+      <i
+        className="ui-icon ui-icon--large"
+      >
+        close
+      </i>
+    </button>
     <div
       className="search-field__results"
     >
