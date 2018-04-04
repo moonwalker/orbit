@@ -5,7 +5,7 @@
  */
 .ui-input {
   border: 1px solid $muted-color;
-  padding: scalc('%s - %s', $space-xsmall, 1px);
+  inner-space($space-xsmall, 1px);
   color: $muted-color;
   width: 100%;
   type-scale(medium);
@@ -47,10 +47,10 @@
  * Size variations
  */
 .ui-input--small {
-  padding: scalc('%s - %s', $space-xxsmall, 1px);
+  inner-space($space-xxsmall, 1px)
   type-scale(small);
 }
 .ui-input--large {
-  padding: scalc('%s - %s', $space-small, 1px);
+  inner-space($space-small, 1px)
   type-scale(large);
 }
