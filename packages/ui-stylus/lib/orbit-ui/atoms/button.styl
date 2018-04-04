@@ -2,15 +2,15 @@
 
 /*!
  * Button
- */
+ *******************************************************************************/
 
 .ui-button {
   flex();
   align-items: center;
   border: 0;
-  padding: $space-xxsmall $space-small;
+  inner-space($space-xxsmall $space-medium);
 
-  background: $primary-color;
+  background-color: $gray-light;
   color: $light;
   line-height: $line-height;
   text-align: center;
@@ -21,14 +21,17 @@
   cursor: pointer;
 
   &:hover {
-    background: lighten($primary-color, 10);
+    background-color: lighten(@background-color, 5);
     color: $light;
     text-decoration: none;
   }
 }
 
 .ui-button__content {
-  margin: 0 $space-xxsmall;
+  margin-top: 0;
+  margin-right: $space-xsmall;
+  margin-bottom: 0;
+  margin-left: @margin-right;
 
   // Collapse margins in between
   & + .ui-button__content {
@@ -44,92 +47,103 @@
   }
 }
 
+
 /*!
  * Kind variation
- */
+ *-----------------------------------------------------------------------------*/
+
 .ui-button--primary {
-  background: $primary-color;
+  background-color: $primary-color;
 
   &:hover {
-    background: lighten($primary-color, 10);
+    background-color: lighten(@background-color, 5);
   }
 }
 
 .ui-button--secondary {
-  background: $secondary-color;
+  background-color: $secondary-color;
 
   &:hover {
-    background: lighten($secondary-color, 10);
+    background-color: lighten(@background-color, 5);
   }
 }
 
 .ui-button--success {
-  background: $success-color;
+  background-color: $success-color;
 
   &:hover {
-    background: lighten($success-color, 10);
+    background-color: lighten(@background-color, 5);
   }
 }
 
 .ui-button--info {
-  background: $info-color;
+  background-color: $info-color;
 
   &:hover {
-    background: lighten($info-color, 10);
+    background-color: lighten(@background-color, 5);
   }
 }
 
 .ui-button--warning {
-  background: $warning-color;
+  background-color: $warning-color;
 
   &:hover {
-    background: lighten($warning-color, 10);
+    background-color: lighten(@background-color, 5);
   }
 }
 
 .ui-button--danger {
-  background: $danger-color;
+  background-color: $danger-color;
 
   &:hover {
-    background: lighten($danger-color, 10);
+    background-color: lighten(@background-color, 5);
   }
 }
 
 /*!
  * Size variation
- */
+ *-----------------------------------------------------------------------------*/
+
+/*! XSmall */
 .ui-button--xsmall {
-  padding: $space-xxxsmall $space-xxsmall;
+  inner-space($space-xxxsmall $space-xsmall);
   type-scale(xsmall);
 }
 
 .ui-button__content--xsmall {
-  margin: 0 $space-xxxsmall;
+  margin-right: $space-xxsmall;
+  margin-left: @margin-right;
 }
 
+/*! Small */
 .ui-button--small {
-  padding: $space-xxsmall $space-xsmall;
+  inner-space($space-xxsmall $space-small);
   type-scale(small);
 }
 
 .ui-button__content--small {
-  margin: 0 $space-xxxsmall;
+  margin-right: $space-xxsmall;
+  margin-left: @margin-right;
 }
 
+/*! Large */
 .ui-button--large {
-  padding: $space-small $space-medium;
+  inner-space($space-small $space-large);
   type-scale(large);
 }
 
 .ui-button__content--large {
-  margin: 0 $space-xsmall;
+  margin-right: $space-small;
+  margin-left: @margin-right;
 }
 
+/*! XLarge */
 .ui-button--xlarge {
-  padding: $space-medium $space-large;
+  inner-space($space-medium $space-xlarge);
   type-scale(xlarge);
 }
 
 .ui-button__content--xlarge {
-  margin: 0 $space-small;
+  margin-right: $space-medium;
+  margin-left: @margin-right;
 }
