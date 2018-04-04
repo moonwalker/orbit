@@ -1,27 +1,49 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { select } from '@storybook/addon-knobs';
+import { boolean, select } from '@storybook/addon-knobs';
 
 import { Icon } from '../icon/icon';
 import { Button } from './button';
 import {
   KINDS,
   KIND_DEFAULT,
+  KIND_DANGER,
   SIZES,
   SIZE_LARGE,
 } from './button.constants';
 
 const stories = storiesOf('Components/Atoms/Button', module);
 
-const selectKind = () => select('Kind', KINDS, KIND_DEFAULT);
-const selectSize = () => select('Size', SIZES, null);
+const selectKind = kind => select('Kind', KINDS, kind || KIND_DEFAULT);
+const selectSize = size => select('Size', SIZES, size || null);
+const getClear = () => boolean('Clear', false);
 
 stories.add('default', () => (
   <Button
     onClick={action('Click')}
     kind={selectKind()}
     size={selectSize()}
+    clear={getClear()}
+  >
+    Call to action
+  </Button>
+));
+
+stories.add('with kind', () => (
+  <Button
+    onClick={action('Click')}
+    kind={selectKind(KIND_DANGER)}
+  >
+    Call to action
+  </Button>
+));
+
+stories.add('with clear', () => (
+  <Button
+    onClick={action('Click')}
+    kind={selectKind()}
+    clear
   >
     Call to action
   </Button>

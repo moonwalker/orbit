@@ -9,6 +9,15 @@ exports[`Storyshots Components/Atoms/Button default 1`] = `
 </button>
 `;
 
+exports[`Storyshots Components/Atoms/Button with clear 1`] = `
+<button
+  className="ui-button ui-button--clear"
+  onClick={[Function]}
+>
+  Call to action
+</button>
+`;
+
 exports[`Storyshots Components/Atoms/Button with custom content 1`] = `
 <button
   className="ui-button"
@@ -43,6 +52,15 @@ exports[`Storyshots Components/Atoms/Button with different icon size 1`] = `
   >
     Call to action
   </span>
+</button>
+`;
+
+exports[`Storyshots Components/Atoms/Button with kind 1`] = `
+<button
+  className="ui-button ui-button--danger"
+  onClick={[Function]}
+>
+  Call to action
 </button>
 `;
 

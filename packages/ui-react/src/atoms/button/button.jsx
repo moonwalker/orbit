@@ -59,13 +59,16 @@ export const Button = (props) => {
     className,
     children,
     as: Component,
+    clear,
     kind,
     size,
     ...restProps
   } = props;
 
   const rootClassName = cx(UI_NAME, className, {
-    [`${UI_NAME}--${kind}`]: kind,
+    [`${UI_NAME}--${kind}`]: !clear && kind,
+    [`${UI_NAME}--clear`]: clear,
+    [`${UI_NAME}--clear--${kind}`]: clear && kind,
     [`${UI_NAME}--${size}`]: size,
   });
 
@@ -93,6 +96,7 @@ Button.defaultProps = {
   className: '',
   children: null,
   as: 'button',
+  clear: false,
   kind: KIND_DEFAULT,
   size: null,
 };
@@ -109,6 +113,9 @@ Button.propTypes = {
     PropTypes.string,
     PropTypes.func,
   ]),
+
+  /* Clear type */
+  clear: PropTypes.bool,
 
   /* Kind type */
   kind: PropTypes.oneOf(KINDS),
