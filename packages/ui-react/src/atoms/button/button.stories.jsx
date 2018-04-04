@@ -15,9 +15,9 @@ import {
 
 const stories = storiesOf('Components/Atoms/Button', module);
 
-const selectKind = kind => select('Kind', KINDS, kind || KIND_DEFAULT);
-const selectSize = size => select('Size', SIZES, size || null);
-const getClear = () => boolean('Clear', false);
+const selectKind = (kind = KIND_DEFAULT) => select('Kind', KINDS, kind);
+const selectSize = (size = null) => select('Size', SIZES, size);
+const getClear = (clear = false) => boolean('Clear', clear);
 
 stories.add('default', () => (
   <Button
@@ -34,6 +34,8 @@ stories.add('with kind', () => (
   <Button
     onClick={action('Click')}
     kind={selectKind(KIND_DANGER)}
+    size={selectSize()}
+    clear={getClear()}
   >
     Call to action
   </Button>
@@ -43,7 +45,8 @@ stories.add('with clear', () => (
   <Button
     onClick={action('Click')}
     kind={selectKind()}
-    clear
+    size={selectSize()}
+    clear={getClear(true)}
   >
     Call to action
   </Button>
@@ -54,6 +57,7 @@ stories.add('with left icon', () => (
     onClick={action('Click')}
     kind={selectKind()}
     size={selectSize()}
+    clear={getClear()}
   >
     <Icon name="backup" />
     Call to action
@@ -65,6 +69,7 @@ stories.add('with different icon size', () => (
     onClick={action('Click')}
     kind={selectKind()}
     size={selectSize()}
+    clear={getClear()}
   >
     <Icon
       name="backup"
@@ -79,6 +84,7 @@ stories.add('with custom content', () => (
     onClick={action('Click')}
     kind={selectKind()}
     size={selectSize()}
+    clear={getClear()}
   >
     <em className="custom">Call</em>
     to action
