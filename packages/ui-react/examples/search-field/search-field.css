@@ -24,13 +24,9 @@
 }
 
 .search-field__results {
-  position: absolute;
+  box-shadow: 2px 2px 5px #eee;
   left: 24px;
   right: 24px;
-  top: 100%;
-  border: 1px solid #eee;
-  background: #fff;
-  padding: 1rem;
 }
 
 .search-field__item {

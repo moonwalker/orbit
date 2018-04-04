@@ -7,6 +7,8 @@ import {
   Icon,
   Input,
   ButtonIcon,
+  Dropdown,
+  ListGroup,
 } from '../../src';
 
 import './search-field.css';
@@ -65,23 +67,29 @@ export const SearchField = ({ items, ...restProps }) => (
         }
 
         {isOpen && (
-          <div className="search-field__results">
-            {searchItems(items, inputValue).map((item, index) => (
-              <div
-                {...getItemProps({
-                  index,
-                  item,
-                  className: cx('search-field__item', {
-                    'search-field__item--selected': selectedItem && selectedItem.name === item.name,
-                    'search-field__item--highlighted': highlightedIndex === index,
-                  }),
-                })}
-                key={item.key}
-              >
-                {item.name}
-              </div>
-            ))}
-          </div>
+          <Dropdown className="search-field__results">
+            <ListGroup
+              render={({ getListGroupItemProps }) =>
+                searchItems(items, inputValue).map((item, index) => (
+                  <li
+                    {...getItemProps({
+                      index,
+                      item,
+                      ...getListGroupItemProps({
+                        className: cx({
+                          'search-field__item--selected': selectedItem && selectedItem.name === item.name,
+                          'search-field__item--highlighted': highlightedIndex === index,
+                        }),
+                      }),
+                    })}
+                    key={item.key}
+                  >
+                    {item.name}
+                  </li>
+                ))
+              }
+            />
+          </Dropdown>
         )}
       </div>
     )}
