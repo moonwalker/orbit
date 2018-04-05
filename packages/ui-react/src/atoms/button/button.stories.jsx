@@ -79,6 +79,21 @@ stories.add('with different icon size', () => (
   </Button>
 ));
 
+stories.add('with null children', () => (
+  <Button
+    onClick={action('Click')}
+    kind={selectKind()}
+    size={selectSize()}
+    clear={getClear()}
+  >
+    {null}
+    <Icon
+      name="backup"
+      size={SIZE_LARGE}
+    />
+  </Button>
+));
+
 stories.add('with custom content', () => (
   <Button
     onClick={action('Click')}
