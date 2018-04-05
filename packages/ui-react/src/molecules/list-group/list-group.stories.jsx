@@ -8,7 +8,7 @@ import {
   SIZE_LARGE,
 } from './list-group.constants';
 
-const stories = storiesOf('Components/Organisms/ListGroup', module);
+const stories = storiesOf('Components/Molecules/ListGroup', module);
 
 const selectSize = (size = null) => select('Size', SIZES, size);
 

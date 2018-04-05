@@ -6,6 +6,6 @@ export { Select } from './atoms/select/select';
 export { Textarea } from './atoms/textarea/textarea';
 export { Spinner } from './atoms/spinner/spinner';
 
-export { ButtonIcon } from './organisms/button-icon/button-icon';
-export { ListGroup } from './organisms/list-group/list-group';
+export { ButtonIcon } from './molecules/button-icon/button-icon';
+export { ListGroup } from './molecules/list-group/list-group';
 export { Dropdown } from './organisms/dropdown/dropdown';
