@@ -12,7 +12,7 @@ import {
   SIZE_LARGE,
 } from './button-icon.constants';
 
-const stories = storiesOf('Components/Organisms/ButtonIcon', module);
+const stories = storiesOf('Components/Molecules/ButtonIcon', module);
 
 const selectKind = (kind = KIND_DEFAULT) => select('Kind', KINDS, kind);
 const selectSize = (size = null) => select('Size', SIZES, size);

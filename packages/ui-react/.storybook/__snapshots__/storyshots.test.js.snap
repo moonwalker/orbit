@@ -258,7 +258,7 @@ exports[`Storyshots Components/Atoms/Textarea valid 1`] = `
 />
 `;
 
-exports[`Storyshots Components/Organisms/ButtonIcon default 1`] = `
+exports[`Storyshots Components/Molecules/ButtonIcon default 1`] = `
 <button
   className="ui-button-icon"
   onClick={[Function]}
@@ -271,7 +271,7 @@ exports[`Storyshots Components/Organisms/ButtonIcon default 1`] = `
 </button>
 `;
 
-exports[`Storyshots Components/Organisms/ButtonIcon with icon name 1`] = `
+exports[`Storyshots Components/Molecules/ButtonIcon with icon name 1`] = `
 <button
   className="ui-button-icon ui-button-icon--large"
   onClick={[Function]}
@@ -284,7 +284,7 @@ exports[`Storyshots Components/Organisms/ButtonIcon with icon name 1`] = `
 </button>
 `;
 
-exports[`Storyshots Components/Organisms/ButtonIcon with kind 1`] = `
+exports[`Storyshots Components/Molecules/ButtonIcon with kind 1`] = `
 <button
   className="ui-button-icon ui-button-icon--danger"
   onClick={[Function]}
@@ -297,7 +297,7 @@ exports[`Storyshots Components/Organisms/ButtonIcon with kind 1`] = `
 </button>
 `;
 
-exports[`Storyshots Components/Organisms/ButtonIcon with size 1`] = `
+exports[`Storyshots Components/Molecules/ButtonIcon with size 1`] = `
 <button
   className="ui-button-icon ui-button-icon--large"
   onClick={[Function]}
@@ -310,28 +310,7 @@ exports[`Storyshots Components/Organisms/ButtonIcon with size 1`] = `
 </button>
 `;
 
-exports[`Storyshots Components/Organisms/Dropdown default 1`] = `
-<div
-  style={
-    Object {
-      "position": "relative",
-    }
-  }
->
-  <p>
-    Dropdown anchor
-  </p>
-  <div
-    className="ui-dropdown"
-  >
-    <p>
-      Content dropdown
-    </p>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Organisms/ListGroup default 1`] = `
+exports[`Storyshots Components/Molecules/ListGroup default 1`] = `
 <div
   style={
     Object {
@@ -366,7 +345,7 @@ exports[`Storyshots Components/Organisms/ListGroup default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Organisms/ListGroup with custom render 1`] = `
+exports[`Storyshots Components/Molecules/ListGroup with custom render 1`] = `
 <div
   style={
     Object {
@@ -405,7 +384,7 @@ exports[`Storyshots Components/Organisms/ListGroup with custom render 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Organisms/ListGroup with size 1`] = `
+exports[`Storyshots Components/Molecules/ListGroup with size 1`] = `
 <div
   style={
     Object {
@@ -437,6 +416,27 @@ exports[`Storyshots Components/Organisms/ListGroup with size 1`] = `
       Sed sit amet metus id ex fringilla hendrerit non sit amet mauris.
     </li>
   </ul>
+</div>
+`;
+
+exports[`Storyshots Components/Organisms/Dropdown default 1`] = `
+<div
+  style={
+    Object {
+      "position": "relative",
+    }
+  }
+>
+  <p>
+    Dropdown anchor
+  </p>
+  <div
+    className="ui-dropdown"
+  >
+    <p>
+      Content dropdown
+    </p>
+  </div>
 </div>
 `;
 
