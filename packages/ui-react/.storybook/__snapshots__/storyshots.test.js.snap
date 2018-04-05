@@ -82,6 +82,19 @@ exports[`Storyshots Components/Atoms/Button with left icon 1`] = `
 </button>
 `;
 
+exports[`Storyshots Components/Atoms/Button with null children 1`] = `
+<button
+  className="ui-button"
+  onClick={[Function]}
+>
+  <i
+    className="ui-icon ui-button__content ui-icon--large"
+  >
+    backup
+  </i>
+</button>
+`;
+
 exports[`Storyshots Components/Atoms/Icon default 1`] = `
 <i
   className="ui-icon"

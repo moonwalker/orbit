@@ -40,6 +40,10 @@ const mergePropsToChild = (childComponent, props) =>
   }), {});
 
 const wrapChild = props => (child) => {
+  if (!child) {
+    return null;
+  }
+
   const childComponent = typeof child === 'string' ?
     (
       <ButtonContent>
