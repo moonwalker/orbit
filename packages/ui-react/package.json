@@ -1,6 +1,6 @@
 {
   "name": "@moonwalker/orbit-ui-react",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "React UI components library",
   "keywords": [
     "css",
@@ -30,7 +30,7 @@
     "prop-types": "^15.6.1"
   },
   "devDependencies": {
-    "@moonwalker/orbit-ui": "^0.7.0",
+    "@moonwalker/orbit-ui": "^0.7.2",
     "@storybook/addon-actions": "3.4.0",
     "@storybook/addon-info": "3.4.0",
     "@storybook/addon-knobs": "3.4.0",
