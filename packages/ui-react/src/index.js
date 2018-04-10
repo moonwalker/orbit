@@ -1,11 +1,12 @@
-export { Button } from './atoms/button/button';
-export { Input } from './atoms/input/input';
-export { Icon } from './atoms/icon/icon';
-export { Label } from './atoms/label/label';
-export { Select } from './atoms/select/select';
-export { Textarea } from './atoms/textarea/textarea';
-export { Spinner } from './atoms/spinner/spinner';
+export * from './atoms/button';
+export * from './atoms/icon';
+export * from './atoms/input';
+export * from './atoms/label';
+export * from './atoms/select';
+export * from './atoms/textarea';
+export * from './atoms/spinner';
 
-export { ButtonIcon } from './molecules/button-icon/button-icon';
-export { ListGroup } from './molecules/list-group/list-group';
-export { Dropdown } from './organisms/dropdown/dropdown';
+export * from './molecules/button-icon';
+export * from './molecules/list-group';
+
+export * from './organisms/dropdown';
