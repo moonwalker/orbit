@@ -1,5 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Components/Atoms/Button as a different element 1`] = `
+<a
+  className="ui-button"
+  onClick={[Function]}
+>
+  Call to action
+</a>
+`;
+
 exports[`Storyshots Components/Atoms/Button default 1`] = `
 <button
   className="ui-button"
