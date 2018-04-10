@@ -13,6 +13,6 @@
   "license": "MIT",
   "devDependencies": {
     "gh-pages": "1.1.0",
-    "lerna": "2.9.1"
+    "lerna": "2.10.1"
   }
 }
