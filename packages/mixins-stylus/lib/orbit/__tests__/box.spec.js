@@ -33,6 +33,14 @@ describe('Box', () => {
     );
   });
 
+  test('inline-flex', (done) => {
+    assert(
+      __dirname,
+      'box-inline-flex',
+      done,
+    );
+  });
+
   test('proportional-box', (done) => {
     assert(
       __dirname,

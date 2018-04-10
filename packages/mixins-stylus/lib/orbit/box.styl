@@ -76,6 +76,21 @@ flex(width = null, height = null) {
 }
 
 /*
+ * Display inline-flex helper
+ *
+ * Examples:
+ *   inline-flex();
+ *   inline-flex(100px)
+ *   inline-flex(100px, 20px)
+ *   inline-flex(height: 20px)
+ *   inline-flex(cover)
+ */
+inline-flex(width = null, height = null) {
+  display: inline-flex;
+  box(width, height);
+}
+
+/*
  * Proportional box helper
  *
  * Examples:

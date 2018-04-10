@@ -1,0 +1,16 @@
+.a {
+  display: inline-flex;
+}
+.b {
+  display: inline-flex;
+  width: 100px;
+}
+.c {
+  display: inline-flex;
+  width: 100px;
+  height: 20px;
+}
+.d {
+  display: inline-flex;
+  height: 100%;
+}
