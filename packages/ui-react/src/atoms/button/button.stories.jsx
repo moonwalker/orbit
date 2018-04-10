@@ -52,6 +52,18 @@ stories.add('with clear', () => (
   </Button>
 ));
 
+stories.add('as a different element', () => (
+  <Button
+    as="a"
+    onClick={action('Click')}
+    kind={selectKind()}
+    size={selectSize()}
+    clear={getClear()}
+  >
+    Call to action
+  </Button>
+));
+
 stories.add('with left icon', () => (
   <Button
     onClick={action('Click')}
