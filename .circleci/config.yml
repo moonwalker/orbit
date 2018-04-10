@@ -11,8 +11,9 @@ jobs:
 
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          - v1-dependencies-
+            - v0-deps-{{ .Branch }}
+            - v0-deps-master
+            - v0-deps-
 
       - run:
           name: Install dependencies
@@ -28,3 +29,12 @@ jobs:
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               npm run build-pages
             fi
+
+      - save_cache:
+          key: v0-deps-{{ .Branch }}
+          paths:
+            - "node_modules"
+            - "packages/mixins-stylus/node_modules"
+            - "packages/ui-stylus/node_modules"
+            - "packages/ui/node_modules"
+            - "packages/ui-react/node_modules"
