@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { boolean, select } from '@storybook/addon-knobs';
+import { withInfo } from '@storybook/addon-info';
 
 import { Icon } from '../icon/icon';
 import { Button } from './button';
@@ -18,6 +19,17 @@ const stories = storiesOf('Components/Atoms/Button', module);
 const selectKind = (kind = KIND_DEFAULT) => select('Kind', KINDS, kind);
 const selectSize = (size = null) => select('Size', SIZES, size);
 const getClear = (clear = false) => boolean('Clear', clear);
+
+stories.add('info', withInfo({ inline: true })(() => (
+  <Button
+    onClick={action('Click')}
+    kind="primary"
+    size="small"
+    clear={false}
+  >
+    Call to action
+  </Button>
+)));
 
 stories.add('default', () => (
   <Button

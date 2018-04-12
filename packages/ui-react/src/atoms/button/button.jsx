@@ -106,24 +106,24 @@ Button.defaultProps = {
 };
 
 Button.propTypes = {
-  /* Adopted child class name */
+  /** Adopted child class name */
   className: PropTypes.string,
 
-  /* Inner conntent */
+  /** Inner content */
   children: PropTypes.node,
 
-  /* Render tag or component */
+  /** Render tag or component */
   as: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.func,
   ]),
 
-  /* Clear type */
+  /** Clear type */
   clear: PropTypes.bool,
 
-  /* Kind type */
+  /** Kind type */
   kind: PropTypes.oneOf(KINDS),
 
-  /* Size type */
+  /** Size type */
   size: PropTypes.oneOf(SIZES),
 };
