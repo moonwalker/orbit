@@ -291,7 +291,7 @@ h6 + dl {
   padding-right: 24px;
   padding-bottom: 8px;
   padding-left: 24px;
-  background-color: #a8a8a8;
+  background-color: #757575;
   color: #fff;
   line-height: 24px;
   justify-content: center;
@@ -302,7 +302,7 @@ h6 + dl {
   cursor: pointer;
 }
 .ui-button:hover {
-  background-color: #b5b5b5;
+  background-color: #828282;
   color: #fff;
   text-decoration: none;
 }
