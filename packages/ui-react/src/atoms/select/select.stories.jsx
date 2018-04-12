@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { select } from '@storybook/addon-knobs';
+import { withInfo } from '@storybook/addon-info';
 
 import { Select } from './select';
 import {
@@ -20,6 +21,14 @@ const options = [
   'Option B',
   'Option C',
 ];
+
+stories.add('info', withInfo({ inline: true })(() => (
+  <Select
+    onChange={action('Change')}
+    size="small"
+    options={['Option A', 'Option B']}
+  />
+)));
 
 stories.add('default', () => (
   <Select

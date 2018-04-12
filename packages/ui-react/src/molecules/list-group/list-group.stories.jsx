@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { select } from '@storybook/addon-knobs';
+import { withInfo } from '@storybook/addon-info';
 
 import { ListGroup } from './list-group';
 import {
@@ -18,6 +19,13 @@ const items = [
   'Nunc vitae consectetur nibh, at maximus risus.',
   'Sed sit amet metus id ex fringilla hendrerit non sit amet mauris.',
 ];
+
+stories.add('info', withInfo({ inline: true })(() => (
+  <ListGroup
+    size="small"
+    items={['Item 1', 'Item 2']}
+  />
+)));
 
 stories.add('default', () => (
   <div style={{ padding: '1rem' }}>
