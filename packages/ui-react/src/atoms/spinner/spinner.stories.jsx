@@ -5,22 +5,39 @@ import { withInfo } from '@storybook/addon-info';
 
 import {
   SIZES,
+  SIZE_MEDIUM,
   SIZE_LARGE,
 } from './spinner.constants';
 import { Spinner } from './spinner';
+import classNamesOverride from './spinner.stories.override-modules.css';
+import classNamesImport from './spinner.stories.import-modules.styl';
 
 const stories = storiesOf('Components/Atoms/Spinner', module);
 
-const selectSize = () => select('Size', SIZES, SIZE_LARGE);
+const selectSize = (size = SIZE_MEDIUM) => select('Size', SIZES, size);
 
 stories.add('info', withInfo({ inline: true })(() => (
   <Spinner size="small" />
 )));
 
 stories.add('default', () => (
-  <Spinner />
+  <Spinner size={selectSize()} />
 ));
 
-stories.add('with custom size', () => (
-  <Spinner size={selectSize()} />
+stories.add('with size modifier', () => (
+  <Spinner size={selectSize(SIZE_LARGE)} />
+));
+
+stories.add('with custom css-module class names', () => (
+  <Spinner
+    size={selectSize()}
+    classNames={classNamesOverride}
+  />
+));
+
+stories.add('with imported css-module class names', () => (
+  <Spinner
+    size={selectSize()}
+    classNames={classNamesImport}
+  />
 ));

@@ -2,25 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import {
-  UI_NAME,
-  SIZES,
-  VALID,
-  INVALID,
-} from './input.constants';
+import { SIZES } from './input.constants';
+import { CLASS_NAMES } from './input.class-names';
 
 export const Input = (props) => {
   const {
     className,
+    classNames,
     size,
     valid,
     ...restProps
   } = props;
 
-  const rootClassName = cx(UI_NAME, className, {
-    [`${UI_NAME}--${size}`]: size,
-    [`${UI_NAME}--${VALID}`]: valid === true,
-    [`${UI_NAME}--${INVALID}`]: valid === false,
+  const rootClassName = cx(classNames.root, className, {
+    [classNames[size]]: size,
+    [classNames.valid]: valid === true,
+    [classNames.invalid]: valid === false,
   });
 
   return (
@@ -33,6 +30,7 @@ export const Input = (props) => {
 
 Input.defaultProps = {
   className: '',
+  classNames: CLASS_NAMES,
   size: null,
   valid: null,
 };
@@ -40,6 +38,9 @@ Input.defaultProps = {
 Input.propTypes = {
   /* Adopted child class name */
   className: PropTypes.string,
+
+  /** CSS Modules class names mapping */
+  classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
 
   /* Size type */
   size: PropTypes.oneOf(SIZES),

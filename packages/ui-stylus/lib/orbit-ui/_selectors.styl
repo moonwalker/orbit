@@ -1,0 +1,49 @@
+// Css modules selector generation
+css-modules-root() {
+  .root {
+    {block}
+  }
+}
+
+css-modules-modifier($modifier-name) {
+  .{$modifier-name} {
+    {block}
+  }
+}
+
+css-modules-element($element-name) {
+  .{$element-name} {
+    {block}
+  }
+}
+
+// BEM selectors generator
+$component-selector = '.' + $selector-prefix + $component-name;
+
+bem-root() {
+  {$component-selector} {
+    {block}
+  }
+}
+
+bem-modifier($modifier-name) {
+  {$component-selector}--{$modifier-name} {
+    {block}
+  }
+}
+
+bem-element($element-name) {
+  {$component-selector}__{$element-name} {
+    {block}
+  }
+}
+
+if ($bem-selectors) {
+  root = bem-root;
+  modifier = bem-modifier;
+  element = bem-element;
+} else {
+  root = css-modules-root;
+  modifier = css-modules-modifier;
+  element = css-modules-element;
+}

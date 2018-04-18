@@ -2,25 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import {
-  UI_NAME,
-  SIZES,
-  VALID,
-  INVALID,
-} from './textarea.constants';
+import { SIZES } from './textarea.constants';
+import { CLASS_NAMES } from './textarea.class-names';
 
 export const Textarea = (props) => {
   const {
     className,
+    classNames,
     size,
     valid,
     ...restProps
   } = props;
 
-  const rootClassName = cx(UI_NAME, className, {
-    [`${UI_NAME}--${size}`]: size,
-    [`${UI_NAME}--${VALID}`]: valid === true,
-    [`${UI_NAME}--${INVALID}`]: valid === false,
+  const rootClassName = cx(classNames.root, className, {
+    [classNames[size]]: size,
+    [classNames.valid]: valid === true,
+    [classNames.invalid]: valid === false,
   });
 
   return (
@@ -33,6 +30,7 @@ export const Textarea = (props) => {
 
 Textarea.defaultProps = {
   className: '',
+  classNames: CLASS_NAMES,
   size: null,
   valid: null,
 };
@@ -40,6 +38,9 @@ Textarea.defaultProps = {
 Textarea.propTypes = {
   /* Adopted child class name */
   className: PropTypes.string,
+
+  /** CSS Modules class names mapping */
+  classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
 
   /* Size type */
   size: PropTypes.oneOf(SIZES),

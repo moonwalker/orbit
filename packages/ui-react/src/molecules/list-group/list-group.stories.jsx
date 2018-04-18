@@ -6,12 +6,15 @@ import { withInfo } from '@storybook/addon-info';
 import { ListGroup } from './list-group';
 import {
   SIZES,
+  SIZE_MEDIUM,
   SIZE_LARGE,
 } from './list-group.constants';
+import classNamesOverride from './list-group.stories.override-modules.css';
+import classNamesImport from './list-group.stories.import-modules.styl';
 
 const stories = storiesOf('Components/Molecules/ListGroup', module);
 
-const selectSize = (size = null) => select('Size', SIZES, size);
+const selectSize = (size = SIZE_MEDIUM) => select('Size', SIZES, size);
 
 const items = [
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -36,7 +39,7 @@ stories.add('default', () => (
   </div>
 ));
 
-stories.add('with size', () => (
+stories.add('with size modifier', () => (
   <div style={{ padding: '1rem' }}>
     <ListGroup
       size={selectSize(SIZE_LARGE)}
@@ -61,6 +64,26 @@ stories.add('with custom render', () => (
             </a>
           ))
       }
+    />
+  </div>
+));
+
+stories.add('with custom css-module class names', () => (
+  <div style={{ padding: '1rem' }}>
+    <ListGroup
+      size={selectSize()}
+      items={items}
+      classNames={classNamesOverride}
+    />
+  </div>
+));
+
+stories.add('with imported css-module class names', () => (
+  <div style={{ padding: '1rem' }}>
+    <ListGroup
+      size={selectSize()}
+      items={items}
+      classNames={classNamesImport}
     />
   </div>
 ));

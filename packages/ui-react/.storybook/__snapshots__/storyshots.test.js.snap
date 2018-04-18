@@ -1,17 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Atoms/Button as a different element 1`] = `
-<a
-  className="ui-button"
-  onClick={[Function]}
->
-  Call to action
-</a>
-`;
-
 exports[`Storyshots Components/Atoms/Button default 1`] = `
 <button
-  className="ui-button"
+  className="ui-button ui-button--medium"
   onClick={[Function]}
 >
   Call to action
@@ -406,6 +397,46 @@ exports[`Storyshots Components/Atoms/Button info 1`] = `
                 <td
                   className="css-1ygfcef"
                 >
+                  classNames
+                </td>
+                <td
+                  className="css-1ygfcef"
+                >
+                  <span>
+                    object
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  -
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    CLASS_NAMES
+                    "
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  CSS Modules class names mapping
+                </td>
+              </tr>
+              <tr>
+                <td
+                  className="css-1ygfcef"
+                >
                   children
                 </td>
                 <td
@@ -619,9 +650,18 @@ exports[`Storyshots Components/Atoms/Button info 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Atoms/Button with clear 1`] = `
+exports[`Storyshots Components/Atoms/Button render as a different element 1`] = `
+<a
+  className="ui-button ui-button--medium"
+  onClick={[Function]}
+>
+  Call to action
+</a>
+`;
+
+exports[`Storyshots Components/Atoms/Button with clear modifier 1`] = `
 <button
-  className="ui-button ui-button--clear"
+  className="ui-button ui-button--medium ui-button--clear"
   onClick={[Function]}
 >
   Call to action
@@ -630,44 +670,89 @@ exports[`Storyshots Components/Atoms/Button with clear 1`] = `
 
 exports[`Storyshots Components/Atoms/Button with custom content 1`] = `
 <button
-  className="ui-button"
+  className="ui-button ui-button--medium"
   onClick={[Function]}
 >
   <em
-    className="custom ui-button__content"
-    size={null}
+    className="custom ui-button__content ui-button__content--medium"
+    size="medium"
   >
     Call
   </em>
   <span
-    className="ui-button__content"
+    className="ui-button__content ui-button__content--medium"
   >
     to action
   </span>
 </button>
 `;
 
-exports[`Storyshots Components/Atoms/Button with different icon size 1`] = `
+exports[`Storyshots Components/Atoms/Button with custom css-module class names 1`] = `
 <button
-  className="ui-button"
+  className="root medium"
   onClick={[Function]}
 >
   <i
-    className="ui-icon ui-button__content ui-icon--large"
+    className="ui-icon content content--medium ui-icon--medium"
   >
     backup
   </i>
   <span
-    className="ui-button__content"
+    className="content content--medium"
   >
     Call to action
   </span>
 </button>
 `;
 
-exports[`Storyshots Components/Atoms/Button with kind 1`] = `
+exports[`Storyshots Components/Atoms/Button with different icon size 1`] = `
 <button
-  className="ui-button ui-button--danger"
+  className="ui-button ui-button--medium"
+  onClick={[Function]}
+>
+  <i
+    className="ui-icon ui-button__content ui-button__content--medium ui-icon--large"
+  >
+    backup
+  </i>
+  <span
+    className="ui-button__content ui-button__content--medium"
+  >
+    Call to action
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Atoms/Button with imported css-module class names 1`] = `
+<button
+  className="root medium"
+  onClick={[Function]}
+>
+  <i
+    className="ui-icon content content--medium ui-icon--medium"
+  >
+    backup
+  </i>
+  <span
+    className="content content--medium"
+  >
+    Call to action
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Atoms/Button with kind modifer 1`] = `
+<button
+  className="ui-button ui-button--danger ui-button--medium"
+  onClick={[Function]}
+>
+  Call to action
+</button>
+`;
+
+exports[`Storyshots Components/Atoms/Button with kind size modifier 1`] = `
+<button
+  className="ui-button ui-button--large"
   onClick={[Function]}
 >
   Call to action
@@ -676,16 +761,16 @@ exports[`Storyshots Components/Atoms/Button with kind 1`] = `
 
 exports[`Storyshots Components/Atoms/Button with left icon 1`] = `
 <button
-  className="ui-button"
+  className="ui-button ui-button--medium"
   onClick={[Function]}
 >
   <i
-    className="ui-icon ui-button__content"
+    className="ui-icon ui-button__content ui-button__content--medium ui-icon--medium"
   >
     backup
   </i>
   <span
-    className="ui-button__content"
+    className="ui-button__content ui-button__content--medium"
   >
     Call to action
   </span>
@@ -694,11 +779,11 @@ exports[`Storyshots Components/Atoms/Button with left icon 1`] = `
 
 exports[`Storyshots Components/Atoms/Button with null children 1`] = `
 <button
-  className="ui-button"
+  className="ui-button ui-button--medium"
   onClick={[Function]}
 >
   <i
-    className="ui-icon ui-button__content ui-icon--large"
+    className="ui-icon ui-button__content ui-button__content--medium ui-icon--large"
   >
     backup
   </i>
@@ -707,7 +792,7 @@ exports[`Storyshots Components/Atoms/Button with null children 1`] = `
 
 exports[`Storyshots Components/Atoms/Icon default 1`] = `
 <i
-  className="ui-icon"
+  className="ui-icon ui-icon--medium"
 >
   face
 </i>
@@ -1032,6 +1117,46 @@ exports[`Storyshots Components/Atoms/Icon info 1`] = `
                 <td
                   className="css-1ygfcef"
                 >
+                  classNames
+                </td>
+                <td
+                  className="css-1ygfcef"
+                >
+                  <span>
+                    object
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  -
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    CLASS_NAMES
+                    "
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  CSS Modules class names mapping
+                </td>
+              </tr>
+              <tr>
+                <td
+                  className="css-1ygfcef"
+                >
                   name
                 </td>
                 <td
@@ -1104,6 +1229,30 @@ exports[`Storyshots Components/Atoms/Icon info 1`] = `
     </div>
   </div>
 </div>
+`;
+
+exports[`Storyshots Components/Atoms/Icon with custom css-module class names 1`] = `
+<i
+  className="root medium"
+>
+  face
+</i>
+`;
+
+exports[`Storyshots Components/Atoms/Icon with imported css-module class names 1`] = `
+<i
+  className="root medium"
+>
+  face
+</i>
+`;
+
+exports[`Storyshots Components/Atoms/Icon with size modifier 1`] = `
+<i
+  className="ui-icon ui-icon--large"
+>
+  face
+</i>
 `;
 
 exports[`Storyshots Components/Atoms/Input default 1`] = `
@@ -1461,6 +1610,46 @@ exports[`Storyshots Components/Atoms/Input info 1`] = `
                 <td
                   className="css-1ygfcef"
                 >
+                  classNames
+                </td>
+                <td
+                  className="css-1ygfcef"
+                >
+                  <span>
+                    object
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  -
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    CLASS_NAMES
+                    "
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  CSS Modules class names mapping
+                </td>
+              </tr>
+              <tr>
+                <td
+                  className="css-1ygfcef"
+                >
                   size
                 </td>
                 <td
@@ -1546,7 +1735,23 @@ exports[`Storyshots Components/Atoms/Input info 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Atoms/Input invalid 1`] = `
+exports[`Storyshots Components/Atoms/Input with custom css-module class names 1`] = `
+<input
+  className="root medium"
+  onChange={[Function]}
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Input with imported css-module class names 1`] = `
+<input
+  className="root medium"
+  onChange={[Function]}
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Input with invalid state 1`] = `
 <input
   className="ui-input ui-input--medium ui-input--invalid"
   onChange={[Function]}
@@ -1554,7 +1759,15 @@ exports[`Storyshots Components/Atoms/Input invalid 1`] = `
 />
 `;
 
-exports[`Storyshots Components/Atoms/Input valid 1`] = `
+exports[`Storyshots Components/Atoms/Input with size modifier 1`] = `
+<input
+  className="ui-input ui-input--large"
+  onChange={[Function]}
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Input with valid state 1`] = `
 <input
   className="ui-input ui-input--medium ui-input--valid"
   onChange={[Function]}
@@ -1902,6 +2115,46 @@ exports[`Storyshots Components/Atoms/Label info 1`] = `
                 <td
                   className="css-1ygfcef"
                 >
+                  classNames
+                </td>
+                <td
+                  className="css-1ygfcef"
+                >
+                  <span>
+                    object
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  -
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    CLASS_NAMES
+                    "
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  CSS Modules class names mapping
+                </td>
+              </tr>
+              <tr>
+                <td
+                  className="css-1ygfcef"
+                >
                   size
                 </td>
                 <td
@@ -1987,7 +2240,23 @@ exports[`Storyshots Components/Atoms/Label info 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Atoms/Label with size variation 1`] = `
+exports[`Storyshots Components/Atoms/Label with custom css-module class names 1`] = `
+<label
+  className="root medium"
+>
+  Username
+</label>
+`;
+
+exports[`Storyshots Components/Atoms/Label with imported css-module class names 1`] = `
+<label
+  className="root medium"
+>
+  Username
+</label>
+`;
+
+exports[`Storyshots Components/Atoms/Label with size modifier 1`] = `
 <label
   className="ui-label ui-label--large"
 >
@@ -2392,6 +2661,46 @@ exports[`Storyshots Components/Atoms/Select info 1`] = `
                 <td
                   className="css-1ygfcef"
                 >
+                  classNames
+                </td>
+                <td
+                  className="css-1ygfcef"
+                >
+                  <span>
+                    object
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  -
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    CLASS_NAMES
+                    "
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  CSS Modules class names mapping
+                </td>
+              </tr>
+              <tr>
+                <td
+                  className="css-1ygfcef"
+                >
                   size
                 </td>
                 <td
@@ -2517,9 +2826,9 @@ exports[`Storyshots Components/Atoms/Select info 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Atoms/Select invalid 1`] = `
+exports[`Storyshots Components/Atoms/Select with custom css-module class names 1`] = `
 <select
-  className="ui-select ui-select--medium ui-select--invalid"
+  className="root medium"
   onChange={[Function]}
 >
   <option>
@@ -2534,9 +2843,26 @@ exports[`Storyshots Components/Atoms/Select invalid 1`] = `
 </select>
 `;
 
-exports[`Storyshots Components/Atoms/Select valid 1`] = `
+exports[`Storyshots Components/Atoms/Select with imported css-module class names 1`] = `
 <select
-  className="ui-select ui-select--medium ui-select--valid"
+  className="root medium"
+  onChange={[Function]}
+>
+  <option>
+    Option A
+  </option>
+  <option>
+    Option B
+  </option>
+  <option>
+    Option C
+  </option>
+</select>
+`;
+
+exports[`Storyshots Components/Atoms/Select with invalid state 1`] = `
+<select
+  className="ui-select ui-select--medium ui-select--invalid"
   onChange={[Function]}
 >
   <option>
@@ -2575,7 +2901,7 @@ exports[`Storyshots Components/Atoms/Select with options attributes 1`] = `
 </select>
 `;
 
-exports[`Storyshots Components/Atoms/Select with size variation 1`] = `
+exports[`Storyshots Components/Atoms/Select with size modifier 1`] = `
 <select
   className="ui-select ui-select--large"
   onChange={[Function]}
@@ -2592,9 +2918,26 @@ exports[`Storyshots Components/Atoms/Select with size variation 1`] = `
 </select>
 `;
 
+exports[`Storyshots Components/Atoms/Select with valid state 1`] = `
+<select
+  className="ui-select ui-select--medium ui-select--valid"
+  onChange={[Function]}
+>
+  <option>
+    Option A
+  </option>
+  <option>
+    Option B
+  </option>
+  <option>
+    Option C
+  </option>
+</select>
+`;
+
 exports[`Storyshots Components/Atoms/Spinner default 1`] = `
 <span
-  className="ui-spinner"
+  className="ui-spinner ui-spinner--medium"
 />
 `;
 
@@ -2884,6 +3227,114 @@ exports[`Storyshots Components/Atoms/Spinner info 1`] = `
                 <td
                   className="css-1ygfcef"
                 >
+                  classNames
+                </td>
+                <td
+                  className="css-1ygfcef"
+                >
+                  <span />
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  -
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  <span>
+                    {
+                    <span
+                      style={
+                        Object {
+                          "color": "#666",
+                        }
+                      }
+                    >
+                      {
+                      <span
+                        style={
+                          Object {
+                            "color": "#666",
+                          }
+                        }
+                      >
+                        root
+                      </span>
+                      : 
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        ui-spinner
+                        "
+                      </span>
+                      , 
+                      <span
+                        style={
+                          Object {
+                            "color": "#666",
+                          }
+                        }
+                      >
+                        small
+                      </span>
+                      : 
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        ui-spinner--small
+                        "
+                      </span>
+                      , 
+                      <span
+                        style={
+                          Object {
+                            "color": "#666",
+                          }
+                        }
+                      >
+                        medium
+                      </span>
+                      : 
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        ui-spinner--medium
+                        "
+                      </span>
+                      , 
+                      …
+                      }
+                    </span>
+                    }
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                />
+              </tr>
+              <tr>
+                <td
+                  className="css-1ygfcef"
+                >
                   size
                 </td>
                 <td
@@ -2926,7 +3377,19 @@ exports[`Storyshots Components/Atoms/Spinner info 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Atoms/Spinner with custom size 1`] = `
+exports[`Storyshots Components/Atoms/Spinner with custom css-module class names 1`] = `
+<span
+  className="root medium"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Spinner with imported css-module class names 1`] = `
+<span
+  className="root medium"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Spinner with size modifier 1`] = `
 <span
   className="ui-spinner ui-spinner--large"
 />
@@ -3287,6 +3750,46 @@ exports[`Storyshots Components/Atoms/Textarea info 1`] = `
                 <td
                   className="css-1ygfcef"
                 >
+                  classNames
+                </td>
+                <td
+                  className="css-1ygfcef"
+                >
+                  <span>
+                    object
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  -
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    CLASS_NAMES
+                    "
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  CSS Modules class names mapping
+                </td>
+              </tr>
+              <tr>
+                <td
+                  className="css-1ygfcef"
+                >
                   size
                 </td>
                 <td
@@ -3372,7 +3875,23 @@ exports[`Storyshots Components/Atoms/Textarea info 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Atoms/Textarea invalid 1`] = `
+exports[`Storyshots Components/Atoms/Textarea with custom css-module class names 1`] = `
+<textarea
+  className="root medium"
+  onChange={[Function]}
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Textarea with imported css-module class names 1`] = `
+<textarea
+  className="root medium"
+  onChange={[Function]}
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Textarea with invalid state 1`] = `
 <textarea
   className="ui-textarea ui-textarea--medium ui-textarea--invalid"
   onChange={[Function]}
@@ -3380,7 +3899,15 @@ exports[`Storyshots Components/Atoms/Textarea invalid 1`] = `
 />
 `;
 
-exports[`Storyshots Components/Atoms/Textarea valid 1`] = `
+exports[`Storyshots Components/Atoms/Textarea with size modifier 1`] = `
+<textarea
+  className="ui-textarea ui-textarea--large"
+  onChange={[Function]}
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Textarea with valid state 1`] = `
 <textarea
   className="ui-textarea ui-textarea--medium ui-textarea--valid"
   onChange={[Function]}
@@ -3390,11 +3917,11 @@ exports[`Storyshots Components/Atoms/Textarea valid 1`] = `
 
 exports[`Storyshots Components/Molecules/ButtonIcon default 1`] = `
 <button
-  className="ui-button-icon"
+  className="ui-button-icon ui-button-icon--medium"
   onClick={[Function]}
 >
   <i
-    className="ui-icon"
+    className="ui-icon ui-icon--medium"
   >
     face
   </i>
@@ -3792,6 +4319,46 @@ exports[`Storyshots Components/Molecules/ButtonIcon info 1`] = `
                 <td
                   className="css-1ygfcef"
                 >
+                  classNames
+                </td>
+                <td
+                  className="css-1ygfcef"
+                >
+                  <span>
+                    object
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  -
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    CLASS_NAMES
+                    "
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  CSS Modules class names mapping
+                </td>
+              </tr>
+              <tr>
+                <td
+                  className="css-1ygfcef"
+                >
                   as
                 </td>
                 <td
@@ -3954,6 +4521,19 @@ exports[`Storyshots Components/Molecules/ButtonIcon info 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Molecules/ButtonIcon with custom css-module class names 1`] = `
+<button
+  className="root medium"
+  onClick={[Function]}
+>
+  <i
+    className="ui-icon ui-icon--medium"
+  >
+    backup
+  </i>
+</button>
+`;
+
 exports[`Storyshots Components/Molecules/ButtonIcon with icon name 1`] = `
 <button
   className="ui-button-icon ui-button-icon--large"
@@ -3967,20 +4547,33 @@ exports[`Storyshots Components/Molecules/ButtonIcon with icon name 1`] = `
 </button>
 `;
 
-exports[`Storyshots Components/Molecules/ButtonIcon with kind 1`] = `
+exports[`Storyshots Components/Molecules/ButtonIcon with imported css-module class names 1`] = `
 <button
-  className="ui-button-icon ui-button-icon--danger"
+  className="root medium"
   onClick={[Function]}
 >
   <i
-    className="ui-icon"
+    className="ui-icon ui-icon--medium"
+  >
+    backup
+  </i>
+</button>
+`;
+
+exports[`Storyshots Components/Molecules/ButtonIcon with kind modifier 1`] = `
+<button
+  className="ui-button-icon ui-button-icon--medium ui-button-icon--danger"
+  onClick={[Function]}
+>
+  <i
+    className="ui-icon ui-icon--medium"
   >
     face
   </i>
 </button>
 `;
 
-exports[`Storyshots Components/Molecules/ButtonIcon with size 1`] = `
+exports[`Storyshots Components/Molecules/ButtonIcon with size modifier 1`] = `
 <button
   className="ui-button-icon ui-button-icon--large"
   onClick={[Function]}
@@ -4002,7 +4595,7 @@ exports[`Storyshots Components/Molecules/ListGroup default 1`] = `
   }
 >
   <ul
-    className="ui-list-group"
+    className="ui-list-group ui-list-group--medium"
   >
     <li
       className="ui-list-group__item"
@@ -4379,6 +4972,114 @@ exports[`Storyshots Components/Molecules/ListGroup info 1`] = `
                 <td
                   className="css-1ygfcef"
                 >
+                  classNames
+                </td>
+                <td
+                  className="css-1ygfcef"
+                >
+                  <span />
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  -
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  <span>
+                    {
+                    <span
+                      style={
+                        Object {
+                          "color": "#666",
+                        }
+                      }
+                    >
+                      {
+                      <span
+                        style={
+                          Object {
+                            "color": "#666",
+                          }
+                        }
+                      >
+                        root
+                      </span>
+                      : 
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        ui-list-group
+                        "
+                      </span>
+                      , 
+                      <span
+                        style={
+                          Object {
+                            "color": "#666",
+                          }
+                        }
+                      >
+                        small
+                      </span>
+                      : 
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        ui-list-group--small
+                        "
+                      </span>
+                      , 
+                      <span
+                        style={
+                          Object {
+                            "color": "#666",
+                          }
+                        }
+                      >
+                        medium
+                      </span>
+                      : 
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        ui-list-group--medium
+                        "
+                      </span>
+                      , 
+                      …
+                      }
+                    </span>
+                    }
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                />
+              </tr>
+              <tr>
+                <td
+                  className="css-1ygfcef"
+                >
                   items
                 </td>
                 <td
@@ -4532,6 +5233,41 @@ exports[`Storyshots Components/Molecules/ListGroup info 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Molecules/ListGroup with custom css-module class names 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <ul
+    className="root medium"
+  >
+    <li
+      className="item"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </li>
+    <li
+      className="item"
+    >
+      Proin at efficitur est.
+    </li>
+    <li
+      className="item"
+    >
+      Nunc vitae consectetur nibh, at maximus risus.
+    </li>
+    <li
+      className="item"
+    >
+      Sed sit amet metus id ex fringilla hendrerit non sit amet mauris.
+    </li>
+  </ul>
+</div>
+`;
+
 exports[`Storyshots Components/Molecules/ListGroup with custom render 1`] = `
 <div
   style={
@@ -4541,7 +5277,7 @@ exports[`Storyshots Components/Molecules/ListGroup with custom render 1`] = `
   }
 >
   <nav
-    className="ui-list-group"
+    className="ui-list-group ui-list-group--medium"
   >
     <a
       className="ui-list-group__item"
@@ -4571,7 +5307,42 @@ exports[`Storyshots Components/Molecules/ListGroup with custom render 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Molecules/ListGroup with size 1`] = `
+exports[`Storyshots Components/Molecules/ListGroup with imported css-module class names 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <ul
+    className="root medium"
+  >
+    <li
+      className="item"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </li>
+    <li
+      className="item"
+    >
+      Proin at efficitur est.
+    </li>
+    <li
+      className="item"
+    >
+      Nunc vitae consectetur nibh, at maximus risus.
+    </li>
+    <li
+      className="item"
+    >
+      Sed sit amet metus id ex fringilla hendrerit non sit amet mauris.
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components/Molecules/ListGroup with size modifier 1`] = `
 <div
   style={
     Object {
@@ -5163,6 +5934,66 @@ exports[`Storyshots Components/Organisms/Dropdown info 1`] = `
                 <td
                   className="css-1ygfcef"
                 >
+                  classNames
+                </td>
+                <td
+                  className="css-1ygfcef"
+                >
+                  <span />
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  -
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  <span>
+                    {
+                    <span
+                      style={
+                        Object {
+                          "color": "#666",
+                        }
+                      }
+                    >
+                      {
+                      <span
+                        style={
+                          Object {
+                            "color": "#666",
+                          }
+                        }
+                      >
+                        root
+                      </span>
+                      : 
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        ui-dropdown
+                        "
+                      </span>
+                      }
+                    </span>
+                    }
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                />
+              </tr>
+              <tr>
+                <td
+                  className="css-1ygfcef"
+                >
                   children
                 </td>
                 <td
@@ -5201,6 +6032,48 @@ exports[`Storyshots Components/Organisms/Dropdown info 1`] = `
         </div>
       </div>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Organisms/Dropdown with custom css-module class names 1`] = `
+<div
+  style={
+    Object {
+      "position": "relative",
+    }
+  }
+>
+  <p>
+    Dropdown anchor
+  </p>
+  <div
+    className="root"
+  >
+    <p>
+      Content dropdown
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Organisms/Dropdown with imported css-module class names 1`] = `
+<div
+  style={
+    Object {
+      "position": "relative",
+    }
+  }
+>
+  <p>
+    Dropdown anchor
+  </p>
+  <div
+    className="root"
+  >
+    <p>
+      Content dropdown
+    </p>
   </div>
 </div>
 `;

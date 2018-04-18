@@ -1,0 +1,12 @@
+.root {
+  padding: 1rem;
+  background: magenta;
+}
+
+.small {
+  padding: 0.5rem;
+}
+
+.large {
+  padding: 2rem;
+}

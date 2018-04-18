@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 
 import {
-  UI_NAME,
   KINDS,
   KIND_DEFAULT,
   SIZES,
 } from './button.constants';
+import { CLASS_NAMES } from './button.class-names';
 
 const ButtonContent = ({ className, children }) => (
   <span className={className}>
@@ -61,6 +61,7 @@ const wrapChild = props => (child) => {
 export const Button = (props) => {
   const {
     className,
+    classNames,
     children,
     as: Component,
     clear,
@@ -69,20 +70,20 @@ export const Button = (props) => {
     ...restProps
   } = props;
 
-  const rootClassName = cx(UI_NAME, className, {
-    [`${UI_NAME}--${kind}`]: !clear && kind,
-    [`${UI_NAME}--clear`]: clear,
-    [`${UI_NAME}--clear--${kind}`]: clear && kind,
-    [`${UI_NAME}--${size}`]: size,
+  const rootClassName = cx(classNames.root, className, {
+    [classNames[kind]]: !clear && kind,
+    [classNames[size]]: size,
+    [classNames.clear]: clear,
+    [`${classNames.clear}--${kind}`]: clear && kind,
   });
 
-  // Add .`{UI_NAME}__content` if there are multiple children
+  // Add .`__content` if there are multiple children
   const processedChildren = typeof children === 'string' ?
     children :
     React.Children.map(children, wrapChild({
       size,
-      className: cx(`${UI_NAME}__content`, {
-        [`${UI_NAME}__content--${size}`]: size,
+      className: cx(classNames.content, {
+        [classNames[`content--${size}`]]: size,
       }),
     }));
 
@@ -98,6 +99,7 @@ export const Button = (props) => {
 
 Button.defaultProps = {
   className: '',
+  classNames: CLASS_NAMES,
   children: null,
   as: 'button',
   clear: false,
@@ -108,6 +110,9 @@ Button.defaultProps = {
 Button.propTypes = {
   /** Adopted child class name */
   className: PropTypes.string,
+
+  /** CSS Modules class names mapping */
+  classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
 
   /** Inner content */
   children: PropTypes.node,

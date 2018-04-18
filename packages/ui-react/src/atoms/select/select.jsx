@@ -2,26 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import {
-  UI_NAME,
-  SIZES,
-  VALID,
-  INVALID,
-} from './select.constants';
+import { SIZES } from './select.constants';
+import { CLASS_NAMES } from './select.class-names';
 
 export const Select = (props) => {
   const {
     className,
+    classNames,
     size,
     valid,
     options,
     ...restProps
   } = props;
 
-  const rootClassName = cx(UI_NAME, className, {
-    [`${UI_NAME}--${size}`]: size,
-    [`${UI_NAME}--${VALID}`]: valid === true,
-    [`${UI_NAME}--${INVALID}`]: valid === false,
+  const rootClassName = cx(classNames.root, className, {
+    [classNames[size]]: size,
+    [classNames.valid]: valid === true,
+    [classNames.invalid]: valid === false,
   });
 
   return (
@@ -56,6 +53,7 @@ export const Select = (props) => {
 
 Select.defaultProps = {
   className: '',
+  classNames: CLASS_NAMES,
   size: null,
   valid: null,
   options: [],
@@ -64,6 +62,9 @@ Select.defaultProps = {
 Select.propTypes = {
   /* Adopted child class name */
   className: PropTypes.string,
+
+  /** CSS Modules class names mapping */
+  classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
 
   /* Size type */
   size: PropTypes.oneOf(SIZES),

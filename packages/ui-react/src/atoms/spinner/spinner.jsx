@@ -2,19 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import {
-  UI_NAME,
-  SIZES,
-} from './spinner.constants';
+import { SIZES } from './spinner.constants';
+import { CLASS_NAMES } from './spinner.class-names';
 
 export const Spinner = (props) => {
   const {
     className,
+    classNames,
     size,
   } = props;
 
-  const rootClassName = cx(UI_NAME, className, {
-    [`${UI_NAME}--${size}`]: size,
+  const rootClassName = cx(classNames.root, className, {
+    [classNames[size]]: size,
   });
 
   return (
@@ -24,12 +23,16 @@ export const Spinner = (props) => {
 
 Spinner.defaultProps = {
   className: '',
+  classNames: CLASS_NAMES,
   size: null,
 };
 
 Spinner.propTypes = {
   /* Adopted child class name */
   className: PropTypes.string,
+
+  /** CSS Modules class names mapping */
+  classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
 
   /* Size type */
   size: PropTypes.oneOf(SIZES),

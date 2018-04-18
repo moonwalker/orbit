@@ -9,6 +9,8 @@ import {
   SIZE_MEDIUM,
   SIZE_LARGE,
 } from './label.constants';
+import classNamesOverride from './label.stories.override-modules.css';
+import classNamesImport from './label.stories.import-modules.styl';
 
 const stories = storiesOf('Components/Atoms/Label', module);
 
@@ -25,8 +27,26 @@ stories.add('default', () => (
   <Label>Username</Label>
 ));
 
-stories.add('with size variation', () => (
+stories.add('with size modifier', () => (
   <Label size={selectSize(SIZE_LARGE)}>
+    Username
+  </Label>
+));
+
+stories.add('with custom css-module class names', () => (
+  <Label
+    size={selectSize()}
+    classNames={classNamesOverride}
+  >
+    Username
+  </Label>
+));
+
+stories.add('with imported css-module class names', () => (
+  <Label
+    size={selectSize()}
+    classNames={classNamesImport}
+  >
     Username
   </Label>
 ));

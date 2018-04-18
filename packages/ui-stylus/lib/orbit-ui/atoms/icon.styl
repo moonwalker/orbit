@@ -1,5 +1,8 @@
+$component-name = 'icon';
+
 @require '../_variables';
 @require '../_imports';
+@import '../_selectors';
 
 /*!
  * Icon
@@ -7,7 +10,7 @@
  * Based on https://github.com/google/material-design-icons/blob/master/iconfont/material-icons.css
  */
 
-.ui-icon {
++root() {
   inline-block($space-medium, $space-medium);
   font-family: 'Material Icons';
   font-weight: normal;
@@ -34,25 +37,25 @@
 }
 
 /*!
- * Size variations
+ * Size modifers
  */
 
-.ui-icon--xsmall {
++modifier('xsmall') {
   box($space-xsmall, $space-xsmall);
   font-size: $space-xsmall;
 }
 
-.ui-icon--small {
++modifier('small') {
   box($space-small, $space-small);
   font-size: $space-small;
 }
 
-.ui-icon--large {
++modifier('large') {
   box($space-large, $space-large);
   font-size: $space-large;
 }
 
-.ui-icon--xlarge {
++modifier('xlarge') {
   box($space-xlarge, $space-xlarge);
   font-size: $space-xlarge;
 }

@@ -1,7 +1,12 @@
+$component-name = 'list-group';
+
+@require '../_variables';
+@import '../_selectors';
+
 /*!
  * List group
  */
-.ui-list-group {
++root() {
   border: 1px solid $muted-color;
   list-style: none;
   padding: 0;
@@ -18,7 +23,7 @@
   }
 }
 
-.ui-list-group__item {
++element('item') {
   margin: 0;
   border-top: 1px solid $muted-color;
   block();
@@ -40,10 +45,10 @@
 /*!
  * Size variation
  */
-.ui-list-group--small {
++modifier('small') {
   type-scale(small);
 }
 
-.ui-list-group--large {
++modifier('large') {
   type-scale(large);
 }

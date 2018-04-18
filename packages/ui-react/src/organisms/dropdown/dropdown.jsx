@@ -2,15 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import { UI_NAME } from './dropdown.constants';
+import { CLASS_NAMES } from './dropdown.class-names';
 
 export const Dropdown = (props) => {
   const {
     className,
+    classNames,
     children,
   } = props;
 
-  const rootClassName = cx(UI_NAME, className);
+  const rootClassName = cx(classNames.root, className);
 
   return (
     <div className={rootClassName}>
@@ -21,12 +22,16 @@ export const Dropdown = (props) => {
 
 Dropdown.defaultProps = {
   className: '',
+  classNames: CLASS_NAMES,
   children: null,
 };
 
 Dropdown.propTypes = {
   /* Adopted child class name */
   className: PropTypes.string,
+
+  /** CSS Modules class names mapping */
+  classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
 
   /* Inner content */
   children: PropTypes.node,

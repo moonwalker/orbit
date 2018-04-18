@@ -10,6 +10,8 @@ import {
   SIZE_MEDIUM,
   SIZE_LARGE,
 } from './select.constants';
+import classNamesOverride from './select.stories.override-modules.css';
+import classNamesImport from './select.stories.import-modules.styl';
 
 const stories = storiesOf('Components/Atoms/Select', module);
 
@@ -62,7 +64,7 @@ stories.add('with options attributes', () => (
   />
 ));
 
-stories.add('valid', () => (
+stories.add('with valid state', () => (
   <Select
     onChange={action('Change')}
     size={selectSize()}
@@ -71,7 +73,7 @@ stories.add('valid', () => (
   />
 ));
 
-stories.add('invalid', () => (
+stories.add('with invalid state', () => (
   <Select
     onChange={action('Change')}
     size={selectSize()}
@@ -80,10 +82,28 @@ stories.add('invalid', () => (
   />
 ));
 
-stories.add('with size variation', () => (
+stories.add('with size modifier', () => (
   <Select
     onChange={action('Change')}
     size={selectSize(SIZE_LARGE)}
     options={options}
+  />
+));
+
+stories.add('with custom css-module class names', () => (
+  <Select
+    onChange={action('Change')}
+    size={selectSize()}
+    options={options}
+    classNames={classNamesOverride}
+  />
+));
+
+stories.add('with imported css-module class names', () => (
+  <Select
+    onChange={action('Change')}
+    size={selectSize()}
+    options={options}
+    classNames={classNamesImport}
   />
 ));

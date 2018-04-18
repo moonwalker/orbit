@@ -2,21 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import {
-  UI_NAME,
-  SIZES,
-} from './label.constants';
+import { SIZES } from './label.constants';
+import { CLASS_NAMES } from './label.class-names';
 
 export const Label = (props) => {
   const {
     className,
+    classNames,
     size,
     children,
     ...restProps
   } = props;
 
-  const rootClassName = cx(UI_NAME, className, {
-    [`${UI_NAME}--${size}`]: size,
+  const rootClassName = cx(classNames.root, className, {
+    [classNames[size]]: size,
   });
 
   /* eslint-disable jsx-a11y/label-has-for */
@@ -33,6 +32,7 @@ export const Label = (props) => {
 
 Label.defaultProps = {
   className: '',
+  classNames: CLASS_NAMES,
   size: null,
   children: null,
 };
@@ -40,6 +40,9 @@ Label.defaultProps = {
 Label.propTypes = {
   /* Adopted child class name */
   className: PropTypes.string,
+
+  /** CSS Modules class names mapping */
+  classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
 
   /* Size type */
   size: PropTypes.oneOf(SIZES),

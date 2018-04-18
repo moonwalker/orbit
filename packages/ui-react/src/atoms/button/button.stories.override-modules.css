@@ -1,0 +1,27 @@
+.root {
+  border: none;
+  padding: 1rem;
+  background: gray;
+  color: #fff;
+  border-radius: 100px;
+}
+
+.small {
+  font-size: smaller;
+}
+
+.large {
+  font-size: larger;
+}
+
+.primary {
+  background: blue;
+}
+
+.secondary {
+  background: green;
+}
+
+.content {
+  outline: 1px solid red;
+}

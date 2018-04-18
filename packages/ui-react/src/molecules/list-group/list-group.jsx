@@ -2,10 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import {
-  UI_NAME,
-  SIZES,
-} from './list-group.constants';
+import { SIZES } from './list-group.constants';
+import { CLASS_NAMES } from './list-group.class-names';
 
 const getDefaultRender = items => ({ getListGroupItemProps }) =>
   items.map(item => (
@@ -20,19 +18,20 @@ const getDefaultRender = items => ({ getListGroupItemProps }) =>
 export const ListGroup = (props) => {
   const {
     className,
+    classNames,
     items,
     render,
     as: Component,
     size,
   } = props;
 
-  const rootClassName = cx(UI_NAME, className, {
-    [`${UI_NAME}--${size}`]: size,
+  const rootClassName = cx(classNames.root, className, {
+    [classNames[size]]: size,
   });
 
   const getListGroupItemProps = (itemProps = {}) => ({
     ...itemProps,
-    className: cx(`${UI_NAME}__item`, itemProps.className),
+    className: cx(classNames.item, itemProps.className),
   });
 
   const renderFn = render || getDefaultRender(items);
@@ -48,6 +47,7 @@ export const ListGroup = (props) => {
 
 ListGroup.defaultProps = {
   className: '',
+  classNames: CLASS_NAMES,
   items: [],
   render: null,
   as: 'ul',
@@ -57,6 +57,9 @@ ListGroup.defaultProps = {
 ListGroup.propTypes = {
   /* Adopted child class name */
   className: PropTypes.string,
+
+  /** CSS Modules class names mapping */
+  classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
 
   /* List items array */
   items: PropTypes.array, // eslint-disable-line react/forbid-prop-types
