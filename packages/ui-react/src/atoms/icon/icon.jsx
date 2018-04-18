@@ -8,13 +8,14 @@ import { CLASS_NAMES } from './icon.class-names';
 export const Icon = (props) => {
   const {
     className,
+    classNames,
     size,
     name,
     ...restProps
   } = props;
 
-  const rootClassName = cx(CLASS_NAMES.root, className, {
-    [CLASS_NAMES[size]]: size,
+  const rootClassName = cx(classNames.root, className, {
+    [classNames[size]]: size,
   });
 
   return (
@@ -29,12 +30,16 @@ export const Icon = (props) => {
 
 Icon.defaultProps = {
   className: '',
+  classNames: CLASS_NAMES,
   size: null,
 };
 
 Icon.propTypes = {
   /* Adopted child class name */
   className: PropTypes.string,
+
+  /** CSS Modules class names mapping */
+  classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
 
   /* Icon name */
   name: PropTypes.string.isRequired,

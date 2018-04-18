@@ -10,6 +10,8 @@ import {
   SIZE_MEDIUM,
   SIZE_LARGE,
 } from './textarea.constants';
+import classNamesOverride from './textarea.stories.override-modules.css';
+import classNamesImport from './textarea.stories.import-modules.styl';
 
 const stories = storiesOf('Components/Atoms/Textarea', module);
 
@@ -53,5 +55,23 @@ stories.add('with invalid state', () => (
     size={selectSize()}
     placeholder="Enter text here"
     valid={false}
+  />
+));
+
+stories.add('with custom css-module class names', () => (
+  <Textarea
+    onChange={action('Change')}
+    size={selectSize()}
+    placeholder="Enter text here"
+    classNames={classNamesOverride}
+  />
+));
+
+stories.add('with imported css-module class names', () => (
+  <Textarea
+    onChange={action('Change')}
+    size={selectSize()}
+    placeholder="Enter text here"
+    classNames={classNamesImport}
   />
 ));

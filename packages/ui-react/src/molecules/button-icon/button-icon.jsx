@@ -13,6 +13,7 @@ import { CLASS_NAMES } from './button-icon.class-names';
 export const ButtonIcon = (props) => {
   const {
     className,
+    classNames,
     as: Component,
     name,
     kind,
@@ -20,9 +21,9 @@ export const ButtonIcon = (props) => {
     ...restProps
   } = props;
 
-  const rootClassName = cx(CLASS_NAMES.root, className, {
-    [CLASS_NAMES[size]]: size,
-    [CLASS_NAMES[kind]]: kind,
+  const rootClassName = cx(classNames.root, className, {
+    [classNames[size]]: size,
+    [classNames[kind]]: kind,
   });
 
   return (
@@ -40,6 +41,7 @@ export const ButtonIcon = (props) => {
 
 ButtonIcon.defaultProps = {
   className: '',
+  classNames: CLASS_NAMES,
   as: 'button',
   kind: KIND_DEFAULT,
   size: null,
@@ -48,6 +50,9 @@ ButtonIcon.defaultProps = {
 ButtonIcon.propTypes = {
   /* Adopted child class name */
   className: PropTypes.string,
+
+  /** CSS Modules class names mapping */
+  classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
 
   /* Render tag or component */
   as: PropTypes.oneOfType([

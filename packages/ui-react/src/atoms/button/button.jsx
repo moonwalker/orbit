@@ -61,6 +61,7 @@ const wrapChild = props => (child) => {
 export const Button = (props) => {
   const {
     className,
+    classNames,
     children,
     as: Component,
     clear,
@@ -69,11 +70,11 @@ export const Button = (props) => {
     ...restProps
   } = props;
 
-  const rootClassName = cx(CLASS_NAMES.root, className, {
-    [CLASS_NAMES[kind]]: !clear && kind,
-    [CLASS_NAMES[size]]: size,
-    [CLASS_NAMES.clear]: clear,
-    [`${CLASS_NAMES.clear}--${kind}`]: clear && kind,
+  const rootClassName = cx(classNames.root, className, {
+    [classNames[kind]]: !clear && kind,
+    [classNames[size]]: size,
+    [classNames.clear]: clear,
+    [`${classNames.clear}--${kind}`]: clear && kind,
   });
 
   // Add .`__content` if there are multiple children
@@ -81,8 +82,8 @@ export const Button = (props) => {
     children :
     React.Children.map(children, wrapChild({
       size,
-      className: cx(CLASS_NAMES.content, {
-        [`${CLASS_NAMES.content}--${size}`]: size,
+      className: cx(classNames.content, {
+        [classNames[`content--${size}`]]: size,
       }),
     }));
 
@@ -98,6 +99,7 @@ export const Button = (props) => {
 
 Button.defaultProps = {
   className: '',
+  classNames: CLASS_NAMES,
   children: null,
   as: 'button',
   clear: false,
@@ -108,6 +110,9 @@ Button.defaultProps = {
 Button.propTypes = {
   /** Adopted child class name */
   className: PropTypes.string,
+
+  /** CSS Modules class names mapping */
+  classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
 
   /** Inner content */
   children: PropTypes.node,

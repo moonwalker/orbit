@@ -8,15 +8,16 @@ import { CLASS_NAMES } from './textarea.class-names';
 export const Textarea = (props) => {
   const {
     className,
+    classNames,
     size,
     valid,
     ...restProps
   } = props;
 
-  const rootClassName = cx(CLASS_NAMES.root, className, {
-    [CLASS_NAMES[size]]: size,
-    [CLASS_NAMES.valid]: valid === true,
-    [CLASS_NAMES.invalid]: valid === false,
+  const rootClassName = cx(classNames.root, className, {
+    [classNames[size]]: size,
+    [classNames.valid]: valid === true,
+    [classNames.invalid]: valid === false,
   });
 
   return (
@@ -29,6 +30,7 @@ export const Textarea = (props) => {
 
 Textarea.defaultProps = {
   className: '',
+  classNames: CLASS_NAMES,
   size: null,
   valid: null,
 };
@@ -36,6 +38,9 @@ Textarea.defaultProps = {
 Textarea.propTypes = {
   /* Adopted child class name */
   className: PropTypes.string,
+
+  /** CSS Modules class names mapping */
+  classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
 
   /* Size type */
   size: PropTypes.oneOf(SIZES),

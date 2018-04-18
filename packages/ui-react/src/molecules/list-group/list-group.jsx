@@ -18,19 +18,20 @@ const getDefaultRender = items => ({ getListGroupItemProps }) =>
 export const ListGroup = (props) => {
   const {
     className,
+    classNames,
     items,
     render,
     as: Component,
     size,
   } = props;
 
-  const rootClassName = cx(CLASS_NAMES.root, className, {
-    [CLASS_NAMES[size]]: size,
+  const rootClassName = cx(classNames.root, className, {
+    [classNames[size]]: size,
   });
 
   const getListGroupItemProps = (itemProps = {}) => ({
     ...itemProps,
-    className: cx(CLASS_NAMES.item, itemProps.className),
+    className: cx(classNames.item, itemProps.className),
   });
 
   const renderFn = render || getDefaultRender(items);
@@ -46,6 +47,7 @@ export const ListGroup = (props) => {
 
 ListGroup.defaultProps = {
   className: '',
+  classNames: CLASS_NAMES,
   items: [],
   render: null,
   as: 'ul',
@@ -55,6 +57,9 @@ ListGroup.defaultProps = {
 ListGroup.propTypes = {
   /* Adopted child class name */
   className: PropTypes.string,
+
+  /** CSS Modules class names mapping */
+  classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
 
   /* List items array */
   items: PropTypes.array, // eslint-disable-line react/forbid-prop-types

@@ -9,6 +9,8 @@ import {
   SIZE_LARGE,
 } from './spinner.constants';
 import { Spinner } from './spinner';
+import classNamesOverride from './spinner.stories.override-modules.css';
+import classNamesImport from './spinner.stories.import-modules.styl';
 
 const stories = storiesOf('Components/Atoms/Spinner', module);
 
@@ -24,4 +26,18 @@ stories.add('default', () => (
 
 stories.add('with size modifier', () => (
   <Spinner size={selectSize(SIZE_LARGE)} />
+));
+
+stories.add('with custom css-module class names', () => (
+  <Spinner
+    size={selectSize()}
+    classNames={classNamesOverride}
+  />
+));
+
+stories.add('with imported css-module class names', () => (
+  <Spinner
+    size={selectSize()}
+    classNames={classNamesImport}
+  />
 ));

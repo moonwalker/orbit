@@ -10,6 +10,9 @@ import {
   SIZE_LARGE,
 } from './icon.constants';
 
+import classNamesOverride from './icon.stories.override-modules.css';
+import classNamesImport from './icon.stories.import-modules.styl';
+
 const stories = storiesOf('Components/Atoms/Icon', module);
 
 const selectSize = (size = SIZE_MEDIUM) => select('Size', SIZES, size);
@@ -37,5 +40,21 @@ stories.add('with size modifier', () => (
   <Icon
     size={selectSize(SIZE_LARGE)}
     name={selectName()}
+  />
+));
+
+stories.add('with custom css-module class names', () => (
+  <Icon
+    size={selectSize()}
+    name={selectName()}
+    classNames={classNamesOverride}
+  />
+));
+
+stories.add('with imported css-module class names', () => (
+  <Icon
+    size={selectSize()}
+    name={selectName()}
+    classNames={classNamesImport}
   />
 ));

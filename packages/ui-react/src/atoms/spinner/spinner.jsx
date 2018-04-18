@@ -8,11 +8,12 @@ import { CLASS_NAMES } from './spinner.class-names';
 export const Spinner = (props) => {
   const {
     className,
+    classNames,
     size,
   } = props;
 
-  const rootClassName = cx(CLASS_NAMES.root, className, {
-    [CLASS_NAMES[size]]: size,
+  const rootClassName = cx(classNames.root, className, {
+    [classNames[size]]: size,
   });
 
   return (
@@ -22,12 +23,16 @@ export const Spinner = (props) => {
 
 Spinner.defaultProps = {
   className: '',
+  classNames: CLASS_NAMES,
   size: null,
 };
 
 Spinner.propTypes = {
   /* Adopted child class name */
   className: PropTypes.string,
+
+  /** CSS Modules class names mapping */
+  classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
 
   /* Size type */
   size: PropTypes.oneOf(SIZES),

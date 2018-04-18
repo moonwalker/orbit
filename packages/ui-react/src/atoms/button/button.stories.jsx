@@ -15,6 +15,9 @@ import {
   SIZE_LARGE,
 } from './button.constants';
 
+import classNamesOverride from './button.stories.override-modules.css';
+import classNamesImport from './button.stories.import-modules.styl';
+
 const stories = storiesOf('Components/Atoms/Button', module);
 
 const selectKind = (kind = KIND_DEFAULT) => select('Kind', KINDS, kind);
@@ -139,5 +142,31 @@ stories.add('with custom content', () => (
   >
     <em className="custom">Call</em>
     to action
+  </Button>
+));
+
+stories.add('with custom css-module class names', () => (
+  <Button
+    onClick={action('Click')}
+    kind={selectKind()}
+    size={selectSize()}
+    clear={getClear()}
+    classNames={classNamesOverride}
+  >
+    <Icon name="backup" />
+    Call to action
+  </Button>
+));
+
+stories.add('with imported css-module class names', () => (
+  <Button
+    onClick={action('Click')}
+    kind={selectKind()}
+    size={selectSize()}
+    clear={getClear()}
+    classNames={classNamesImport}
+  >
+    <Icon name="backup" />
+    Call to action
   </Button>
 ));

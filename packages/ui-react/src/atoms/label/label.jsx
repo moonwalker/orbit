@@ -8,13 +8,14 @@ import { CLASS_NAMES } from './label.class-names';
 export const Label = (props) => {
   const {
     className,
+    classNames,
     size,
     children,
     ...restProps
   } = props;
 
-  const rootClassName = cx(CLASS_NAMES.root, className, {
-    [CLASS_NAMES[size]]: size,
+  const rootClassName = cx(classNames.root, className, {
+    [classNames[size]]: size,
   });
 
   /* eslint-disable jsx-a11y/label-has-for */
@@ -31,6 +32,7 @@ export const Label = (props) => {
 
 Label.defaultProps = {
   className: '',
+  classNames: CLASS_NAMES,
   size: null,
   children: null,
 };
@@ -38,6 +40,9 @@ Label.defaultProps = {
 Label.propTypes = {
   /* Adopted child class name */
   className: PropTypes.string,
+
+  /** CSS Modules class names mapping */
+  classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
 
   /* Size type */
   size: PropTypes.oneOf(SIZES),

@@ -13,6 +13,8 @@ import {
   SIZE_MEDIUM,
   SIZE_LARGE,
 } from './button-icon.constants';
+import classNamesOverride from './button-icon.stories.override-modules.css';
+import classNamesImport from './button-icon.stories.import-modules.styl';
 
 const stories = storiesOf('Components/Molecules/ButtonIcon', module);
 
@@ -62,5 +64,25 @@ stories.add('with icon name', () => (
     kind={selectKind()}
     size={selectSize(SIZE_LARGE)}
     name={selectName('backup')}
+  />
+));
+
+stories.add('with custom css-module class names', () => (
+  <ButtonIcon
+    onClick={action('Click')}
+    kind={selectKind()}
+    size={selectSize()}
+    name={selectName('backup')}
+    classNames={classNamesOverride}
+  />
+));
+
+stories.add('with imported css-module class names', () => (
+  <ButtonIcon
+    onClick={action('Click')}
+    kind={selectKind()}
+    size={selectSize()}
+    name={selectName('backup')}
+    classNames={classNamesImport}
   />
 ));

@@ -9,6 +9,8 @@ import {
   SIZE_MEDIUM,
   SIZE_LARGE,
 } from './list-group.constants';
+import classNamesOverride from './list-group.stories.override-modules.css';
+import classNamesImport from './list-group.stories.import-modules.styl';
 
 const stories = storiesOf('Components/Molecules/ListGroup', module);
 
@@ -62,6 +64,26 @@ stories.add('with custom render', () => (
             </a>
           ))
       }
+    />
+  </div>
+));
+
+stories.add('with custom css-module class names', () => (
+  <div style={{ padding: '1rem' }}>
+    <ListGroup
+      size={selectSize()}
+      items={items}
+      classNames={classNamesOverride}
+    />
+  </div>
+));
+
+stories.add('with imported css-module class names', () => (
+  <div style={{ padding: '1rem' }}>
+    <ListGroup
+      size={selectSize()}
+      items={items}
+      classNames={classNamesImport}
     />
   </div>
 ));

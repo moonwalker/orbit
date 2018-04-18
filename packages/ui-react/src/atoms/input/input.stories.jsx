@@ -10,6 +10,8 @@ import {
   SIZE_MEDIUM,
   SIZE_LARGE,
 } from './input.constants';
+import classNamesOverride from './input.stories.override-modules.css';
+import classNamesImport from './input.stories.import-modules.styl';
 
 const stories = storiesOf('Components/Atoms/Input', module);
 
@@ -54,5 +56,23 @@ stories.add('with invalid state', () => (
     size={selectSize()}
     placeholder="Enter text here"
     valid={false}
+  />
+));
+
+stories.add('with custom css-module class names', () => (
+  <Input
+    onChange={action('Change')}
+    size={selectSize()}
+    placeholder="Enter text here"
+    classNames={classNamesOverride}
+  />
+));
+
+stories.add('with imported css-module class names', () => (
+  <Input
+    onChange={action('Change')}
+    size={selectSize()}
+    placeholder="Enter text here"
+    classNames={classNamesImport}
   />
 ));
