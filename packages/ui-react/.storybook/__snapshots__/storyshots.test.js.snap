@@ -4512,6 +4512,46 @@ exports[`Storyshots Components/Molecules/ButtonIcon info 1`] = `
                   
                 </td>
               </tr>
+              <tr>
+                <td
+                  className="css-1ygfcef"
+                >
+                  renderIcon
+                </td>
+                <td
+                  className="css-1ygfcef"
+                >
+                  <span>
+                    func
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  -
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    props =&gt; &lt;Icon {...props} /&gt;
+                    "
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -4570,6 +4610,19 @@ exports[`Storyshots Components/Molecules/ButtonIcon with kind modifier 1`] = `
   >
     face
   </i>
+</button>
+`;
+
+exports[`Storyshots Components/Molecules/ButtonIcon with render prop 1`] = `
+<button
+  className="ui-button-icon ui-button-icon--medium"
+  onClick={[Function]}
+>
+  <span>
+    backup
+     / 
+    medium
+  </span>
 </button>
 `;
 
