@@ -322,7 +322,7 @@ h6 + dl {
   margin-right: 0;
 }
 /*
- * Kind variation
+ * Kind modifier
  *-----------------------------------------------------------------------------*/
 .ui-button--primary {
   background-color: #1e6c9f;
@@ -361,7 +361,7 @@ h6 + dl {
   background-color: #f05979;
 }
 /*
- * Clear variation
+ * Clear modifier
  *-----------------------------------------------------------------------------*/
 .ui-button--clear {
   background-color: transparent;
@@ -409,7 +409,7 @@ h6 + dl {
   color: #f05979;
 }
 /*
- * Size variation
+ * Size modifier
  *-----------------------------------------------------------------------------*/
 /* XSmall */
 .ui-button--xsmall {
@@ -494,7 +494,7 @@ h6 + dl {
           font-feature-settings: 'liga';
 }
 /*
- * Size variations
+ * Size modifers
  */
 .ui-icon--xsmall {
   width: 12px;
@@ -543,12 +543,6 @@ h6 + dl {
 .ui-input:-moz-placeholder {
   color: rgba(168,168,168,0.6);
 }
-/*
- * States
- */
-/*
- * Focus state
- */
 .ui-input:focus {
   border-color: #757575;
   color: #424242;
@@ -627,16 +621,13 @@ h6 + dl {
 .ui-select:-moz-placeholder {
   color: rgba(168,168,168,0.6);
 }
-/*
- * States
- */
-/*
- * Focus state
- */
 .ui-select:focus {
   border-color: #757575;
   color: #424242;
 }
+/*
+ * States
+ */
 /*
  * Valid state
  */
@@ -686,16 +677,13 @@ h6 + dl {
 .ui-textarea:-moz-placeholder {
   color: rgba(168,168,168,0.6);
 }
-/*
- * States
- */
-/*
- * Focus state
- */
 .ui-textarea:focus {
   border-color: #757575;
   color: #424242;
 }
+/*
+ * States
+ */
 /*
  * Valid state
  */
