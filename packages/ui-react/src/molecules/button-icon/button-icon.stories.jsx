@@ -67,6 +67,16 @@ stories.add('with icon name', () => (
   />
 ));
 
+stories.add('with render prop', () => (
+  <ButtonIcon
+    onClick={action('Click')}
+    kind={selectKind()}
+    size={selectSize()}
+    name={selectName('backup')}
+    renderIcon={props => <span>{props.name} / {props.size}</span>}
+  />
+));
+
 stories.add('with custom css-module class names', () => (
   <ButtonIcon
     onClick={action('Click')}

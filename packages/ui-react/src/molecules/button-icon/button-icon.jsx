@@ -18,6 +18,7 @@ export const ButtonIcon = (props) => {
     name,
     kind,
     size,
+    renderIcon,
     ...restProps
   } = props;
 
@@ -31,10 +32,7 @@ export const ButtonIcon = (props) => {
       className={rootClassName}
       {...restProps}
     >
-      <Icon
-        name={name}
-        size={size}
-      />
+      {renderIcon({ name, size })}
     </Component>
   );
 };
@@ -45,6 +43,7 @@ ButtonIcon.defaultProps = {
   as: 'button',
   kind: KIND_DEFAULT,
   size: null,
+  renderIcon: props => <Icon {...props} />,
 };
 
 ButtonIcon.propTypes = {
@@ -68,4 +67,7 @@ ButtonIcon.propTypes = {
 
   /* Size type */
   size: PropTypes.oneOf(SIZES),
+
+  /* Render Icon */
+  renderIcon: PropTypes.func,
 };
