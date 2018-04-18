@@ -2,10 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import {
-  UI_NAME,
-  SIZES,
-} from './icon.constants';
+import { SIZES } from './icon.constants';
+import { CLASS_NAMES } from './icon.class-names';
 
 export const Icon = (props) => {
   const {
@@ -15,8 +13,8 @@ export const Icon = (props) => {
     ...restProps
   } = props;
 
-  const rootClassName = cx(UI_NAME, className, {
-    [`${UI_NAME}--${size}`]: size,
+  const rootClassName = cx(CLASS_NAMES.root, className, {
+    [CLASS_NAMES[size]]: size,
   });
 
   return (

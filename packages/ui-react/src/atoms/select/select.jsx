@@ -2,12 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import {
-  UI_NAME,
-  SIZES,
-  VALID,
-  INVALID,
-} from './select.constants';
+import { SIZES } from './select.constants';
+import { CLASS_NAMES } from './select.class-names';
 
 export const Select = (props) => {
   const {
@@ -18,10 +14,10 @@ export const Select = (props) => {
     ...restProps
   } = props;
 
-  const rootClassName = cx(UI_NAME, className, {
-    [`${UI_NAME}--${size}`]: size,
-    [`${UI_NAME}--${VALID}`]: valid === true,
-    [`${UI_NAME}--${INVALID}`]: valid === false,
+  const rootClassName = cx(CLASS_NAMES.root, className, {
+    [CLASS_NAMES[size]]: size,
+    [CLASS_NAMES.valid]: valid === true,
+    [CLASS_NAMES.invalid]: valid === false,
   });
 
   return (

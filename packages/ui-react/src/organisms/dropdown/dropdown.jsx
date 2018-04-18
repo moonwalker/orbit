@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import { UI_NAME } from './dropdown.constants';
+import { CLASS_NAMES } from './dropdown.class-names';
 
 export const Dropdown = (props) => {
   const {
@@ -10,7 +10,7 @@ export const Dropdown = (props) => {
     children,
   } = props;
 
-  const rootClassName = cx(UI_NAME, className);
+  const rootClassName = cx(CLASS_NAMES.root, className);
 
   return (
     <div className={rootClassName}>

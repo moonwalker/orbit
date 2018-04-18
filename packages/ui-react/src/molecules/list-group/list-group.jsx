@@ -2,10 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import {
-  UI_NAME,
-  SIZES,
-} from './list-group.constants';
+import { SIZES } from './list-group.constants';
+import { CLASS_NAMES } from './list-group.class-names';
 
 const getDefaultRender = items => ({ getListGroupItemProps }) =>
   items.map(item => (
@@ -26,13 +24,13 @@ export const ListGroup = (props) => {
     size,
   } = props;
 
-  const rootClassName = cx(UI_NAME, className, {
-    [`${UI_NAME}--${size}`]: size,
+  const rootClassName = cx(CLASS_NAMES.root, className, {
+    [CLASS_NAMES[size]]: size,
   });
 
   const getListGroupItemProps = (itemProps = {}) => ({
     ...itemProps,
-    className: cx(`${UI_NAME}__item`, itemProps.className),
+    className: cx(CLASS_NAMES.item, itemProps.className),
   });
 
   const renderFn = render || getDefaultRender(items);

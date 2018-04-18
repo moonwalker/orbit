@@ -2,10 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import {
-  UI_NAME,
-  SIZES,
-} from './spinner.constants';
+import { SIZES } from './spinner.constants';
+import { CLASS_NAMES } from './spinner.class-names';
 
 export const Spinner = (props) => {
   const {
@@ -13,8 +11,8 @@ export const Spinner = (props) => {
     size,
   } = props;
 
-  const rootClassName = cx(UI_NAME, className, {
-    [`${UI_NAME}--${size}`]: size,
+  const rootClassName = cx(CLASS_NAMES.root, className, {
+    [CLASS_NAMES[size]]: size,
   });
 
   return (

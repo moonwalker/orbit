@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 
 import {
-  UI_NAME,
   KINDS,
   KIND_DEFAULT,
   SIZES,
 } from './button.constants';
+import { CLASS_NAMES } from './button.class-names';
 
 const ButtonContent = ({ className, children }) => (
   <span className={className}>
@@ -69,20 +69,20 @@ export const Button = (props) => {
     ...restProps
   } = props;
 
-  const rootClassName = cx(UI_NAME, className, {
-    [`${UI_NAME}--${kind}`]: !clear && kind,
-    [`${UI_NAME}--clear`]: clear,
-    [`${UI_NAME}--clear--${kind}`]: clear && kind,
-    [`${UI_NAME}--${size}`]: size,
+  const rootClassName = cx(CLASS_NAMES.root, className, {
+    [CLASS_NAMES[kind]]: !clear && kind,
+    [CLASS_NAMES[size]]: size,
+    [CLASS_NAMES.clear]: clear,
+    [`${CLASS_NAMES.clear}--${kind}`]: clear && kind,
   });
 
-  // Add .`{UI_NAME}__content` if there are multiple children
+  // Add .`__content` if there are multiple children
   const processedChildren = typeof children === 'string' ?
     children :
     React.Children.map(children, wrapChild({
       size,
-      className: cx(`${UI_NAME}__content`, {
-        [`${UI_NAME}__content--${size}`]: size,
+      className: cx(CLASS_NAMES.content, {
+        [`${CLASS_NAMES.content}--${size}`]: size,
       }),
     }));
 

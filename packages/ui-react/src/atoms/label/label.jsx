@@ -2,10 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import {
-  UI_NAME,
-  SIZES,
-} from './label.constants';
+import { SIZES } from './label.constants';
+import { CLASS_NAMES } from './label.class-names';
 
 export const Label = (props) => {
   const {
@@ -15,8 +13,8 @@ export const Label = (props) => {
     ...restProps
   } = props;
 
-  const rootClassName = cx(UI_NAME, className, {
-    [`${UI_NAME}--${size}`]: size,
+  const rootClassName = cx(CLASS_NAMES.root, className, {
+    [CLASS_NAMES[size]]: size,
   });
 
   /* eslint-disable jsx-a11y/label-has-for */

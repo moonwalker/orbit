@@ -4,11 +4,11 @@ import cx from 'classnames';
 
 import { Icon } from '../../';
 import {
-  UI_NAME,
   KINDS,
   KIND_DEFAULT,
   SIZES,
 } from './button-icon.constants';
+import { CLASS_NAMES } from './button-icon.class-names';
 
 export const ButtonIcon = (props) => {
   const {
@@ -20,9 +20,9 @@ export const ButtonIcon = (props) => {
     ...restProps
   } = props;
 
-  const rootClassName = cx(UI_NAME, className, {
-    [`${UI_NAME}--${size}`]: size,
-    [`${UI_NAME}--${kind}`]: kind,
+  const rootClassName = cx(CLASS_NAMES.root, className, {
+    [CLASS_NAMES[size]]: size,
+    [CLASS_NAMES[kind]]: kind,
   });
 
   return (
