@@ -1,10 +1,13 @@
+$component-name = 'button-icon';
+
 @require '../_variables';
+@import '../_selectors';
 
 /*!
  * Button icon
  *******************************************************************************/
 
-.ui-button-icon {
++root() {
   flex();
   align-items: center;
   border: 0;
@@ -29,7 +32,7 @@
  * Kind variation
  *-----------------------------------------------------------------------------*/
 
-.ui-button-icon--primary {
++modifier('primary') {
   color: $primary-color;
 
   &:hover {
@@ -37,7 +40,7 @@
   }
 }
 
-.ui-button-icon--secondary {
++modifier('secondary') {
   color: $secondary-color;
 
   &:hover {
@@ -45,7 +48,7 @@
   }
 }
 
-.ui-button-icon--success {
++modifier('success') {
   color: $success-color;
 
   &:hover {
@@ -53,7 +56,7 @@
   }
 }
 
-.ui-button-icon--info {
++modifier('info') {
   color: $info-color;
 
   &:hover {
@@ -61,7 +64,7 @@
   }
 }
 
-.ui-button-icon--warning {
++modifier('warning') {
   color: $warning-color;
 
   &:hover {
@@ -69,7 +72,7 @@
   }
 }
 
-.ui-button-icon--danger {
++modifier('danger') {
   color: $danger-color;
 
   &:hover {
@@ -81,18 +84,18 @@
  * Size variation
  *-----------------------------------------------------------------------------*/
 
-.ui-button-icon--xsmall {
++modifier('xsmall') {
   inner-space($space-xxsmall / 2);
 }
 
-.ui-button-icon--small {
++modifier('small') {
   inner-space($space-xxsmall);
 }
 
-.ui-button-icon--large {
++modifier('large') {
   inner-space($space-xxsmall);
 }
 
-.ui-button-icon--xlarge {
++modifier('xlarge') {
   inner-space($space-medium);
 }

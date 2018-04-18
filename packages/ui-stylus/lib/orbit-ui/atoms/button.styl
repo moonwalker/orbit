@@ -1,10 +1,13 @@
+$component-name = 'button';
+
 @require '../_variables';
+@import '../_selectors';
 
 /*!
  * Button
  *******************************************************************************/
 
-.ui-button {
++root() {
   inline-flex();
   align-items: center;
   border: 0;
@@ -28,14 +31,14 @@
   }
 }
 
-.ui-button__content {
++element('content') {
   margin-top: 0;
   margin-right: $space-xsmall;
   margin-bottom: 0;
   margin-left: @margin-right;
 
   // Collapse margins in between
-  & + .ui-button__content {
+  & + & {
     margin-left: 0;
   }
 
@@ -49,10 +52,10 @@
 }
 
 /*!
- * Kind variation
+ * Kind modifier
  *-----------------------------------------------------------------------------*/
 
-.ui-button--primary {
++modifier('primary') {
   background-color: $primary-color;
 
   &:hover {
@@ -60,7 +63,7 @@
   }
 }
 
-.ui-button--secondary {
++modifier('secondary') {
   background-color: $secondary-color;
 
   &:hover {
@@ -68,7 +71,7 @@
   }
 }
 
-.ui-button--success {
++modifier('success') {
   background-color: $success-color;
 
   &:hover {
@@ -76,7 +79,7 @@
   }
 }
 
-.ui-button--info {
++modifier('info') {
   background-color: $info-color;
 
   &:hover {
@@ -84,7 +87,7 @@
   }
 }
 
-.ui-button--warning {
++modifier('warning') {
   background-color: $warning-color;
 
   &:hover {
@@ -92,7 +95,7 @@
   }
 }
 
-.ui-button--danger {
++modifier('danger') {
   background-color: $danger-color;
 
   &:hover {
@@ -101,9 +104,10 @@
 }
 
 /*!
- * Clear variation
+ * Clear modifier
  *-----------------------------------------------------------------------------*/
-.ui-button--clear {
+
++modifier('clear') {
   background-color: transparent;
   color: $gray-light;
 
@@ -114,7 +118,7 @@
   }
 }
 
-.ui-button--clear--primary {
++modifier('clear--primary') {
   color: $primary-color;
 
   &:hover {
@@ -122,7 +126,7 @@
   }
 }
 
-.ui-button--clear--secondary {
++modifier('clear--secondary') {
   color: $secondary-color;
 
   &:hover {
@@ -130,28 +134,31 @@
   }
 }
 
-.ui-button--clear--success {
++modifier('clear--success') {
   color: $success-color;
 
   &:hover {
     color: lighten(@color, 5);
   }
 }
-.ui-button--clear--info {
+
++modifier('clear--info') {
   color: $info-color;
 
   &:hover {
     color: lighten(@color, 5);
   }
 }
-.ui-button--clear--warning {
+
++modifier('clear--warning') {
   color: $warning-color;
 
   &:hover {
     color: lighten(@color, 5);
   }
 }
-.ui-button--clear--danger {
+
++modifier('clear--danger') {
   color: $danger-color;
 
   &:hover {
@@ -159,51 +166,50 @@
   }
 }
 
-
 /*!
- * Size variation
+ * Size modifier
  *-----------------------------------------------------------------------------*/
 
 /*! XSmall */
-.ui-button--xsmall {
++modifier('xsmall') {
   inner-space($space-xxxsmall $space-xsmall);
   type-scale(xsmall);
 }
 
-.ui-button__content--xsmall {
++element('content--xsmall') {
   margin-right: $space-xxsmall;
   margin-left: @margin-right;
 }
 
 /*! Small */
-.ui-button--small {
++modifier('small') {
   inner-space($space-xxsmall $space-small);
   type-scale(small);
 }
 
-.ui-button__content--small {
++element('content--small') {
   margin-right: $space-xxsmall;
   margin-left: @margin-right;
 }
 
 /*! Large */
-.ui-button--large {
++modifier('large') {
   inner-space($space-small $space-large);
   type-scale(large);
 }
 
-.ui-button__content--large {
++element('content--large') {
   margin-right: $space-small;
   margin-left: @margin-right;
 }
 
 /*! XLarge */
-.ui-button--xlarge {
++modifier('xlarge') {
   inner-space($space-medium $space-xlarge);
   type-scale(xlarge);
 }
 
-.ui-button__content--xlarge {
++element('content--xlarge') {
   margin-right: $space-medium;
   margin-left: @margin-right;
 }

@@ -1,10 +1,13 @@
+$component-name = 'select';
+
 @require '../_variables';
+@import '../_selectors';
 
 /*
  * Select
  */
 
-.ui-select {
++root() {
   appearance: none;
   border: 1px solid $muted-color;
   border-radius: 0;
@@ -19,6 +22,11 @@
   +placeholder() {
     color: rgba(@color, 0.6);
   }
+
+  &:focus {
+    border-color: $gray;
+    color: $body-color;
+  }
 }
 
 /*!
@@ -26,35 +34,28 @@
  */
 
 /*!
- * Focus state
- */
-.ui-select:focus {
-  border-color: $gray;
-  color: $body-color;
-}
-
-/*!
  * Valid state
  */
-.ui-select--valid {
++modifier('valid') {
   border-color: $success-color;
 }
 
 /*!
  * Invalid state
  */
-.ui-select--invalid {
++modifier('invalid') {
   border-color: $danger-color;
 }
 
 /*!
  * Size variations
  */
-.ui-select--small {
++modifier('small') {
   padding: scalc('%s - %s', $space-xxsmall, 1px);
   type-scale(small);
 }
-.ui-select--large {
+
++modifier('large') {
   padding: scalc('%s - %s', $space-small, 1px);
   type-scale(large);
 }

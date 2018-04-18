@@ -1,19 +1,22 @@
+$component-name = 'label';
+
 @require '../_variables';
+@import '../_selectors';
 
 /*!
  * Label
  */
-.ui-label {
++root() {
   block();
 }
 
 /*!
  * Size variations
  */
-.ui-label--small {
++modifier('small') {
   type-scale(small);
 }
 
-.ui-label--large {
++modifier('large') {
   type-scale(large);
 }

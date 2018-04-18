@@ -11,10 +11,13 @@ const orbitUI = require('@moonwalker/orbit-ui-stylus');
 const SRC_DIR = path.join(__dirname, 'node_modules/@moonwalker/orbit-ui-stylus/lib/orbit-ui');
 const DIST_DIR = path.join(__dirname, 'dist');
 
-gulp.task('compile', () => {
-  gulp.src('**/[^_]*.styl', { cwd: SRC_DIR, base: SRC_DIR })
+gulp.task('compile:lib', () => {
+  gulp.src('orbit-ui.styl', { cwd: SRC_DIR, base: SRC_DIR })
     .pipe(stylus({
-      use: orbitUI()
+      use: orbitUI(),
+      define: {
+        '$bem-selectors': true,
+      },
     }))
     .pipe(postcss([
       autoprefixer
@@ -22,6 +25,22 @@ gulp.task('compile', () => {
     .pipe(print())
     .pipe(gulp.dest(DIST_DIR));
 });
+gulp.task('compile:components', () => {
+  gulp.src('*/[^_]*.styl', { cwd: SRC_DIR, base: SRC_DIR })
+    .pipe(stylus({
+      use: orbitUI(),
+      define: {
+        '$bem-selectors': true,
+      },
+    }))
+    .pipe(postcss([
+      autoprefixer
+    ]))
+    .pipe(print())
+    .pipe(gulp.dest(DIST_DIR));
+});
+
+gulp.task('compile', ['compile:lib', 'compile:components']);
 
 gulp.task('minimize', () => {
   gulp.src('**/*.css', { cwd: DIST_DIR, base: DIST_DIR })
