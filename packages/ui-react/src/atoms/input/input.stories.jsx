@@ -8,11 +8,12 @@ import { Input } from './input';
 import {
   SIZES,
   SIZE_MEDIUM,
+  SIZE_LARGE,
 } from './input.constants';
 
 const stories = storiesOf('Components/Atoms/Input', module);
 
-const selectSize = () => select('Size', SIZES, SIZE_MEDIUM);
+const selectSize = (size = SIZE_MEDIUM) => select('Size', SIZES, size);
 
 stories.add('info', withInfo({ inline: true })(() => (
   <Input
@@ -30,7 +31,15 @@ stories.add('default', () => (
   />
 ));
 
-stories.add('valid', () => (
+stories.add('with size modifier', () => (
+  <Input
+    onChange={action('Change')}
+    size={selectSize(SIZE_LARGE)}
+    placeholder="Enter text here"
+  />
+));
+
+stories.add('with valid state', () => (
   <Input
     onChange={action('Change')}
     size={selectSize()}
@@ -39,7 +48,7 @@ stories.add('valid', () => (
   />
 ));
 
-stories.add('invalid', () => (
+stories.add('with invalid state', () => (
   <Input
     onChange={action('Change')}
     size={selectSize()}

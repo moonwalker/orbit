@@ -4,11 +4,15 @@ import { select } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import { Icon } from './icon';
-import { SIZES } from './icon.constants';
+import {
+  SIZES,
+  SIZE_MEDIUM,
+  SIZE_LARGE,
+} from './icon.constants';
 
 const stories = storiesOf('Components/Atoms/Icon', module);
 
-const selectSize = () => select('Size', SIZES, null);
+const selectSize = (size = SIZE_MEDIUM) => select('Size', SIZES, size);
 const selectName = () => select('Name', [
   'face',
   'search',
@@ -25,6 +29,13 @@ stories.add('info', withInfo({ inline: true })(() => (
 stories.add('default', () => (
   <Icon
     size={selectSize()}
+    name={selectName()}
+  />
+));
+
+stories.add('with size modifier', () => (
+  <Icon
+    size={selectSize(SIZE_LARGE)}
     name={selectName()}
   />
 ));

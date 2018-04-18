@@ -10,13 +10,14 @@ import {
   KIND_DEFAULT,
   KIND_DANGER,
   SIZES,
+  SIZE_MEDIUM,
   SIZE_LARGE,
 } from './button-icon.constants';
 
 const stories = storiesOf('Components/Molecules/ButtonIcon', module);
 
 const selectKind = (kind = KIND_DEFAULT) => select('Kind', KINDS, kind);
-const selectSize = (size = null) => select('Size', SIZES, size);
+const selectSize = (size = SIZE_MEDIUM) => select('Size', SIZES, size);
 const selectName = (name = 'face') => select('Icon', ['face', 'backup', 'keyboard_arrow_right'], name);
 
 stories.add('info', withInfo({ inline: true })(() => (
@@ -37,7 +38,7 @@ stories.add('default', () => (
   />
 ));
 
-stories.add('with kind', () => (
+stories.add('with kind modifier', () => (
   <ButtonIcon
     onClick={action('Click')}
     kind={selectKind(KIND_DANGER)}
@@ -46,7 +47,7 @@ stories.add('with kind', () => (
   />
 ));
 
-stories.add('with size', () => (
+stories.add('with size modifier', () => (
   <ButtonIcon
     onClick={action('Click')}
     kind={selectKind()}

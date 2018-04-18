@@ -1,17 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Atoms/Button as a different element 1`] = `
-<a
-  className="ui-button"
-  onClick={[Function]}
->
-  Call to action
-</a>
-`;
-
 exports[`Storyshots Components/Atoms/Button default 1`] = `
 <button
-  className="ui-button"
+  className="ui-button ui-button--medium"
   onClick={[Function]}
 >
   Call to action
@@ -619,9 +610,18 @@ exports[`Storyshots Components/Atoms/Button info 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Atoms/Button with clear 1`] = `
+exports[`Storyshots Components/Atoms/Button render as a different element 1`] = `
+<a
+  className="ui-button ui-button--medium"
+  onClick={[Function]}
+>
+  Call to action
+</a>
+`;
+
+exports[`Storyshots Components/Atoms/Button with clear modifier 1`] = `
 <button
-  className="ui-button ui-button--clear"
+  className="ui-button ui-button--medium ui-button--clear"
   onClick={[Function]}
 >
   Call to action
@@ -630,17 +630,17 @@ exports[`Storyshots Components/Atoms/Button with clear 1`] = `
 
 exports[`Storyshots Components/Atoms/Button with custom content 1`] = `
 <button
-  className="ui-button"
+  className="ui-button ui-button--medium"
   onClick={[Function]}
 >
   <em
-    className="custom ui-button__content"
-    size={null}
+    className="custom ui-button__content ui-button__content--medium"
+    size="medium"
   >
     Call
   </em>
   <span
-    className="ui-button__content"
+    className="ui-button__content ui-button__content--medium"
   >
     to action
   </span>
@@ -649,25 +649,34 @@ exports[`Storyshots Components/Atoms/Button with custom content 1`] = `
 
 exports[`Storyshots Components/Atoms/Button with different icon size 1`] = `
 <button
-  className="ui-button"
+  className="ui-button ui-button--medium"
   onClick={[Function]}
 >
   <i
-    className="ui-icon ui-button__content ui-icon--large"
+    className="ui-icon ui-button__content ui-button__content--medium ui-icon--large"
   >
     backup
   </i>
   <span
-    className="ui-button__content"
+    className="ui-button__content ui-button__content--medium"
   >
     Call to action
   </span>
 </button>
 `;
 
-exports[`Storyshots Components/Atoms/Button with kind 1`] = `
+exports[`Storyshots Components/Atoms/Button with kind modifer 1`] = `
 <button
-  className="ui-button ui-button--danger"
+  className="ui-button ui-button--danger ui-button--medium"
+  onClick={[Function]}
+>
+  Call to action
+</button>
+`;
+
+exports[`Storyshots Components/Atoms/Button with kind size modifier 1`] = `
+<button
+  className="ui-button ui-button--large"
   onClick={[Function]}
 >
   Call to action
@@ -676,16 +685,16 @@ exports[`Storyshots Components/Atoms/Button with kind 1`] = `
 
 exports[`Storyshots Components/Atoms/Button with left icon 1`] = `
 <button
-  className="ui-button"
+  className="ui-button ui-button--medium"
   onClick={[Function]}
 >
   <i
-    className="ui-icon ui-button__content"
+    className="ui-icon ui-button__content ui-button__content--medium ui-icon--medium"
   >
     backup
   </i>
   <span
-    className="ui-button__content"
+    className="ui-button__content ui-button__content--medium"
   >
     Call to action
   </span>
@@ -694,11 +703,11 @@ exports[`Storyshots Components/Atoms/Button with left icon 1`] = `
 
 exports[`Storyshots Components/Atoms/Button with null children 1`] = `
 <button
-  className="ui-button"
+  className="ui-button ui-button--medium"
   onClick={[Function]}
 >
   <i
-    className="ui-icon ui-button__content ui-icon--large"
+    className="ui-icon ui-button__content ui-button__content--medium ui-icon--large"
   >
     backup
   </i>
@@ -707,7 +716,7 @@ exports[`Storyshots Components/Atoms/Button with null children 1`] = `
 
 exports[`Storyshots Components/Atoms/Icon default 1`] = `
 <i
-  className="ui-icon"
+  className="ui-icon ui-icon--medium"
 >
   face
 </i>
@@ -1104,6 +1113,14 @@ exports[`Storyshots Components/Atoms/Icon info 1`] = `
     </div>
   </div>
 </div>
+`;
+
+exports[`Storyshots Components/Atoms/Icon with size modifier 1`] = `
+<i
+  className="ui-icon ui-icon--large"
+>
+  face
+</i>
 `;
 
 exports[`Storyshots Components/Atoms/Input default 1`] = `
@@ -1546,7 +1563,7 @@ exports[`Storyshots Components/Atoms/Input info 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Atoms/Input invalid 1`] = `
+exports[`Storyshots Components/Atoms/Input with invalid state 1`] = `
 <input
   className="ui-input ui-input--medium ui-input--invalid"
   onChange={[Function]}
@@ -1554,7 +1571,15 @@ exports[`Storyshots Components/Atoms/Input invalid 1`] = `
 />
 `;
 
-exports[`Storyshots Components/Atoms/Input valid 1`] = `
+exports[`Storyshots Components/Atoms/Input with size modifier 1`] = `
+<input
+  className="ui-input ui-input--large"
+  onChange={[Function]}
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Input with valid state 1`] = `
 <input
   className="ui-input ui-input--medium ui-input--valid"
   onChange={[Function]}
@@ -1987,7 +2012,7 @@ exports[`Storyshots Components/Atoms/Label info 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Atoms/Label with size variation 1`] = `
+exports[`Storyshots Components/Atoms/Label with size modifier 1`] = `
 <label
   className="ui-label ui-label--large"
 >
@@ -2517,26 +2542,9 @@ exports[`Storyshots Components/Atoms/Select info 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Atoms/Select invalid 1`] = `
+exports[`Storyshots Components/Atoms/Select with invalid state 1`] = `
 <select
   className="ui-select ui-select--medium ui-select--invalid"
-  onChange={[Function]}
->
-  <option>
-    Option A
-  </option>
-  <option>
-    Option B
-  </option>
-  <option>
-    Option C
-  </option>
-</select>
-`;
-
-exports[`Storyshots Components/Atoms/Select valid 1`] = `
-<select
-  className="ui-select ui-select--medium ui-select--valid"
   onChange={[Function]}
 >
   <option>
@@ -2575,7 +2583,7 @@ exports[`Storyshots Components/Atoms/Select with options attributes 1`] = `
 </select>
 `;
 
-exports[`Storyshots Components/Atoms/Select with size variation 1`] = `
+exports[`Storyshots Components/Atoms/Select with size modifier 1`] = `
 <select
   className="ui-select ui-select--large"
   onChange={[Function]}
@@ -2592,9 +2600,26 @@ exports[`Storyshots Components/Atoms/Select with size variation 1`] = `
 </select>
 `;
 
+exports[`Storyshots Components/Atoms/Select with valid state 1`] = `
+<select
+  className="ui-select ui-select--medium ui-select--valid"
+  onChange={[Function]}
+>
+  <option>
+    Option A
+  </option>
+  <option>
+    Option B
+  </option>
+  <option>
+    Option C
+  </option>
+</select>
+`;
+
 exports[`Storyshots Components/Atoms/Spinner default 1`] = `
 <span
-  className="ui-spinner"
+  className="ui-spinner ui-spinner--medium"
 />
 `;
 
@@ -2926,7 +2951,7 @@ exports[`Storyshots Components/Atoms/Spinner info 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Atoms/Spinner with custom size 1`] = `
+exports[`Storyshots Components/Atoms/Spinner with size modifier 1`] = `
 <span
   className="ui-spinner ui-spinner--large"
 />
@@ -3372,7 +3397,7 @@ exports[`Storyshots Components/Atoms/Textarea info 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Atoms/Textarea invalid 1`] = `
+exports[`Storyshots Components/Atoms/Textarea with invalid state 1`] = `
 <textarea
   className="ui-textarea ui-textarea--medium ui-textarea--invalid"
   onChange={[Function]}
@@ -3380,7 +3405,15 @@ exports[`Storyshots Components/Atoms/Textarea invalid 1`] = `
 />
 `;
 
-exports[`Storyshots Components/Atoms/Textarea valid 1`] = `
+exports[`Storyshots Components/Atoms/Textarea with size modifier 1`] = `
+<textarea
+  className="ui-textarea ui-textarea--large"
+  onChange={[Function]}
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Textarea with valid state 1`] = `
 <textarea
   className="ui-textarea ui-textarea--medium ui-textarea--valid"
   onChange={[Function]}
@@ -3390,11 +3423,11 @@ exports[`Storyshots Components/Atoms/Textarea valid 1`] = `
 
 exports[`Storyshots Components/Molecules/ButtonIcon default 1`] = `
 <button
-  className="ui-button-icon"
+  className="ui-button-icon ui-button-icon--medium"
   onClick={[Function]}
 >
   <i
-    className="ui-icon"
+    className="ui-icon ui-icon--medium"
   >
     face
   </i>
@@ -3967,20 +4000,20 @@ exports[`Storyshots Components/Molecules/ButtonIcon with icon name 1`] = `
 </button>
 `;
 
-exports[`Storyshots Components/Molecules/ButtonIcon with kind 1`] = `
+exports[`Storyshots Components/Molecules/ButtonIcon with kind modifier 1`] = `
 <button
-  className="ui-button-icon ui-button-icon--danger"
+  className="ui-button-icon ui-button-icon--medium ui-button-icon--danger"
   onClick={[Function]}
 >
   <i
-    className="ui-icon"
+    className="ui-icon ui-icon--medium"
   >
     face
   </i>
 </button>
 `;
 
-exports[`Storyshots Components/Molecules/ButtonIcon with size 1`] = `
+exports[`Storyshots Components/Molecules/ButtonIcon with size modifier 1`] = `
 <button
   className="ui-button-icon ui-button-icon--large"
   onClick={[Function]}
@@ -4002,7 +4035,7 @@ exports[`Storyshots Components/Molecules/ListGroup default 1`] = `
   }
 >
   <ul
-    className="ui-list-group"
+    className="ui-list-group ui-list-group--medium"
   >
     <li
       className="ui-list-group__item"
@@ -4541,7 +4574,7 @@ exports[`Storyshots Components/Molecules/ListGroup with custom render 1`] = `
   }
 >
   <nav
-    className="ui-list-group"
+    className="ui-list-group ui-list-group--medium"
   >
     <a
       className="ui-list-group__item"
@@ -4571,7 +4604,7 @@ exports[`Storyshots Components/Molecules/ListGroup with custom render 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Molecules/ListGroup with size 1`] = `
+exports[`Storyshots Components/Molecules/ListGroup with size modifier 1`] = `
 <div
   style={
     Object {

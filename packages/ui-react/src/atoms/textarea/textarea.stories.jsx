@@ -8,11 +8,12 @@ import { Textarea } from './textarea';
 import {
   SIZES,
   SIZE_MEDIUM,
+  SIZE_LARGE,
 } from './textarea.constants';
 
 const stories = storiesOf('Components/Atoms/Textarea', module);
 
-const selectSize = () => select('Size', SIZES, SIZE_MEDIUM);
+const selectSize = (size = SIZE_MEDIUM) => select('Size', SIZES, size);
 
 stories.add('info', withInfo({ inline: true })(() => (
   <Textarea
@@ -29,7 +30,15 @@ stories.add('default', () => (
   />
 ));
 
-stories.add('valid', () => (
+stories.add('with size modifier', () => (
+  <Textarea
+    onChange={action('Change')}
+    size={selectSize(SIZE_LARGE)}
+    placeholder="Enter text here"
+  />
+));
+
+stories.add('with valid state', () => (
   <Textarea
     onChange={action('Change')}
     size={selectSize()}
@@ -38,7 +47,7 @@ stories.add('valid', () => (
   />
 ));
 
-stories.add('invalid', () => (
+stories.add('with invalid state', () => (
   <Textarea
     onChange={action('Change')}
     size={selectSize()}

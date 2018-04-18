@@ -6,12 +6,13 @@ import { withInfo } from '@storybook/addon-info';
 import { ListGroup } from './list-group';
 import {
   SIZES,
+  SIZE_MEDIUM,
   SIZE_LARGE,
 } from './list-group.constants';
 
 const stories = storiesOf('Components/Molecules/ListGroup', module);
 
-const selectSize = (size = null) => select('Size', SIZES, size);
+const selectSize = (size = SIZE_MEDIUM) => select('Size', SIZES, size);
 
 const items = [
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -36,7 +37,7 @@ stories.add('default', () => (
   </div>
 ));
 
-stories.add('with size', () => (
+stories.add('with size modifier', () => (
   <div style={{ padding: '1rem' }}>
     <ListGroup
       size={selectSize(SIZE_LARGE)}

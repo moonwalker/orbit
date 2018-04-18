@@ -62,7 +62,7 @@ stories.add('with options attributes', () => (
   />
 ));
 
-stories.add('valid', () => (
+stories.add('with valid state', () => (
   <Select
     onChange={action('Change')}
     size={selectSize()}
@@ -71,7 +71,7 @@ stories.add('valid', () => (
   />
 ));
 
-stories.add('invalid', () => (
+stories.add('with invalid state', () => (
   <Select
     onChange={action('Change')}
     size={selectSize()}
@@ -80,7 +80,7 @@ stories.add('invalid', () => (
   />
 ));
 
-stories.add('with size variation', () => (
+stories.add('with size modifier', () => (
   <Select
     onChange={action('Change')}
     size={selectSize(SIZE_LARGE)}

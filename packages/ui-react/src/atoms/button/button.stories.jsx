@@ -11,13 +11,14 @@ import {
   KIND_DEFAULT,
   KIND_DANGER,
   SIZES,
+  SIZE_MEDIUM,
   SIZE_LARGE,
 } from './button.constants';
 
 const stories = storiesOf('Components/Atoms/Button', module);
 
 const selectKind = (kind = KIND_DEFAULT) => select('Kind', KINDS, kind);
-const selectSize = (size = null) => select('Size', SIZES, size);
+const selectSize = (size = SIZE_MEDIUM) => select('Size', SIZES, size);
 const getClear = (clear = false) => boolean('Clear', clear);
 
 stories.add('info', withInfo({ inline: true })(() => (
@@ -42,7 +43,7 @@ stories.add('default', () => (
   </Button>
 ));
 
-stories.add('with kind', () => (
+stories.add('with kind modifer', () => (
   <Button
     onClick={action('Click')}
     kind={selectKind(KIND_DANGER)}
@@ -53,7 +54,18 @@ stories.add('with kind', () => (
   </Button>
 ));
 
-stories.add('with clear', () => (
+stories.add('with kind size modifier', () => (
+  <Button
+    onClick={action('Click')}
+    kind={selectKind()}
+    size={selectSize(SIZE_LARGE)}
+    clear={getClear()}
+  >
+    Call to action
+  </Button>
+));
+
+stories.add('with clear modifier', () => (
   <Button
     onClick={action('Click')}
     kind={selectKind()}
@@ -64,7 +76,7 @@ stories.add('with clear', () => (
   </Button>
 ));
 
-stories.add('as a different element', () => (
+stories.add('render as a different element', () => (
   <Button
     as="a"
     onClick={action('Click')}

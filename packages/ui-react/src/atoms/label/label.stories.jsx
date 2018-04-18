@@ -25,7 +25,7 @@ stories.add('default', () => (
   <Label>Username</Label>
 ));
 
-stories.add('with size variation', () => (
+stories.add('with size modifier', () => (
   <Label size={selectSize(SIZE_LARGE)}>
     Username
   </Label>
