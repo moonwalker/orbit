@@ -22,9 +22,11 @@ $component-name = 'button-icon';
 
   cursor: pointer;
   outline: none;
+  transition: $state-transition-out if $state-transition-out;
 
   &:hover {
     color: lighten(@color, 5);
+    transition: $state-transition-in if $state-transition-in;
   }
 }
 

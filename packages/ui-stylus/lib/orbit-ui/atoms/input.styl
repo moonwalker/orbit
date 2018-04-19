@@ -12,6 +12,8 @@ $component-name = 'input';
   color: $muted-color;
   width: 100%;
   type-scale(medium);
+
+  transition: $state-transition-out if $state-transition-out;
   outline: none;
 
   // Placheolder
@@ -23,6 +25,7 @@ $component-name = 'input';
   &:focus {
     border-color: $gray;
     color: $body-color;
+    transition: $state-transition-in if $state-transition-in;
   }
 }
 
@@ -31,6 +34,7 @@ $component-name = 'input';
  */
 +modifier('valid') {
   border-color: $success-color;
+  transition: $state-transition-in if $state-transition-in;
 }
 
 /*!
@@ -38,6 +42,7 @@ $component-name = 'input';
  */
 +modifier('invalid') {
   border-color: $danger-color;
+  transition: $state-transition-in if $state-transition-in;
 }
 
 /*!
