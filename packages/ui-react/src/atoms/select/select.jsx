@@ -27,20 +27,19 @@ export const Select = (props) => {
       {...restProps}
     >
       {options.map((option) => {
-        if (typeof option === 'string') {
-          return (
-            <option key={option}>
-              {option}
-            </option>
-          );
-        }
+        const item = (typeof option === 'string' || typeof option === 'number') ?
+          {
+            value: option,
+            text: option,
+          } :
+          { ...option };
 
-        const { text, value, ...restOptionProps } = option;
+        const { text, value, ...restOptionProps } = item;
 
         return (
           <option
-            value={value}
             key={value}
+            value={value}
             {...restOptionProps}
           >
             {text}
@@ -60,18 +59,32 @@ Select.defaultProps = {
 };
 
 Select.propTypes = {
-  /* Adopted child class name */
+  /** Adopted child class name */
   className: PropTypes.string,
 
   /** CSS Modules class names mapping */
-  classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
+  classNames: PropTypes.shape({
+    root: PropTypes.string,
+  }),
 
-  /* Size type */
+  /** Size modifier name */
   size: PropTypes.oneOf(SIZES),
 
-  /* Valid boolean value */
+  /** Valid boolean value */
   valid: PropTypes.bool,
 
-  /* Select options array */
-  options: PropTypes.array, // eslint-disable-line react/forbid-prop-types
+  /** Options array */
+  options: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+    ])),
+    PropTypes.arrayOf(PropTypes.shape({
+      text: PropTypes.string,
+      value: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number,
+      ]),
+    })),
+  ]),
 };

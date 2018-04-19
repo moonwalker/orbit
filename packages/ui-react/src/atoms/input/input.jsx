@@ -36,15 +36,17 @@ Input.defaultProps = {
 };
 
 Input.propTypes = {
-  /* Adopted child class name */
+  /** Adopted child class name */
   className: PropTypes.string,
 
   /** CSS Modules class names mapping */
-  classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
+  classNames: PropTypes.shape({
+    root: PropTypes.string,
+  }),
 
-  /* Size type */
+  /** Size modifier name */
   size: PropTypes.oneOf(SIZES),
 
-  /* Valid boolean value */
+  /** Valid boolean value */
   valid: PropTypes.bool,
 };

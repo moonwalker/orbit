@@ -28,7 +28,7 @@ stories.add('info', withInfo({ inline: true })(() => (
   <Select
     onChange={action('Change')}
     size="small"
-    options={['Option A', 'Option B']}
+    options={options}
   />
 )));
 
@@ -48,7 +48,6 @@ const optionsAttributes = [
   {
     text: 'Option B',
     value: 1,
-    selected: true,
   },
   {
     text: 'Option C',
@@ -61,6 +60,7 @@ stories.add('with options attributes', () => (
     onChange={action('Change')}
     size={selectSize()}
     options={optionsAttributes}
+    defaultValue={1}
   />
 ));
 

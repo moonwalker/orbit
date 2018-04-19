@@ -27,12 +27,14 @@ Dropdown.defaultProps = {
 };
 
 Dropdown.propTypes = {
-  /* Adopted child class name */
+  /** Adopted child class name */
   className: PropTypes.string,
 
   /** CSS Modules class names mapping */
-  classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
+  classNames: PropTypes.shape({
+    root: PropTypes.string,
+  }),
 
-  /* Inner content */
+  /** Inner content */
   children: PropTypes.node,
 };

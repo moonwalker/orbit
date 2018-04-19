@@ -55,24 +55,24 @@ ListGroup.defaultProps = {
 };
 
 ListGroup.propTypes = {
-  /* Adopted child class name */
+  /** Adopted child class name */
   className: PropTypes.string,
 
   /** CSS Modules class names mapping */
   classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
 
-  /* List items array */
+  /** List items array */
   items: PropTypes.array, // eslint-disable-line react/forbid-prop-types
 
-  /* Render prop conntent */
+  /** Render prop conntent */
   render: PropTypes.func,
 
-  /* Render tag or component */
+  /** Render tag or component */
   as: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.func,
   ]),
 
-  /* Size type */
+  /** Size modifier name  */
   size: PropTypes.oneOf(SIZES),
 };
