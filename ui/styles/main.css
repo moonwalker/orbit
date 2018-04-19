@@ -195,9 +195,11 @@ h6 {
 }
 a {
   color: #1e6c9f;
+  transition: all 0.17s ease-out;
 }
 a:hover {
   color: #47a1dc;
+  transition: all 0.2s ease-in;
 }
 ul,
 ol {
@@ -291,7 +293,7 @@ h6 + dl {
   padding-right: 24px;
   padding-bottom: 8px;
   padding-left: 24px;
-  background-color: #757575;
+  background-color: #a8a8a8;
   color: #fff;
   line-height: 24px;
   justify-content: center;
@@ -300,11 +302,13 @@ h6 + dl {
   vertical-align: middle;
   white-space: nowrap;
   cursor: pointer;
+  transition: all 0.17s ease-out;
 }
 .ui-button:hover {
-  background-color: #828282;
+  background-color: #757575;
   color: #fff;
   text-decoration: none;
+  transition: all 0.2s ease-in;
 }
 .ui-button__content {
   margin-top: 0;
@@ -328,37 +332,37 @@ h6 + dl {
   background-color: #1e6c9f;
 }
 .ui-button--primary:hover {
-  background-color: #227bb4;
+  background-color: #1b618f;
 }
 .ui-button--secondary {
   background-color: #a8a8a8;
 }
 .ui-button--secondary:hover {
-  background-color: #b5b5b5;
+  background-color: #979797;
 }
 .ui-button--success {
   background-color: #0ead69;
 }
 .ui-button--success:hover {
-  background-color: #10c577;
+  background-color: #0d9c5f;
 }
 .ui-button--info {
   background-color: #1e6c9f;
 }
 .ui-button--info:hover {
-  background-color: #227bb4;
+  background-color: #1b618f;
 }
 .ui-button--warning {
   background-color: #e8bf3a;
 }
 .ui-button--warning:hover {
-  background-color: #ebc651;
+  background-color: #e5b720;
 }
 .ui-button--danger {
   background-color: #ee4266;
 }
 .ui-button--danger:hover {
-  background-color: #f05979;
+  background-color: #eb264f;
 }
 /*
  * Clear modifier
@@ -369,44 +373,44 @@ h6 + dl {
 }
 .ui-button--clear:hover {
   background-color: transparent;
-  color: #a8a8a8;
+  color: #757575;
   text-decoration: none;
 }
 .ui-button--clear--primary {
   color: #1e6c9f;
 }
 .ui-button--clear--primary:hover {
-  color: #227bb4;
+  color: #1b618f;
 }
 .ui-button--clear--secondary {
   color: #a8a8a8;
 }
 .ui-button--clear--secondary:hover {
-  color: #b5b5b5;
+  color: #979797;
 }
 .ui-button--clear--success {
   color: #0ead69;
 }
 .ui-button--clear--success:hover {
-  color: #10c577;
+  color: #0d9c5f;
 }
 .ui-button--clear--info {
   color: #1e6c9f;
 }
 .ui-button--clear--info:hover {
-  color: #227bb4;
+  color: #1b618f;
 }
 .ui-button--clear--warning {
   color: #e8bf3a;
 }
 .ui-button--clear--warning:hover {
-  color: #ebc651;
+  color: #e5b720;
 }
 .ui-button--clear--danger {
   color: #ee4266;
 }
 .ui-button--clear--danger:hover {
-  color: #f05979;
+  color: #eb264f;
 }
 /*
  * Size modifier
@@ -521,6 +525,7 @@ h6 + dl {
  */
 .ui-input {
   border: 1px solid #a8a8a8;
+  border-radius: 0;
   padding-top: 11px;
   padding-right: 11px;
   padding-bottom: 11px;
@@ -529,35 +534,42 @@ h6 + dl {
   width: 100%;
   font-size: 14px;
   line-height: 16px;
+  transition: all 0.17s ease-out;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   outline: none;
 }
 .ui-input::-webkit-input-placeholder {
-  color: rgba(168,168,168,0.6);
+  color: #a8a8a8;
 }
 .ui-input::-moz-placeholder {
-  color: rgba(168,168,168,0.6);
+  color: #a8a8a8;
 }
 .ui-input:-ms-input-placeholder {
-  color: rgba(168,168,168,0.6);
+  color: #a8a8a8;
 }
 .ui-input:-moz-placeholder {
-  color: rgba(168,168,168,0.6);
+  color: #a8a8a8;
 }
 .ui-input:focus {
   border-color: #757575;
   color: #424242;
+  transition: all 0.2s ease-in;
 }
 /*
  * Valid state
  */
 .ui-input--valid {
   border-color: #0ead69;
+  transition: all 0.2s ease-in;
 }
 /*
  * Invalid state
  */
 .ui-input--invalid {
   border-color: #ee4266;
+  transition: all 0.2s ease-in;
 }
 /*
  * Size variations
@@ -607,6 +619,7 @@ h6 + dl {
   width: 100%;
   font-size: 14px;
   line-height: 16px;
+  transition: all 0.17s ease-out;
   outline: none;
 }
 .ui-select::-webkit-input-placeholder {
@@ -624,6 +637,7 @@ h6 + dl {
 .ui-select:focus {
   border-color: #757575;
   color: #424242;
+  transition: all 0.2s ease-in;
 }
 /*
  * States
@@ -633,12 +647,14 @@ h6 + dl {
  */
 .ui-select--valid {
   border-color: #0ead69;
+  transition: all 0.2s ease-in;
 }
 /*
  * Invalid state
  */
 .ui-select--invalid {
   border-color: #ee4266;
+  transition: all 0.2s ease-in;
 }
 /*
  * Size variations
@@ -658,11 +674,16 @@ h6 + dl {
  */
 .ui-textarea {
   border: 1px solid #a8a8a8;
+  border-radius: 0;
   padding: calc(12px - 1px);
   color: #a8a8a8;
   width: 100%;
   font-size: 14px;
   line-height: 16px;
+  transition: all 0.17s ease-out;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   outline: none;
 }
 .ui-textarea::-webkit-input-placeholder {
@@ -680,6 +701,7 @@ h6 + dl {
 .ui-textarea:focus {
   border-color: #757575;
   color: #424242;
+  transition: all 0.2s ease-in;
 }
 /*
  * States
@@ -689,12 +711,14 @@ h6 + dl {
  */
 .ui-textarea--valid {
   border-color: #0ead69;
+  transition: all 0.2s ease-in;
 }
 /*
  * Invalid state
  */
 .ui-textarea--invalid {
   border-color: #ee4266;
+  transition: all 0.2s ease-in;
 }
 /*
  * Size variations
@@ -789,16 +813,18 @@ h6 + dl {
   padding-bottom: 8px;
   padding-left: 8px;
   background-color: transparent;
-  color: #757575;
+  color: #a8a8a8;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
   white-space: nowrap;
   cursor: pointer;
   outline: none;
+  transition: all 0.17s ease-out;
 }
 .ui-button-icon:hover {
-  color: #828282;
+  color: #757575;
+  transition: all 0.2s ease-in;
 }
 /*
  * Kind variation
@@ -807,37 +833,37 @@ h6 + dl {
   color: #1e6c9f;
 }
 .ui-button-icon--primary:hover {
-  color: #227bb4;
+  color: #1b618f;
 }
 .ui-button-icon--secondary {
   color: #a8a8a8;
 }
 .ui-button-icon--secondary:hover {
-  color: #b5b5b5;
+  color: #979797;
 }
 .ui-button-icon--success {
   color: #0ead69;
 }
 .ui-button-icon--success:hover {
-  color: #10c577;
+  color: #0d9c5f;
 }
 .ui-button-icon--info {
   color: #1e6c9f;
 }
 .ui-button-icon--info:hover {
-  color: #227bb4;
+  color: #1b618f;
 }
 .ui-button-icon--warning {
   color: #e8bf3a;
 }
 .ui-button-icon--warning:hover {
-  color: #ebc651;
+  color: #e5b720;
 }
 .ui-button-icon--danger {
   color: #ee4266;
 }
 .ui-button-icon--danger:hover {
-  color: #f05979;
+  color: #eb264f;
 }
 /*
  * Size variation
