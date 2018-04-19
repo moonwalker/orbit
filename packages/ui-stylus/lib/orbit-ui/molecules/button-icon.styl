@@ -14,7 +14,7 @@ $component-name = 'button-icon';
   inner-space($space-xxsmall);
 
   background-color: transparent;
-  color: $gray;
+  color: $gray-light;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -25,7 +25,7 @@ $component-name = 'button-icon';
   transition: $state-transition-out if $state-transition-out;
 
   &:hover {
-    color: lighten(@color, 5);
+    color: $gray;
     transition: $state-transition-in if $state-transition-in;
   }
 }
@@ -38,7 +38,7 @@ $component-name = 'button-icon';
   color: $primary-color;
 
   &:hover {
-    color: lighten(@color, 5);
+    color: $primary-dark-color;
   }
 }
 
@@ -46,7 +46,7 @@ $component-name = 'button-icon';
   color: $secondary-color;
 
   &:hover {
-    color: lighten(@color, 5);
+    color: $secondary-dark-color;
   }
 }
 
@@ -54,7 +54,7 @@ $component-name = 'button-icon';
   color: $success-color;
 
   &:hover {
-    color: lighten(@color, 5);
+    color: $success-dark-color;
   }
 }
 
@@ -62,7 +62,7 @@ $component-name = 'button-icon';
   color: $info-color;
 
   &:hover {
-    color: lighten(@color, 5);
+    color: $info-dark-color;
   }
 }
 
@@ -70,7 +70,7 @@ $component-name = 'button-icon';
   color: $warning-color;
 
   &:hover {
-    color: lighten(@color, 5);
+    color: $warning-dark-color;
   }
 }
 
@@ -78,7 +78,7 @@ $component-name = 'button-icon';
   color: $danger-color;
 
   &:hover {
-    color: lighten(@color, 5);
+    color: $danger-dark-color;
   }
 }
 
