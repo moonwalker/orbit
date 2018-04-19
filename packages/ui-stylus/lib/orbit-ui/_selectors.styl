@@ -5,6 +5,12 @@ css-modules-root() {
   }
 }
 
+css-modules-state($state-name) {
+  .{$state-name} {
+    {block}
+  }
+}
+
 css-modules-modifier($modifier-name) {
   .{$modifier-name} {
     {block}
@@ -26,6 +32,12 @@ bem-root() {
   }
 }
 
+bem-state($state-name) {
+  {$component-selector}--{$state-name} {
+    {block}
+  }
+}
+
 bem-modifier($modifier-name) {
   {$component-selector}--{$modifier-name} {
     {block}
@@ -40,10 +52,12 @@ bem-element($element-name) {
 
 if ($bem-selectors) {
   root = bem-root;
+  state = bem-state;
   modifier = bem-modifier;
   element = bem-element;
 } else {
   root = css-modules-root;
+  state = css-modules-state;
   modifier = css-modules-modifier;
   element = css-modules-element;
 }

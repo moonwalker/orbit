@@ -32,7 +32,7 @@ $component-name = 'input';
 /*!
  * Valid state
  */
-+modifier('valid') {
++state('valid') {
   border-color: $success-color;
   transition: $state-transition-in if $state-transition-in;
 }
@@ -40,7 +40,7 @@ $component-name = 'input';
 /*!
  * Invalid state
  */
-+modifier('invalid') {
++state('invalid') {
   border-color: $danger-color;
   transition: $state-transition-in if $state-transition-in;
 }
