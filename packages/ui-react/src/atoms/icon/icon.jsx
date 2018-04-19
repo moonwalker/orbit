@@ -2,7 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import { SIZES } from './icon.constants';
+import {
+  SIZES,
+  SIZE_MEDIUM,
+} from './icon.constants';
 import { CLASS_NAMES } from './icon.class-names';
 
 export const Icon = (props) => {
@@ -31,7 +34,7 @@ export const Icon = (props) => {
 Icon.defaultProps = {
   className: '',
   classNames: CLASS_NAMES,
-  size: null,
+  size: SIZE_MEDIUM,
 };
 
 Icon.propTypes = {

@@ -1,6 +1,6 @@
 export const UI_NAME = 'ui-button-icon';
 
-export const KIND_DEFAULT = '';
+export const KIND_DEFAULT = 'default';
 export const KIND_PRIMARY = 'primary';
 export const KIND_SECONDARY = 'secondary';
 export const KIND_SUCCESS = 'success';

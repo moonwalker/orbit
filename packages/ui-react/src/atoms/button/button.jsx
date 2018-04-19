@@ -6,6 +6,7 @@ import {
   KINDS,
   KIND_DEFAULT,
   SIZES,
+  SIZE_MEDIUM,
 } from './button.constants';
 import { CLASS_NAMES } from './button.class-names';
 
@@ -104,7 +105,7 @@ Button.defaultProps = {
   as: 'button',
   clear: false,
   kind: KIND_DEFAULT,
-  size: null,
+  size: SIZE_MEDIUM,
 };
 
 Button.propTypes = {

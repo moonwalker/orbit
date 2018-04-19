@@ -2,7 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import { SIZES } from './spinner.constants';
+import {
+  SIZES,
+  SIZE_MEDIUM,
+} from './spinner.constants';
 import { CLASS_NAMES } from './spinner.class-names';
 
 export const Spinner = (props) => {
@@ -24,7 +27,7 @@ export const Spinner = (props) => {
 Spinner.defaultProps = {
   className: '',
   classNames: CLASS_NAMES,
-  size: null,
+  size: SIZE_MEDIUM,
 };
 
 Spinner.propTypes = {

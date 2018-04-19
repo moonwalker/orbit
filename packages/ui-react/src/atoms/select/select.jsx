@@ -2,7 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import { SIZES } from './select.constants';
+import {
+  SIZES,
+  SIZE_MEDIUM,
+} from './select.constants';
 import { CLASS_NAMES } from './select.class-names';
 
 export const Select = (props) => {
@@ -53,7 +56,7 @@ export const Select = (props) => {
 Select.defaultProps = {
   className: '',
   classNames: CLASS_NAMES,
-  size: null,
+  size: SIZE_MEDIUM,
   valid: null,
   options: [],
 };

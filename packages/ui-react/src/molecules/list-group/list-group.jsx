@@ -2,7 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import { SIZES } from './list-group.constants';
+import {
+  SIZES,
+  SIZE_MEDIUM,
+} from './list-group.constants';
 import { CLASS_NAMES } from './list-group.class-names';
 
 const getDefaultRender = items => ({ getListGroupItemProps }) =>
@@ -51,7 +54,7 @@ ListGroup.defaultProps = {
   items: [],
   render: null,
   as: 'ul',
-  size: null,
+  size: SIZE_MEDIUM,
 };
 
 ListGroup.propTypes = {

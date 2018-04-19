@@ -2,7 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import { SIZES } from './textarea.constants';
+import {
+  SIZES,
+  SIZE_MEDIUM,
+} from './textarea.constants';
 import { CLASS_NAMES } from './textarea.class-names';
 
 export const Textarea = (props) => {
@@ -31,7 +34,7 @@ export const Textarea = (props) => {
 Textarea.defaultProps = {
   className: '',
   classNames: CLASS_NAMES,
-  size: null,
+  size: SIZE_MEDIUM,
   valid: null,
 };
 
