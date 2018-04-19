@@ -35,15 +35,17 @@ Icon.defaultProps = {
 };
 
 Icon.propTypes = {
-  /* Adopted child class name */
+  /** Adopted child class name */
   className: PropTypes.string,
 
   /** CSS Modules class names mapping */
-  classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
+  classNames: PropTypes.shape({
+    root: PropTypes.string,
+  }),
 
-  /* Icon name */
+  /** Icon name */
   name: PropTypes.string.isRequired,
 
-  /* Size type */
+  /** Size modifier name */
   size: PropTypes.oneOf(SIZES),
 };

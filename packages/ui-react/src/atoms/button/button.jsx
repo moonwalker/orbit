@@ -112,7 +112,9 @@ Button.propTypes = {
   className: PropTypes.string,
 
   /** CSS Modules class names mapping */
-  classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
+  classNames: PropTypes.shape({
+    root: PropTypes.string,
+  }),
 
   /** Inner content */
   children: PropTypes.node,
@@ -123,12 +125,12 @@ Button.propTypes = {
     PropTypes.func,
   ]),
 
-  /** Clear type */
+  /** Clear modifier flag */
   clear: PropTypes.bool,
 
-  /** Kind type */
+  /** Kind modifier name */
   kind: PropTypes.oneOf(KINDS),
 
-  /** Size type */
+  /** Size modifier name */
   size: PropTypes.oneOf(SIZES),
 };

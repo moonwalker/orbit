@@ -47,27 +47,29 @@ ButtonIcon.defaultProps = {
 };
 
 ButtonIcon.propTypes = {
-  /* Adopted child class name */
+  /** Adopted child class name */
   className: PropTypes.string,
 
   /** CSS Modules class names mapping */
-  classNames: PropTypes.object, // eslint-disable-line react/forbid-prop-types
+  classNames: PropTypes.shape({
+    root: PropTypes.string,
+  }),
 
-  /* Render tag or component */
+  /** Render tag or component */
   as: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.func,
   ]),
 
-  /* Icon name */
+  /** Icon name */
   name: PropTypes.string.isRequired,
 
-  /* Kind type */
+  /** Kind modifier name */
   kind: PropTypes.oneOf(KINDS),
 
-  /* Size type */
+  /** Size modifier name */
   size: PropTypes.oneOf(SIZES),
 
-  /* Render Icon */
+  /** Render Icon prop */
   renderIcon: PropTypes.func,
 };

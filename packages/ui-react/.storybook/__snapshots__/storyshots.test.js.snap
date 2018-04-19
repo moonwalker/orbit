@@ -403,7 +403,52 @@ exports[`Storyshots Components/Atoms/Button info 1`] = `
                   className="css-1ygfcef"
                 >
                   <span>
-                    object
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                    >
+                      {
+                    </button>
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                    >
+                      ...
+                    </button>
+                    <div
+                      style={
+                        Object {
+                          "marginLeft": 15,
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "whiteSpace": "nowrap",
+                          }
+                        }
+                      >
+                        root
+                        ?
+                        :
+                         
+                      </span>
+                      <span>
+                        string
+                      </span>
+                      ,
+                    </div>
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                    >
+                      }
+                    </button>
                   </span>
                 </td>
                 <td
@@ -558,7 +603,7 @@ exports[`Storyshots Components/Atoms/Button info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  Clear type
+                  Clear modifier flag
                 </td>
               </tr>
               <tr>
@@ -598,7 +643,7 @@ exports[`Storyshots Components/Atoms/Button info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  Kind type
+                  Kind modifier name
                 </td>
               </tr>
               <tr>
@@ -638,7 +683,7 @@ exports[`Storyshots Components/Atoms/Button info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  Size type
+                  Size modifier name
                 </td>
               </tr>
             </tbody>
@@ -1110,7 +1155,7 @@ exports[`Storyshots Components/Atoms/Icon info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Adopted child class name
                 </td>
               </tr>
               <tr>
@@ -1123,7 +1168,52 @@ exports[`Storyshots Components/Atoms/Icon info 1`] = `
                   className="css-1ygfcef"
                 >
                   <span>
-                    object
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                    >
+                      {
+                    </button>
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                    >
+                      ...
+                    </button>
+                    <div
+                      style={
+                        Object {
+                          "marginLeft": 15,
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "whiteSpace": "nowrap",
+                          }
+                        }
+                      >
+                        root
+                        ?
+                        :
+                         
+                      </span>
+                      <span>
+                        string
+                      </span>
+                      ,
+                    </div>
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                    >
+                      }
+                    </button>
                   </span>
                 </td>
                 <td
@@ -1179,7 +1269,7 @@ exports[`Storyshots Components/Atoms/Icon info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Icon name
                 </td>
               </tr>
               <tr>
@@ -1219,7 +1309,7 @@ exports[`Storyshots Components/Atoms/Icon info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Size modifier name
                 </td>
               </tr>
             </tbody>
@@ -1603,7 +1693,7 @@ exports[`Storyshots Components/Atoms/Input info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Adopted child class name
                 </td>
               </tr>
               <tr>
@@ -1616,7 +1706,52 @@ exports[`Storyshots Components/Atoms/Input info 1`] = `
                   className="css-1ygfcef"
                 >
                   <span>
-                    object
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                    >
+                      {
+                    </button>
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                    >
+                      ...
+                    </button>
+                    <div
+                      style={
+                        Object {
+                          "marginLeft": 15,
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "whiteSpace": "nowrap",
+                          }
+                        }
+                      >
+                        root
+                        ?
+                        :
+                         
+                      </span>
+                      <span>
+                        string
+                      </span>
+                      ,
+                    </div>
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                    >
+                      }
+                    </button>
                   </span>
                 </td>
                 <td
@@ -1683,7 +1818,7 @@ exports[`Storyshots Components/Atoms/Input info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Size modifier name
                 </td>
               </tr>
               <tr>
@@ -1723,7 +1858,7 @@ exports[`Storyshots Components/Atoms/Input info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Valid boolean value
                 </td>
               </tr>
             </tbody>
@@ -2108,7 +2243,7 @@ exports[`Storyshots Components/Atoms/Label info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Adopted child class name
                 </td>
               </tr>
               <tr>
@@ -2121,7 +2256,52 @@ exports[`Storyshots Components/Atoms/Label info 1`] = `
                   className="css-1ygfcef"
                 >
                   <span>
-                    object
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                    >
+                      {
+                    </button>
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                    >
+                      ...
+                    </button>
+                    <div
+                      style={
+                        Object {
+                          "marginLeft": 15,
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "whiteSpace": "nowrap",
+                          }
+                        }
+                      >
+                        root
+                        ?
+                        :
+                         
+                      </span>
+                      <span>
+                        string
+                      </span>
+                      ,
+                    </div>
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                    >
+                      }
+                    </button>
                   </span>
                 </td>
                 <td
@@ -2188,7 +2368,7 @@ exports[`Storyshots Components/Atoms/Label info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Size modifier name
                 </td>
               </tr>
               <tr>
@@ -2228,7 +2408,7 @@ exports[`Storyshots Components/Atoms/Label info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Inner content
                 </td>
               </tr>
             </tbody>
@@ -2269,13 +2449,19 @@ exports[`Storyshots Components/Atoms/Select default 1`] = `
   className="ui-select ui-select--medium"
   onChange={[Function]}
 >
-  <option>
+  <option
+    value="Option A"
+  >
     Option A
   </option>
-  <option>
+  <option
+    value="Option B"
+  >
     Option B
   </option>
-  <option>
+  <option
+    value="Option C"
+  >
     Option C
   </option>
 </select>
@@ -2347,11 +2533,20 @@ exports[`Storyshots Components/Atoms/Select info 1`] = `
       className="ui-select ui-select--small"
       onChange={[Function]}
     >
-      <option>
+      <option
+        value="Option A"
+      >
         Option A
       </option>
-      <option>
+      <option
+        value="Option B"
+      >
         Option B
+      </option>
+      <option
+        value="Option C"
+      >
+        Option C
       </option>
     </select>
   </div>
@@ -2516,6 +2711,19 @@ exports[`Storyshots Components/Atoms/Select info 1`] = `
                             Option B
                             "
                           </span>
+                          , 
+                          <span
+                            style={
+                              Object {
+                                "color": "#22a",
+                                "wordBreak": "break-word",
+                              }
+                            }
+                          >
+                            "
+                            Option C
+                            "
+                          </span>
                           ]
                         </span>
                         }
@@ -2654,7 +2862,7 @@ exports[`Storyshots Components/Atoms/Select info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Adopted child class name
                 </td>
               </tr>
               <tr>
@@ -2667,7 +2875,52 @@ exports[`Storyshots Components/Atoms/Select info 1`] = `
                   className="css-1ygfcef"
                 >
                   <span>
-                    object
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                    >
+                      {
+                    </button>
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                    >
+                      ...
+                    </button>
+                    <div
+                      style={
+                        Object {
+                          "marginLeft": 15,
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "whiteSpace": "nowrap",
+                          }
+                        }
+                      >
+                        root
+                        ?
+                        :
+                         
+                      </span>
+                      <span>
+                        string
+                      </span>
+                      ,
+                    </div>
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                    >
+                      }
+                    </button>
                   </span>
                 </td>
                 <td
@@ -2734,7 +2987,7 @@ exports[`Storyshots Components/Atoms/Select info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Size modifier name
                 </td>
               </tr>
               <tr>
@@ -2774,7 +3027,7 @@ exports[`Storyshots Components/Atoms/Select info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Valid boolean value
                 </td>
               </tr>
               <tr>
@@ -2787,7 +3040,120 @@ exports[`Storyshots Components/Atoms/Select info 1`] = `
                   className="css-1ygfcef"
                 >
                   <span>
-                    array
+                    <span>
+                      <span>
+                        [
+                      </span>
+                      <span>
+                        <span>
+                          <span>
+                            string
+                          </span>
+                          <span>
+                             | 
+                          </span>
+                          <span>
+                            number
+                          </span>
+                        </span>
+                      </span>
+                      <span>
+                        ]
+                      </span>
+                    </span>
+                    <span>
+                       | 
+                    </span>
+                    <span>
+                      <span>
+                        [
+                      </span>
+                      <span>
+                        <span>
+                          <button
+                            className="css-5gtpmt"
+                            onClick={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                          >
+                            {
+                          </button>
+                          <button
+                            className="css-5gtpmt"
+                            onClick={[Function]}
+                          >
+                            ...
+                          </button>
+                          <div
+                            style={
+                              Object {
+                                "marginLeft": 15,
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "whiteSpace": "nowrap",
+                                }
+                              }
+                            >
+                              text
+                              ?
+                              :
+                               
+                            </span>
+                            <span>
+                              string
+                            </span>
+                            ,
+                          </div>
+                          <div
+                            style={
+                              Object {
+                                "marginLeft": 15,
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "whiteSpace": "nowrap",
+                                }
+                              }
+                            >
+                              value
+                              ?
+                              :
+                               
+                            </span>
+                            <span>
+                              <span>
+                                string
+                              </span>
+                              <span>
+                                 | 
+                              </span>
+                              <span>
+                                number
+                              </span>
+                            </span>
+                            ,
+                          </div>
+                          <button
+                            className="css-5gtpmt"
+                            onClick={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                          >
+                            }
+                          </button>
+                        </span>
+                      </span>
+                      <span>
+                        ]
+                      </span>
+                    </span>
                   </span>
                 </td>
                 <td
@@ -2814,7 +3180,7 @@ exports[`Storyshots Components/Atoms/Select info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Options array
                 </td>
               </tr>
             </tbody>
@@ -2831,13 +3197,19 @@ exports[`Storyshots Components/Atoms/Select with custom css-module class names 1
   className="root medium"
   onChange={[Function]}
 >
-  <option>
+  <option
+    value="Option A"
+  >
     Option A
   </option>
-  <option>
+  <option
+    value="Option B"
+  >
     Option B
   </option>
-  <option>
+  <option
+    value="Option C"
+  >
     Option C
   </option>
 </select>
@@ -2848,13 +3220,19 @@ exports[`Storyshots Components/Atoms/Select with imported css-module class names
   className="root medium"
   onChange={[Function]}
 >
-  <option>
+  <option
+    value="Option A"
+  >
     Option A
   </option>
-  <option>
+  <option
+    value="Option B"
+  >
     Option B
   </option>
-  <option>
+  <option
+    value="Option C"
+  >
     Option C
   </option>
 </select>
@@ -2865,13 +3243,19 @@ exports[`Storyshots Components/Atoms/Select with invalid state 1`] = `
   className="ui-select ui-select--medium ui-select--invalid"
   onChange={[Function]}
 >
-  <option>
+  <option
+    value="Option A"
+  >
     Option A
   </option>
-  <option>
+  <option
+    value="Option B"
+  >
     Option B
   </option>
-  <option>
+  <option
+    value="Option C"
+  >
     Option C
   </option>
 </select>
@@ -2880,6 +3264,7 @@ exports[`Storyshots Components/Atoms/Select with invalid state 1`] = `
 exports[`Storyshots Components/Atoms/Select with options attributes 1`] = `
 <select
   className="ui-select ui-select--medium"
+  defaultValue={1}
   onChange={[Function]}
 >
   <option
@@ -2888,7 +3273,6 @@ exports[`Storyshots Components/Atoms/Select with options attributes 1`] = `
     Option A
   </option>
   <option
-    selected={true}
     value={1}
   >
     Option B
@@ -2906,13 +3290,19 @@ exports[`Storyshots Components/Atoms/Select with size modifier 1`] = `
   className="ui-select ui-select--large"
   onChange={[Function]}
 >
-  <option>
+  <option
+    value="Option A"
+  >
     Option A
   </option>
-  <option>
+  <option
+    value="Option B"
+  >
     Option B
   </option>
-  <option>
+  <option
+    value="Option C"
+  >
     Option C
   </option>
 </select>
@@ -2923,13 +3313,19 @@ exports[`Storyshots Components/Atoms/Select with valid state 1`] = `
   className="ui-select ui-select--medium ui-select--valid"
   onChange={[Function]}
 >
-  <option>
+  <option
+    value="Option A"
+  >
     Option A
   </option>
-  <option>
+  <option
+    value="Option B"
+  >
     Option B
   </option>
-  <option>
+  <option
+    value="Option C"
+  >
     Option C
   </option>
 </select>
@@ -3743,7 +4139,7 @@ exports[`Storyshots Components/Atoms/Textarea info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Adopted child class name
                 </td>
               </tr>
               <tr>
@@ -3756,7 +4152,52 @@ exports[`Storyshots Components/Atoms/Textarea info 1`] = `
                   className="css-1ygfcef"
                 >
                   <span>
-                    object
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                    >
+                      {
+                    </button>
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                    >
+                      ...
+                    </button>
+                    <div
+                      style={
+                        Object {
+                          "marginLeft": 15,
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "whiteSpace": "nowrap",
+                          }
+                        }
+                      >
+                        root
+                        ?
+                        :
+                         
+                      </span>
+                      <span>
+                        string
+                      </span>
+                      ,
+                    </div>
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                    >
+                      }
+                    </button>
                   </span>
                 </td>
                 <td
@@ -3823,7 +4264,7 @@ exports[`Storyshots Components/Atoms/Textarea info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Size modifier name
                 </td>
               </tr>
               <tr>
@@ -3863,7 +4304,7 @@ exports[`Storyshots Components/Atoms/Textarea info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Valid boolean value
                 </td>
               </tr>
             </tbody>
@@ -4312,7 +4753,7 @@ exports[`Storyshots Components/Molecules/ButtonIcon info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Adopted child class name
                 </td>
               </tr>
               <tr>
@@ -4325,7 +4766,52 @@ exports[`Storyshots Components/Molecules/ButtonIcon info 1`] = `
                   className="css-1ygfcef"
                 >
                   <span>
-                    object
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                    >
+                      {
+                    </button>
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                    >
+                      ...
+                    </button>
+                    <div
+                      style={
+                        Object {
+                          "marginLeft": 15,
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "whiteSpace": "nowrap",
+                          }
+                        }
+                      >
+                        root
+                        ?
+                        :
+                         
+                      </span>
+                      <span>
+                        string
+                      </span>
+                      ,
+                    </div>
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                    >
+                      }
+                    </button>
                   </span>
                 </td>
                 <td
@@ -4400,7 +4886,7 @@ exports[`Storyshots Components/Molecules/ButtonIcon info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Render tag or component
                 </td>
               </tr>
               <tr>
@@ -4429,7 +4915,7 @@ exports[`Storyshots Components/Molecules/ButtonIcon info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Icon name
                 </td>
               </tr>
               <tr>
@@ -4469,7 +4955,7 @@ exports[`Storyshots Components/Molecules/ButtonIcon info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Kind modifier name
                 </td>
               </tr>
               <tr>
@@ -4509,7 +4995,7 @@ exports[`Storyshots Components/Molecules/ButtonIcon info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Size modifier name
                 </td>
               </tr>
               <tr>
@@ -4549,7 +5035,7 @@ exports[`Storyshots Components/Molecules/ButtonIcon info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  
+                  Render Icon prop
                 </td>
               </tr>
             </tbody>
@@ -6185,40 +6671,64 @@ exports[`Storyshots Examples/Contact Form default 1`] = `
         className="ui-select"
         name="country"
       >
-        <option>
+        <option
+          value="Afghanistan"
+        >
           Afghanistan
         </option>
-        <option>
+        <option
+          value="Albania"
+        >
           Albania
         </option>
-        <option>
+        <option
+          value="Algeria"
+        >
           Algeria
         </option>
-        <option>
+        <option
+          value="Andorra"
+        >
           Andorra
         </option>
-        <option>
+        <option
+          value="Angola"
+        >
           Angola
         </option>
-        <option>
+        <option
+          value="Antigua and Barbuda"
+        >
           Antigua and Barbuda
         </option>
-        <option>
+        <option
+          value="Argentina"
+        >
           Argentina
         </option>
-        <option>
+        <option
+          value="Armenia"
+        >
           Armenia
         </option>
-        <option>
+        <option
+          value="Aruba"
+        >
           Aruba
         </option>
-        <option>
+        <option
+          value="Australia"
+        >
           Australia
         </option>
-        <option>
+        <option
+          value="Austria"
+        >
           Austria
         </option>
-        <option>
+        <option
+          value="Azerbaijan"
+        >
           Azerbaijan
         </option>
       </select>
