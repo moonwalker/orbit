@@ -1,3 +1,4 @@
+// Prefix BEM selectors
 $selector-prefix ?= 'ui-';
 
 // Output BEM selectors (eg: .ui-button--primary)
@@ -25,35 +26,44 @@ $size-xxxlarge   ?= 34px;
 // Colors
 // https://coolors.co/1e6c9f-ee4266-e8bf3a-757575-0ead69
 // -----------------------------------------------------------------------------
+$_color-step = 10%;
 
-$blue            ?= #1E6C9F;
-$green           ?= #0ead69;
-$yellow          ?= #E8BF3A;
-$red             ?= #ee4266;
-$gray            ?= #757575;
+$blue                 ?= #1E6C9F;
+$green                ?= #0ead69;
+$yellow               ?= #E8BF3A;
+$red                  ?= #ee4266;
+$gray                 ?= #757575;
 
 // Neutrals
-$light           ?= #fff;
-$gray-dark       ?= darken($gray, 20);
-$gray-light      ?= lighten($gray, 20);
-$dark            ?= #000;
+$light                ?= #fff;
+$gray-dark            ?= darken($gray, 20);
+$gray-light           ?= lighten($gray, 20);
+$dark                 ?= #000;
 
 // Branding
-$primary-color   ?= $blue;
-$secondary-color ?= $gray-light;
+$primary-color        ?= $blue;
+$secondary-color      ?= $gray-light;
+
+$primary-dark-color   ?= darken($primary-color, $_color-step);
+$secondary-dark-color ?= darken($secondary-color, $_color-step);
 
 // Functionals
-$success-color   ?= $green;
-$info-color      ?= $blue;
-$warning-color   ?= $yellow;
-$danger-color    ?= $red;
+$success-color        ?= $green;
+$info-color           ?= $blue;
+$warning-color        ?= $yellow;
+$danger-color         ?= $red;
+
+$success-dark-color   ?= darken($success-color, $_color-step);
+$info-dark-color      ?= darken($info-color, $_color-step);
+$warning-dark-color   ?= darken($warning-color, $_color-step);
+$danger-dark-color    ?= darken($danger-color, $_color-step);
 
 // UI
-$body-color       ?= $gray-dark;
-$muted-color      ?= $gray-light;
-$header-color     ?= $gray-dark;
-$link-color       ?= $primary-color;
-$link-color-hover ?= lighten($link-color, 20);
+$body-color           ?= $gray-dark;
+$muted-color          ?= $gray-light;
+$header-color         ?= $gray-dark;
+$link-color           ?= $primary-color;
+$link-color-hover     ?= lighten($link-color, 20);
 
 
 // Spaces
@@ -74,3 +84,8 @@ $space-xxxlarge ?= 56px;
 
 $container-max-width ?= 1200px;
 $icon-font-css ?= 'https://fonts.googleapis.com/icon?family=Material+Icons'
+
+// Global state transitions
+// -----------------------------------------------------------------------------
+$state-transition-in  ?= all 0.2s ease-in;
+$state-transition-out ?= all 0.17s ease-out;

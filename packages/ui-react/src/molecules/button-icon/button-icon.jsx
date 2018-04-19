@@ -7,6 +7,7 @@ import {
   KINDS,
   KIND_DEFAULT,
   SIZES,
+  SIZE_MEDIUM,
 } from './button-icon.constants';
 import { CLASS_NAMES } from './button-icon.class-names';
 
@@ -42,7 +43,7 @@ ButtonIcon.defaultProps = {
   classNames: CLASS_NAMES,
   as: 'button',
   kind: KIND_DEFAULT,
-  size: null,
+  size: SIZE_MEDIUM,
   renderIcon: props => <Icon {...props} />,
 };
 

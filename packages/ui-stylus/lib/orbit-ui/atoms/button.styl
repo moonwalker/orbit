@@ -13,7 +13,7 @@ $component-name = 'button';
   border: 0;
   inner-space($space-xxsmall $space-medium);
 
-  background-color: $gray;
+  background-color: $gray-light;
   color: $light;
   line-height: $line-height;
   justify-content: center;
@@ -23,11 +23,14 @@ $component-name = 'button';
   white-space: nowrap;
 
   cursor: pointer;
+  transition: $state-transition-out if $state-transition-out;
 
   &:hover {
-    background-color: lighten(@background-color, 5);
+    background-color: $gray;
     color: $light;
     text-decoration: none;
+
+    transition: $state-transition-in if $state-transition-in;
   }
 }
 
@@ -59,7 +62,7 @@ $component-name = 'button';
   background-color: $primary-color;
 
   &:hover {
-    background-color: lighten(@background-color, 5);
+    background-color: $primary-dark-color;
   }
 }
 
@@ -67,7 +70,7 @@ $component-name = 'button';
   background-color: $secondary-color;
 
   &:hover {
-    background-color: lighten(@background-color, 5);
+    background-color: $secondary-dark-color;
   }
 }
 
@@ -75,7 +78,7 @@ $component-name = 'button';
   background-color: $success-color;
 
   &:hover {
-    background-color: lighten(@background-color, 5);
+    background-color: $success-dark-color;
   }
 }
 
@@ -83,7 +86,7 @@ $component-name = 'button';
   background-color: $info-color;
 
   &:hover {
-    background-color: lighten(@background-color, 5);
+    background-color: $info-dark-color;
   }
 }
 
@@ -91,7 +94,7 @@ $component-name = 'button';
   background-color: $warning-color;
 
   &:hover {
-    background-color: lighten(@background-color, 5);
+    background-color: $warning-dark-color;
   }
 }
 
@@ -99,7 +102,7 @@ $component-name = 'button';
   background-color: $danger-color;
 
   &:hover {
-    background-color: lighten(@background-color, 5);
+    background-color: $danger-dark-color;
   }
 }
 
@@ -113,7 +116,7 @@ $component-name = 'button';
 
   &:hover {
     background-color: transparent;
-    color: $gray-light;
+    color: $gray;
     text-decoration: none;
   }
 }
@@ -122,7 +125,7 @@ $component-name = 'button';
   color: $primary-color;
 
   &:hover {
-    color: lighten(@color, 5);
+    color: $primary-dark-color;
   }
 }
 
@@ -130,7 +133,7 @@ $component-name = 'button';
   color: $secondary-color;
 
   &:hover {
-    color: lighten(@color, 5);
+    color: $secondary-dark-color;
   }
 }
 
@@ -138,7 +141,7 @@ $component-name = 'button';
   color: $success-color;
 
   &:hover {
-    color: lighten(@color, 5);
+    color: $success-dark-color;
   }
 }
 
@@ -146,7 +149,7 @@ $component-name = 'button';
   color: $info-color;
 
   &:hover {
-    color: lighten(@color, 5);
+    color: $info-dark-color;
   }
 }
 
@@ -154,7 +157,7 @@ $component-name = 'button';
   color: $warning-color;
 
   &:hover {
-    color: lighten(@color, 5);
+    color: $warning-dark-color;
   }
 }
 
@@ -162,7 +165,7 @@ $component-name = 'button';
   color: $danger-color;
 
   &:hover {
-    color: lighten(@color, 5);
+    color: $danger-dark-color;
   }
 }
 

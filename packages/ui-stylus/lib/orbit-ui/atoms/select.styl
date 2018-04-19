@@ -16,6 +16,8 @@ $component-name = 'select';
   color: $muted-color;
   width: 100%;
   type-scale(medium);
+
+  transition: $state-transition-out if $state-transition-out;
   outline: none;
 
   // Placheolder
@@ -26,6 +28,7 @@ $component-name = 'select';
   &:focus {
     border-color: $gray;
     color: $body-color;
+    transition: $state-transition-in if $state-transition-in;
   }
 }
 
@@ -36,15 +39,17 @@ $component-name = 'select';
 /*!
  * Valid state
  */
-+modifier('valid') {
++state('valid') {
   border-color: $success-color;
+  transition: $state-transition-in if $state-transition-in;
 }
 
 /*!
  * Invalid state
  */
-+modifier('invalid') {
++state('invalid') {
   border-color: $danger-color;
+  transition: $state-transition-in if $state-transition-in;
 }
 
 /*!

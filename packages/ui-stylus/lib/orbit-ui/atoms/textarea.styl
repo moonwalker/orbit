@@ -8,10 +8,14 @@ $component-name = 'textarea';
  */
 +root() {
   border: 1px solid $muted-color;
+  border-radius: 0;
   padding: scalc('%s - %s', $space-xsmall, 1px);
   color: $muted-color;
   width: 100%;
   type-scale(medium);
+
+  transition: $state-transition-out if $state-transition-out;
+  appearance: none;
   outline: none;
 
   // Placheolder
@@ -22,6 +26,7 @@ $component-name = 'textarea';
   &:focus {
     border-color: $gray;
     color: $body-color;
+    transition: $state-transition-in if $state-transition-in;
   }
 }
 
@@ -32,15 +37,17 @@ $component-name = 'textarea';
 /*!
  * Valid state
  */
-+modifier('valid') {
++state('valid') {
   border-color: $success-color;
+  transition: $state-transition-in if $state-transition-in;
 }
 
 /*!
  * Invalid state
  */
-+modifier('invalid') {
++state('invalid') {
   border-color: $danger-color;
+  transition: $state-transition-in if $state-transition-in;
 }
 
 /*!

@@ -54,9 +54,11 @@ h6 {
 // -----------------------------------------------------------------------------
 a {
   color: $link-color;
+  transition: $state-transition-out if $state-transition-out;
 
   &:hover {
     color: $link-color-hover;
+    transition: $state-transition-in if $state-transition-in;
   }
 }
 

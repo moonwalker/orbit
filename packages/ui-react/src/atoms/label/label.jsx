@@ -2,7 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import { SIZES } from './label.constants';
+import {
+  SIZES,
+  SIZE_MEDIUM,
+} from './label.constants';
 import { CLASS_NAMES } from './label.class-names';
 
 export const Label = (props) => {
@@ -33,7 +36,7 @@ export const Label = (props) => {
 Label.defaultProps = {
   className: '',
   classNames: CLASS_NAMES,
-  size: null,
+  size: SIZE_MEDIUM,
   children: null,
 };
 

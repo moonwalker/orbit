@@ -2,7 +2,7 @@
 
 exports[`Storyshots Components/Atoms/Button default 1`] = `
 <button
-  className="ui-button ui-button--medium"
+  className="ui-button ui-button--default ui-button--medium"
   onClick={[Function]}
 >
   Call to action
@@ -676,7 +676,7 @@ exports[`Storyshots Components/Atoms/Button info 1`] = `
                     }
                   >
                     "
-                    null
+                    SIZE_MEDIUM
                     "
                   </span>
                 </td>
@@ -697,7 +697,7 @@ exports[`Storyshots Components/Atoms/Button info 1`] = `
 
 exports[`Storyshots Components/Atoms/Button render as a different element 1`] = `
 <a
-  className="ui-button ui-button--medium"
+  className="ui-button ui-button--default ui-button--medium"
   onClick={[Function]}
 >
   Call to action
@@ -706,7 +706,7 @@ exports[`Storyshots Components/Atoms/Button render as a different element 1`] = 
 
 exports[`Storyshots Components/Atoms/Button with clear modifier 1`] = `
 <button
-  className="ui-button ui-button--medium ui-button--clear"
+  className="ui-button ui-button--medium ui-button--clear ui-button--clear--default"
   onClick={[Function]}
 >
   Call to action
@@ -715,7 +715,7 @@ exports[`Storyshots Components/Atoms/Button with clear modifier 1`] = `
 
 exports[`Storyshots Components/Atoms/Button with custom content 1`] = `
 <button
-  className="ui-button ui-button--medium"
+  className="ui-button ui-button--default ui-button--medium"
   onClick={[Function]}
 >
   <em
@@ -734,7 +734,7 @@ exports[`Storyshots Components/Atoms/Button with custom content 1`] = `
 
 exports[`Storyshots Components/Atoms/Button with custom css-module class names 1`] = `
 <button
-  className="root medium"
+  className="root default medium"
   onClick={[Function]}
 >
   <i
@@ -752,7 +752,7 @@ exports[`Storyshots Components/Atoms/Button with custom css-module class names 1
 
 exports[`Storyshots Components/Atoms/Button with different icon size 1`] = `
 <button
-  className="ui-button ui-button--medium"
+  className="ui-button ui-button--default ui-button--medium"
   onClick={[Function]}
 >
   <i
@@ -770,7 +770,7 @@ exports[`Storyshots Components/Atoms/Button with different icon size 1`] = `
 
 exports[`Storyshots Components/Atoms/Button with imported css-module class names 1`] = `
 <button
-  className="root medium"
+  className="root default medium"
   onClick={[Function]}
 >
   <i
@@ -797,7 +797,7 @@ exports[`Storyshots Components/Atoms/Button with kind modifer 1`] = `
 
 exports[`Storyshots Components/Atoms/Button with kind size modifier 1`] = `
 <button
-  className="ui-button ui-button--large"
+  className="ui-button ui-button--default ui-button--large"
   onClick={[Function]}
 >
   Call to action
@@ -806,7 +806,7 @@ exports[`Storyshots Components/Atoms/Button with kind size modifier 1`] = `
 
 exports[`Storyshots Components/Atoms/Button with left icon 1`] = `
 <button
-  className="ui-button ui-button--medium"
+  className="ui-button ui-button--default ui-button--medium"
   onClick={[Function]}
 >
   <i
@@ -824,7 +824,7 @@ exports[`Storyshots Components/Atoms/Button with left icon 1`] = `
 
 exports[`Storyshots Components/Atoms/Button with null children 1`] = `
 <button
-  className="ui-button ui-button--medium"
+  className="ui-button ui-button--default ui-button--medium"
   onClick={[Function]}
 >
   <i
@@ -1302,7 +1302,7 @@ exports[`Storyshots Components/Atoms/Icon info 1`] = `
                     }
                   >
                     "
-                    null
+                    SIZE_MEDIUM
                     "
                   </span>
                 </td>
@@ -1811,7 +1811,7 @@ exports[`Storyshots Components/Atoms/Input info 1`] = `
                     }
                   >
                     "
-                    null
+                    SIZE_MEDIUM
                     "
                   </span>
                 </td>
@@ -1912,7 +1912,7 @@ exports[`Storyshots Components/Atoms/Input with valid state 1`] = `
 
 exports[`Storyshots Components/Atoms/Label default 1`] = `
 <label
-  className="ui-label"
+  className="ui-label ui-label--medium"
 >
   Username
 </label>
@@ -2361,7 +2361,7 @@ exports[`Storyshots Components/Atoms/Label info 1`] = `
                     }
                   >
                     "
-                    null
+                    SIZE_MEDIUM
                     "
                   </span>
                 </td>
@@ -2980,7 +2980,7 @@ exports[`Storyshots Components/Atoms/Select info 1`] = `
                     }
                   >
                     "
-                    null
+                    SIZE_MEDIUM
                     "
                   </span>
                 </td>
@@ -3746,18 +3746,17 @@ exports[`Storyshots Components/Atoms/Spinner info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  <span>
-                    {
-                    <span
-                      style={
-                        Object {
-                          "color": "#777",
-                        }
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
                       }
-                    >
-                      null
-                    </span>
                     }
+                  >
+                    "
+                    medium
+                    "
                   </span>
                 </td>
                 <td
@@ -4257,7 +4256,7 @@ exports[`Storyshots Components/Atoms/Textarea info 1`] = `
                     }
                   >
                     "
-                    null
+                    SIZE_MEDIUM
                     "
                   </span>
                 </td>
@@ -4358,7 +4357,7 @@ exports[`Storyshots Components/Atoms/Textarea with valid state 1`] = `
 
 exports[`Storyshots Components/Molecules/ButtonIcon default 1`] = `
 <button
-  className="ui-button-icon ui-button-icon--medium"
+  className="ui-button-icon ui-button-icon--medium ui-button-icon--default"
   onClick={[Function]}
 >
   <i
@@ -4988,7 +4987,7 @@ exports[`Storyshots Components/Molecules/ButtonIcon info 1`] = `
                     }
                   >
                     "
-                    null
+                    SIZE_MEDIUM
                     "
                   </span>
                 </td>
@@ -5049,7 +5048,7 @@ exports[`Storyshots Components/Molecules/ButtonIcon info 1`] = `
 
 exports[`Storyshots Components/Molecules/ButtonIcon with custom css-module class names 1`] = `
 <button
-  className="root medium"
+  className="root medium default"
   onClick={[Function]}
 >
   <i
@@ -5062,7 +5061,7 @@ exports[`Storyshots Components/Molecules/ButtonIcon with custom css-module class
 
 exports[`Storyshots Components/Molecules/ButtonIcon with icon name 1`] = `
 <button
-  className="ui-button-icon ui-button-icon--large"
+  className="ui-button-icon ui-button-icon--large ui-button-icon--default"
   onClick={[Function]}
 >
   <i
@@ -5075,7 +5074,7 @@ exports[`Storyshots Components/Molecules/ButtonIcon with icon name 1`] = `
 
 exports[`Storyshots Components/Molecules/ButtonIcon with imported css-module class names 1`] = `
 <button
-  className="root medium"
+  className="root medium default"
   onClick={[Function]}
 >
   <i
@@ -5101,7 +5100,7 @@ exports[`Storyshots Components/Molecules/ButtonIcon with kind modifier 1`] = `
 
 exports[`Storyshots Components/Molecules/ButtonIcon with render prop 1`] = `
 <button
-  className="ui-button-icon ui-button-icon--medium"
+  className="ui-button-icon ui-button-icon--medium ui-button-icon--default"
   onClick={[Function]}
 >
   <span>
@@ -5114,7 +5113,7 @@ exports[`Storyshots Components/Molecules/ButtonIcon with render prop 1`] = `
 
 exports[`Storyshots Components/Molecules/ButtonIcon with size modifier 1`] = `
 <button
-  className="ui-button-icon ui-button-icon--large"
+  className="ui-button-icon ui-button-icon--large ui-button-icon--default"
   onClick={[Function]}
 >
   <i
@@ -5745,18 +5744,17 @@ exports[`Storyshots Components/Molecules/ListGroup info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  <span>
-                    {
-                    <span
-                      style={
-                        Object {
-                          "color": "#777",
-                        }
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
                       }
-                    >
-                      null
-                    </span>
                     }
+                  >
+                    "
+                    medium
+                    "
                   </span>
                 </td>
                 <td
@@ -6635,12 +6633,12 @@ exports[`Storyshots Examples/Contact Form default 1`] = `
       className="contact-form__field"
     >
       <label
-        className="ui-label contact-form__field__label"
+        className="ui-label contact-form__field__label ui-label--medium"
       >
         First name
       </label>
       <input
-        className="ui-input"
+        className="ui-input ui-input--medium"
         name="firstname"
         placeholder="First name"
       />
@@ -6649,12 +6647,12 @@ exports[`Storyshots Examples/Contact Form default 1`] = `
       className="contact-form__field"
     >
       <label
-        className="ui-label contact-form__field__label"
+        className="ui-label contact-form__field__label ui-label--medium"
       >
         Last name
       </label>
       <input
-        className="ui-input"
+        className="ui-input ui-input--medium"
         name="lastname"
         placeholder="Last name"
       />
@@ -6663,12 +6661,12 @@ exports[`Storyshots Examples/Contact Form default 1`] = `
       className="contact-form__field"
     >
       <label
-        className="ui-label contact-form__field__label"
+        className="ui-label contact-form__field__label ui-label--medium"
       >
         Country
       </label>
       <select
-        className="ui-select"
+        className="ui-select ui-select--medium"
         name="country"
       >
         <option
@@ -6737,12 +6735,12 @@ exports[`Storyshots Examples/Contact Form default 1`] = `
       className="contact-form__field"
     >
       <label
-        className="ui-label contact-form__field__label"
+        className="ui-label contact-form__field__label ui-label--medium"
       >
         Message
       </label>
       <textarea
-        className="ui-textarea"
+        className="ui-textarea ui-textarea--medium"
         name="message"
         placeholder="Enter your message"
         rows="5"
@@ -6752,7 +6750,7 @@ exports[`Storyshots Examples/Contact Form default 1`] = `
       className="contact-form__actions"
     >
       <button
-        className="ui-button"
+        className="ui-button ui-button--default ui-button--medium"
       >
         Send
       </button>
@@ -6825,7 +6823,7 @@ exports[`Storyshots Examples/SearchField with predefined query 1`] = `
       value="Lo"
     />
     <button
-      className="ui-button-icon search-field__icon search-field__icon--clear ui-button-icon--large"
+      className="ui-button-icon search-field__icon search-field__icon--clear ui-button-icon--large ui-button-icon--default"
       onClick={[Function]}
       type="button"
     >
@@ -6839,7 +6837,7 @@ exports[`Storyshots Examples/SearchField with predefined query 1`] = `
       className="ui-dropdown search-field__results"
     >
       <ul
-        className="ui-list-group"
+        className="ui-list-group ui-list-group--medium"
       >
         <li
           className="ui-list-group__item"

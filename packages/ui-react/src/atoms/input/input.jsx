@@ -2,7 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import { SIZES } from './input.constants';
+import {
+  SIZES,
+  SIZE_MEDIUM,
+} from './input.constants';
 import { CLASS_NAMES } from './input.class-names';
 
 export const Input = (props) => {
@@ -31,7 +34,7 @@ export const Input = (props) => {
 Input.defaultProps = {
   className: '',
   classNames: CLASS_NAMES,
-  size: null,
+  size: SIZE_MEDIUM,
   valid: null,
 };
 
