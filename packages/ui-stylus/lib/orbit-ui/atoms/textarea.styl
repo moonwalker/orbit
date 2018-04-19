@@ -8,12 +8,14 @@ $component-name = 'textarea';
  */
 +root() {
   border: 1px solid $muted-color;
+  border-radius: 0;
   padding: scalc('%s - %s', $space-xsmall, 1px);
   color: $muted-color;
   width: 100%;
   type-scale(medium);
 
   transition: $state-transition-out if $state-transition-out;
+  appearance: none;
   outline: none;
 
   // Placheolder
