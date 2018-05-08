@@ -8,7 +8,7 @@ import {
 } from './input.constants';
 import { CLASS_NAMES } from './input.class-names';
 
-export const Input = (props) => {
+export const Input = React.forwardRef((props, ref) => {
   const {
     className,
     classNames,
@@ -26,10 +26,11 @@ export const Input = (props) => {
   return (
     <input
       className={rootClassName}
+      ref={ref}
       {...restProps}
     />
   );
-};
+});
 
 Input.defaultProps = {
   className: '',

@@ -1477,7 +1477,7 @@ exports[`Storyshots Components/Atoms/Input info 1`] = `
                 }
               >
                 &lt;
-                Input
+                Unknown
               </span>
               <span>
                 <span>
@@ -1620,7 +1620,6 @@ exports[`Storyshots Components/Atoms/Input info 1`] = `
             }
           >
             "
-            Input
             " Component
           </h2>
           <table
@@ -1665,9 +1664,7 @@ exports[`Storyshots Components/Atoms/Input info 1`] = `
                 <td
                   className="css-1ygfcef"
                 >
-                  <span>
-                    string
-                  </span>
+                  <span />
                 </td>
                 <td
                   className="css-d52hbj"
@@ -1686,15 +1683,13 @@ exports[`Storyshots Components/Atoms/Input info 1`] = `
                     }
                   >
                     "
-                    ''
+                    
                     "
                   </span>
                 </td>
                 <td
                   className="css-d52hbj"
-                >
-                  Adopted child class name
-                </td>
+                />
               </tr>
               <tr>
                 <td
@@ -1705,54 +1700,7 @@ exports[`Storyshots Components/Atoms/Input info 1`] = `
                 <td
                   className="css-1ygfcef"
                 >
-                  <span>
-                    <button
-                      className="css-5gtpmt"
-                      onClick={[Function]}
-                      onMouseEnter={[Function]}
-                      onMouseLeave={[Function]}
-                    >
-                      {
-                    </button>
-                    <button
-                      className="css-5gtpmt"
-                      onClick={[Function]}
-                    >
-                      ...
-                    </button>
-                    <div
-                      style={
-                        Object {
-                          "marginLeft": 15,
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "whiteSpace": "nowrap",
-                          }
-                        }
-                      >
-                        root
-                        ?
-                        :
-                         
-                      </span>
-                      <span>
-                        string
-                      </span>
-                      ,
-                    </div>
-                    <button
-                      className="css-5gtpmt"
-                      onClick={[Function]}
-                      onMouseEnter={[Function]}
-                      onMouseLeave={[Function]}
-                    >
-                      }
-                    </button>
-                  </span>
+                  <span />
                 </td>
                 <td
                   className="css-d52hbj"
@@ -1762,24 +1710,94 @@ exports[`Storyshots Components/Atoms/Input info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#22a",
-                        "wordBreak": "break-word",
+                  <span>
+                    {
+                    <span
+                      style={
+                        Object {
+                          "color": "#666",
+                        }
                       }
+                    >
+                      {
+                      <span
+                        style={
+                          Object {
+                            "color": "#666",
+                          }
+                        }
+                      >
+                        root
+                      </span>
+                      : 
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        ui-input
+                        "
+                      </span>
+                      , 
+                      <span
+                        style={
+                          Object {
+                            "color": "#666",
+                          }
+                        }
+                      >
+                        small
+                      </span>
+                      : 
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        ui-input--small
+                        "
+                      </span>
+                      , 
+                      <span
+                        style={
+                          Object {
+                            "color": "#666",
+                          }
+                        }
+                      >
+                        medium
+                      </span>
+                      : 
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        ui-input--medium
+                        "
+                      </span>
+                      , 
+                      …
+                      }
+                    </span>
                     }
-                  >
-                    "
-                    CLASS_NAMES
-                    "
                   </span>
                 </td>
                 <td
                   className="css-d52hbj"
-                >
-                  CSS Modules class names mapping
-                </td>
+                />
               </tr>
               <tr>
                 <td
@@ -1790,9 +1808,7 @@ exports[`Storyshots Components/Atoms/Input info 1`] = `
                 <td
                   className="css-1ygfcef"
                 >
-                  <span>
-                    oneOf SIZES
-                  </span>
+                  <span />
                 </td>
                 <td
                   className="css-d52hbj"
@@ -1811,15 +1827,13 @@ exports[`Storyshots Components/Atoms/Input info 1`] = `
                     }
                   >
                     "
-                    SIZE_MEDIUM
+                    medium
                     "
                   </span>
                 </td>
                 <td
                   className="css-d52hbj"
-                >
-                  Size modifier name
-                </td>
+                />
               </tr>
               <tr>
                 <td
@@ -1830,9 +1844,7 @@ exports[`Storyshots Components/Atoms/Input info 1`] = `
                 <td
                   className="css-1ygfcef"
                 >
-                  <span>
-                    bool
-                  </span>
+                  <span />
                 </td>
                 <td
                   className="css-d52hbj"
@@ -1842,24 +1854,23 @@ exports[`Storyshots Components/Atoms/Input info 1`] = `
                 <td
                   className="css-d52hbj"
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#22a",
-                        "wordBreak": "break-word",
+                  <span>
+                    {
+                    <span
+                      style={
+                        Object {
+                          "color": "#777",
+                        }
                       }
+                    >
+                      null
+                    </span>
                     }
-                  >
-                    "
-                    null
-                    "
                   </span>
                 </td>
                 <td
                   className="css-d52hbj"
-                >
-                  Valid boolean value
-                </td>
+                />
               </tr>
             </tbody>
           </table>
