@@ -3801,6 +3801,616 @@ exports[`Storyshots Components/Atoms/Spinner with size modifier 1`] = `
 />
 `;
 
+exports[`Storyshots Components/Atoms/Tag default 1`] = `
+<span
+  className="ui-tag ui-tag--default ui-tag--medium"
+>
+  Tag A
+</span>
+`;
+
+exports[`Storyshots Components/Atoms/Tag info 1`] = `
+<div>
+  <div
+    style={undefined}
+  >
+    <div
+      style={
+        Object {
+          "WebkitFontSmoothing": "antialiased",
+          "backgroundColor": "#fff",
+          "border": "1px solid #eee",
+          "borderRadius": "2px",
+          "boxShadow": "0px 2px 3px rgba(0, 0, 0, 0.05)",
+          "color": "#444",
+          "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+          "fontSize": "15px",
+          "fontWeight": 300,
+          "lineHeight": 1.45,
+          "marginBottom": "20px",
+          "marginTop": "20px",
+          "padding": "20px 40px 40px",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "borderBottom": "1px solid #eee",
+            "marginBottom": 10,
+            "paddingTop": 10,
+          }
+        }
+      >
+        <h1
+          style={
+            Object {
+              "fontSize": "35px",
+              "margin": 0,
+              "padding": 0,
+            }
+          }
+        >
+          Components/Atoms/Tag
+        </h1>
+        <h2
+          style={
+            Object {
+              "fontSize": "22px",
+              "fontWeight": 400,
+              "margin": "0 0 10px 0",
+              "padding": 0,
+            }
+          }
+        >
+          info
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div
+    style={Object {}}
+  >
+    <span
+      className="ui-tag ui-tag--primary ui-tag--small"
+    >
+      Tag A
+    </span>
+  </div>
+  <div
+    style={undefined}
+  >
+    <div
+      style={
+        Object {
+          "WebkitFontSmoothing": "antialiased",
+          "backgroundColor": "#fff",
+          "border": "1px solid #eee",
+          "borderRadius": "2px",
+          "boxShadow": "0px 2px 3px rgba(0, 0, 0, 0.05)",
+          "color": "#444",
+          "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+          "fontSize": "15px",
+          "fontWeight": 300,
+          "lineHeight": 1.45,
+          "marginBottom": "20px",
+          "marginTop": "20px",
+          "padding": "20px 40px 40px",
+        }
+      }
+    >
+      
+      <div>
+        <h1
+          style={
+            Object {
+              "borderBottom": "1px solid #EEE",
+              "fontSize": "25px",
+              "margin": "20px 0 0 0",
+              "padding": "0 0 5px 0",
+            }
+          }
+        >
+          Story Source
+        </h1>
+        <pre
+          className="css-4akams"
+        >
+          <div>
+            <div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &lt;
+                  Tag
+                </span>
+                <span>
+                  <span>
+                     
+                    <span
+                      style={Object {}}
+                    >
+                      kind
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
+                          }
+                        >
+                          "
+                          primary
+                          "
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                  <span>
+                     
+                    <span
+                      style={Object {}}
+                    >
+                      size
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
+                          }
+                        >
+                          "
+                          small
+                          "
+                        </span>
+                      </span>
+                    </span>
+                    
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &gt;
+                </span>
+              </div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 33,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  Tag A
+                </span>
+              </div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &lt;/
+                  Tag
+                  &gt;
+                </span>
+              </div>
+            </div>
+          </div>
+          <button
+            className="css-gydez8"
+            onClick={[Function]}
+          >
+            <div
+              className="css-kv47nt"
+            >
+              <div
+                style={
+                  Object {
+                    "marginBottom": 6,
+                  }
+                }
+              >
+                Copied!
+              </div>
+              <div>
+                Copy
+              </div>
+            </div>
+          </button>
+        </pre>
+      </div>
+      <div>
+        <h1
+          style={
+            Object {
+              "borderBottom": "1px solid #EEE",
+              "fontSize": "25px",
+              "margin": "20px 0 0 0",
+              "padding": "0 0 5px 0",
+            }
+          }
+        >
+          Prop Types
+        </h1>
+        <div>
+          <h2
+            style={
+              Object {
+                "margin": "20px 0 0 0",
+              }
+            }
+          >
+            "
+            Tag
+            " Component
+          </h2>
+          <table
+            className="css-1ytzlk7"
+          >
+            <thead>
+              <tr>
+                <th
+                  className="css-d52hbj"
+                >
+                  property
+                </th>
+                <th
+                  className="css-d52hbj"
+                >
+                  propType
+                </th>
+                <th
+                  className="css-d52hbj"
+                >
+                  required
+                </th>
+                <th
+                  className="css-d52hbj"
+                >
+                  default
+                </th>
+                <th
+                  className="css-d52hbj"
+                >
+                  description
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td
+                  className="css-1ygfcef"
+                >
+                  className
+                </td>
+                <td
+                  className="css-1ygfcef"
+                >
+                  <span>
+                    string
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  -
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    ''
+                    "
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  Adopted child class name
+                </td>
+              </tr>
+              <tr>
+                <td
+                  className="css-1ygfcef"
+                >
+                  classNames
+                </td>
+                <td
+                  className="css-1ygfcef"
+                >
+                  <span>
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                    >
+                      {
+                    </button>
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                    >
+                      ...
+                    </button>
+                    <div
+                      style={
+                        Object {
+                          "marginLeft": 15,
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "whiteSpace": "nowrap",
+                          }
+                        }
+                      >
+                        root
+                        ?
+                        :
+                         
+                      </span>
+                      <span>
+                        string
+                      </span>
+                      ,
+                    </div>
+                    <button
+                      className="css-5gtpmt"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                    >
+                      }
+                    </button>
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  -
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    CLASS_NAMES
+                    "
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  CSS Modules class names mapping
+                </td>
+              </tr>
+              <tr>
+                <td
+                  className="css-1ygfcef"
+                >
+                  as
+                </td>
+                <td
+                  className="css-1ygfcef"
+                >
+                  <span>
+                    <span>
+                      string
+                    </span>
+                    <span>
+                       | 
+                    </span>
+                    <span>
+                      func
+                    </span>
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  -
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    'span'
+                    "
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  Render tag or component
+                </td>
+              </tr>
+              <tr>
+                <td
+                  className="css-1ygfcef"
+                >
+                  kind
+                </td>
+                <td
+                  className="css-1ygfcef"
+                >
+                  <span>
+                    oneOf KINDS
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  -
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    KIND_DEFAULT
+                    "
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  Kind modifier name
+                </td>
+              </tr>
+              <tr>
+                <td
+                  className="css-1ygfcef"
+                >
+                  size
+                </td>
+                <td
+                  className="css-1ygfcef"
+                >
+                  <span>
+                    oneOf SIZES
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  -
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    SIZE_MEDIUM
+                    "
+                  </span>
+                </td>
+                <td
+                  className="css-d52hbj"
+                >
+                  Size modifier name
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Tag render as a different element 1`] = `
+<a
+  className="ui-tag ui-tag--default ui-tag--medium"
+  onClick={[Function]}
+>
+  Tag A
+</a>
+`;
+
+exports[`Storyshots Components/Atoms/Tag with kind modifer 1`] = `
+<span
+  className="ui-tag ui-tag--danger ui-tag--medium"
+>
+  Tag A
+</span>
+`;
+
+exports[`Storyshots Components/Atoms/Tag with size modifier 1`] = `
+<span
+  className="ui-tag ui-tag--default ui-tag--large"
+>
+  Tag A
+</span>
+`;
+
 exports[`Storyshots Components/Atoms/Textarea default 1`] = `
 <textarea
   className="ui-textarea ui-textarea--medium"

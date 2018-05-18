@@ -42,5 +42,9 @@
   {
     "slug": "spinner",
     "title": "Spinner"
+  },
+  {
+    "slug": "tag",
+    "title": "Tag"
   }
 ]

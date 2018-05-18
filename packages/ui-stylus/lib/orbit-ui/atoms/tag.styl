@@ -1,0 +1,103 @@
+$component-name = 'tag';
+
+@require '../_variables';
+@import '../_selectors';
+
+/*!
+ * Tag
+ *******************************************************************************/
+
++root() {
+  inline-flex();
+  align-items: center;
+  border: 0;
+  inner-space($space-xxsmall $space-small);
+
+  background-color: $gray-light;
+  color: $light;
+  line-height: $line-height;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  cursor: pointer;
+  transition: $state-transition-out if $state-transition-out;
+
+  &:hover {
+    background-color: $gray;
+    color: $light;
+    text-decoration: none;
+
+    transition: $state-transition-in if $state-transition-in;
+  }
+}
+
+/*!
+ * Kind modifier
+ *-----------------------------------------------------------------------------*/
+
++modifier('primary') {
+  background-color: $primary-color;
+
+  &:hover {
+    background-color: $primary-dark-color;
+  }
+}
+
++modifier('secondary') {
+  background-color: $secondary-color;
+
+  &:hover {
+    background-color: $secondary-dark-color;
+  }
+}
+
++modifier('success') {
+  background-color: $success-color;
+
+  &:hover {
+    background-color: $success-dark-color;
+  }
+}
+
++modifier('info') {
+  background-color: $info-color;
+
+  &:hover {
+    background-color: $info-dark-color;
+  }
+}
+
++modifier('warning') {
+  background-color: $warning-color;
+
+  &:hover {
+    background-color: $warning-dark-color;
+  }
+}
+
++modifier('danger') {
+  background-color: $danger-color;
+
+  &:hover {
+    background-color: $danger-dark-color;
+  }
+}
+
+/*!
+ * Size modifier
+ *-----------------------------------------------------------------------------*/
+
+/*! Small */
++modifier('small') {
+  inner-space($space-xxsmall $space-xsmall);
+  type-scale(small);
+}
+
+/*! Large */
++modifier('large') {
+  inner-space($space-small $space-medium);
+  type-scale(large);
+}
