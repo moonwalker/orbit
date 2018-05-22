@@ -55,6 +55,54 @@ $component-name = 'button';
 }
 
 /*!
+ * Size modifier
+ *-----------------------------------------------------------------------------*/
+
+/*! XSmall */
++modifier('xsmall') {
+  inner-space($space-xxxsmall $space-xsmall);
+  type-scale(xsmall);
+}
+
++element('content--xsmall') {
+  margin-right: $space-xxsmall;
+  margin-left: @margin-right;
+}
+
+/*! Small */
++modifier('small') {
+  inner-space($space-xxsmall $space-small);
+  type-scale(small);
+}
+
++element('content--small') {
+  margin-right: $space-xxsmall;
+  margin-left: @margin-right;
+}
+
+/*! Large */
++modifier('large') {
+  inner-space($space-small $space-large);
+  type-scale(large);
+}
+
++element('content--large') {
+  margin-right: $space-small;
+  margin-left: @margin-right;
+}
+
+/*! XLarge */
++modifier('xlarge') {
+  inner-space($space-medium $space-xlarge);
+  type-scale(xlarge);
+}
+
++element('content--xlarge') {
+  margin-right: $space-medium;
+  margin-left: @margin-right;
+}
+
+/*!
  * Kind modifier
  *-----------------------------------------------------------------------------*/
 
@@ -170,49 +218,91 @@ $component-name = 'button';
 }
 
 /*!
- * Size modifier
+ * Outline modifier
  *-----------------------------------------------------------------------------*/
 
-/*! XSmall */
-+modifier('xsmall') {
-  inner-space($space-xxxsmall $space-xsmall);
-  type-scale(xsmall);
++modifier('outline') {
+  border: 1px solid $gray;
+  background-color: transparent;
+  color: $gray;
+
+  &:hover {
+    background-color: transparent;
+    color: $gray-dark;
+    text-decoration: none;
+  }
 }
 
-+element('content--xsmall') {
-  margin-right: $space-xxsmall;
-  margin-left: @margin-right;
++modifier('outline--xsmall') {
+  inner-space($space-xxxsmall $space-xsmall, 1px);
 }
 
-/*! Small */
-+modifier('small') {
-  inner-space($space-xxsmall $space-small);
-  type-scale(small);
++modifier('outline--small') {
+  inner-space($space-xxsmall $space-small, 1px);
 }
 
-+element('content--small') {
-  margin-right: $space-xxsmall;
-  margin-left: @margin-right;
++modifier('outline--medium') {
+  inner-space($space-xxsmall $space-medium, 1px);
 }
 
-/*! Large */
-+modifier('large') {
-  inner-space($space-small $space-large);
-  type-scale(large);
++modifier('outline--large') {
+  inner-space($space-small $space-large, 1px);
 }
 
-+element('content--large') {
-  margin-right: $space-small;
-  margin-left: @margin-right;
++modifier('outline--xlarge') {
+  inner-space($space-medium $space-xlarge, 1px);
 }
 
-/*! XLarge */
-+modifier('xlarge') {
-  inner-space($space-medium $space-xlarge);
-  type-scale(xlarge);
++modifier('outline--primary') {
+  border-color: $primary-color;
+  color: $primary-color;
+
+  &:hover {
+    color: $primary-dark-color;
+  }
 }
 
-+element('content--xlarge') {
-  margin-right: $space-medium;
-  margin-left: @margin-right;
++modifier('outline--secondary') {
+  border-color: $secondary-color;
+  color: $secondary-color;
+
+  &:hover {
+    color: $secondary-dark-color;
+  }
+}
+
++modifier('outline--success') {
+  border-color: $success-color;
+  color: $success-color;
+
+  &:hover {
+    color: $success-dark-color;
+  }
+}
+
++modifier('outline--info') {
+  border-color: $info-color;
+  color: $info-color;
+
+  &:hover {
+    color: $info-dark-color;
+  }
+}
+
++modifier('outline--warning') {
+  border-color: $warning-color;
+  color: $warning-color;
+
+  &:hover {
+    color: $warning-dark-color;
+  }
+}
+
++modifier('outline--danger') {
+  border-color: $danger-color;
+  color: $danger-color;
+
+  &:hover {
+    color: $danger-dark-color;
+  }
 }

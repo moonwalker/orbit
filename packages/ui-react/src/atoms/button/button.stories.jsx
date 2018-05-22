@@ -23,6 +23,7 @@ const stories = storiesOf('Components/Atoms/Button', module);
 const selectKind = (kind = KIND_DEFAULT) => select('Kind', KINDS, kind);
 const selectSize = (size = SIZE_MEDIUM) => select('Size', SIZES, size);
 const getClear = (clear = false) => boolean('Clear', clear);
+const getOutline = (outline = false) => boolean('Outline', outline);
 
 stories.add('info', withInfo({ inline: true })(() => (
   <Button
@@ -30,6 +31,7 @@ stories.add('info', withInfo({ inline: true })(() => (
     kind="primary"
     size="small"
     clear={false}
+    outline={getOutline()}
   >
     Call to action
   </Button>
@@ -41,6 +43,43 @@ stories.add('default', () => (
     kind={selectKind()}
     size={selectSize()}
     clear={getClear()}
+    outline={getOutline()}
+  >
+    Call to action
+  </Button>
+));
+
+stories.add('with outline modifer', () => (
+  <Button
+    onClick={action('Click')}
+    kind={selectKind()}
+    size={selectSize()}
+    clear={getClear()}
+    outline={getOutline(true)}
+  >
+    Call to action
+  </Button>
+));
+
+stories.add('with outline size modifer', () => (
+  <Button
+    onClick={action('Click')}
+    kind={selectKind()}
+    size={selectSize(SIZE_LARGE)}
+    clear={getClear()}
+    outline={getOutline(true)}
+  >
+    Call to action
+  </Button>
+));
+
+stories.add('with outline kind modifer', () => (
+  <Button
+    onClick={action('Click')}
+    kind={selectKind(KIND_DANGER)}
+    size={selectSize()}
+    clear={getClear()}
+    outline={getOutline(true)}
   >
     Call to action
   </Button>
@@ -52,6 +91,7 @@ stories.add('with kind modifer', () => (
     kind={selectKind(KIND_DANGER)}
     size={selectSize()}
     clear={getClear()}
+    outline={getOutline()}
   >
     Call to action
   </Button>
@@ -63,6 +103,7 @@ stories.add('with kind size modifier', () => (
     kind={selectKind()}
     size={selectSize(SIZE_LARGE)}
     clear={getClear()}
+    outline={getOutline()}
   >
     Call to action
   </Button>
@@ -74,6 +115,7 @@ stories.add('with clear modifier', () => (
     kind={selectKind()}
     size={selectSize()}
     clear={getClear(true)}
+    outline={getOutline()}
   >
     Call to action
   </Button>
@@ -86,6 +128,7 @@ stories.add('render as a different element', () => (
     kind={selectKind()}
     size={selectSize()}
     clear={getClear()}
+    outline={getOutline()}
   >
     Call to action
   </Button>
@@ -97,6 +140,7 @@ stories.add('with left icon', () => (
     kind={selectKind()}
     size={selectSize()}
     clear={getClear()}
+    outline={getOutline()}
   >
     <Icon name="backup" />
     Call to action
@@ -109,6 +153,7 @@ stories.add('with different icon size', () => (
     kind={selectKind()}
     size={selectSize()}
     clear={getClear()}
+    outline={getOutline()}
   >
     <Icon
       name="backup"
@@ -124,6 +169,7 @@ stories.add('with null children', () => (
     kind={selectKind()}
     size={selectSize()}
     clear={getClear()}
+    outline={getOutline()}
   >
     {null}
     <Icon
@@ -139,6 +185,7 @@ stories.add('with custom content', () => (
     kind={selectKind()}
     size={selectSize()}
     clear={getClear()}
+    outline={getOutline()}
   >
     <em className="custom">Call</em>
     to action
@@ -151,6 +198,7 @@ stories.add('with custom css-module class names', () => (
     kind={selectKind()}
     size={selectSize()}
     clear={getClear()}
+    outline={getOutline()}
     classNames={classNamesOverride}
   >
     <Icon name="backup" />
@@ -164,6 +212,7 @@ stories.add('with imported css-module class names', () => (
     kind={selectKind()}
     size={selectSize()}
     clear={getClear()}
+    outline={getOutline()}
     classNames={classNamesImport}
   >
     <Icon name="backup" />

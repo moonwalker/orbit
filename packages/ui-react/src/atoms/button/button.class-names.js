@@ -14,7 +14,6 @@ import {
   SIZE_MEDIUM,
   SIZE_LARGE,
   SIZE_XLARGE,
-
 } from './button.constants';
 
 export const CLASS_NAMES = {
@@ -33,6 +32,21 @@ export const CLASS_NAMES = {
   [SIZE_MEDIUM]: `${UI_NAME}--${SIZE_MEDIUM}`,
   [SIZE_LARGE]: `${UI_NAME}--${SIZE_LARGE}`,
   [SIZE_XLARGE]: `${UI_NAME}--${SIZE_XLARGE}`,
+
+  outline: `${UI_NAME}--outline`,
+  [`outline--${KIND_DEFAULT}`]: `${UI_NAME}--outline--${KIND_DEFAULT}`,
+  [`outline--${KIND_PRIMARY}`]: `${UI_NAME}--outline--${KIND_PRIMARY}`,
+  [`outline--${KIND_SECONDARY}`]: `${UI_NAME}--outline--${KIND_SECONDARY}`,
+  [`outline--${KIND_SUCCESS}`]: `${UI_NAME}--outline--${KIND_SUCCESS}`,
+  [`outline--${KIND_INFO}`]: `${UI_NAME}--outline--${KIND_INFO}`,
+  [`outline--${KIND_WARNING}`]: `${UI_NAME}--outline--${KIND_WARNING}`,
+  [`outline--${KIND_DANGER}`]: `${UI_NAME}--outline--${KIND_DANGER}`,
+
+  [`outline--${SIZE_XSMALL}`]: `${UI_NAME}--outline--${SIZE_XSMALL}`,
+  [`outline--${SIZE_SMALL}`]: `${UI_NAME}--outline--${SIZE_SMALL}`,
+  [`outline--${SIZE_MEDIUM}`]: `${UI_NAME}--outline--${SIZE_MEDIUM}`,
+  [`outline--${SIZE_LARGE}`]: `${UI_NAME}--outline--${SIZE_LARGE}`,
+  [`outline--${SIZE_XLARGE}`]: `${UI_NAME}--outline--${SIZE_XLARGE}`,
 
   clear: `${UI_NAME}--clear`,
 

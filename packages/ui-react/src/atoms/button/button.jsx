@@ -68,15 +68,22 @@ export const Button = (props) => {
     clear,
     kind,
     size,
+    outline,
     ...restProps
   } = props;
 
-  const rootClassName = cx(classNames.root, className, {
-    [classNames[kind]]: !clear && kind,
-    [classNames[size]]: size,
-    [classNames.clear]: clear,
-    [`${classNames.clear}--${kind}`]: clear && kind,
-  });
+  const rootClassName = cx(
+    classNames.root,
+    className,
+
+    !outline && size && classNames[size],
+    !clear && !outline && kind && classNames[kind],
+    outline && classNames.outline,
+    outline && kind && `${classNames.outline}--${kind}`,
+    outline && size && `${classNames.outline}--${size}`,
+    clear && classNames.clear,
+    clear && kind && `${classNames.clear}--${kind}`,
+  );
 
   // Add .`__content` if there are multiple children
   const processedChildren = typeof children === 'string' ?
@@ -106,6 +113,7 @@ Button.defaultProps = {
   clear: false,
   kind: KIND_DEFAULT,
   size: SIZE_MEDIUM,
+  outline: false,
 };
 
 Button.propTypes = {
@@ -134,4 +142,7 @@ Button.propTypes = {
 
   /** Size modifier name */
   size: PropTypes.oneOf(SIZES),
+
+  /** Outline modifier flag */
+  outline: PropTypes.bool,
 };
