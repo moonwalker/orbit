@@ -326,6 +326,61 @@ h6 + dl {
   margin-right: 0;
 }
 /*
+ * Size modifier
+ *-----------------------------------------------------------------------------*/
+/* XSmall */
+.ui-button--xsmall {
+  padding-top: 4px;
+  padding-right: 12px;
+  padding-bottom: 4px;
+  padding-left: 12px;
+  font-size: 12px;
+  line-height: 16px;
+}
+.ui-button__content--xsmall {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+/* Small */
+.ui-button--small {
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  font-size: 13px;
+  line-height: 16px;
+}
+.ui-button__content--small {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+/* Large */
+.ui-button--large {
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  font-size: 16px;
+  line-height: 16px;
+}
+.ui-button__content--large {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+/* XLarge */
+.ui-button--xlarge {
+  padding-top: 24px;
+  padding-right: 40px;
+  padding-bottom: 24px;
+  padding-left: 40px;
+  font-size: 20px;
+  line-height: 24px;
+}
+.ui-button__content--xlarge {
+  margin-right: 24px;
+  margin-left: 24px;
+}
+/*
  * Kind modifier
  *-----------------------------------------------------------------------------*/
 .ui-button--primary {
@@ -413,59 +468,89 @@ h6 + dl {
   color: #eb264f;
 }
 /*
- * Size modifier
+ * Outline modifier
  *-----------------------------------------------------------------------------*/
-/* XSmall */
-.ui-button--xsmall {
-  padding-top: 4px;
-  padding-right: 12px;
-  padding-bottom: 4px;
-  padding-left: 12px;
-  font-size: 12px;
-  line-height: 16px;
+.ui-button--outline {
+  border: 1px solid #757575;
+  background-color: transparent;
+  color: #757575;
 }
-.ui-button__content--xsmall {
-  margin-right: 8px;
-  margin-left: 8px;
+.ui-button--outline:hover {
+  background-color: transparent;
+  color: #424242;
+  text-decoration: none;
 }
-/* Small */
-.ui-button--small {
-  padding-top: 8px;
-  padding-right: 16px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  font-size: 13px;
-  line-height: 16px;
+.ui-button--outline--xsmall {
+  padding-top: 3px;
+  padding-right: 11px;
+  padding-bottom: 3px;
+  padding-left: 11px;
 }
-.ui-button__content--small {
-  margin-right: 8px;
-  margin-left: 8px;
+.ui-button--outline--small {
+  padding-top: 7px;
+  padding-right: 15px;
+  padding-bottom: 7px;
+  padding-left: 15px;
 }
-/* Large */
-.ui-button--large {
-  padding-top: 16px;
-  padding-right: 32px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  font-size: 16px;
-  line-height: 16px;
+.ui-button--outline--medium {
+  padding-top: 7px;
+  padding-right: 23px;
+  padding-bottom: 7px;
+  padding-left: 23px;
 }
-.ui-button__content--large {
-  margin-right: 16px;
-  margin-left: 16px;
+.ui-button--outline--large {
+  padding-top: 15px;
+  padding-right: 31px;
+  padding-bottom: 15px;
+  padding-left: 31px;
 }
-/* XLarge */
-.ui-button--xlarge {
-  padding-top: 24px;
-  padding-right: 40px;
-  padding-bottom: 24px;
-  padding-left: 40px;
-  font-size: 20px;
-  line-height: 24px;
+.ui-button--outline--xlarge {
+  padding-top: 23px;
+  padding-right: 39px;
+  padding-bottom: 23px;
+  padding-left: 39px;
 }
-.ui-button__content--xlarge {
-  margin-right: 24px;
-  margin-left: 24px;
+.ui-button--outline--primary {
+  border-color: #1e6c9f;
+  color: #1e6c9f;
+}
+.ui-button--outline--primary:hover {
+  color: #1b618f;
+}
+.ui-button--outline--secondary {
+  border-color: #a8a8a8;
+  color: #a8a8a8;
+}
+.ui-button--outline--secondary:hover {
+  color: #979797;
+}
+.ui-button--outline--success {
+  border-color: #0ead69;
+  color: #0ead69;
+}
+.ui-button--outline--success:hover {
+  color: #0d9c5f;
+}
+.ui-button--outline--info {
+  border-color: #1e6c9f;
+  color: #1e6c9f;
+}
+.ui-button--outline--info:hover {
+  color: #1b618f;
+}
+.ui-button--outline--warning {
+  border-color: #e8bf3a;
+  color: #e8bf3a;
+}
+.ui-button--outline--warning:hover {
+  color: #e5b720;
+}
+.ui-button--outline--danger {
+  border-color: #ee4266;
+  color: #ee4266;
+}
+.ui-button--outline--danger:hover {
+  color: #eb264f;
 }
 /*
  * Icon
