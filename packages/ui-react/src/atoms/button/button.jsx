@@ -76,7 +76,7 @@ export const Button = (props) => {
     classNames.root,
     className,
 
-    !outline && size && classNames[size],
+    size && classNames[size],
     !clear && !outline && kind && classNames[kind],
     outline && classNames.outline,
     outline && kind && `${classNames.outline}--${kind}`,
