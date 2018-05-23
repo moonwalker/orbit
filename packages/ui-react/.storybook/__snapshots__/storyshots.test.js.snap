@@ -160,7 +160,7 @@ exports[`Storyshots Components/Atoms/Button with null children 1`] = `
 
 exports[`Storyshots Components/Atoms/Button with outline kind modifer 1`] = `
 <button
-  className="ui-button ui-button--outline ui-button--outline--danger ui-button--outline--medium"
+  className="ui-button ui-button--medium ui-button--outline ui-button--outline--danger ui-button--outline--medium"
   onClick={[Function]}
 >
   Call to action
@@ -169,7 +169,7 @@ exports[`Storyshots Components/Atoms/Button with outline kind modifer 1`] = `
 
 exports[`Storyshots Components/Atoms/Button with outline modifer 1`] = `
 <button
-  className="ui-button ui-button--outline ui-button--outline--default ui-button--outline--medium"
+  className="ui-button ui-button--medium ui-button--outline ui-button--outline--default ui-button--outline--medium"
   onClick={[Function]}
 >
   Call to action
@@ -178,7 +178,7 @@ exports[`Storyshots Components/Atoms/Button with outline modifer 1`] = `
 
 exports[`Storyshots Components/Atoms/Button with outline size modifer 1`] = `
 <button
-  className="ui-button ui-button--outline ui-button--outline--default ui-button--outline--large"
+  className="ui-button ui-button--large ui-button--outline ui-button--outline--default ui-button--outline--large"
   onClick={[Function]}
 >
   Call to action
