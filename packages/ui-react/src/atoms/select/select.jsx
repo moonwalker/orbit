@@ -29,19 +29,22 @@ export const Select = (props) => {
       className={rootClassName}
       {...restProps}
     >
-      {options.map((option) => {
-        const item = (typeof option === 'string' || typeof option === 'number') ?
+      {options.map((option, index) => {
+        const item = (typeof option !== 'object') ?
           {
             value: option,
             text: option,
+            key: option,
           } :
-          { ...option };
+          {
+            key: index,
+            ...option,
+          };
 
         const { text, value, ...restOptionProps } = item;
 
         return (
           <option
-            key={value}
             value={value}
             {...restOptionProps}
           >
@@ -77,17 +80,15 @@ Select.propTypes = {
   valid: PropTypes.bool,
 
   /** Options array */
-  options: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.number,
-    ])),
-    PropTypes.arrayOf(PropTypes.shape({
+  options: PropTypes.arrayOf(PropTypes.oneOfType(
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.shape({
       text: PropTypes.string,
       value: PropTypes.oneOfType([
         PropTypes.string,
         PropTypes.number,
       ]),
-    })),
-  ]),
+    }),
+  )),
 };
