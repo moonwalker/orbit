@@ -80,7 +80,7 @@ Select.propTypes = {
   valid: PropTypes.bool,
 
   /** Options array */
-  options: PropTypes.arrayOf(PropTypes.oneOfType(
+  options: PropTypes.arrayOf(PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number,
     PropTypes.shape({
@@ -90,5 +90,5 @@ Select.propTypes = {
         PropTypes.number,
       ]),
     }),
-  )),
+  ])),
 };
