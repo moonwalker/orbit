@@ -79,10 +79,10 @@ export const Button = (props) => {
     size && classNames[size],
     !clear && !outline && kind && classNames[kind],
     outline && classNames.outline,
-    outline && kind && `${classNames.outline}--${kind}`,
-    outline && size && `${classNames.outline}--${size}`,
+    outline && kind && classNames[`outline--${kind}`],
+    outline && size && classNames[`outline--${size}`],
     clear && classNames.clear,
-    clear && kind && `${classNames.clear}--${kind}`,
+    clear && kind && classNames[`clear--${kind}`],
   );
 
   // Add .`__content` if there are multiple children
