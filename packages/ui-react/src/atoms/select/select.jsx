@@ -8,6 +8,31 @@ import {
 } from './select.constants';
 import { CLASS_NAMES } from './select.class-names';
 
+const defaultRender = optionItems =>
+  optionItems.map((option, index) => {
+    const item = (typeof option !== 'object') ?
+      {
+        value: option,
+        text: option,
+        key: option,
+      } :
+      {
+        key: index,
+        ...option,
+      };
+
+    const { text, value, ...restOptionProps } = item;
+
+    return (
+      <option
+        value={value}
+        {...restOptionProps}
+      >
+        {text}
+      </option>
+    );
+  });
+
 export const Select = (props) => {
   const {
     className,
@@ -15,6 +40,8 @@ export const Select = (props) => {
     size,
     valid,
     options,
+    render,
+    children,
     ...restProps
   } = props;
 
@@ -29,29 +56,7 @@ export const Select = (props) => {
       className={rootClassName}
       {...restProps}
     >
-      {options.map((option, index) => {
-        const item = (typeof option !== 'object') ?
-          {
-            value: option,
-            text: option,
-            key: option,
-          } :
-          {
-            key: index,
-            ...option,
-          };
-
-        const { text, value, ...restOptionProps } = item;
-
-        return (
-          <option
-            value={value}
-            {...restOptionProps}
-          >
-            {text}
-          </option>
-        );
-      })}
+      {children || render(options)}
     </select>
   );
 };
@@ -62,6 +67,8 @@ Select.defaultProps = {
   size: SIZE_MEDIUM,
   valid: null,
   options: [],
+  render: defaultRender,
+  children: null,
 };
 
 Select.propTypes = {
@@ -91,4 +98,10 @@ Select.propTypes = {
       ]),
     }),
   ])),
+
+  /** Render prop function */
+  render: PropTypes.func,
+
+  /** Inner content */
+  children: PropTypes.node,
 };

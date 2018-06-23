@@ -367,6 +367,52 @@ exports[`Storyshots Components/Atoms/Select info 1`] = `
 </select>
 `;
 
+exports[`Storyshots Components/Atoms/Select with children 1`] = `
+<select
+  className="ui-select ui-select--medium"
+  onChange={[Function]}
+>
+  <optgroup
+    label="Group A"
+  >
+    <option
+      value="a1"
+    >
+      Option 1
+    </option>
+    <option
+      value="a2"
+    >
+      Option 2
+    </option>
+    <option
+      value="a3"
+    >
+      Option 3
+    </option>
+  </optgroup>
+  <optgroup
+    label="Group b"
+  >
+    <option
+      value="b1"
+    >
+      Option 1
+    </option>
+    <option
+      value="b2"
+    >
+      Option 2
+    </option>
+    <option
+      value="b3"
+    >
+      Option 3
+    </option>
+  </optgroup>
+</select>
+`;
+
 exports[`Storyshots Components/Atoms/Select with custom css-module class names 1`] = `
 <select
   className="root medium"

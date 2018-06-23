@@ -64,6 +64,7 @@ stories.add('with options attributes', () => (
   />
 ));
 
+
 stories.add('with valid state', () => (
   <Select
     onChange={action('Change')}
@@ -107,3 +108,22 @@ stories.add('with imported css-module class names', () => (
     classNames={classNamesImport}
   />
 ));
+
+stories.add('with children', () => (
+  <Select
+    onChange={action('Change')}
+    size={selectSize()}
+  >
+    <optgroup label="Group A">
+      <option value="a1">Option 1</option>
+      <option value="a2">Option 2</option>
+      <option value="a3">Option 3</option>
+    </optgroup>
+    <optgroup label="Group b">
+      <option value="b1">Option 1</option>
+      <option value="b2">Option 2</option>
+      <option value="b3">Option 3</option>
+    </optgroup>
+  </Select>
+));
+
