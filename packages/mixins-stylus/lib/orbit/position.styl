@@ -4,7 +4,7 @@
  * - literal with calc
  */
 -is-position-value($value) {
-  return type($value) == 'unit' || (type($value) == 'literal' && match("^calc(.*?)$", $value));
+  return type($value) == 'unit' || (type($value) == 'literal' && match('^calc(.*?)$', $value));
 }
 
 /*

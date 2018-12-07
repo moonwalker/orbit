@@ -73,7 +73,15 @@ stories.add('with render prop', () => (
     kind={selectKind()}
     size={selectSize()}
     name={selectName('backup')}
-    renderIcon={props => <span>{props.name} / {props.size}</span>}
+    renderIcon={props => (
+      <span>
+        {props.name}
+        {' '}
+/
+        {' '}
+        {props.size}
+      </span>
+    )}
   />
 ));
 

@@ -8,30 +8,29 @@ import {
 } from './select.constants';
 import { CLASS_NAMES } from './select.class-names';
 
-const defaultRender = optionItems =>
-  optionItems.map((option, index) => {
-    const item = (typeof option !== 'object') ?
-      {
-        value: option,
-        text: option,
-        key: option,
-      } :
-      {
-        key: index,
-        ...option,
-      };
+const defaultRender = optionItems => optionItems.map((option, index) => {
+  const item = (typeof option !== 'object')
+    ? {
+      value: option,
+      text: option,
+      key: option,
+    }
+    : {
+      key: index,
+      ...option,
+    };
 
-    const { text, value, ...restOptionProps } = item;
+  const { text, value, ...restOptionProps } = item;
 
-    return (
-      <option
-        value={value}
-        {...restOptionProps}
-      >
-        {text}
-      </option>
-    );
-  });
+  return (
+    <option
+      value={value}
+      {...restOptionProps}
+    >
+      {text}
+    </option>
+  );
+});
 
 export const Select = (props) => {
   const {

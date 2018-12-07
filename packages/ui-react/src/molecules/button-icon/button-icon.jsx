@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import { Icon } from '../../';
+import { Icon } from '../..';
 import {
   KINDS,
   KIND_DEFAULT,

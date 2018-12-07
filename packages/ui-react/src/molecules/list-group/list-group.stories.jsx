@@ -53,16 +53,15 @@ stories.add('with custom render', () => (
     <ListGroup
       size={selectSize()}
       as="nav"
-      render={({ getListGroupItemProps }) =>
-          items.map((item, index) => (
-            <a
-              key={item}
-              href={`#${index}`}
-              {...getListGroupItemProps()}
-            >
-              {item}
-            </a>
-          ))
+      render={({ getListGroupItemProps }) => items.map((item, index) => (
+        <a
+          key={item}
+          href={`#${index}`}
+          {...getListGroupItemProps()}
+        >
+          {item}
+        </a>
+      ))
       }
     />
   </div>

@@ -15,8 +15,7 @@ import classNamesImport from './select.stories.import-modules.styl';
 
 const stories = storiesOf('Components/Atoms/Select', module);
 
-const selectSize = size =>
-  select('Size', SIZES, size || SIZE_MEDIUM);
+const selectSize = size => select('Size', SIZES, size || SIZE_MEDIUM);
 
 const options = [
   'Option A',
@@ -126,4 +125,3 @@ stories.add('with children', () => (
     </optgroup>
   </Select>
 ));
-
