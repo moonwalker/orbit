@@ -3,7 +3,7 @@ const { resolve } = require('path');
 const webpackMerge = require('webpack-merge');
 const autoprefixer = require('autoprefixer');
 const orbitUI = require('@moonwalker/orbit-ui-stylus');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = storybookConfig => webpackMerge(storybookConfig, {
   resolve: {
