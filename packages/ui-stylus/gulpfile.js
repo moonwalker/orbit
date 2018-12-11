@@ -1,5 +1,5 @@
 const path = require('path');
-const gulp = require('gulp');
+const { src, dest, parallel, series, watch } = require('gulp');
 const stylus = require('gulp-stylus');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
@@ -13,8 +13,7 @@ const orbitUI = require('./');
 const OUTPUT_DIR = path.join(__dirname, 'dist');
 const pages = require(path.join(__dirname, 'demo/pages.json')); // eslint-disable-line import/no-dynamic-require
 
-const getPage = slug =>
-  pages.find(page => page.slug === slug);
+const getPage = slug => pages.find(page => page.slug === slug);
 
 const loadPugData = (file, enc, next) => {
   const filepath = path.parse(file.path);
@@ -28,16 +27,18 @@ const loadPugData = (file, enc, next) => {
   next(null, file);
 };
 
-gulp.task('html', () => {
-  gulp.src('**/[^_]*.pug', { cwd: 'demo', base: 'demo' })
+const buildHtml = (cb) => {
+  src('**/[^_]*.pug', { cwd: 'demo', base: 'demo' })
     .pipe(through(loadPugData))
     .pipe(pug())
     .pipe(print())
-    .pipe(gulp.dest(OUTPUT_DIR));
-});
+    .pipe(dest(OUTPUT_DIR));
 
-gulp.task('css', () => {
-  gulp.src('**/[^_]*.styl', { cwd: 'demo', base: 'demo' })
+  cb();
+};
+
+const buildCss = (cb) => {
+  src('**/[^_]*.styl', { cwd: 'demo', base: 'demo' })
     .pipe(stylus({
       use: orbitUI({
         autoImport: false,
@@ -47,12 +48,12 @@ gulp.task('css', () => {
       autoprefixer,
     ]))
     .pipe(print())
-    .pipe(gulp.dest(OUTPUT_DIR));
-});
+    .pipe(dest(OUTPUT_DIR));
 
-gulp.task('build', ['css', 'html']);
+  cb();
+};
 
-gulp.task('serve', ['build'], () => {
+const listen = () => {
   browserSync.init({
     server: {
       baseDir: OUTPUT_DIR,
@@ -64,6 +65,12 @@ gulp.task('serve', ['build'], () => {
     open: false,
   });
 
-  gulp.watch(['lib/**/*.styl', 'demo/**/*.styl'], ['css']);
-  gulp.watch(['demo/**/*.pug'], ['html']);
-});
+  watch(['lib/**/*.styl', 'demo/**/*.styl'], buildCss);
+  watch(['demo/**/*.pug'], buildHtml);
+};
+
+const build = parallel(buildHtml, buildCss);
+const serve = series(build, listen);
+
+module.exports.build = build;
+module.exports.serve = serve;
