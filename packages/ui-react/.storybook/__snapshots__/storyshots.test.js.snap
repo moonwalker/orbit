@@ -764,7 +764,9 @@ exports[`Storyshots Components/Molecules/ButtonIcon with render prop 1`] = `
 >
   <span>
     backup
-     / 
+     
+    /
+     
     medium
   </span>
 </button>
@@ -1218,12 +1220,18 @@ exports[`Storyshots Examples/SearchField default 1`] = `
   }
 >
   <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-0-label"
+    aria-owns={null}
     className="search-field"
+    role="combobox"
   >
     <input
       aria-activedescendant={null}
       aria-autocomplete="list"
-      aria-expanded={false}
+      aria-controls={null}
+      aria-labelledby="downshift-0-label"
       autoComplete="off"
       className="ui-input search-field__input ui-input--large"
       id="downshift-0-input"
@@ -1231,7 +1239,6 @@ exports[`Storyshots Examples/SearchField default 1`] = `
       onChange={[Function]}
       onKeyDown={[Function]}
       placeholder="Search for something"
-      role="combobox"
       value=""
     />
     <i
@@ -1254,12 +1261,18 @@ exports[`Storyshots Examples/SearchField with predefined query 1`] = `
   }
 >
   <div
+    aria-expanded={true}
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-1-label"
+    aria-owns="downshift-1-menu"
     className="search-field"
+    role="combobox"
   >
     <input
       aria-activedescendant={null}
       aria-autocomplete="list"
-      aria-expanded={true}
+      aria-controls="downshift-1-menu"
+      aria-labelledby="downshift-1-label"
       autoComplete="off"
       className="ui-input search-field__input ui-input--large"
       id="downshift-1-input"
@@ -1267,20 +1280,13 @@ exports[`Storyshots Examples/SearchField with predefined query 1`] = `
       onChange={[Function]}
       onKeyDown={[Function]}
       placeholder="Search for something"
-      role="combobox"
-      value="Lo"
+      value=""
     />
-    <button
-      className="ui-button-icon search-field__icon search-field__icon--clear ui-button-icon--large ui-button-icon--default"
-      onClick={[Function]}
-      type="button"
+    <i
+      className="ui-icon search-field__icon search-field__icon--search ui-icon--large"
     >
-      <i
-        className="ui-icon ui-icon--large"
-      >
-        close
-      </i>
-    </button>
+      search
+    </i>
     <div
       className="ui-dropdown search-field__results"
     >
@@ -1288,29 +1294,90 @@ exports[`Storyshots Examples/SearchField with predefined query 1`] = `
         className="ui-list-group ui-list-group--medium"
       >
         <li
+          aria-selected={false}
           className="ui-list-group__item"
           id="downshift-1-item-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseMove={[Function]}
+          role="option"
         >
-          Lottie Ramirez
+          Kristine Mckenzie
         </li>
         <li
+          aria-selected={false}
           className="ui-list-group__item"
           id="downshift-1-item-1"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseMove={[Function]}
+          role="option"
         >
-          Kirkland Cook
+          Lottie Ramirez
         </li>
         <li
+          aria-selected={false}
           className="ui-list-group__item"
           id="downshift-1-item-2"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseMove={[Function]}
+          role="option"
+        >
+          Wendy Mitchell
+        </li>
+        <li
+          aria-selected={false}
+          className="ui-list-group__item"
+          id="downshift-1-item-3"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseMove={[Function]}
+          role="option"
+        >
+          Best Mcfarland
+        </li>
+        <li
+          aria-selected={false}
+          className="ui-list-group__item"
+          id="downshift-1-item-4"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseMove={[Function]}
+          role="option"
+        >
+          Barnes Solis
+        </li>
+        <li
+          aria-selected={false}
+          className="ui-list-group__item"
+          id="downshift-1-item-5"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseMove={[Function]}
+          role="option"
+        >
+          Kirkland Cook
+        </li>
+        <li
+          aria-selected={false}
+          className="ui-list-group__item"
+          id="downshift-1-item-6"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseMove={[Function]}
+          role="option"
+        >
+          Sharpe Townsend
+        </li>
+        <li
+          aria-selected={false}
+          className="ui-list-group__item"
+          id="downshift-1-item-7"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseMove={[Function]}
+          role="option"
         >
           Marcie Adkins
         </li>

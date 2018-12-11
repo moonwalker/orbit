@@ -30,7 +30,8 @@ export const SearchField = ({ items, ...restProps }) => (
   <Downshift
     {...restProps}
     itemToString={itemToString}
-    render={({
+  >
+    {({
       getInputProps,
       isOpen,
       reset,
@@ -94,7 +95,7 @@ export const SearchField = ({ items, ...restProps }) => (
         )}
       </div>
     )}
-  />
+  </Downshift>
 );
 
 SearchField.defaultProps = {
