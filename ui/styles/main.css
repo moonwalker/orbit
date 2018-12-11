@@ -557,7 +557,7 @@ h6 + dl {
  *
  * Based on https://github.com/google/material-design-icons/blob/master/iconfont/material-icons.css
  */
-.ui-button {
+.ui-icon {
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -586,22 +586,22 @@ h6 + dl {
 /*
  * Size modifers
  */
-.ui-button--xsmall {
+.ui-icon--xsmall {
   width: 12px;
   height: 12px;
   font-size: 12px;
 }
-.ui-button--small {
+.ui-icon--small {
   width: 16px;
   height: 16px;
   font-size: 16px;
 }
-.ui-button--large {
+.ui-icon--large {
   width: 32px;
   height: 32px;
   font-size: 32px;
 }
-.ui-button--xlarge {
+.ui-icon--xlarge {
   width: 40px;
   height: 40px;
   font-size: 40px;
