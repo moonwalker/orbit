@@ -2,14 +2,14 @@ module.exports = {
   extends: 'airbnb',
   rules: {
     'import/no-extraneous-dependencies': [
-      ['error', {
+      'error', {
         peerDependencies: true,
         devDependencies: [
           '**/*stories.jsx',
           '**/*.spec.js',
         ],
-      }]
+      }
     ],
-    'import/prefer-default-export': false,
+    'import/prefer-default-export': 'off',
   },
 }

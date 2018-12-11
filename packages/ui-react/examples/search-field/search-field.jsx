@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import Downshift from 'downshift';
 import cx from 'classnames';
 
@@ -17,9 +18,9 @@ const searchItems = (items, query) => {
   const pattern = new RegExp(query, 'i');
 
   return items.filter(item => (
-    pattern.test(item.name) ||
-    pattern.test(item.company) ||
-    pattern.test(item.email)
+    pattern.test(item.name)
+    || pattern.test(item.company)
+    || pattern.test(item.email)
   ));
 };
 
@@ -47,8 +48,8 @@ export const SearchField = ({ items, ...restProps }) => (
           })}
         />
 
-        {inputValue ?
-          (
+        {inputValue
+          ? (
             <ButtonIcon
               className="search-field__icon search-field__icon--clear"
               type="button"
@@ -56,8 +57,8 @@ export const SearchField = ({ items, ...restProps }) => (
               size="large"
               onClick={() => reset({ inputValue: '' })}
             />
-          ) :
-          (
+          )
+          : (
             <Icon
               className="search-field__icon search-field__icon--search"
               name="search"
@@ -69,8 +70,8 @@ export const SearchField = ({ items, ...restProps }) => (
         {isOpen && (
           <Dropdown className="search-field__results">
             <ListGroup
-              render={({ getListGroupItemProps }) =>
-                searchItems(items, inputValue).map((item, index) => (
+              render={({ getListGroupItemProps }) => searchItems(items, inputValue)
+                .map((item, index) => (
                   <li
                     {...getItemProps({
                       index,
