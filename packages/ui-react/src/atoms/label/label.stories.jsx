@@ -14,8 +14,7 @@ import classNamesImport from './label.stories.import-modules.styl';
 
 const stories = storiesOf('Components/Atoms/Label', module);
 
-const selectSize = size =>
-  select('Size', SIZES, size || SIZE_MEDIUM);
+const selectSize = size => select('Size', SIZES, size || SIZE_MEDIUM);
 
 stories.add('info', withInfo({ inline: true })(() => (
   <Label size="large">

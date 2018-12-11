@@ -34,8 +34,8 @@ const mergePropValue = (propName, propValue, ownProps) => {
   return ownProps[propName] || propValue;
 };
 
-const mergePropsToChild = (childComponent, props) =>
-  Object.entries(props).reduce((aggregator, [propName, propValue]) => ({
+const mergePropsToChild = (childComponent, props) => Object.entries(props)
+  .reduce((aggregator, [propName, propValue]) => ({
     ...aggregator,
     [propName]: mergePropValue(propName, propValue, childComponent.props),
   }), {});
@@ -45,13 +45,13 @@ const wrapChild = props => (child) => {
     return null;
   }
 
-  const childComponent = typeof child === 'string' ?
-    (
+  const childComponent = typeof child === 'string'
+    ? (
       <ButtonContent>
         {child}
       </ButtonContent>
-    ) :
-    child;
+    )
+    : child;
 
   return React.cloneElement(
     childComponent,
@@ -86,9 +86,9 @@ export const Button = (props) => {
   );
 
   // Add .`__content` if there are multiple children
-  const processedChildren = typeof children === 'string' ?
-    children :
-    React.Children.map(children, wrapChild({
+  const processedChildren = typeof children === 'string'
+    ? children
+    : React.Children.map(children, wrapChild({
       size,
       className: cx(classNames.content, {
         [classNames[`content--${size}`]]: size,

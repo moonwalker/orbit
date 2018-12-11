@@ -1,4 +1,12 @@
+.editorconfig
+.eslint*
+.jest
 .storybook
+__mocks__
+artifacts
 examples
-*stories.jsx
+jest.config.js
+jsconfig.json
+src/**/*stories.jsx
 storybook-static
+webpack.config.js

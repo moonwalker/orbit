@@ -21,7 +21,7 @@ export const Label = (props) => {
     [classNames[size]]: size,
   });
 
-  /* eslint-disable jsx-a11y/label-has-for */
+  /* eslint-disable jsx-a11y/label-has-for, jsx-a11y/label-has-associated-control */
   return (
     <label
       className={rootClassName}
@@ -30,7 +30,7 @@ export const Label = (props) => {
       {children}
     </label>
   );
-  /* eslint-enable jsx-a11y/label-has-for */
+  /* eslint-enable jasx-a11y/label-has-for, jsx-a11y/label-has-associated-control */
 };
 
 Label.defaultProps = {

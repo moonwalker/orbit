@@ -1,9 +1,9 @@
 /* globals require, __dirname, process */
 const { resolve } = require('path');
 const webpackMerge = require('webpack-merge');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const orbitUI = require('@moonwalker/orbit-ui-stylus');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = storybookConfig => webpackMerge(storybookConfig, {
   resolve: {
@@ -16,10 +16,9 @@ module.exports = storybookConfig => webpackMerge(storybookConfig, {
       {
         test: /\.(css|styl)$/,
         enforce: 'post',
-        loader: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: []
-        }),
+        use: process.env.NODE_ENV === 'production'
+          ? MiniCssExtractPlugin.loader
+          : 'style-loader'
       },
       {
         test: /\.(css|styl)$/,
@@ -72,9 +71,10 @@ module.exports = storybookConfig => webpackMerge(storybookConfig, {
     ],
   },
   plugins: [
-    new ExtractTextPlugin({
-      filename: '[name].css',
-      disable: process.env.NODE_ENV === 'production',
-    }),
+    ...(process.env.NODE_ENV === 'production' ? [
+      new MiniCssExtractPlugin({
+        filename: '[name].css'
+      }),
+    ] : [])
   ],
 });
