@@ -1,6 +1,6 @@
 # Orbit
 
-![CircleCI branch](https://img.shields.io/circleci/project/github/moonwalker/orbit/master.svg)
+[![CircleCI branch](https://img.shields.io/circleci/project/github/moonwalker/orbit/master.svg)](https://circleci.com/gh/moonwalker/orbit)
 [![renovatebot](https://badges.renovateapi.com/github/moonwalker/orbit)](https://renovatebot.com/dashboard#github/moonwalker/orbit)
 
 | Package | Description |
