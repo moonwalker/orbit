@@ -1,7 +1,7 @@
 # Orbit
 
-![CircleCI branch](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser/master.svg?style=flat-square)
-[![renovatebot](https://badges.renovateapi.com/github/moonwalker/jetpack)](https://renovatebot.com/dashboard#github/moonwalker/orbit)
+![CircleCI branch](https://img.shields.io/circleci/project/github/moonwalker/orbit/master.svg)
+[![renovatebot](https://badges.renovateapi.com/github/moonwalker/orbit)](https://renovatebot.com/dashboard#github/moonwalker/orbit)
 
 | Package | Description |
 |---------|-------------|
