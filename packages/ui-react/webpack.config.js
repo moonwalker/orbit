@@ -17,8 +17,30 @@ module.exports = {
     libraryTarget: 'umd',
   },
   externals: {
-    react: 'React',
-    'react-dom': 'ReactDOM',
+    classnames: {
+      commonjs: 'classnames',
+      commonjs2: 'classnames',
+      amd: 'classnames',
+      root: 'classnames',
+    },
+    'prop-types': {
+      commonjs: 'prop-types',
+      commonjs2: 'prop-types',
+      amd: 'PropTypes',
+      root: 'PropTypes',
+    },
+    react: {
+      commonjs: 'react',
+      commonjs2: 'react',
+      amd: 'React',
+      root: 'React',
+    },
+    'react-dom': {
+      commonjs: 'react-dom',
+      commonjs2: 'react-dom',
+      amd: 'ReactDOM',
+      root: 'ReactDOM',
+    },
   },
   resolve: {
     extensions: ['.jsx', '.js', '.json'],
