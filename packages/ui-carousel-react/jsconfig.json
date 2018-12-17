@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "lib": "esnext",
+    "checkJs": true,
+    "module": "es6",
+    "jsx": "react"
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

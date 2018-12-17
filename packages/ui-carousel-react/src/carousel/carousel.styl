@@ -1,0 +1,70 @@
+.root {
+  width: 100%;
+  relative();
+}
+
+.outerWrapper {
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+
+  // extra space to hide the scrollbar
+  padding-bottom: $space-medium;
+  margin-bottom: -($space-medium);
+}
+
+.items {
+  inline-flex();
+  // set the flex container 100% to allow items to stretch full width
+  width: 100%;
+}
+
+.item {
+  flex: 0 0 auto;
+}
+
+// state: hasItemsScrollingIntoView
+// snap-alignment is affecting the scrollTo smoth scrolling when there are multiple items
+// -----------------------------------------------------------------------------
+.snapScrolling .item {
+  scroll-snap-align: start;
+}
+
+.snapScrolling.hasItemsScrollingIntoView .item {
+  scroll-snap-align: none;
+}
+
+// state: off canvas item
+// -----------------------------------------------------------------------------
+.item {
+  opacity: 1;
+  pointer-events: all;
+  transition: $state-transition-out;
+}
+
+.itemOffCanvas {
+  opacity: 0.5;
+  pointer-events: none;
+  transition: $state-transition-in;
+}
+
+// element: Navigation
+// -----------------------------------------------------------------------------
+.navigation {
+  absolute(left right top 50%);
+  height: 0;
+  z-index: 10;
+}
+
+// State: loading
+// -----------------------------------------------------------------------------
+.loading {
+  pointer-events: none;
+  overflow: hidden;
+}
