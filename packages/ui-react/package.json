@@ -12,18 +12,22 @@
   "author": "Vio <vio@moonwalker.tech>",
   "license": "MIT",
   "main": "dist/orbit-ui-react.js",
-  "module": "src/index.js",
+  "module": "dist-esm/index.js",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "build": "npm run build-lib && npm run build-storybook",
+    "build": "npm run build-esm && npm run build-lib && npm run build-storybook",
+    "build-esm": "rm -fr ./dist-esm && babel -d dist-esm src",
     "build-lib": "webpack --mode production",
     "build-storybook": "build-storybook",
     "lint": "eslint --ext js,jsx .",
     "prepublishOnly": "npm run lint && npm run test && npm run build",
     "start": "storybook-server -p 8081",
     "test": "jest"
+  },
+  "dependencies": {
+    "@babel/runtime": "7.2.0"
   },
   "peerDependencies": {
     "classnames": "^2.2.6",
@@ -32,6 +36,7 @@
     "react-dom": "^16.6.3"
   },
   "devDependencies": {
+    "@babel/cli": "7.2.0",
     "@babel/core": "7.2.0",
     "@babel/plugin-proposal-class-properties": "7.2.1",
     "@babel/plugin-proposal-decorators": "7.2.0",
@@ -42,6 +47,7 @@
     "@babel/plugin-proposal-throw-expressions": "7.2.0",
     "@babel/plugin-syntax-dynamic-import": "7.2.0",
     "@babel/plugin-syntax-import-meta": "7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
     "@babel/preset-env": "7.2.0",
     "@babel/preset-react": "7.0.0",
     "@moonwalker/orbit-ui": "^1.6.1",
