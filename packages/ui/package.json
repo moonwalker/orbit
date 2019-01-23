@@ -25,13 +25,13 @@
   "devDependencies": {
     "@moonwalker/orbit-ui-stylus": "^1.6.1",
     "autoprefixer": "9.4.6",
-    "cssnano": "4.1.7",
+    "cssnano": "4.1.8",
     "gulp": "4.0.0",
     "gulp-postcss": "8.0.0",
     "gulp-print": "5.0.0",
     "gulp-rename": "1.4.0",
     "gulp-stylus": "2.7.0",
-    "stylelint": "9.9.0",
+    "stylelint": "9.10.1",
     "stylelint-config-recommended": "2.1.0",
     "stylus": "0.54.5"
   }
