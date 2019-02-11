@@ -1,7 +1,7 @@
 {
-  "timezone": "CET",
-  "prHourlyLimit": 0,
   "extends": [
     "config:base"
-  ]
+  ],
+  "timezone": "CET",
+  "prHourlyLimit": 20
 }
