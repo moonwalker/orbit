@@ -26,10 +26,10 @@
     "test": "jest"
   },
   "devDependencies": {
-    "eslint": "^5.14.1",
+    "eslint": "5.14.1",
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-plugin-import": "2.16.0",
-    "eslint-plugin-jest": "^22.3.0",
+    "eslint-plugin-jest": "22.3.0",
     "jest": "24.1.0",
     "stylint": "1.5.9",
     "stylus": "0.54.5"
