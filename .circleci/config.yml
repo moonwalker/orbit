@@ -58,6 +58,9 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/repo
+      - add_ssh_keys:
+          fingerprints:
+            - "11:c8:1f:4c:fb:3b:92:2e:b6:d0:30:25:4e:73:b5:58"
       - run:
           name: Deploy pages
           command:
