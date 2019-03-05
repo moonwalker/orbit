@@ -7,11 +7,10 @@ executors:
     working_directory: /tmp
 
 jobs:
-  build:
+  dependencies:
     executor: runner
     steps:
       - checkout
-
       - restore_cache:
           keys:
             - v0-deps-{{ .Branch }}
@@ -21,14 +20,6 @@ jobs:
       - run:
           name: Install dependencies
           command: npm install && npm run lerna -- bootstrap
-
-      - run:
-          name: Test
-          command: npm run test
-
-      - run:
-          name: Build
-          command: npm run lerna -- run build
 
       - save_cache:
           key: v0-deps-{{ .Branch }}
@@ -44,6 +35,24 @@ jobs:
           paths:
             - *
 
+  test:
+    executor: runner
+    steps:
+      - attach_workspace:
+          at: /tmp/workspace
+      - run:
+          name: Test
+          command: npm run test
+
+  build:
+    executor: runner
+    steps:
+      - attach_workspace:
+          at: /tmp/workspace
+      - run:
+          name: Build
+          command: npm run lerna -- run build
+
   deploy:
     executor: runner
     steps:
@@ -58,11 +67,17 @@ workflows:
   version: 2.1
 
   build:
+    filters:
+      branches:
+        ignore: gh-pages
     jobs:
+      - dependencies
+      - test
+          requires:
+            - dependencies
       - build:
-          filters:
-            branches:
-              ignore: gh-pages
+          requires:
+            - test
       - deploy:
           requires:
             - build
