@@ -80,7 +80,7 @@ workflows:
               ignore: gh-pages
       - build:
           requires:
-            - test
+            - dependencies
           filters:
             branches:
               ignore: gh-pages
