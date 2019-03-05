@@ -60,7 +60,7 @@ jobs:
           at: ~/repo
       - add_ssh_keys:
           fingerprints:
-            - "0d:4b:b9:b8:68:77:71:57:fe:66:e4:d9:83:43:11:03"
+            - "46:07:4d:8e:ce:5f:84:48:fb:3c:06:83:6b:24:72:dd"
       - run:
           name: Deploy pages
           command:
