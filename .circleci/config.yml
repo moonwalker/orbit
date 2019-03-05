@@ -1,11 +1,14 @@
-version: 2
-jobs:
-  build:
+version: 2.1
+
+executors:
+  runner:
     docker:
       - image: circleci/node:9.11.2@sha256:edd46a503ae6228ef01b933384a9eb3562ba0d4ac58d4a89a73c497551e2a158
+    working_directory: /tmp
 
-    working_directory: ~/repo
-
+jobs:
+  build:
+    executor: runner
     steps:
       - checkout
 
@@ -36,22 +39,25 @@ jobs:
             - "packages/ui/node_modules"
             - "packages/ui-react/node_modules"
 
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - *
+
   deploy:
-    docker:
-      - image: circleci/node:9.11.2@sha256:edd46a503ae6228ef01b933384a9eb3562ba0d4ac58d4a89a73c497551e2a158
-
-    working_directory: ~/repo
-
+    executor: runner
     steps:
+      - attach_workspace:
+          at: /tmp/workspace
       - run:
           name: Deploy pages
           command:
             npm run build-pages
 
 workflows:
-  version: 2
+  version: 2.1
 
-  build_and_deploy:
+  build:
     jobs:
       - build:
           filters:
