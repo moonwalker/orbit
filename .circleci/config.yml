@@ -4,8 +4,6 @@ jobs:
     docker:
       - image: circleci/node:9.11.2@sha256:edd46a503ae6228ef01b933384a9eb3562ba0d4ac58d4a89a73c497551e2a158
 
-    working_directory: ~/repo
-
     steps:
       - checkout
 
@@ -20,15 +18,12 @@ jobs:
           command: npm install && npm run lerna -- bootstrap
 
       - run:
+          name: Test
+          command: npm run test
+
+      - run:
           name: Build
           command: npm run lerna -- run build
-
-      - deploy:
-          name: Deploy pages
-          command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              npm run build-pages
-            fi
 
       - save_cache:
           key: v0-deps-{{ .Branch }}
@@ -38,3 +33,33 @@ jobs:
             - "packages/ui-stylus/node_modules"
             - "packages/ui/node_modules"
             - "packages/ui-react/node_modules"
+
+  deploy:
+    docker:
+      - image: circleci/node:9.11.2@sha256:edd46a503ae6228ef01b933384a9eb3562ba0d4ac58d4a89a73c497551e2a158
+
+    steps:
+      - run:
+          name: Deploy pages
+          command:
+            npm run build-pages
+
+workflows:
+  version: 2
+
+  build_and_deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              ignore: gh-pages
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
+
+
+
+
