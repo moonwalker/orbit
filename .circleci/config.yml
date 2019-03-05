@@ -4,7 +4,7 @@ executors:
   runner:
     docker:
       - image: circleci/node:9.11.2@sha256:edd46a503ae6228ef01b933384a9eb3562ba0d4ac58d4a89a73c497551e2a158
-    working_directory: /tmp
+    working_directory: ~/repo
 
 jobs:
   dependencies:
@@ -31,15 +31,15 @@ jobs:
             - "packages/ui-react/node_modules"
 
       - persist_to_workspace:
-          root: /tmp/workspace
+          root: '.'
           paths:
-            - *
+            - '*'
 
   test:
     executor: runner
     steps:
       - attach_workspace:
-          at: /tmp/workspace
+          at: ~/repo
       - run:
           name: Test
           command: npm run test
@@ -48,7 +48,7 @@ jobs:
     executor: runner
     steps:
       - attach_workspace:
-          at: /tmp/workspace
+          at: ~/repo
       - run:
           name: Build
           command: npm run lerna -- run build
@@ -57,7 +57,7 @@ jobs:
     executor: runner
     steps:
       - attach_workspace:
-          at: /tmp/workspace
+          at: ~/repo
       - run:
           name: Deploy pages
           command:
@@ -67,17 +67,23 @@ workflows:
   version: 2.1
 
   build:
-    filters:
-      branches:
-        ignore: gh-pages
     jobs:
-      - dependencies
-      - test
+      - dependencies:
+          filters:
+            branches:
+              ignore: gh-pages
+      - test:
           requires:
             - dependencies
+          filters:
+            branches:
+              ignore: gh-pages
       - build:
           requires:
-            - test
+            - dependencies
+          filters:
+            branches:
+              ignore: gh-pages
       - deploy:
           requires:
             - build
