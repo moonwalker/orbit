@@ -73,10 +73,6 @@ jobs:
   deploy:
     executor: runner
     steps:
-      - add_ssh_keys:
-          fingerprints:
-            - "0d:4b:b9:b8:68:77:71:57:fe:66:e4:d9:83:43:11:03"
-            - "80:32:38:eb:e1:7a:df:ca:20:81:ef:d1:ff:8c:49:fc"
       - attach_workspace:
           at: ~/repo
       - run:
@@ -108,11 +104,11 @@ workflows:
             branches:
               ignore: gh-pages
 
-      # - build_pages:
-      #     requires:
-      #       - build
+      - build_pages:
+          requires:
+            - build
 
-      # - deploy:
-      #     requires:
-      #       - build_pages
-      #       - test
+      - deploy:
+          requires:
+            - build_pages
+            - test
