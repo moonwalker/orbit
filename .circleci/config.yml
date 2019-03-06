@@ -73,11 +73,9 @@ jobs:
   deploy:
     executor: runner
     steps:
-      - add_ssh_keys:
-          fingerprints:
-            - "da:67:04:98:16:a8:70:c7:dd:bb:ce:47:aa:d9:f9:15"
       - attach_workspace:
           at: ~/repo
+      - add_ssh_keys
       - run:
           name: Deploy pages
           command: |
