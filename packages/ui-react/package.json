@@ -17,7 +17,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "npm run build-esm && npm run build-lib && npm run build-storybook",
+    "build": "npm run build-esm && npm run build-lib",
     "build-esm": "rm -fr ./dist-esm && babel -d dist-esm src",
     "build-lib": "rm -fr ./dist && webpack --mode production",
     "build-pages": "build-storybook",
