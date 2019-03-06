@@ -52,18 +52,38 @@ jobs:
       - run:
           name: Build
           command: npm run lerna -- run build
+      - persist_to_workspace:
+          root: '.'
+          paths:
+            - '*'
 
-  deploy:
+  build_pages:
     executor: runner
     steps:
       - attach_workspace:
           at: ~/repo
+      - run:
+          name: Build
+          command: npm run lerna -- run build-pages
+      - persist_to_workspace:
+          root: '.'
+          paths:
+            - '*'
+
+  deploy:
+    executor: runner
+    steps:
       - add_ssh_keys:
           fingerprints:
             - "0d:4b:b9:b8:68:77:71:57:fe:66:e4:d9:83:43:11:03"
+            - "80:32:38:eb:e1:7a:df:ca:20:81:ef:d1:ff:8c:49:fc"
+      - attach_workspace:
+          at: ~/repo
       - run:
           name: Deploy pages
-          command:
+          command: |
+            git config user.email "ci-build@moonwalker.tech"
+            git config user.name "ci-build"
             npm run build-pages
 
 workflows:
@@ -87,9 +107,12 @@ workflows:
           filters:
             branches:
               ignore: gh-pages
-      - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only: master
+
+      # - build_pages:
+      #     requires:
+      #       - build
+
+      # - deploy:
+      #     requires:
+      #       - build_pages
+      #       - test
