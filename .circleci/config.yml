@@ -79,8 +79,7 @@ jobs:
       - run:
           name: Deploy pages
           command: |
-            git config user.email "ci-build@moonwalker.tech"
-            git config user.name "ci-build"
+            ./scripts/pre-deploy.sh
             npm run build-pages
 
 workflows:
@@ -108,8 +107,14 @@ workflows:
       - build_pages:
           requires:
             - build
-
+          filters:
+            branches:
+              only: master
+              
       - deploy:
           requires:
             - build_pages
             - test
+          filters:
+            branches:
+              only: master
