@@ -38,7 +38,7 @@
     "eslint-plugin-jest": "22.3.2",
     "gulp": "4.0.0",
     "gulp-postcss": "8.0.0",
-    "gulp-print": "5.0.0",
+    "gulp-print": "5.0.2",
     "gulp-pug": "4.0.1",
     "gulp-stylus": "2.7.0",
     "pug": "2.0.3",
