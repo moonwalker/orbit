@@ -5,8 +5,8 @@
   "timezone": "CET",
   "schedule": ["after 1am and before 6am on tuesday"],
   "prHourlyLimit": 20,
-  "separateMinorPatch": true,
-  "patch": {
-    "automerge": true
-  }
+  "packageRules": [{
+    "updateTypes": ["patch"],
+    "labels": ["UPDATE-PATCH"]
+  }]
 }
