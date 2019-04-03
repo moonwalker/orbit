@@ -30,7 +30,7 @@
     "@moonwalker/orbit-mixins-stylus": "^1.12.3"
   },
   "devDependencies": {
-    "autoprefixer": "9.4.10",
+    "autoprefixer": "9.5.0",
     "browser-sync": "2.26.3",
     "eslint": "5.16.0",
     "eslint-config-airbnb-base": "13.1.0",
