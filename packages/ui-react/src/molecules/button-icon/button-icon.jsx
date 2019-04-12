@@ -31,6 +31,7 @@ export const ButtonIcon = (props) => {
   return (
     <Component
       className={rootClassName}
+      name={name}
       {...restProps}
     >
       {renderIcon({ name, size })}

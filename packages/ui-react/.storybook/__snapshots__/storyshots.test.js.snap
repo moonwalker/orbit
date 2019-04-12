@@ -682,6 +682,7 @@ exports[`Storyshots Components/Atoms/Textarea with valid state 1`] = `
 exports[`Storyshots Components/Molecules/ButtonIcon default 1`] = `
 <button
   className="ui-button-icon ui-button-icon--medium ui-button-icon--default"
+  name="face"
   onClick={[Function]}
 >
   <i
@@ -695,6 +696,7 @@ exports[`Storyshots Components/Molecules/ButtonIcon default 1`] = `
 exports[`Storyshots Components/Molecules/ButtonIcon info 1`] = `
 <button
   className="ui-button-icon ui-button-icon--large ui-button-icon--primary"
+  name="home"
   onClick={[Function]}
 >
   <i
@@ -708,6 +710,7 @@ exports[`Storyshots Components/Molecules/ButtonIcon info 1`] = `
 exports[`Storyshots Components/Molecules/ButtonIcon with custom css-module class names 1`] = `
 <button
   className="root medium default"
+  name="backup"
   onClick={[Function]}
 >
   <i
@@ -721,6 +724,7 @@ exports[`Storyshots Components/Molecules/ButtonIcon with custom css-module class
 exports[`Storyshots Components/Molecules/ButtonIcon with icon name 1`] = `
 <button
   className="ui-button-icon ui-button-icon--large ui-button-icon--default"
+  name="backup"
   onClick={[Function]}
 >
   <i
@@ -734,6 +738,7 @@ exports[`Storyshots Components/Molecules/ButtonIcon with icon name 1`] = `
 exports[`Storyshots Components/Molecules/ButtonIcon with imported css-module class names 1`] = `
 <button
   className="root medium default"
+  name="backup"
   onClick={[Function]}
 >
   <i
@@ -747,6 +752,7 @@ exports[`Storyshots Components/Molecules/ButtonIcon with imported css-module cla
 exports[`Storyshots Components/Molecules/ButtonIcon with kind modifier 1`] = `
 <button
   className="ui-button-icon ui-button-icon--medium ui-button-icon--danger"
+  name="face"
   onClick={[Function]}
 >
   <i
@@ -760,6 +766,7 @@ exports[`Storyshots Components/Molecules/ButtonIcon with kind modifier 1`] = `
 exports[`Storyshots Components/Molecules/ButtonIcon with render prop 1`] = `
 <button
   className="ui-button-icon ui-button-icon--medium ui-button-icon--default"
+  name="backup"
   onClick={[Function]}
 >
   <span>
@@ -775,6 +782,7 @@ exports[`Storyshots Components/Molecules/ButtonIcon with render prop 1`] = `
 exports[`Storyshots Components/Molecules/ButtonIcon with size modifier 1`] = `
 <button
   className="ui-button-icon ui-button-icon--large ui-button-icon--default"
+  name="face"
   onClick={[Function]}
 >
   <i
