@@ -4,7 +4,7 @@ import cx from 'classnames';
 
 import {
   SIZES,
-  SIZE_MEDIUM,
+  SIZE_DEFAULT,
 } from './input.constants';
 import { CLASS_NAMES } from './input.class-names';
 
@@ -35,7 +35,7 @@ export const Input = React.forwardRef((props, ref) => {
 Input.defaultProps = {
   className: '',
   classNames: CLASS_NAMES,
-  size: SIZE_MEDIUM,
+  size: SIZE_DEFAULT,
   valid: null,
 };
 
