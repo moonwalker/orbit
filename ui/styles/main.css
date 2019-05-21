@@ -302,6 +302,7 @@ h6 + dl {
   vertical-align: middle;
   white-space: nowrap;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   transition: all 0.17s ease-out;
 }
 .ui-button:hover {
@@ -1044,6 +1045,7 @@ h6 + dl {
   white-space: nowrap;
   cursor: pointer;
   outline: none;
+  -webkit-tap-highlight-color: transparent;
   transition: all 0.17s ease-out;
 }
 .ui-button-icon:hover {
