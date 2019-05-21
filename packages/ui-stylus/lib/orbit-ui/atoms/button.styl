@@ -306,3 +306,68 @@ $component-name = 'button';
     color: $danger-dark-color;
   }
 }
+
+/*!
+ * Inline modifier
+ *-----------------------------------------------------------------------------*/
+
++modifier('inline') {
+  padding: 0;
+  background-color: transparent;
+  color: inherit;
+  font-weight: inherit;
+
+  &:hover {
+    background-color: transparent;
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
++modifier('inline--primary') {
+  color: $primary-color;
+
+  &:hover {
+    color: $primary-dark-color;
+  }
+}
+
++modifier('inline--secondary') {
+  color: $secondary-color;
+
+  &:hover {
+    color: $secondary-dark-color;
+  }
+}
+
++modifier('inline--success') {
+  color: $success-color;
+
+  &:hover {
+    color: $success-dark-color;
+  }
+}
+
++modifier('inline--info') {
+  color: $info-color;
+
+  &:hover {
+    color: $info-dark-color;
+  }
+}
+
++modifier('inline--warning') {
+  color: $warning-color;
+
+  &:hover {
+    color: $warning-dark-color;
+  }
+}
+
++modifier('inline--danger') {
+  color: $danger-color;
+
+  &:hover {
+    color: $danger-dark-color;
+  }
+}
