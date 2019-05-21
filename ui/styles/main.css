@@ -553,6 +553,56 @@ h6 + dl {
   color: #eb264f;
 }
 /*
+ * Inline modifier
+ *-----------------------------------------------------------------------------*/
+.ui-button--inline {
+  padding: 0;
+  background-color: transparent;
+  color: inherit;
+  font-weight: inherit;
+}
+.ui-button--inline:hover {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: underline;
+}
+.ui-button--inline--primary {
+  color: #1e6c9f;
+}
+.ui-button--inline--primary:hover {
+  color: #1b618f;
+}
+.ui-button--inline--secondary {
+  color: #a8a8a8;
+}
+.ui-button--inline--secondary:hover {
+  color: #979797;
+}
+.ui-button--inline--success {
+  color: #0ead69;
+}
+.ui-button--inline--success:hover {
+  color: #0d9c5f;
+}
+.ui-button--inline--info {
+  color: #1e6c9f;
+}
+.ui-button--inline--info:hover {
+  color: #1b618f;
+}
+.ui-button--inline--warning {
+  color: #e8bf3a;
+}
+.ui-button--inline--warning:hover {
+  color: #e5b720;
+}
+.ui-button--inline--danger {
+  color: #ee4266;
+}
+.ui-button--inline--danger:hover {
+  color: #eb264f;
+}
+/*
  * Icon
  *
  * Based on https://github.com/google/material-design-icons/blob/master/iconfont/material-icons.css
