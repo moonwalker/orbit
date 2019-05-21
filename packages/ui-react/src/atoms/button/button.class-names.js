@@ -48,6 +48,12 @@ export const CLASS_NAMES = {
   [`outline--${SIZE_LARGE}`]: `${UI_NAME}--outline--${SIZE_LARGE}`,
   [`outline--${SIZE_XLARGE}`]: `${UI_NAME}--outline--${SIZE_XLARGE}`,
 
+  [`outline--${SIZE_XSMALL}`]: `${UI_NAME}--outline--${SIZE_XSMALL}`,
+  [`outline--${SIZE_SMALL}`]: `${UI_NAME}--outline--${SIZE_SMALL}`,
+  [`outline--${SIZE_MEDIUM}`]: `${UI_NAME}--outline--${SIZE_MEDIUM}`,
+  [`outline--${SIZE_LARGE}`]: `${UI_NAME}--outline--${SIZE_LARGE}`,
+  [`outline--${SIZE_XLARGE}`]: `${UI_NAME}--outline--${SIZE_XLARGE}`,
+
   clear: `${UI_NAME}--clear`,
 
   [`clear--${KIND_DEFAULT}`]: `${UI_NAME}--clear--${KIND_DEFAULT}`,
@@ -57,6 +63,15 @@ export const CLASS_NAMES = {
   [`clear--${KIND_INFO}`]: `${UI_NAME}--clear--${KIND_INFO}`,
   [`clear--${KIND_WARNING}`]: `${UI_NAME}--clear--${KIND_WARNING}`,
   [`clear--${KIND_DANGER}`]: `${UI_NAME}--clear--${KIND_DANGER}`,
+
+  inline: `${UI_NAME}--inline`,
+  [`inline--${KIND_DEFAULT}`]: `${UI_NAME}--inline--${KIND_DEFAULT}`,
+  [`inline--${KIND_PRIMARY}`]: `${UI_NAME}--inline--${KIND_PRIMARY}`,
+  [`inline--${KIND_SECONDARY}`]: `${UI_NAME}--inline--${KIND_SECONDARY}`,
+  [`inline--${KIND_SUCCESS}`]: `${UI_NAME}--inline--${KIND_SUCCESS}`,
+  [`inline--${KIND_INFO}`]: `${UI_NAME}--inline--${KIND_INFO}`,
+  [`inline--${KIND_WARNING}`]: `${UI_NAME}--inline--${KIND_WARNING}`,
+  [`inline--${KIND_DANGER}`]: `${UI_NAME}--inline--${KIND_DANGER}`,
 
   content: `${UI_NAME}__content`,
   [`content--${SIZE_XSMALL}`]: `${UI_NAME}__content--${SIZE_XSMALL}`,

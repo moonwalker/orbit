@@ -69,6 +69,7 @@ export const Button = (props) => {
     kind,
     size,
     outline,
+    inline,
     ...restProps
   } = props;
 
@@ -81,6 +82,8 @@ export const Button = (props) => {
     outline && classNames.outline,
     outline && kind && classNames[`outline--${kind}`],
     outline && size && classNames[`outline--${size}`],
+    inline && classNames.inline,
+    inline && kind && classNames[`inline--${kind}`],
     clear && classNames.clear,
     clear && kind && classNames[`clear--${kind}`],
   );
@@ -114,6 +117,7 @@ Button.defaultProps = {
   kind: KIND_DEFAULT,
   size: SIZE_MEDIUM,
   outline: false,
+  inline: false,
 };
 
 Button.propTypes = {
@@ -145,4 +149,7 @@ Button.propTypes = {
 
   /** Outline modifier flag */
   outline: PropTypes.bool,
+
+  /** Inline flag */
+  inline: PropTypes.bool,
 };

@@ -109,6 +109,15 @@ exports[`Storyshots Components/Atoms/Button with imported css-module class names
 </button>
 `;
 
+exports[`Storyshots Components/Atoms/Button with inline modifier 1`] = `
+<button
+  className="ui-button ui-button--medium ui-button--inline ui-button--inline--default ui-button--clear ui-button--clear--default"
+  onClick={[Function]}
+>
+  Call to action
+</button>
+`;
+
 exports[`Storyshots Components/Atoms/Button with kind modifer 1`] = `
 <button
   className="ui-button ui-button--medium ui-button--danger"
