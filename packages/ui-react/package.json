@@ -78,7 +78,7 @@
     "style-loader": "0.23.1",
     "stylus": "0.54.5",
     "stylus-loader": "3.0.2",
-    "webpack": "4.34.0",
+    "webpack": "4.35.0",
     "webpack-bundle-analyzer": "3.3.2",
     "webpack-cli": "3.3.4",
     "webpack-merge": "4.2.1"
