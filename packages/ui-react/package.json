@@ -80,7 +80,7 @@
     "stylus-loader": "3.0.2",
     "webpack": "4.34.0",
     "webpack-bundle-analyzer": "3.3.2",
-    "webpack-cli": "3.3.4",
+    "webpack-cli": "3.3.5",
     "webpack-merge": "4.2.1"
   }
 }
