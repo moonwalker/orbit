@@ -127,6 +127,10 @@ Button.propTypes = {
   /** CSS Modules class names mapping */
   classNames: PropTypes.shape({
     root: PropTypes.string,
+    outline: PropTypes.string,
+    inline: PropTypes.string,
+    clear: PropTypes.string,
+    content: PropTypes.string,
   }),
 
   /** Inner content */

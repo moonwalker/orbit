@@ -30,7 +30,7 @@ export const Label = (props) => {
       {children}
     </label>
   );
-  /* eslint-enable jasx-a11y/label-has-for, jsx-a11y/label-has-associated-control */
+  /* eslint-enable jsx-a11y/label-has-for, jsx-a11y/label-has-associated-control */
 };
 
 Label.defaultProps = {

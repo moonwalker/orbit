@@ -46,6 +46,8 @@ Input.propTypes = {
   /** CSS Modules class names mapping */
   classNames: PropTypes.shape({
     root: PropTypes.string,
+    valid: PropTypes.string,
+    invalid: PropTypes.string,
   }),
 
   /** Size modifier name */
