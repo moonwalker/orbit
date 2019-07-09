@@ -50,7 +50,7 @@
     "@storybook/addon-storyshots": "5.1.9",
     "@storybook/addons": "5.1.9",
     "@storybook/react": "5.1.9",
-    "autoprefixer": "9.6.0",
+    "autoprefixer": "9.6.1",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.0.2",
     "babel-jest": "24.8.0",
