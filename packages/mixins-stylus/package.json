@@ -30,7 +30,7 @@
     "eslint-config-airbnb-base": "14.0.0",
     "eslint-plugin-import": "2.18.2",
     "eslint-plugin-jest": "22.15.1",
-    "jest": "24.8.0",
+    "jest": "24.9.0",
     "stylint": "2.0.0",
     "stylus": "0.54.5"
   }
