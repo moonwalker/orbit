@@ -54,7 +54,7 @@ jobs:
           command: npm run lerna -- run build
       - run:
           name: Send bundle stats to RelativeCI
-          command: cd ./packages/ui-react && ./node_modules/.bin/releative-ci-agent
+          command: cd ./packages/ui-react && ./node_modules/.bin/relative-ci-agent
       - persist_to_workspace:
           root: '.'
           paths:
