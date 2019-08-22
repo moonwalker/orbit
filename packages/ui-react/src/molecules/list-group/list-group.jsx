@@ -8,7 +8,7 @@ import {
 } from './list-group.constants';
 import { CLASS_NAMES } from './list-group.class-names';
 
-const getDefaultRender = items => ({ getListGroupItemProps }) => items.map(item => (
+const getDefaultRender = (items) => ({ getListGroupItemProps }) => items.map((item) => (
   <li
     key={item}
     {...getListGroupItemProps()}

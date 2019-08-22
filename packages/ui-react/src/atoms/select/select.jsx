@@ -8,7 +8,7 @@ import {
 } from './select.constants';
 import { CLASS_NAMES } from './select.class-names';
 
-const defaultRender = optionItems => optionItems.map((option, index) => {
+const defaultRender = (optionItems) => optionItems.map((option, index) => {
   const item = (typeof option !== 'object')
     ? {
       value: option,

@@ -40,7 +40,7 @@ const mergePropsToChild = (childComponent, props) => Object.entries(props)
     [propName]: mergePropValue(propName, propValue, childComponent.props),
   }), {});
 
-const wrapChild = props => (child) => {
+const wrapChild = (props) => (child) => {
   if (!child) {
     return null;
   }

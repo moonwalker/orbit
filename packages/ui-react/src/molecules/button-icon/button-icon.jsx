@@ -45,7 +45,7 @@ ButtonIcon.defaultProps = {
   as: 'button',
   kind: KIND_DEFAULT,
   size: SIZE_MEDIUM,
-  renderIcon: props => <Icon {...props} />,
+  renderIcon: (props) => <Icon {...props} />,
 };
 
 ButtonIcon.propTypes = {

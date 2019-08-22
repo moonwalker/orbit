@@ -61,8 +61,7 @@ stories.add('with custom render', () => (
         >
           {item}
         </a>
-      ))
-      }
+      ))}
     />
   </div>
 ));
