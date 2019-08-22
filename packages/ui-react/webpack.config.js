@@ -69,13 +69,14 @@ module.exports = {
       },
     }),
     new StatsPlugin(
-      path.join(ARTIFACTS_DIR, 'artifcats'),
+      path.join(ARTIFACTS_DIR, 'webpack-stats.json'),
       {
-        context: process.cwd(),
+        context: SRC_DIR,
         assets: true,
         timings: true,
         modules: true,
         chunks: true,
+        entrypoints: true,
         performance: false,
         children: false,
         source: false,
