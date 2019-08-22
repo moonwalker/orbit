@@ -28,7 +28,8 @@ bg() {
 
   // bg(<string>, ...)
   if ($_length > 0 && type(arguments[0]) == 'string') {
-    $_other-values = $_length > 1 ? slice(arguments, 1) : null;
+
+    $_other-values = arguments[1];
     background: url(arguments[0]) $_other-values;
     $_done = true;
   }
