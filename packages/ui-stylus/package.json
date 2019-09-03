@@ -32,7 +32,7 @@
   "devDependencies": {
     "autoprefixer": "9.6.1",
     "browser-sync": "2.26.7",
-    "eslint": "6.2.2",
+    "eslint": "6.3.0",
     "eslint-config-airbnb-base": "14.0.0",
     "eslint-plugin-import": "2.18.2",
     "eslint-plugin-jest": "22.15.2",
