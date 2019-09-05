@@ -2,6 +2,7 @@
 
 /*! stylelint-disable no-duplicate-selectors, no-descending-specificity */
 html {
+  line-height: unit($line-height / $font-size, '');
   font-size: percentage($font-size / 16);
   box-sizing: border-box;
 }
@@ -11,8 +12,6 @@ html {
 }
 
 body {
-  font-family: $font-family;
-  line-height: unit($line-height / $font-size, '');
   color: $body-color;
 }
 
