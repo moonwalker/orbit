@@ -1,0 +1,7 @@
+:root {
+  --color-light: #fff;
+}
+
+.element {
+  color: var(--color-light);
+}

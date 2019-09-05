@@ -14,3 +14,17 @@ is-pseudoelement() {
 scalc(expression, args...) {
   return unquote('calc(' + (expression % args) + ')');
 }
+
+/*
+ * get a variable name
+ */
+getVar(name) {
+  return unquote('var(--' + name + ')');
+}
+
+/*
+ * set a variable name
+ */
+setVar(name) {
+  add-property('--' + name, lookup('$' + name));
+}
