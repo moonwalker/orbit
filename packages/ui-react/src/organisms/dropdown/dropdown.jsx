@@ -5,25 +5,17 @@ import cx from 'classnames';
 import { CLASS_NAMES } from './dropdown.class-names';
 
 export const Dropdown = (props) => {
-  const {
-    className,
-    classNames,
-    children,
-  } = props;
+  const { className, classNames, children } = props;
 
   const rootClassName = cx(classNames.root, className);
 
-  return (
-    <div className={rootClassName}>
-      {children}
-    </div>
-  );
+  return <div className={rootClassName}>{children}</div>;
 };
 
 Dropdown.defaultProps = {
   className: '',
   classNames: CLASS_NAMES,
-  children: null,
+  children: null
 };
 
 Dropdown.propTypes = {
@@ -32,9 +24,9 @@ Dropdown.propTypes = {
 
   /** CSS Modules class names mapping */
   classNames: PropTypes.shape({
-    root: PropTypes.string,
+    root: PropTypes.string
   }),
 
   /** Inner content */
-  children: PropTypes.node,
+  children: PropTypes.node
 };

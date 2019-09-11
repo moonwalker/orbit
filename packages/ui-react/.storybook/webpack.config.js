@@ -9,25 +9,18 @@ module.exports = ({ config }) => {
   const { rules } = config.modules;
 
   // Remove storybook css rule
-  config.module.rules = [
-    ...rules.slice(0, 2),
-    ...rules.slice(3)
-  ];
+  config.module.rules = [...rules.slice(0, 2), ...rules.slice(3)];
 
   return webpackMerge(config, {
     resolve: {
-      modules: [
-        resolve(__dirname, '..', 'node_modules'),
-      ],
+      modules: [resolve(__dirname, '..', 'node_modules')]
     },
     module: {
       rules: [
         {
           test: /\.(css|styl)$/,
           enforce: 'post',
-          use: process.env.NODE_ENV === 'production'
-          ? MiniCssExtractPlugin.loader
-          : 'style-loader'
+          use: process.env.NODE_ENV === 'production' ? MiniCssExtractPlugin.loader : 'style-loader'
         },
         {
           test: /\.(css|styl)$/,
@@ -39,18 +32,16 @@ module.exports = ({ config }) => {
                   loader: 'css-loader',
                   options: {
                     modules: true,
-                    localIdentName: '[path]-[name]__[local]',
-                  },
+                    localIdentName: '[path]-[name]__[local]'
+                  }
                 },
                 {
                   loader: 'postcss-loader',
                   options: {
                     sourceMap: true,
-                    plugins: [
-                      autoprefixer,
-                    ],
-                  },
-                },
+                    plugins: [autoprefixer]
+                  }
+                }
               ]
             },
             {
@@ -60,13 +51,11 @@ module.exports = ({ config }) => {
                   loader: 'postcss-loader',
                   options: {
                     sourceMap: true,
-                    plugins: [
-                      autoprefixer,
-                    ],
-                  },
-                },
-              ],
-            },
+                    plugins: [autoprefixer]
+                  }
+                }
+              ]
+            }
           ]
         },
         {
@@ -74,17 +63,19 @@ module.exports = ({ config }) => {
           enforce: 'pre',
           loader: 'stylus-loader',
           options: {
-            use: orbitUI(),
+            use: orbitUI()
           }
         }
-      ],
+      ]
     },
     plugins: [
-      ...(process.env.NODE_ENV === 'production' ? [
-        new MiniCssExtractPlugin({
-          filename: '[name].css'
-        }),
-      ] : [])
-    ],
+      ...(process.env.NODE_ENV === 'production'
+        ? [
+            new MiniCssExtractPlugin({
+              filename: '[name].css'
+            })
+          ]
+        : [])
+    ]
   });
 };

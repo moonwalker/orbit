@@ -12,7 +12,7 @@ import {
   KIND_DANGER,
   SIZES,
   SIZE_MEDIUM,
-  SIZE_LARGE,
+  SIZE_LARGE
 } from './button.constants';
 
 import classNamesOverride from './button.stories.override-modules.css';
@@ -26,19 +26,21 @@ const getClear = (clear = false) => boolean('Clear', clear);
 const getOutline = (outline = false) => boolean('Outline', outline);
 const getInline = (inline = false) => boolean('Inline', inline);
 
-
-stories.add('info', withInfo({ inline: true })(() => (
-  <Button
-    onClick={action('Click')}
-    kind="primary"
-    size="small"
-    clear={false}
-    outline={getOutline()}
-    inline={getInline()}
-  >
-    Call to action
-  </Button>
-)));
+stories.add(
+  'info',
+  withInfo({ inline: true })(() => (
+    <Button
+      onClick={action('Click')}
+      kind="primary"
+      size="small"
+      clear={false}
+      outline={getOutline()}
+      inline={getInline()}
+    >
+      Call to action
+    </Button>
+  ))
+);
 
 stories.add('default', () => (
   <Button
@@ -181,10 +183,7 @@ stories.add('with different icon size', () => (
     outline={getOutline()}
     inline={getInline()}
   >
-    <Icon
-      name="backup"
-      size={SIZE_LARGE}
-    />
+    <Icon name="backup" size={SIZE_LARGE} />
     Call to action
   </Button>
 ));
@@ -199,10 +198,7 @@ stories.add('with null children', () => (
     inline={getInline()}
   >
     {null}
-    <Icon
-      name="backup"
-      size={SIZE_LARGE}
-    />
+    <Icon name="backup" size={SIZE_LARGE} />
   </Button>
 ));
 

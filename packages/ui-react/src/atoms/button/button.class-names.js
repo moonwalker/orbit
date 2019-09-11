@@ -1,6 +1,5 @@
 import {
   UI_NAME,
-
   KIND_DEFAULT,
   KIND_PRIMARY,
   KIND_SECONDARY,
@@ -8,12 +7,11 @@ import {
   KIND_INFO,
   KIND_WARNING,
   KIND_DANGER,
-
   SIZE_XSMALL,
   SIZE_SMALL,
   SIZE_MEDIUM,
   SIZE_LARGE,
-  SIZE_XLARGE,
+  SIZE_XLARGE
 } from './button.constants';
 
 export const CLASS_NAMES = {
@@ -78,5 +76,5 @@ export const CLASS_NAMES = {
   [`content--${SIZE_SMALL}`]: `${UI_NAME}__content--${SIZE_SMALL}`,
   [`content--${SIZE_MEDIUM}`]: `${UI_NAME}__content--${SIZE_MEDIUM}`,
   [`content--${SIZE_LARGE}`]: `${UI_NAME}__content--${SIZE_LARGE}`,
-  [`content--${SIZE_XLARGE}`]: `${UI_NAME}__content--${SIZE_XLARGE}`,
+  [`content--${SIZE_XLARGE}`]: `${UI_NAME}__content--${SIZE_XLARGE}`
 };

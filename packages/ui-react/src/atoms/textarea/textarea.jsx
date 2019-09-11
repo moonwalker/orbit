@@ -2,40 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import {
-  SIZES,
-  SIZE_MEDIUM,
-} from './textarea.constants';
+import { SIZES, SIZE_MEDIUM } from './textarea.constants';
 import { CLASS_NAMES } from './textarea.class-names';
 
 export const Textarea = (props) => {
-  const {
-    className,
-    classNames,
-    size,
-    valid,
-    ...restProps
-  } = props;
+  const { className, classNames, size, valid, ...restProps } = props;
 
   const rootClassName = cx(classNames.root, className, {
     [classNames[size]]: size,
     [classNames.valid]: valid === true,
-    [classNames.invalid]: valid === false,
+    [classNames.invalid]: valid === false
   });
 
-  return (
-    <textarea
-      className={rootClassName}
-      {...restProps}
-    />
-  );
+  return <textarea className={rootClassName} {...restProps} />;
 };
 
 Textarea.defaultProps = {
   className: '',
   classNames: CLASS_NAMES,
   size: SIZE_MEDIUM,
-  valid: null,
+  valid: null
 };
 
 Textarea.propTypes = {
@@ -46,12 +32,12 @@ Textarea.propTypes = {
   classNames: PropTypes.shape({
     root: PropTypes.string,
     valid: PropTypes.string,
-    invalid: PropTypes.string,
+    invalid: PropTypes.string
   }),
 
   /** Size modifier name */
   size: PropTypes.oneOf(SIZES),
 
   /** Valid boolean value */
-  valid: PropTypes.bool,
+  valid: PropTypes.bool
 };

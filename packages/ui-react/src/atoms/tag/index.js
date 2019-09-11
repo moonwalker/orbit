@@ -12,5 +12,5 @@ export {
   SIZE_SMALL as TAG_SIZE_SMALL,
   SIZE_MEDIUM as TAG_SIZE_MEDIUM,
   SIZE_LARGE as TAG_SIZE_LARGE,
-  SIZES as TAG_SIZES,
+  SIZES as TAG_SIZES
 } from './tag.constants';

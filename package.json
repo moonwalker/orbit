@@ -6,12 +6,14 @@
     "build-pages": "./build-pages.sh",
     "lint": "lerna run lint",
     "lerna": "lerna",
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "format": "prettier --write \"**/*.{js,jsx}\""
   },
   "keywords": [],
   "author": "Vio <vio@moonwalker.tech>",
   "license": "MIT",
   "devDependencies": {
+    "@moonwalker/pre-flight-check": "^1.0.6",
     "gh-pages": "2.1.1",
     "lerna": "3.16.4"
   }

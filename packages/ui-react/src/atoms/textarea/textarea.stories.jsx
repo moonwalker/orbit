@@ -5,11 +5,7 @@ import { select } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import { Textarea } from './textarea';
-import {
-  SIZES,
-  SIZE_MEDIUM,
-  SIZE_LARGE,
-} from './textarea.constants';
+import { SIZES, SIZE_MEDIUM, SIZE_LARGE } from './textarea.constants';
 import classNamesOverride from './textarea.stories.override-modules.css';
 import classNamesImport from './textarea.stories.import-modules.styl';
 
@@ -17,19 +13,14 @@ const stories = storiesOf('Components/Atoms/Textarea', module);
 
 const selectSize = (size = SIZE_MEDIUM) => select('Size', SIZES, size);
 
-stories.add('info', withInfo({ inline: true })(() => (
-  <Textarea
-    onChange={action('Change')}
-    size="small"
-    placeholder="Enter text here"
-  />
-)));
+stories.add(
+  'info',
+  withInfo({ inline: true })(() => (
+    <Textarea onChange={action('Change')} size="small" placeholder="Enter text here" />
+  ))
+);
 stories.add('default', () => (
-  <Textarea
-    onChange={action('Change')}
-    size={selectSize()}
-    placeholder="Enter text here"
-  />
+  <Textarea onChange={action('Change')} size={selectSize()} placeholder="Enter text here" />
 ));
 
 stories.add('with size modifier', () => (
@@ -41,12 +32,7 @@ stories.add('with size modifier', () => (
 ));
 
 stories.add('with valid state', () => (
-  <Textarea
-    onChange={action('Change')}
-    size={selectSize()}
-    placeholder="Enter text here"
-    valid
-  />
+  <Textarea onChange={action('Change')} size={selectSize()} placeholder="Enter text here" valid />
 ));
 
 stories.add('with invalid state', () => (
