@@ -2,30 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import {
-  SIZES,
-  SIZE_MEDIUM,
-} from './icon.constants';
+import { SIZES, SIZE_MEDIUM } from './icon.constants';
 import { CLASS_NAMES } from './icon.class-names';
 
 export const Icon = (props) => {
-  const {
-    className,
-    classNames,
-    size,
-    name,
-    ...restProps
-  } = props;
+  const { className, classNames, size, name, ...restProps } = props;
 
   const rootClassName = cx(classNames.root, className, {
-    [classNames[size]]: size,
+    [classNames[size]]: size
   });
 
   return (
-    <i
-      className={rootClassName}
-      {...restProps}
-    >
+    <i className={rootClassName} {...restProps}>
       {name}
     </i>
   );
@@ -34,7 +22,7 @@ export const Icon = (props) => {
 Icon.defaultProps = {
   className: '',
   classNames: CLASS_NAMES,
-  size: SIZE_MEDIUM,
+  size: SIZE_MEDIUM
 };
 
 Icon.propTypes = {
@@ -43,12 +31,12 @@ Icon.propTypes = {
 
   /** CSS Modules class names mapping */
   classNames: PropTypes.shape({
-    root: PropTypes.string,
+    root: PropTypes.string
   }),
 
   /** Icon name */
   name: PropTypes.string.isRequired,
 
   /** Size modifier name */
-  size: PropTypes.oneOf(SIZES),
+  size: PropTypes.oneOf(SIZES)
 };

@@ -14,48 +14,45 @@ module.exports = {
     path: DEST_DIR,
     filename: 'orbit-ui-react.js',
     library: 'orbitUIReact',
-    libraryTarget: 'umd',
+    libraryTarget: 'umd'
   },
   externals: {
     classnames: {
       commonjs: 'classnames',
       commonjs2: 'classnames',
       amd: 'classnames',
-      root: 'classnames',
+      root: 'classnames'
     },
     'prop-types': {
       commonjs: 'prop-types',
       commonjs2: 'prop-types',
       amd: 'PropTypes',
-      root: 'PropTypes',
+      root: 'PropTypes'
     },
     react: {
       commonjs: 'react',
       commonjs2: 'react',
       amd: 'React',
-      root: 'React',
+      root: 'React'
     },
     'react-dom': {
       commonjs: 'react-dom',
       commonjs2: 'react-dom',
       amd: 'ReactDOM',
-      root: 'ReactDOM',
-    },
+      root: 'ReactDOM'
+    }
   },
   resolve: {
-    extensions: ['.jsx', '.js', '.json'],
+    extensions: ['.jsx', '.js', '.json']
   },
   module: {
     rules: [
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',
-        include: [
-          SRC_DIR,
-          EXAMPLES_DIR,
-        ],
-      },
-    ],
+        include: [SRC_DIR, EXAMPLES_DIR]
+      }
+    ]
   },
   plugins: [
     new BundleAnalyzerPlugin({
@@ -65,22 +62,19 @@ module.exports = {
       generateStatsFile: false,
       statsOptions: {
         context: process.cwd(),
-        source: false,
-      },
+        source: false
+      }
     }),
-    new StatsPlugin(
-      path.join(ARTIFACTS_DIR, 'webpack-stats.json'),
-      {
-        context: SRC_DIR,
-        assets: true,
-        timings: true,
-        modules: true,
-        chunks: true,
-        entrypoints: true,
-        performance: false,
-        children: false,
-        source: false,
-      },
-    ),
-  ],
+    new StatsPlugin(path.join(ARTIFACTS_DIR, 'webpack-stats.json'), {
+      context: SRC_DIR,
+      assets: true,
+      timings: true,
+      modules: true,
+      chunks: true,
+      entrypoints: true,
+      performance: false,
+      children: false,
+      source: false
+    })
+  ]
 };

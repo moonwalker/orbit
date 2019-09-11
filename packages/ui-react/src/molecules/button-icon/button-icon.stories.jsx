@@ -11,7 +11,7 @@ import {
   KIND_DANGER,
   SIZES,
   SIZE_MEDIUM,
-  SIZE_LARGE,
+  SIZE_LARGE
 } from './button-icon.constants';
 import classNamesOverride from './button-icon.stories.override-modules.css';
 import classNamesImport from './button-icon.stories.import-modules.styl';
@@ -20,16 +20,15 @@ const stories = storiesOf('Components/Molecules/ButtonIcon', module);
 
 const selectKind = (kind = KIND_DEFAULT) => select('Kind', KINDS, kind);
 const selectSize = (size = SIZE_MEDIUM) => select('Size', SIZES, size);
-const selectName = (name = 'face') => select('Icon', ['face', 'backup', 'keyboard_arrow_right'], name);
+const selectName = (name = 'face') =>
+  select('Icon', ['face', 'backup', 'keyboard_arrow_right'], name);
 
-stories.add('info', withInfo({ inline: true })(() => (
-  <ButtonIcon
-    onClick={action('Click')}
-    kind="primary"
-    size="large"
-    name="home"
-  />
-)));
+stories.add(
+  'info',
+  withInfo({ inline: true })(() => (
+    <ButtonIcon onClick={action('Click')} kind="primary" size="large" name="home" />
+  ))
+);
 
 stories.add('default', () => (
   <ButtonIcon
@@ -73,15 +72,7 @@ stories.add('with render prop', () => (
     kind={selectKind()}
     size={selectSize()}
     name={selectName('backup')}
-    renderIcon={(props) => (
-      <span>
-        {props.name}
-        {' '}
-/
-        {' '}
-        {props.size}
-      </span>
-    )}
+    renderIcon={(props) => <span>{`${props.name} / ${props.size}`}</span>}
   />
 ));
 

@@ -13,16 +13,13 @@ const orbitUI = require('./');
 const OUTPUT_DIR = path.join(__dirname, 'dist');
 const pages = require(path.join(__dirname, 'demo/pages.json')); // eslint-disable-line import/no-dynamic-require
 
-const getPage = slug => pages.find(page => page.slug === slug);
+const getPage = (slug) => pages.find((page) => page.slug === slug);
 
 const loadPugData = (file, enc, next) => {
   const filepath = path.parse(file.path);
 
   // eslint-disable-next-line no-param-reassign
-  file.data = Object.assign({}, file.data, {
-    currentPage: getPage(filepath.name),
-    pages,
-  });
+  file.data = { ...file.data, currentPage: getPage(filepath.name), pages };
 
   next(null, file);
 };
@@ -39,14 +36,14 @@ const buildHtml = (cb) => {
 
 const buildCss = (cb) => {
   src('**/[^_]*.styl', { cwd: 'demo', base: 'demo' })
-    .pipe(stylus({
-      use: orbitUI({
-        autoImport: false,
-      }),
-    }))
-    .pipe(postcss([
-      autoprefixer,
-    ]))
+    .pipe(
+      stylus({
+        use: orbitUI({
+          autoImport: false
+        })
+      })
+    )
+    .pipe(postcss([autoprefixer]))
     .pipe(print())
     .pipe(dest(OUTPUT_DIR));
 
@@ -56,13 +53,13 @@ const buildCss = (cb) => {
 const listen = () => {
   browserSync.init({
     server: {
-      baseDir: OUTPUT_DIR,
+      baseDir: OUTPUT_DIR
     },
     watchOptions: {
-      ignoreInitials: true,
+      ignoreInitials: true
     },
     files: [OUTPUT_DIR],
-    open: false,
+    open: false
   });
 
   watch(['lib/**/*.styl', 'demo/**/*.styl'], buildCss);

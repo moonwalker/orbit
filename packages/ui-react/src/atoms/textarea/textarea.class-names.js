@@ -1,13 +1,4 @@
-import {
-  UI_NAME,
-
-  SIZE_SMALL,
-  SIZE_MEDIUM,
-  SIZE_LARGE,
-
-  VALID,
-  INVALID,
-} from './textarea.constants';
+import { UI_NAME, SIZE_SMALL, SIZE_MEDIUM, SIZE_LARGE, VALID, INVALID } from './textarea.constants';
 
 export const CLASS_NAMES = {
   root: UI_NAME,
@@ -17,5 +8,5 @@ export const CLASS_NAMES = {
   [SIZE_LARGE]: `${UI_NAME}--${SIZE_LARGE}`,
 
   [VALID]: `${UI_NAME}--${VALID}`,
-  [INVALID]: `${UI_NAME}--${INVALID}`,
+  [INVALID]: `${UI_NAME}--${INVALID}`
 };

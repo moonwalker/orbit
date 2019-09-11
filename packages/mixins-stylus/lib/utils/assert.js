@@ -20,9 +20,7 @@ module.exports = async (testDirname, name, ...args) => {
     const expected = await readFile(cssFilepath, 'utf8');
 
     const actual = await compile(source, {
-      use: [
-        orbit(options),
-      ],
+      use: [orbit(options)]
     });
 
     expect(actual).toBe(expected);

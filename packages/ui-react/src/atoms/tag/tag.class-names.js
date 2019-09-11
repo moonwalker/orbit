@@ -1,6 +1,5 @@
 import {
   UI_NAME,
-
   KIND_DEFAULT,
   KIND_PRIMARY,
   KIND_SECONDARY,
@@ -8,11 +7,9 @@ import {
   KIND_INFO,
   KIND_WARNING,
   KIND_DANGER,
-
   SIZE_SMALL,
   SIZE_MEDIUM,
-  SIZE_LARGE,
-
+  SIZE_LARGE
 } from './tag.constants';
 
 export const CLASS_NAMES = {
@@ -28,5 +25,5 @@ export const CLASS_NAMES = {
 
   [SIZE_SMALL]: `${UI_NAME}--${SIZE_SMALL}`,
   [SIZE_MEDIUM]: `${UI_NAME}--${SIZE_MEDIUM}`,
-  [SIZE_LARGE]: `${UI_NAME}--${SIZE_LARGE}`,
+  [SIZE_LARGE]: `${UI_NAME}--${SIZE_LARGE}`
 };

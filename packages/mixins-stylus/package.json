@@ -20,16 +20,12 @@
     "prebuild": "npm run lint && npm run test",
     "build": "echo \"Info: nothing to build\" && exit 0",
     "lint": "npm run lint:styl && npm run lint:js",
-    "lint:js": "eslint lib/**/*.js",
+    "lint:js": "../../node_modules/.bin/eslint lib/**/*.js",
     "lint:styl": "stylint lib",
     "prepublishOnly": "npm run build",
     "test": "jest"
   },
   "devDependencies": {
-    "eslint": "6.3.0",
-    "eslint-config-airbnb-base": "14.0.0",
-    "eslint-plugin-import": "2.18.2",
-    "eslint-plugin-jest": "22.17.0",
     "jest": "24.9.0",
     "stylint": "2.0.0",
     "stylus": "0.54.7"

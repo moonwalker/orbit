@@ -7,8 +7,4 @@ export const SIZE_LARGE = 'large';
 export const VALID = 'valid';
 export const INVALID = 'invalid';
 
-export const SIZES = [
-  SIZE_SMALL,
-  SIZE_MEDIUM,
-  SIZE_LARGE,
-];
+export const SIZES = [SIZE_SMALL, SIZE_MEDIUM, SIZE_LARGE];

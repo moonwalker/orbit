@@ -2,35 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import {
-  KINDS,
-  KIND_DEFAULT,
-  SIZES,
-  SIZE_MEDIUM,
-} from './tag.constants';
+import { KINDS, KIND_DEFAULT, SIZES, SIZE_MEDIUM } from './tag.constants';
 import { CLASS_NAMES } from './tag.class-names';
 
 export const Tag = (props) => {
-  const {
-    className,
-    classNames,
-    as: Component,
-    kind,
-    size,
-    ...restProps
-  } = props;
+  const { className, classNames, as: Component, kind, size, ...restProps } = props;
 
   const rootClassName = cx(classNames.root, className, {
     [classNames[kind]]: kind,
-    [classNames[size]]: size,
+    [classNames[size]]: size
   });
 
-  return (
-    <Component
-      className={rootClassName}
-      {...restProps}
-    />
-  );
+  return <Component className={rootClassName} {...restProps} />;
 };
 
 Tag.defaultProps = {
@@ -38,7 +21,7 @@ Tag.defaultProps = {
   classNames: CLASS_NAMES,
   as: 'span',
   kind: KIND_DEFAULT,
-  size: SIZE_MEDIUM,
+  size: SIZE_MEDIUM
 };
 
 Tag.propTypes = {
@@ -47,18 +30,15 @@ Tag.propTypes = {
 
   /** CSS Modules class names mapping */
   classNames: PropTypes.shape({
-    root: PropTypes.string,
+    root: PropTypes.string
   }),
 
   /** Render tag or component */
-  as: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.func,
-  ]),
+  as: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
 
   /** Kind modifier name */
   kind: PropTypes.oneOf(KINDS),
 
   /** Size modifier name */
-  size: PropTypes.oneOf(SIZES),
+  size: PropTypes.oneOf(SIZES)
 };

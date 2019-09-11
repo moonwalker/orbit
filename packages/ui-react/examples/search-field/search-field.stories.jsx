@@ -7,24 +7,16 @@ import { SearchField } from './search-field';
 
 const stories = storiesOf('Examples/SearchField', module);
 
-const handleOnSelect = item => action('Selected', item);
+const handleOnSelect = (item) => action('Selected', item);
 
 stories.add('default', () => (
   <div style={{ maxWidth: '380px', margin: '0 auto', padding: '1rem' }}>
-    <SearchField
-      items={items}
-      onSelect={handleOnSelect()}
-    />
+    <SearchField items={items} onSelect={handleOnSelect()} />
   </div>
 ));
 
 stories.add('with predefined query', () => (
   <div style={{ maxWidth: '380px', margin: '0 auto', padding: '1rem' }}>
-    <SearchField
-      items={items}
-      onSelect={handleOnSelect()}
-      defaultInputValue="Lo"
-      defaultIsOpen
-    />
+    <SearchField items={items} onSelect={handleOnSelect()} defaultInputValue="Lo" defaultIsOpen />
   </div>
 ));

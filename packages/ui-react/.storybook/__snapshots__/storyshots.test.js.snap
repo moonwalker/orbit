@@ -779,11 +779,7 @@ exports[`Storyshots Components/Molecules/ButtonIcon with render prop 1`] = `
   onClick={[Function]}
 >
   <span>
-    backup
-     
-    /
-     
-    medium
+    backup / medium
   </span>
 </button>
 `;

@@ -13,15 +13,15 @@ const DIST_DIR = path.join(__dirname, 'dist');
 
 const compileLib = (cb) => {
   src('orbit-ui.styl', { cwd: SRC_DIR, base: SRC_DIR })
-    .pipe(stylus({
-      use: orbitUI(),
-      define: {
-        '$bem-selectors': true,
-      },
-    }))
-    .pipe(postcss([
-      autoprefixer
-    ]))
+    .pipe(
+      stylus({
+        use: orbitUI(),
+        define: {
+          '$bem-selectors': true
+        }
+      })
+    )
+    .pipe(postcss([autoprefixer]))
     .pipe(print())
     .pipe(dest(DIST_DIR));
 
@@ -30,15 +30,15 @@ const compileLib = (cb) => {
 
 const compileComponents = (cb) => {
   src('*/[^_]*.styl', { cwd: SRC_DIR, base: SRC_DIR })
-    .pipe(stylus({
-      use: orbitUI(),
-      define: {
-        '$bem-selectors': true,
-      },
-    }))
-    .pipe(postcss([
-      autoprefixer
-    ]))
+    .pipe(
+      stylus({
+        use: orbitUI(),
+        define: {
+          '$bem-selectors': true
+        }
+      })
+    )
+    .pipe(postcss([autoprefixer]))
     .pipe(print())
     .pipe(dest(DIST_DIR));
 
@@ -49,14 +49,14 @@ module.exports.compile = parallel(compileLib, compileComponents);
 
 module.exports.minimize = (cb) => {
   src('**/*.css', { cwd: DIST_DIR, base: DIST_DIR })
-    .pipe(postcss([
-      cssnano
-    ]))
-    .pipe(rename((filepath) => {
-      filepath.basename += '.min';
-    }))
+    .pipe(postcss([cssnano]))
+    .pipe(
+      rename((filepath) => {
+        filepath.basename += '.min';
+      })
+    )
     .pipe(print())
-    .pipe(dest(DIST_DIR))
+    .pipe(dest(DIST_DIR));
 
   cb();
 };

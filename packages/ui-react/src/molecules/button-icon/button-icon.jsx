@@ -3,12 +3,7 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 
 import { Icon } from '../../atoms/icon';
-import {
-  KINDS,
-  KIND_DEFAULT,
-  SIZES,
-  SIZE_MEDIUM,
-} from './button-icon.constants';
+import { KINDS, KIND_DEFAULT, SIZES, SIZE_MEDIUM } from './button-icon.constants';
 import { CLASS_NAMES } from './button-icon.class-names';
 
 export const ButtonIcon = (props) => {
@@ -25,15 +20,11 @@ export const ButtonIcon = (props) => {
 
   const rootClassName = cx(classNames.root, className, {
     [classNames[size]]: size,
-    [classNames[kind]]: kind,
+    [classNames[kind]]: kind
   });
 
   return (
-    <Component
-      className={rootClassName}
-      name={name}
-      {...restProps}
-    >
+    <Component className={rootClassName} name={name} {...restProps}>
       {renderIcon({ name, size })}
     </Component>
   );
@@ -45,7 +36,7 @@ ButtonIcon.defaultProps = {
   as: 'button',
   kind: KIND_DEFAULT,
   size: SIZE_MEDIUM,
-  renderIcon: (props) => <Icon {...props} />,
+  renderIcon: (props) => <Icon {...props} />
 };
 
 ButtonIcon.propTypes = {
@@ -54,14 +45,11 @@ ButtonIcon.propTypes = {
 
   /** CSS Modules class names mapping */
   classNames: PropTypes.shape({
-    root: PropTypes.string,
+    root: PropTypes.string
   }),
 
   /** Render tag or component */
-  as: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.func,
-  ]),
+  as: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
 
   /** Icon name */
   name: PropTypes.string.isRequired,
@@ -73,5 +61,5 @@ ButtonIcon.propTypes = {
   size: PropTypes.oneOf(SIZES),
 
   /** Render Icon prop */
-  renderIcon: PropTypes.func,
+  renderIcon: PropTypes.func
 };
