@@ -35,7 +35,7 @@
     "eslint": "6.3.0",
     "eslint-config-airbnb-base": "14.0.0",
     "eslint-plugin-import": "2.18.2",
-    "eslint-plugin-jest": "22.16.0",
+    "eslint-plugin-jest": "22.17.0",
     "gulp": "4.0.2",
     "gulp-postcss": "8.0.0",
     "gulp-print": "5.0.2",
