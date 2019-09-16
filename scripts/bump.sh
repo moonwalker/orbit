@@ -6,7 +6,7 @@ PRERELEASE_ARG=""
 # IF diff than master, release beta
 if [ "$BRANCH" != "master" ]
 then
-  PRERELEASE_ARG="prepatch --force-publish"
+  PRERELEASE_ARG="prepatch --preid beta --force-publish"
 else
 	PRERELEASE_ARG="--conventional-commits"
 fi
