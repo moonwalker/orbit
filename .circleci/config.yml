@@ -85,6 +85,16 @@ jobs:
             ./scripts/pre-deploy.sh
             npm run build-pages
 
+  publish:
+    executor: runner
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - add_ssh_keys
+      - run: ./scripts/pre-deploy.sh
+      - deploy:
+          command: npm run release
+
 workflows:
   version: 2.1
 
@@ -109,6 +119,7 @@ workflows:
 
       - build_pages:
           requires:
+            - test
             - build
           filters:
             branches:
@@ -117,7 +128,39 @@ workflows:
       - deploy:
           requires:
             - build_pages
-            - test
           filters:
             branches:
               only: master
+
+  build:
+    jobs:
+      - dependencies:
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
+      - test:
+          requires: dependencies
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
+      - build:
+          requires: dependencies
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
+
+      - publish:
+          requires:
+            - test
+            - build
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
