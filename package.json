@@ -8,19 +8,17 @@
     "lerna": "lerna",
     "test": "lerna run test",
     "format": "prettier --write \"**/*.{js,jsx}\"",
-    "bump": "./scripts/bump.sh",
-    "release": "./scripts/release.sh"
+    "bump": "lerna version",
+    "release": "lerna publish"
   },
   "keywords": [],
   "author": "Vio <vio@moonwalker.tech>",
   "license": "MIT",
   "devDependencies": {
     "@moonwalker/pre-flight-check": "^1.0.6",
-    "@release-it/conventional-changelog": "^1.1.0",
     "dotenv": "^8.1.0",
     "gh-pages": "2.1.1",
-    "lerna": "3.16.4",
-    "release-it": "^12.3.6"
+    "lerna": "3.16.4"
   },
   "version": "1.13.7-beta.1"
 }
