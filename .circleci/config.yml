@@ -96,8 +96,6 @@ jobs:
           command: npm run release
 
 workflows:
-  version: 2.1
-
   build:
     jobs:
       - dependencies:
