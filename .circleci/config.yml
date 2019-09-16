@@ -127,21 +127,8 @@ workflows:
           filters:
             branches:
               ignore: gh-pages
-      - build_pages:
-          requires:
-            - test
-            - build
-          filters:
-            branches:
-              only: master
-      - deploy:
-          requires:
-            - build_pages
-          filters:
-            branches:
-              only: master
 
-  publish:
+  publish-and-deploy:
     jobs:
       - dependencies:
           filters:
@@ -172,5 +159,22 @@ workflows:
           filters:
             tags:
               only: /^v.*/
+            branches:
+              ignore: /.*/
+      - build_pages:
+          requires:
+            - test
+            - build
+          filters:
+            tags:
+              only: /^v\d*\.\d*\.\d*/
+            branches:
+              ignore: /.*/
+      - deploy:
+          requires:
+            - build_pages
+          filters:
+            tags:
+              only: /^v\d*\.\d*\.\d*/
             branches:
               ignore: /.*/
