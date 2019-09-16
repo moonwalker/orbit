@@ -21,5 +21,6 @@
     "gh-pages": "2.1.1",
     "lerna": "3.16.4",
     "release-it": "^12.3.6"
-  }
+  },
+  "version": "1.13.7-beta.1"
 }
