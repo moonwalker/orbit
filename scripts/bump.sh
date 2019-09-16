@@ -6,9 +6,9 @@ PRERELEASE_ARG=""
 # IF diff than master, release beta
 if [ "$BRANCH" != "master" ]
 then
-  PRERELEASE_ARG="prepatch --preid beta --force-publish"
+  PRERELEASE_ARG="prepatch --preid beta --force-publish --message 'DROP - v%s\n[skip ci]'"
 else
-	PRERELEASE_ARG="--conventional-commits"
+	PRERELEASE_ARG="--conventional-commits --message ':package: release %s\n[ci skip]'"
 fi
 
 RELEASE_ARGS="${PRERELEASE_ARG} ${@}"
