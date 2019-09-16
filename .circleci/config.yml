@@ -51,14 +51,20 @@ jobs:
           at: ~/repo
       - run:
           name: Build
-          command: npm run lerna -- run build
-      - run:
-          name: Send bundle stats to RelativeCI
-          command: cd ./packages/ui-react && ./node_modules/.bin/relative-ci-agent
+          command: npm run build
       - persist_to_workspace:
           root: '.'
           paths:
             - '*'
+
+  send-artifacts:
+    executor: runner
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - run:
+          name: Send bundle stats to RelativeCI
+          command: cd ./packages/ui-react && ./node_modules/.bin/relative-ci-agent
 
   build_pages:
     executor: runner
@@ -85,9 +91,18 @@ jobs:
             ./scripts/pre-deploy.sh
             npm run build-pages
 
-workflows:
-  version: 2.1
+  publish:
+    executor: runner
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - add_ssh_keys
+      - run: ./scripts/pre-deploy.sh
+      - run: git reset --hard HEAD
+      - deploy:
+          command: npm run release
 
+workflows:
   build:
     jobs:
       - dependencies:
@@ -106,18 +121,56 @@ workflows:
           filters:
             branches:
               ignore: gh-pages
-
-      - build_pages:
+      - send-artifacts:
           requires:
             - build
           filters:
             branches:
-              only: master
-
-      - deploy:
+              ignore: gh-pages
+      - build_pages:
           requires:
-            - build_pages
             - test
+            - build
           filters:
             branches:
               only: master
+      - deploy:
+          requires:
+            - build_pages
+          filters:
+            branches:
+              only: master
+
+  publish:
+    jobs:
+      - dependencies:
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
+      - test:
+          requires:
+            - dependencies
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
+      - build:
+          requires:
+            - dependencies
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
+      - publish:
+          requires:
+            - test
+            - build
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
