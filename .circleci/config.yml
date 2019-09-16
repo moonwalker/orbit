@@ -139,14 +139,16 @@ workflows:
             branches:
               ignore: /.*/
       - test:
-          requires: dependencies
+          requires:
+            - dependencies
           filters:
             tags:
               only: /^v.*/
             branches:
               ignore: /.*/
       - build:
-          requires: dependencies
+          requires:
+            - dependencies
           filters:
             tags:
               only: /^v.*/
