@@ -51,7 +51,7 @@ jobs:
           at: ~/repo
       - run:
           name: Build
-          command: npm run lerna -- run build
+          command: npm run build
       - run:
           name: Send bundle stats to RelativeCI
           command: cd ./packages/ui-react && ./node_modules/.bin/relative-ci-agent
@@ -130,7 +130,7 @@ workflows:
             branches:
               only: master
 
-  build:
+  publish:
     jobs:
       - dependencies:
           filters:
@@ -152,7 +152,6 @@ workflows:
               only: /^v.*/
             branches:
               ignore: /.*/
-
       - publish:
           requires:
             - test
