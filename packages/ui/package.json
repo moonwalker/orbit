@@ -1,6 +1,6 @@
 {
   "name": "@moonwalker/orbit-ui",
-  "version": "1.13.22-beta.3",
+  "version": "1.13.22-beta.4",
   "description": "UI components library",
   "keywords": [
     "css",
@@ -23,7 +23,7 @@
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "devDependencies": {
-    "@moonwalker/orbit-ui-stylus": "^1.13.22-beta.3",
+    "@moonwalker/orbit-ui-stylus": "^1.13.22-beta.4",
     "autoprefixer": "9.6.1",
     "cssnano": "4.1.10",
     "gulp": "4.0.2",
