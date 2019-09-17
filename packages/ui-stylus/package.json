@@ -1,6 +1,6 @@
 {
   "name": "@moonwalker/orbit-ui-stylus",
-  "version": "1.13.25-beta.2",
+  "version": "1.13.25-beta.3",
   "description": "UI components library",
   "keywords": [
     "css",
@@ -26,7 +26,7 @@
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "dependencies": {
-    "@moonwalker/orbit-mixins-stylus": "^1.13.25-beta.2"
+    "@moonwalker/orbit-mixins-stylus": "^1.13.25-beta.3"
   },
   "devDependencies": {
     "autoprefixer": "9.6.1",
