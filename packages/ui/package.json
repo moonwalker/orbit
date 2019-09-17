@@ -17,7 +17,7 @@
     "prebuild": "npm run lint && npm run test",
     "build": "rm -fr dist && gulp compile && gulp minimize",
     "prelint": "gulp compile",
-    "lint": "stylelint dist",
+    "lint": "../../node_modules/.bin/stylelint dist",
     "start": "gulp serve",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
@@ -30,8 +30,6 @@
     "gulp-print": "5.0.2",
     "gulp-rename": "1.4.0",
     "gulp-stylus": "2.7.0",
-    "stylelint": "10.1.0",
-    "stylelint-config-recommended": "2.2.0",
     "stylus": "0.54.7"
   }
 }
