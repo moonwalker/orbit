@@ -18,7 +18,6 @@
     "build": "rm -fr dist && gulp compile && gulp minimize",
     "prelint": "gulp compile",
     "lint": "stylelint dist",
-    "prepublishOnly": "npm run build",
     "start": "gulp serve",
     "test": "echo \"Error: no test specified\" && exit 0"
   },

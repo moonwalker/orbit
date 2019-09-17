@@ -22,7 +22,6 @@
     "build-lib": "rm -fr ./dist && webpack --mode production",
     "build-pages": "build-storybook",
     "lint": "../../node_modules/.bin/eslint --ext js,jsx src",
-    "prepublishOnly": "npm run lint && npm run test && npm run build",
     "start": "storybook-server -p 8081",
     "test": "jest"
   },
