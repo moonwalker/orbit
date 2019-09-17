@@ -7,6 +7,16 @@ const tag = execSync('git tag -l --points-at HEAD').toString();
 const matchTag = tag.match(/^v\d*\.\d*\.\d*-(\w*)\.*$/);
 const distTag = (matchTag && matchTag[1]) || 'latest';
 
-execSync(
-  `./node_modules/.bin/lerna publish from-git --no-changelog --no-git-tag-version --no-push --yes --dist-tag ${distTag}`
-);
+const options = [
+  'publish',
+  'from-git',
+  `--dist-tag ${distTag}`,
+  '--no-changelog',
+  '--no-git-tag-version',
+  '--no-push',
+  '--yes'
+];
+
+console.log(`Running lerna with "${options.join(' ')}"`);
+
+execSync(`./node_modules/.bin/lerna ${options.join(' ')}`);
