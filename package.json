@@ -9,7 +9,7 @@
     "test": "lerna run test",
     "format": "prettier --write \"**/*.{js,jsx}\"",
     "bump": "./scripts/bump.sh",
-    "release": "./scripts/release.sh"
+    "release": "./scripts/release.js"
   },
   "keywords": [],
   "author": "Vio <vio@moonwalker.tech>",
