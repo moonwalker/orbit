@@ -2,9 +2,11 @@
 
 const { execSync } = require('child_process');
 
-const tag = execSync('git tag -l --points-at HEAD').toString();
+const tag = execSync('git tag -l --points-at HEAD')
+  .toString()
+  .trim();
 
-const matchTag = tag.match(/^v\d*\.\d*\.\d*-(\w*)\.*$/);
+const matchTag = tag.match(/^v\d*\.\d*\.\d*-(\w*)\..*$/);
 const distTag = (matchTag && matchTag[1]) || 'latest';
 
 const options = [
@@ -19,4 +21,4 @@ const options = [
 
 console.log(`Running lerna with "${options.join(' ')}"`);
 
-execSync(`./node_modules/.bin/lerna ${options.join(' ')}`);
+// execSync(`./node_modules/.bin/lerna ${options.join(' ')}`);
