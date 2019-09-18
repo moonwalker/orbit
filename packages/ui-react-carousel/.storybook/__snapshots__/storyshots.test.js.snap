@@ -1,0 +1,3092 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Carousel default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <div
+    className=""
+    style={
+      Object {
+        "position": "relative",
+        "with": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "overflow": "hidden",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "WebkitOverflowScrolling": "touch",
+            "marginBottom": "-24px",
+            "overflowX": "auto",
+            "overflowY": "hidden",
+            "paddingBottom": "24px",
+            "scrollSnapType": "x mandatory",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "display": "inline-flex",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": 0,
+                "width": "200px",
+              }
+            }
+          >
+            1
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            2
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            3
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            4
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            5
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            6
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            7
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            8
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            9
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            10
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            11
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            12
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            13
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            14
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            15
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            16
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Carousel loading 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <div
+    className=""
+    style={
+      Object {
+        "overflow": "hidden",
+        "pointerEvents": "none",
+        "position": "relative",
+        "with": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "overflow": "hidden",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "WebkitOverflowScrolling": "touch",
+            "marginBottom": "-24px",
+            "overflowX": "auto",
+            "overflowY": "hidden",
+            "paddingBottom": "24px",
+            "scrollSnapType": "x mandatory",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "display": "inline-flex",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "#eee",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": 0,
+                "width": "200px",
+              }
+            }
+          >
+            1
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "#eee",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            2
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "#eee",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            3
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "#eee",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            4
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "#eee",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Carousel with async data 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <p>
+    Loading: true
+  </p>
+  <div
+    className=""
+    style={
+      Object {
+        "overflow": "hidden",
+        "pointerEvents": "none",
+        "position": "relative",
+        "with": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "overflow": "hidden",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "WebkitOverflowScrolling": "touch",
+            "marginBottom": "-24px",
+            "overflowX": "auto",
+            "overflowY": "hidden",
+            "paddingBottom": "24px",
+            "scrollSnapType": "x mandatory",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "display": "inline-flex",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "#eee",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": 0,
+                "width": "200px",
+              }
+            }
+          >
+            1
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "#eee",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            2
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "#eee",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            3
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "#eee",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            4
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "#eee",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Carousel with custom styles 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <div
+    className=""
+    style={
+      Object {
+        "boxShadow": "0 0 10px pink",
+        "position": "relative",
+        "with": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "overflow": "hidden",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "WebkitOverflowScrolling": "touch",
+            "background": "lightpink",
+            "marginBottom": "-24px",
+            "overflowX": "auto",
+            "overflowY": "hidden",
+            "paddingBottom": "24px",
+            "scrollSnapType": "x mandatory",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "display": "inline-flex",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": 0,
+                "width": "200px",
+              }
+            }
+          >
+            1
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            2
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            3
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            4
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            5
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            6
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            7
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            8
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            9
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            10
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            11
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            12
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            13
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            14
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            15
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            16
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Carousel with full width item 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <div
+    className=""
+    style={
+      Object {
+        "position": "relative",
+        "with": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "overflow": "hidden",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "WebkitOverflowScrolling": "touch",
+            "marginBottom": "-24px",
+            "overflowX": "auto",
+            "overflowY": "hidden",
+            "paddingBottom": "24px",
+            "scrollSnapType": "x mandatory",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "display": "inline-flex",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": 0,
+                "width": "100%",
+              }
+            }
+          >
+            1
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "100%",
+              }
+            }
+          >
+            2
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "100%",
+              }
+            }
+          >
+            3
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "100%",
+              }
+            }
+          >
+            4
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "100%",
+              }
+            }
+          >
+            5
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "100%",
+              }
+            }
+          >
+            6
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "100%",
+              }
+            }
+          >
+            7
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "100%",
+              }
+            }
+          >
+            8
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "100%",
+              }
+            }
+          >
+            9
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "100%",
+              }
+            }
+          >
+            10
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "100%",
+              }
+            }
+          >
+            11
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "100%",
+              }
+            }
+          >
+            12
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "100%",
+              }
+            }
+          >
+            13
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "100%",
+              }
+            }
+          >
+            14
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "100%",
+              }
+            }
+          >
+            15
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "100%",
+              }
+            }
+          >
+            16
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Carousel with item intersection observer 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <div
+    className=""
+    style={
+      Object {
+        "position": "relative",
+        "with": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "overflow": "hidden",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "WebkitOverflowScrolling": "touch",
+            "marginBottom": "-24px",
+            "overflowX": "auto",
+            "overflowY": "hidden",
+            "paddingBottom": "24px",
+            "scrollSnapType": "x mandatory",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "display": "inline-flex",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": 0,
+                "width": "200px",
+              }
+            }
+          >
+            1
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            2
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            3
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            4
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            5
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            6
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            7
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            8
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            9
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            10
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            11
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            12
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            13
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            14
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            15
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            16
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Carousel with lazyRender 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "height": "100vh",
+      }
+    }
+  >
+    <p>
+      Scroll down to test lazyRender
+    </p>
+  </div>
+  <div
+    className=""
+    style={
+      Object {
+        "position": "relative",
+        "with": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "overflow": "hidden",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "WebkitOverflowScrolling": "touch",
+            "marginBottom": "-24px",
+            "overflowX": "auto",
+            "overflowY": "hidden",
+            "paddingBottom": "24px",
+            "scrollSnapType": "x mandatory",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "display": "inline-flex",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": 0,
+                "width": "200px",
+              }
+            }
+          >
+            1
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            2
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            3
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            4
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            5
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            6
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            7
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            8
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Carousel with navigation 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <div
+    className=""
+    style={
+      Object {
+        "position": "relative",
+        "with": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "overflow": "hidden",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "WebkitOverflowScrolling": "touch",
+            "marginBottom": "-24px",
+            "overflowX": "auto",
+            "overflowY": "hidden",
+            "paddingBottom": "24px",
+            "scrollSnapType": "x mandatory",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "display": "inline-flex",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": 0,
+                "width": "200px",
+              }
+            }
+          >
+            1
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            2
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            3
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            4
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            5
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            6
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            7
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            8
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            9
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            10
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            11
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            12
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            13
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            14
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            15
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            16
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav
+      style={
+        Object {
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": "50%",
+        }
+      }
+    >
+      <button
+        disabled={true}
+        onClick={[Function]}
+        style={
+          Object {
+            "left": 0,
+            "position": "absolute",
+            "top": "50%",
+          }
+        }
+        type="button"
+      >
+        Previous
+      </button>
+      <button
+        disabled={true}
+        onClick={[Function]}
+        style={
+          Object {
+            "position": "absolute",
+            "right": 0,
+            "top": "50%",
+          }
+        }
+        type="button"
+      >
+        Next
+      </button>
+    </nav>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Carousel with pagination 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <div
+    className=""
+    style={
+      Object {
+        "position": "relative",
+        "with": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "overflow": "hidden",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "WebkitOverflowScrolling": "touch",
+            "marginBottom": "-24px",
+            "overflowX": "auto",
+            "overflowY": "hidden",
+            "paddingBottom": "24px",
+            "scrollSnapType": "x mandatory",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "display": "inline-flex",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": 0,
+                "width": "200px",
+              }
+            }
+          >
+            1
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            2
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            3
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            4
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            5
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            6
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            7
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            8
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            9
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            10
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            11
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            12
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            13
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            14
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            15
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "200px",
+              }
+            }
+          >
+            16
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav
+      style={
+        Object {
+          "padding": "12px",
+          "textAlign": "center",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Carousel with variable width item 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <div
+    className=""
+    style={
+      Object {
+        "position": "relative",
+        "with": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "overflow": "hidden",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "WebkitOverflowScrolling": "touch",
+            "marginBottom": "-24px",
+            "overflowX": "auto",
+            "overflowY": "hidden",
+            "paddingBottom": "24px",
+            "scrollSnapType": "x mandatory",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "display": "inline-flex",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": 0,
+                "width": "5%",
+              }
+            }
+          >
+            1
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "10%",
+              }
+            }
+          >
+            2
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "15%",
+              }
+            }
+          >
+            3
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "20%",
+              }
+            }
+          >
+            4
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "25%",
+              }
+            }
+          >
+            5
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "30%",
+              }
+            }
+          >
+            6
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "35%",
+              }
+            }
+          >
+            7
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "40%",
+              }
+            }
+          >
+            8
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "45%",
+              }
+            }
+          >
+            9
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "50%",
+              }
+            }
+          >
+            10
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "55%",
+              }
+            }
+          >
+            11
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "60%",
+              }
+            }
+          >
+            12
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "65%",
+              }
+            }
+          >
+            13
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "70%",
+              }
+            }
+          >
+            14
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "75%",
+              }
+            }
+          >
+            15
+          </div>
+          <div
+            addItem={[Function]}
+            removeItem={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "linear-gradient(-20deg, lightpink, skyblue)",
+                "color": "#fff",
+                "display": "flex",
+                "flex": "0 0 auto",
+                "fontWeight": "bold",
+                "height": "240px",
+                "justifyContent": "center",
+                "marginLeft": "12px",
+                "width": "80%",
+              }
+            }
+          >
+            16
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
