@@ -1,6 +1,6 @@
 {
   "name": "@moonwalker/orbit-ui-react-carousel",
-  "version": "1.13.18",
+  "version": "1.14.0-beta.0",
   "description": "React UI carousel component",
   "keywords": [
     "carousel",
