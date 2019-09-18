@@ -1,0 +1,55 @@
+$component-name = 'badge';
+
+@require '../_variables';
+@import '../_selectors';
+
+/*!
+ * Badge
+ *******************************************************************************/
++root() {
+  inline-block(auto, $space-small)
+  border-radius: 50%;
+  min-width: @height;
+  inner-space(4px);
+  bg($gray);
+  color: $light;
+  font-size: 8px;
+  line-height: 1;
+  text-align: center;
+}
+
+/*!
+ * Kind modifier
+ *-----------------------------------------------------------------------------*/
+
++modifier('success') {
+  bg($success-color);
+}
++modifier('info') {
+  bg($info-color);
+}
++modifier('warning') {
+  bg($warning-color);
+}
++modifier('danger') {
+  bg($danger-color);
+}
+
+/*!
+ * Size modifier
+ *-----------------------------------------------------------------------------*/
+
+/*! Small */
++modifier('small') {
+  height: $space-xsmall;
+  min-width: @height;
+  inner-space(2px);
+}
+
+/*! Large */
++modifier('large') {
+  height: $space-medium;
+  min-width: @height;
+  inner-space(6px);
+  font-size: 12px;
+}

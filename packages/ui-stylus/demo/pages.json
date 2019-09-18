@@ -4,6 +4,10 @@
     "title": "Base"
   },
   {
+    "slug": "badge",
+    "title": "Badge"
+  },
+  {
     "slug": "button",
     "title": "Button"
   },
