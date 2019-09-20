@@ -8,7 +8,7 @@
     "components"
   ],
   "homepage": "https://github.com/moonwalker/orbit",
-  "repository": "moonwalker/orbit",
+  "repository": "https://github.com/moonwalker/orbit",
   "author": "Vio <vio@moonwalker.tech>",
   "license": "MIT",
   "main": "lib/index.js",
