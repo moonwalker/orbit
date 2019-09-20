@@ -9,6 +9,7 @@ const browserSync = require('browser-sync').create();
 const through = require('through2').obj;
 
 const orbitUI = require('./');
+const pck = require('./package.json');
 
 const OUTPUT_DIR = path.join(__dirname, 'dist');
 const pages = require(path.join(__dirname, 'demo/pages.json')); // eslint-disable-line import/no-dynamic-require
@@ -19,7 +20,13 @@ const loadPugData = (file, enc, next) => {
   const filepath = path.parse(file.path);
 
   // eslint-disable-next-line no-param-reassign
-  file.data = { ...file.data, currentPage: getPage(filepath.name), pages };
+  file.data = {
+    ...file.data,
+    currentPage: getPage(filepath.name),
+    pages,
+    version: pck.version,
+    repository: pck.repository
+  };
 
   next(null, file);
 };
@@ -30,7 +37,6 @@ const buildHtml = (cb) => {
     .pipe(pug())
     .pipe(print())
     .pipe(dest(OUTPUT_DIR));
-
   cb();
 };
 
