@@ -372,3 +372,38 @@ $component-name = 'button';
     color: $danger-dark-color;
   }
 }
+
+/*!
+ * Vertical modifier
+ *-----------------------------------------------------------------------------*/
+ +modifier('vertical') {
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
++element('content--vertical') {
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+
+  // Collapse margins in between
+  & + & {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &:first-child {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
