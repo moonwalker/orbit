@@ -1,6 +1,6 @@
 {
   "name": "@moonwalker/orbit-mixins-stylus",
-  "version": "1.13.18",
+  "version": "1.14.0-beta.1",
   "description": "Stylus mixins and utilities library",
   "keywords": [
     "css",
