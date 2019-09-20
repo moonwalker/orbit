@@ -1,3 +1,4 @@
+export * from './atoms/badge';
 export * from './atoms/button';
 export * from './atoms/icon';
 export * from './atoms/input';
