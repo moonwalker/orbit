@@ -1,0 +1,50 @@
+$component-name = 'alert';
+
+@require '../_variables';
+@import '../_selectors';
+
+/*!
+ * Badge
+ *******************************************************************************/
++root() {
+  block();
+  inner-space($space-small, 1px);
+  border: 1px solid $gray;
+}
+
+/*!
+ * Kind modifier
+ *-----------------------------------------------------------------------------*/
+
++modifier('success') {
+  border-color: $success-color;
+  color: $success-color;
+}
++modifier('info') {
+  border-color: $info-color;
+  color: $info-color;
+}
++modifier('warning') {
+  border-color: $warning-color;
+  color: $warning-color;
+}
++modifier('danger') {
+  border-color: $danger-color;
+  color: $danger-color;
+}
+
+/*!
+ * Size modifier
+ *-----------------------------------------------------------------------------*/
+
+/*! Small */
++modifier('small') {
+  inner-space($space-xsmall, 1px);
+  type-scale(small);
+}
+
+/*! Large */
++modifier('large') {
+  type-scale(large);
+  inner-space($space-medium, 1px);
+}
