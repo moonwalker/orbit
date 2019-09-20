@@ -12,15 +12,19 @@ html(lang="en")
   body
     .demo-header
       .demo-header__inner
-        a.demo-header__title(href="base.html") Orbit UI
+        a.demo-header__title(href="index.html") Orbit UI
 
-        each page in pages
+        each page in pages.slice(1)
           a.demo-header__link(
             href= page.slug + ".html",
             class= page.slug === currentPage.slug ? "active" : ""
           )= page.title
 
     .demo-content
-      .demo-container
+      .demo-content__container.demo-container
         h1.demo-title= currentPage.title
         block content
+
+    .demo-footer
+      .demo-container
+        a(href=repository)= `v ${version}`
