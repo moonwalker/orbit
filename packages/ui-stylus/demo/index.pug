@@ -1,0 +1,10 @@
+extends _layout
+
+block content
+  .demo-home
+    each page in pages.slice(1)
+      h2.demo-home__title
+        a.demo-home__link(
+          href= page.slug + ".html",
+          class= page.slug === currentPage.slug ? "active" : ""
+        )= page.title

@@ -1,5 +1,9 @@
 [
   {
+    "slug": "index",
+    "title": "Home"
+  },
+  {
     "slug": "base",
     "title": "Base"
   },
