@@ -6,7 +6,7 @@ const orbitUI = require('@moonwalker/orbit-ui-stylus');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = ({ config }) => {
-  const { rules } = config.modules;
+  const { rules } = config.module;
 
   // Remove storybook css rule
   config.module.rules = [...rules.slice(0, 2), ...rules.slice(3)];
@@ -31,8 +31,9 @@ module.exports = ({ config }) => {
                 {
                   loader: 'css-loader',
                   options: {
-                    modules: true,
-                    localIdentName: '[path]-[name]__[local]'
+                    modules: {
+                      localIdentName: '[path]-[name]__[local]'
+                    }
                   }
                 },
                 {
