@@ -8,6 +8,10 @@
     "title": "Base"
   },
   {
+    "slug": "alert",
+    "title": "Alert"
+  },
+  {
     "slug": "badge",
     "title": "Badge"
   },
