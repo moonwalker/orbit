@@ -1,0 +1,36 @@
+$component-name = 'tabs';
+
+@require '../_variables';
+@import '../_selectors';
+
+/*!
+ * Rabs
+ *******************************************************************************/
++root() {
+}
+
++element('item') {
+  relative();
+  inner-space($space-small);
+  color: inherit;
+  text-decoration: none;
+
+  &::after {
+    absolute(left right bottom);
+    box(100%, 2px);
+    content: '';
+    bg($primary-color);
+    display: none;
+  }
+}
+
+/*!
+ * Active item
+ */
++element('item--active') {
+  text-decoration: none;
+
+  &::after {
+    display: block;
+  }
+}
