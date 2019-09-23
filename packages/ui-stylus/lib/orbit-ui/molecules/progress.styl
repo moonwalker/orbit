@@ -1,0 +1,50 @@
+$component-name = 'progress';
+
+@require '../_variables';
+@import '../_selectors';
+
+/*!
+ * Progress
+ *******************************************************************************/
++root() {
+  block(100%, $space-xxsmall);
+  relative();
+  bg(lighten($gray-light, 20));
+  overflow: hidden;
+}
+
++element('bar') {
+  absolute(left top);
+  block(0, 100%);
+  bg($gray-light);
+  min-width: 1px;
+  transition: $state-transition-out;
+}
+
+/*!
+ * Kind modifier
+ *-----------------------------------------------------------------------------*/
+
++element('bar--primary') {
+  bg($primary-color);
+}
+
++element('bar--secondary') {
+  bg($secondary-color)
+}
+
++element('bar--success') {
+  bg($success-color);
+}
+
++element('bar--info') {
+  bg($info-color);
+}
+
++element('bar--warning') {
+  bg($warning-color);
+}
+
++element('bar--danger') {
+  bg($danger-color);
+}

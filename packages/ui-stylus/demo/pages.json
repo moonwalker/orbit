@@ -44,6 +44,10 @@
     "title": "List group"
   },
   {
+    "slug": "progress",
+    "title": "Progress"
+  },
+  {
     "slug": "select",
     "title": "Select"
   },
