@@ -1,0 +1,46 @@
+$component-name = 'tabs';
+
+@require '../_variables';
+@import '../_selectors';
+
+/*!
+ * Rabs
+ *******************************************************************************/
++root() {
+  flex();
+}
+
++element('item') {
+  relative();
+  inner-space($space-small);
+  color: inherit;
+  text-decoration: none;
+  transition: $state-transition-in;
+
+  &::after {
+    absolute(left right bottom);
+    box(100%, 2px);
+    content: '';
+    background: transparent;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    &::after {
+      background: currentColor;
+    }
+  }
+}
+
+/*!
+ * Active item
+ */
++element('item--active') {
+  text-decoration: none;
+  transition: $state-transition-in;
+
+  &::after {
+    background: currentColor;
+  }
+}

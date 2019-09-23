@@ -52,6 +52,10 @@
     "title": "Select"
   },
   {
+    "slug": "tabs",
+    "title": "Tabs"
+  },
+  {
     "slug": "textarea",
     "title": "Textarea"
   },
