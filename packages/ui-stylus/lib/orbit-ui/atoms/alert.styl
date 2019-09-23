@@ -8,8 +8,9 @@ $component-name = 'alert';
  *******************************************************************************/
 +root() {
   block();
-  inner-space($space-small, 1px);
-  border: 1px solid $gray;
+  inner-space($space-small);
+  bg($gray)
+  color: $light;
 }
 
 /*!
@@ -17,20 +18,54 @@ $component-name = 'alert';
  *-----------------------------------------------------------------------------*/
 
 +modifier('success') {
+  bg($success-color);
+}
++modifier('info') {
+  bg($info-color);
+}
++modifier('warning') {
+  bg($warning-color);
+}
++modifier('danger') {
+  bg($danger-color);
+}
+
+/*!
+ * Outline modifier
+ *-----------------------------------------------------------------------------*/
++modifier('outline') {
+  bg();
+  border: 1px solid $gray;
+  inner-space($space-small, 1px);
+  color: inherit;
+}
+
++modifier('outline--success') {
   border-color: $success-color;
   color: $success-color;
 }
-+modifier('info') {
+
++modifier('outline--info') {
   border-color: $info-color;
   color: $info-color;
 }
-+modifier('warning') {
+
++modifier('outline--warning') {
   border-color: $warning-color;
   color: $warning-color;
 }
-+modifier('danger') {
+
++modifier('outline--danger') {
   border-color: $danger-color;
   color: $danger-color;
+}
+
++modifier('outline--small') {
+  inner-space($space-xsmall, 1px);
+}
+
++modifier('outline--large') {
+  inner-space($space-medium, 1px);
 }
 
 /*!
@@ -39,12 +74,10 @@ $component-name = 'alert';
 
 /*! Small */
 +modifier('small') {
-  inner-space($space-xsmall, 1px);
   type-scale(small);
 }
 
 /*! Large */
 +modifier('large') {
-  type-scale(large);
   inner-space($space-medium, 1px);
 }
