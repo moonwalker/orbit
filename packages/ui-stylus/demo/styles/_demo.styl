@@ -9,32 +9,32 @@
 
 .demo-header {
   fixed(left top right)
+  inner-space($space-xxsmall);
   z-index: 1000;
+  flex();
+  align-items: center;
   background: $dark;
+  color: $light;
 
-  &__inner {
-    margin: 0 auto;
-    padding: 0 $space-medium;
-    max-width: $container-max-width;
+  &__menu {
+    color: $light;
   }
 
   &__title {
-    padding: $space-xsmall $space-xsmall $space-xsmall 0;
+    margin: 0;
     font-weight: bold;
-    type-scale(medium)
-    text-decoration: none;
+    type-scale(large)
   }
 
-  &__link {
+  &__title__link {
     inline-block();
     relative();
-    padding: $space-xsmall;
     color: $light;
     font-weight: bold;
     text-decoration: none;
 
     &:hover {
-      color: rgba($light, 0.8);
+      color: rgba($light, 0.6);
     }
 
     &.active::after {
@@ -43,6 +43,28 @@
       background: $light;
     }
   }
+}
+
+.demo-side-nav {
+  fixed(left top 56px bottom);
+  box(240px, 100%);
+  inner-space($space-xxsmall 0)
+  bg($gray-dark);
+  color: $light;
+  z-index: 1001;
+
+  display: none;
+
+  &.visible {
+    display: block;
+  }
+}
+
+.demo-side-nav__link {
+  block();
+  inner-space($space-xxxsmall $space-small);
+  color: inherit;
+  text-decoration: none;
 }
 
 .demo-content {
