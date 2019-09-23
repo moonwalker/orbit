@@ -11,5 +11,6 @@ export * from './atoms/tag';
 
 export * from './molecules/button-icon';
 export * from './molecules/list-group';
+export * from './molecules/progress';
 
 export * from './organisms/dropdown';

@@ -1188,6 +1188,146 @@ exports[`Storyshots Components/Molecules/ListGroup with size modifier 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Molecules/Progress default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    className="ui-progress ui-progress--default"
+  >
+    <span
+      className="ui-progress__bar ui-progress__bar--default"
+      style={
+        Object {
+          "width": "66%",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Molecules/Progress info 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    className="ui-progress ui-progress--default"
+  >
+    <span
+      className="ui-progress__bar ui-progress__bar--default"
+      style={
+        Object {
+          "width": "66%",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Molecules/Progress render as a different element 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <a
+    className="ui-progress ui-progress--default"
+    onClick={[Function]}
+  >
+    <span
+      className="ui-progress__bar ui-progress__bar--default"
+      style={
+        Object {
+          "width": "66%",
+        }
+      }
+    />
+  </a>
+</div>
+`;
+
+exports[`Storyshots Components/Molecules/Progress with custom bar props 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    className="ui-progress ui-progress--default"
+  >
+    <span
+      className="ui-progress__bar ui-progress__bar--default"
+      style={
+        Object {
+          "background": "magenta",
+          "width": "66%",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Molecules/Progress with custom total 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    className="ui-progress ui-progress--default"
+  >
+    <span
+      className="ui-progress__bar ui-progress__bar--default"
+      style={
+        Object {
+          "width": "33%",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Molecules/Progress with kind modifer 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    className="ui-progress ui-progress--danger"
+  >
+    <span
+      className="ui-progress__bar ui-progress__bar--danger"
+      style={
+        Object {
+          "width": "66%",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Organisms/Dropdown default 1`] = `
 <div
   style={
