@@ -7,6 +7,7 @@ $component-name = 'tabs';
  * Rabs
  *******************************************************************************/
 +root() {
+  flex();
 }
 
 +element('item') {
@@ -14,13 +15,21 @@ $component-name = 'tabs';
   inner-space($space-small);
   color: inherit;
   text-decoration: none;
+  transition: $state-transition-in;
 
   &::after {
     absolute(left right bottom);
     box(100%, 2px);
     content: '';
-    bg($primary-color);
-    display: none;
+    background: transparent;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    &::after {
+      background: currentColor;
+    }
   }
 }
 
@@ -29,8 +38,9 @@ $component-name = 'tabs';
  */
 +element('item--active') {
   text-decoration: none;
+  transition: $state-transition-in;
 
   &::after {
-    display: block;
+    background: currentColor;
   }
 }
