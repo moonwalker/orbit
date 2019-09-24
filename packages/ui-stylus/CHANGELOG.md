@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.19](https://github.com/moonwalker/orbit/compare/v1.13.18...v1.13.19) (2019-09-24)
+
+**Note:** Version bump only for package @moonwalker/orbit-ui-stylus
+
+
+
+
+
 ## [1.13.18](https://github.com/moonwalker/orbit/compare/v1.13.17...v1.13.18) (2019-09-17)
 
 **Note:** Version bump only for package @moonwalker/orbit-ui-stylus
