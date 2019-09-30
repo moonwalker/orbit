@@ -1412,6 +1412,75 @@ exports[`Storyshots Components/Organisms/Dropdown with imported css-module class
 </div>
 `;
 
+exports[`Storyshots Components/Organisms/Tabs default 1`] = `
+<div
+  className="ui-tabs"
+>
+  <span
+    className="ui-tabs__item"
+  >
+    Item 1
+  </span>
+  <span
+    className="ui-tabs__item ui-tabs__item--active"
+    isTabActive={true}
+  >
+    Item 2
+  </span>
+  <span
+    className="ui-tabs__item"
+  >
+    Item 3
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/Organisms/Tabs info 1`] = `
+<div
+  className="ui-tabs"
+>
+  <span
+    className="ui-tabs__item"
+  >
+    Item 1
+  </span>
+  <span
+    className="ui-tabs__item ui-tabs__item--active"
+    isTabActive={true}
+  >
+    Item 2
+  </span>
+  <span
+    className="ui-tabs__item"
+  >
+    Item 3
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/Organisms/Tabs with custom render 1`] = `
+<nav
+  className="ui-tabs"
+>
+  <span
+    className="ui-tabs__item"
+  >
+    Item 1
+  </span>
+  <span
+    className="ui-tabs__item ui-tabs__item--active"
+    isTabActive={true}
+  >
+    Item 2
+  </span>
+  <span
+    className="ui-tabs__item"
+  >
+    Item 3
+  </span>
+</nav>
+`;
+
 exports[`Storyshots Examples/Contact Form default 1`] = `
 <div
   style={
