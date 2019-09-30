@@ -14,3 +14,4 @@ export * from './molecules/list-group';
 export * from './molecules/progress';
 
 export * from './organisms/dropdown';
+export * from './organisms/tabs';
