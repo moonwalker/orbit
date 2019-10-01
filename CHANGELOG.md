@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.14.0](https://github.com/moonwalker/orbit/compare/v1.13.19...v1.14.0) (2019-10-01)
+
+
+### Bug Fixes
+
+* **ui-stylus:** Alert - add outline variation ([0bda223](https://github.com/moonwalker/orbit/commit/0bda223))
+* **ui-stylus:** Move demo pages into a sidebar ([02721e8](https://github.com/moonwalker/orbit/commit/02721e8))
+
+
+### Features
+
+* **ui:** Tabs component ([212681c](https://github.com/moonwalker/orbit/commit/212681c))
+* **ui-react:** Alert component ([6d3c9d6](https://github.com/moonwalker/orbit/commit/6d3c9d6))
+* **ui-react:** Badge component ([5da8dcd](https://github.com/moonwalker/orbit/commit/5da8dcd))
+* **ui-react:** Progress component ([4a006fd](https://github.com/moonwalker/orbit/commit/4a006fd))
+* **ui-react:** Tabs component ([208a7c3](https://github.com/moonwalker/orbit/commit/208a7c3))
+* **ui-stylus:** Alert component ([466432d](https://github.com/moonwalker/orbit/commit/466432d))
+* **ui-stylus:** Badge component ([77f179f](https://github.com/moonwalker/orbit/commit/77f179f))
+* **ui-stylus:** Button - add vertical modifier ([982c506](https://github.com/moonwalker/orbit/commit/982c506))
+* **ui-stylus:** Progress ([54d26f1](https://github.com/moonwalker/orbit/commit/54d26f1))
+
+
+
+
+
 ## [1.13.19](https://github.com/moonwalker/orbit/compare/v1.13.18...v1.13.19) (2019-09-24)
 
 
