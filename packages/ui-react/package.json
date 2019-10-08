@@ -1,6 +1,6 @@
 {
   "name": "@moonwalker/orbit-ui-react",
-  "version": "1.14.1",
+  "version": "1.14.2",
   "description": "React UI components library",
   "keywords": [
     "css",
@@ -41,8 +41,8 @@
     "@babel/plugin-transform-runtime": "7.6.2",
     "@babel/preset-env": "7.6.2",
     "@babel/preset-react": "7.0.0",
-    "@moonwalker/orbit-ui": "^1.14.1",
-    "@moonwalker/orbit-ui-stylus": "^1.14.1",
+    "@moonwalker/orbit-ui": "^1.14.2",
+    "@moonwalker/orbit-ui-stylus": "^1.14.2",
     "@relative-ci/agent": "1.2.0",
     "@storybook/addon-actions": "5.2.3",
     "@storybook/addon-info": "5.2.3",
