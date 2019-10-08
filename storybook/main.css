@@ -798,8 +798,7 @@ h6 + dl {
 /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
 /* Support for IE. */
-  -webkit-font-feature-settings: 'liga';
-          font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
 }
 /*
  * Size modifers
@@ -1843,8 +1842,7 @@ h6 + dl {
 /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
 /* Support for IE. */
-  -webkit-font-feature-settings: 'liga';
-          font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
 }
 /*
  * Size modifers
