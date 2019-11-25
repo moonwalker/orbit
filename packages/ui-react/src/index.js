@@ -15,3 +15,4 @@ export * from './molecules/progress';
 
 export * from './organisms/dropdown';
 export * from './organisms/tabs';
+export * from './organisms/wizard';
