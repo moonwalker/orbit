@@ -1,32 +1,50 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link, MemoryRouter } from 'react-router-dom';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
 
 import { Button } from '../../atoms/button';
-import { Wizard } from './';
+import { Wizard } from '.';
 
-const Dialog = ({ title, handleWizardPrevStep, handleWizardCancel, ...restProps }) => (
+const Wrapper = ({ title, onBack, onClose, wizardData, ...restProps }) => (
   <div>
-    <div style={{ display: 'flex', justifyContent: 'spread-appart' }}>
-      <button onClick={handleWizardPrevStep}>back</button>
-      <p>{title}</p>
-      <button onClick={handleWizardCancel}>x</button>
+    <div
+      style={{
+        padding: '12px',
+        background: '#eee',
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center'
+      }}
+    >
+      <button type="button" onClick={onBack}>
+        back
+      </button>
+      <span>{title}</span>
+      <button type="button" onClick={onClose}>
+        close
+      </button>
     </div>
     <div style={{ padding: '24px' }} {...restProps} />
+    <h4>Wizard data:</h4>
+    <pre style={{ background: 'lightyellow', padding: '12px' }}>
+      {JSON.stringify(wizardData, null, 2)}
+    </pre>
   </div>
 );
 
-const stories = storiesOf('Components/Organisms/Wizard', module);
-
-stories.addDecorator((storyFn) => (
-  <div style={{ width: '100%', maxWidth: '380px' }}>{storyFn()}</div>
-));
+Wrapper.propTypes = {
+  title: PropTypes.string.isRequired,
+  onBack: PropTypes.func.isRequired,
+  onClose: PropTypes.func.isRequired,
+  wizardData: PropTypes.object.isRequired // eslint-disable-line react/forbid-prop-types
+};
 
 const Content = ({ style = {}, ...props }) => (
   <div
     style={{
-      border: '1px solid #ddd',
+      background: '#fefefe',
       padding: '24px',
       ...style
     }}
@@ -41,26 +59,27 @@ const getComponent = (id, ChildComponent = () => null) => ({
   wizardData,
   handleWizardSetData
 }) => (
-  <Dialog
-    title={`Step ${id}`}
-    handleBackButtonClick={handleWizardPrevStep}
-    handleCloseButtonClick={handleWizardCancel}
-  >
-    <ChildComponent />
-
-    <Button
-      onClick={() => {
-        handleWizardSetData({ [`step-${id}`]: id }, handleWizardNextStep);
-      }}
-      size="small"
-      kind="primary"
-    >
-      Go next
-    </Button>
-
-    <pre>{JSON.stringify(wizardData, null, 2)}</pre>
-  </Dialog>
+  <div>
+    <h1>{`Component ${id}`}</h1>
+    <button type="button" onClick={handleWizardPrevStep} style={{ margin: '4px' }}>
+      Previous
+    </button>
+    <button type="button" onClick={handleWizardNextStep} style={{ margin: '4px' }}>
+      Next
+    </button>
+    <button type="button" onClick={handleWizardCancel} style={{ margin: '4px 4px 4px 16px' }}>
+      Cancel
+    </button>
+  </div>
 );
+
+const stories = storiesOf('Components/Organisms/Wizard', module);
+
+stories.addDecorator((storyFn) => (
+  <MemoryRouter State={{}}>
+    <div style={{ width: '100%', maxWidth: '380px', padding: '24px' }}>{storyFn()}</div>
+  </MemoryRouter>
+));
 
 const getComponentWithReducer = (id, ChildComponent = () => null) => ({
   handleWizardNextStep,
@@ -69,7 +88,7 @@ const getComponentWithReducer = (id, ChildComponent = () => null) => ({
   wizardData,
   handleWizardSetData
 }) => (
-  <Dialog
+  <Wrapper
     title={`Step ${id}`}
     handleBackButtonClick={handleWizardPrevStep}
     handleCloseButtonClick={handleWizardCancel}
@@ -101,7 +120,7 @@ const getComponentWithReducer = (id, ChildComponent = () => null) => ({
     </Button>
 
     <pre>{JSON.stringify(wizardData, null, 2)}</pre>
-  </Dialog>
+  </Wrapper>
 );
 
 const getWrappedComponent = (id, ChildComponent = () => null) => ({
@@ -123,26 +142,24 @@ const getWrappedComponent = (id, ChildComponent = () => null) => ({
 );
 
 stories.add('default', () => (
-  <MemoryRouter State={{}}>
-    <Wizard
-      steps={[
-        {
-          path: '/step-1',
-          component: getComponent(1)
-        },
-        {
-          path: '/step-2',
-          component: getComponent(2)
-        },
-        {
-          path: '/step-3',
-          component: getComponent(3)
-        }
-      ]}
-      onEnd={action('end')}
-      onCancel={action('cancel')}
-    />
-  </MemoryRouter>
+  <Wizard
+    steps={[
+      {
+        path: '/step-1',
+        component: getComponent(1)
+      },
+      {
+        path: '/step-2',
+        component: getComponent(2)
+      },
+      {
+        path: '/step-3',
+        component: getComponent(3)
+      }
+    ]}
+    onEnd={action('END')}
+    onCancel={action('CANCEL')}
+  />
 ));
 
 // stories.add('with nextPath', () => (
