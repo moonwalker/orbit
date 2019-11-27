@@ -15,9 +15,9 @@
   "author": "Vio <vio@moonwalker.tech>",
   "license": "MIT",
   "devDependencies": {
-    "@moonwalker/pre-flight-check": "1.0.14",
+    "@moonwalker/pre-flight-check": "1.0.15",
     "dotenv": "8.2.0",
     "gh-pages": "2.1.1",
-    "lerna": "3.18.3"
+    "lerna": "3.19.0"
   }
 }
