@@ -17,7 +17,7 @@
   "devDependencies": {
     "@moonwalker/pre-flight-check": "1.0.18",
     "dotenv": "8.2.0",
-    "gh-pages": "2.1.1",
+    "gh-pages": "2.2.0",
     "lerna": "3.19.0"
   }
 }
