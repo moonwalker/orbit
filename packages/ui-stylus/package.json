@@ -29,7 +29,7 @@
     "@moonwalker/orbit-mixins-stylus": "^1.14.9"
   },
   "devDependencies": {
-    "autoprefixer": "9.7.3",
+    "autoprefixer": "9.7.4",
     "browser-sync": "2.26.7",
     "gulp": "4.0.2",
     "gulp-postcss": "8.0.0",
