@@ -26,7 +26,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@babel/runtime": "7.8.3"
+    "@babel/runtime": "7.8.4"
   },
   "peerDependencies": {
     "classnames": "^2.2.6",
@@ -35,11 +35,11 @@
     "react-dom": "^16.6.3"
   },
   "devDependencies": {
-    "@babel/cli": "7.8.3",
-    "@babel/core": "7.8.3",
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.8.4",
     "@babel/plugin-proposal-class-properties": "7.8.3",
     "@babel/plugin-transform-runtime": "7.8.3",
-    "@babel/preset-env": "7.8.3",
+    "@babel/preset-env": "7.8.4",
     "@babel/preset-react": "7.8.3",
     "@moonwalker/orbit-ui": "^1.14.10",
     "@moonwalker/orbit-ui-stylus": "^1.14.10",
