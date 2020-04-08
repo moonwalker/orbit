@@ -25,7 +25,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "jest": "25.1.0",
+    "jest": "25.2.7",
     "stylint": "2.0.0",
     "stylus": "0.54.7"
   }

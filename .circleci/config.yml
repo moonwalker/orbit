@@ -3,7 +3,7 @@ version: 2.1
 executors:
   runner:
     docker:
-      - image: circleci/node:9.11.2@sha256:edd46a503ae6228ef01b933384a9eb3562ba0d4ac58d4a89a73c497551e2a158
+      - image: circleci/node:13
     working_directory: ~/repo
 
 jobs:
