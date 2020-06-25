@@ -36,7 +36,7 @@
     "gulp-print": "5.0.2",
     "gulp-pug": "4.0.1",
     "gulp-stylus": "2.7.0",
-    "pug": "2.0.4",
+    "pug": "3.0.0",
     "stylint": "2.0.0",
     "stylus": "0.54.7",
     "through2": "3.0.1"
