@@ -1,6 +1,6 @@
 # Orbit UI
 
-[![CircleCI branch](https://img.shields.io/circleci/project/github/moonwalker/orbit/master.svg)](https://circleci.com/gh/moonwalker/orbit)
+[![ci](https://github.com/moonwalker/orbit/workflows/ci/badge.svg)](https://github.com/moonwalker/orbit/actions?query=workflow%3Aci)
 [![renovatebot](https://badges.renovateapi.com/github/moonwalker/orbit)](https://renovatebot.com/dashboard#github/moonwalker/orbit)
 
 ## [![](https://img.shields.io/npm/v/@moonwalker/orbit-mixins-stylus.svg)](https://www.npmjs.com/package/@moonwalker/orbit-mixins-stylus) [orbit-mixins-stylus](packages/mixins-stylus)
