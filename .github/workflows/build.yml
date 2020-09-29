@@ -32,7 +32,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - run: yarn --frozen-lockfile
+      - name: Install dependencies
+        run: yarn --frozen-lockfile && yarn lerna bootstrap
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
@@ -68,7 +69,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - run: yarn --frozen-lockfile
+      - name: Install dependencies
+        run: yarn --frozen-lockfile && yarn lerna bootstrap
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
@@ -104,14 +106,14 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - run: yarn --frozen-lockfile
+      - name: Install dependencies
+        run: yarn --frozen-lockfile && yarn lerna bootstrap
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
       - run: yarn build
         env:
           RELATIVE_CI_KEY: ${{secrets.RELATIVE_CI_KEY}}
-
 
   publish:
     needs:
@@ -150,7 +152,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - run: yarn --frozen-lockfile
+      - name: Install dependencies
+        run: yarn --frozen-lockfile && yarn lerna bootstrap
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
