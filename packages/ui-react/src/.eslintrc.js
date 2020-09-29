@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 const path = require('path');
 
 const ROOT_DIR = path.join(__dirname, '../../../');
