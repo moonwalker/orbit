@@ -1394,23 +1394,6 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@moonwalker/orbit-mixins-stylus@^1.14.17":
-  version "1.14.17"
-  resolved "https://registry.yarnpkg.com/@moonwalker/orbit-mixins-stylus/-/orbit-mixins-stylus-1.14.17.tgz#6977f0816cf68a31ea2bd960f63b6ea771a2fc94"
-  integrity sha512-DKl3ekm7BF7Mxs1uCPtYpQx+QLxa5aJj8g3n07l5SiV5USKpq4KXYcEWKHTjX1d+18I3J9X2ltvZH1sjqUwTAg==
-
-"@moonwalker/orbit-ui-stylus@^1.14.17":
-  version "1.14.17"
-  resolved "https://registry.yarnpkg.com/@moonwalker/orbit-ui-stylus/-/orbit-ui-stylus-1.14.17.tgz#dad65be203a62cbd990ba6c31b6d5b7e426ef183"
-  integrity sha512-CJpgQu0p2gwhdY7c9Q2ZL48Xar+zHAT4jcmFW8+uY+/sJdnxyklmxI+DnjJHGsubGOdJOgY8vIYJaCdZod1qcA==
-  dependencies:
-    "@moonwalker/orbit-mixins-stylus" "^1.14.17"
-
-"@moonwalker/orbit-ui@^1.14.17":
-  version "1.14.17"
-  resolved "https://registry.yarnpkg.com/@moonwalker/orbit-ui/-/orbit-ui-1.14.17.tgz#6ed5fa8f2e0333d38d134031cbd0d3251ce20fbd"
-  integrity sha512-glpPFuqKbmgMvl5vOwPngEQZKsT/LIJFbIc1bZa46s8qe3CuUXLoXmBQmEUnx86t5GSPRFS/z+qrlwLZBRK7BA==
-
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
