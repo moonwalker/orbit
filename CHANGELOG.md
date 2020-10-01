@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.20](https://github.com/moonwalker/orbit/compare/v1.14.19...v1.14.20) (2020-10-01)
+
+
+### Reverts
+
+* Revert "build: Run bootstrap on bump" ([ecc126f](https://github.com/moonwalker/orbit/commit/ecc126f332020d20d36fda2f1f9325bf48ce5320))
+
+
+
+
+
 ## [1.14.19](https://github.com/moonwalker/orbit/compare/v1.14.18...v1.14.19) (2020-10-01)
 
 **Note:** Version bump only for package orbit
