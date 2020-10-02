@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.22](https://github.com/moonwalker/orbit/compare/v1.14.21...v1.14.22) (2020-10-02)
+
+
+### Bug Fixes
+
+* Regenerate yarn lock ([79550fe](https://github.com/moonwalker/orbit/commit/79550fe335ea7cb20a1acf322a1c2993b39d23c2))
+
+
+
+
+
 ## [1.14.21](https://github.com/moonwalker/orbit/compare/v1.14.20...v1.14.21) (2020-10-02)
 
 
