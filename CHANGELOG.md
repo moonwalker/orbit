@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.21](https://github.com/moonwalker/orbit/compare/v1.14.20...v1.14.21) (2020-10-02)
+
+
+### Bug Fixes
+
+* **ui-react:** Button - wrap child fragments ([50775b4](https://github.com/moonwalker/orbit/commit/50775b4f71512684468714a3176483b4d0e5881b))
+
+
+
+
+
 ## [1.14.20](https://github.com/moonwalker/orbit/compare/v1.14.19...v1.14.20) (2020-10-01)
 
 
