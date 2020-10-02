@@ -26,7 +26,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@babel/runtime": "^7.10.5"
+    "@babel/runtime": "^7.10.5",
+    "react-is": "^16.13.1"
   },
   "peerDependencies": {
     "classnames": "^2.2.6",

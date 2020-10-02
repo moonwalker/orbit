@@ -1,4 +1,5 @@
 import React from 'react';
+import { isFragment } from 'react-is';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
@@ -39,7 +40,8 @@ const wrapChild = (props) => (child) => {
     return null;
   }
 
-  const childComponent = typeof child === 'string' ? <ButtonContent>{child}</ButtonContent> : child;
+  const childComponent =
+    typeof child === 'string' || isFragment(child) ? <ButtonContent>{child}</ButtonContent> : child;
 
   return React.cloneElement(childComponent, mergePropsToChild(childComponent, props));
 };

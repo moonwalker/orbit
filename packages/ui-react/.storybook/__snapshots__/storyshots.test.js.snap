@@ -285,6 +285,19 @@ exports[`Storyshots Components/Atoms/Button with different icon size 1`] = `
 </button>
 `;
 
+exports[`Storyshots Components/Atoms/Button with fragment child 1`] = `
+<button
+  className="ui-button ui-button--medium ui-button--default"
+  onClick={[Function]}
+>
+  <span
+    className="ui-button__content ui-button__content--medium"
+  >
+    Next
+  </span>
+</button>
+`;
+
 exports[`Storyshots Components/Atoms/Button with imported css-module class names 1`] = `
 <button
   className="root medium default"

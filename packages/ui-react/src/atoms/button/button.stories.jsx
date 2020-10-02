@@ -202,6 +202,19 @@ stories.add('with null children', () => (
   </Button>
 ));
 
+stories.add('with fragment child', () => (
+  <Button
+    onClick={action('Click')}
+    kind={selectKind()}
+    size={selectSize()}
+    clear={getClear()}
+    outline={getOutline()}
+    inline={getInline()}
+  >
+    <>Next</>
+  </Button>
+));
+
 stories.add('with custom content', () => (
   <Button
     onClick={action('Click')}
