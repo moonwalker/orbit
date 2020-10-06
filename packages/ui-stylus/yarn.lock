@@ -21,11 +21,6 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@moonwalker/orbit-mixins-stylus@^1.14.17":
-  version "1.14.17"
-  resolved "https://registry.yarnpkg.com/@moonwalker/orbit-mixins-stylus/-/orbit-mixins-stylus-1.14.17.tgz#6977f0816cf68a31ea2bd960f63b6ea771a2fc94"
-  integrity sha512-DKl3ekm7BF7Mxs1uCPtYpQx+QLxa5aJj8g3n07l5SiV5USKpq4KXYcEWKHTjX1d+18I3J9X2ltvZH1sjqUwTAg==
-
 "@types/babel-types@*", "@types/babel-types@^7.0.0":
   version "7.0.9"
   resolved "https://registry.yarnpkg.com/@types/babel-types/-/babel-types-7.0.9.tgz#01d7b86949f455402a94c788883fe4ba574cad41"
