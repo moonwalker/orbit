@@ -23,6 +23,12 @@ React UI Component library
 yarn lerna bootstrap
 ```
 
+### Build
+
+```shell
+yarn build
+```
+
 ### Release
 
 ```shell
