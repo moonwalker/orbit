@@ -14,3 +14,19 @@ UI Component library (CSS)
 
 ## [![](https://img.shields.io/npm/v/@moonwalker/orbit-ui-react.svg)](https://www.npmjs.com/package/@moonwalker/orbit-ui-react) [orbit-ui-react](packages/ui-react)
 React UI Component library
+
+## Development
+
+### Install
+
+```shell
+yarn lerna bootstrap
+```
+
+### Release
+
+```shell
+yarn bump
+```
+
+[Read more about the release flow](https://github.com/moonwalker/mrm-presets#how-is-working)
