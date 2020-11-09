@@ -13,8 +13,8 @@ $component-name = 'button';
   border: 0;
   inner-space($space-xxsmall $space-medium);
 
-  background-color: $gray-light;
-  color: $light;
+  background-color: $neutral-200;
+  color: $neutral-0;
   line-height: $line-height;
   justify-content: center;
   text-align: center;
@@ -27,8 +27,8 @@ $component-name = 'button';
   transition: $state-transition-out if $state-transition-out;
 
   &:hover {
-    background-color: $gray;
-    color: $light;
+    background-color: $neutral-500;
+    color: $neutral-0;
     text-decoration: none;
 
     transition: $state-transition-in if $state-transition-in;
@@ -161,11 +161,11 @@ $component-name = 'button';
 
 +modifier('clear') {
   background-color: transparent;
-  color: $gray-light;
+  color: $neutral-200;
 
   &:hover {
     background-color: transparent;
-    color: $gray;
+    color: $neutral-500;
     text-decoration: none;
   }
 }
@@ -223,13 +223,13 @@ $component-name = 'button';
  *-----------------------------------------------------------------------------*/
 
 +modifier('outline') {
-  border: 1px solid $gray;
+  border: 1px solid $neutral-500;
   background-color: transparent;
-  color: $gray;
+  color: $neutral-500;
 
   &:hover {
     background-color: transparent;
-    color: $gray-dark;
+    color: $neutral-800;
     text-decoration: none;
   }
 }

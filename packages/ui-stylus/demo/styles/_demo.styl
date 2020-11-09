@@ -13,11 +13,11 @@
   z-index: 1000;
   flex();
   align-items: center;
-  background: $dark;
-  color: $light;
+  background: $neutral-1000;
+  color: $neutral-0;
 
   &__menu {
-    color: $light;
+    color: $neutral-0;
   }
 
   &__title {
@@ -29,18 +29,18 @@
   &__title__link {
     inline-block();
     relative();
-    color: $light;
+    color: $neutral-0;
     font-weight: bold;
     text-decoration: none;
 
     &:hover {
-      color: rgba($light, 0.6);
+      color: rgba($neutral-0, 0.6);
     }
 
     &.active::after {
       block(100%, 2px);
       absolute(left bottom);
-      background: $light;
+      background: $neutral-0;
     }
   }
 }
@@ -49,8 +49,8 @@
   fixed(left top 56px bottom);
   box(240px, 100%);
   inner-space($space-xxsmall 0)
-  bg($gray-dark);
-  color: $light;
+  bg($neutral-800);
+  color: $neutral-0;
   z-index: 1001;
 
   display: none;
@@ -69,18 +69,18 @@
 
 .demo-content {
   box(cover);
-  debug-baseline(rgba($gray, 0.2));
+  debug-baseline(rgba($neutral-500, 0.2));
   min-height: 100vh;
 
   h2 {
     padding-bottom: ($space-xxsmall - 1px);
-    border-bottom: 1px solid $gray;
+    border-bottom: 1px solid $neutral-500;
   }
 }
 
 .demo-title {
   margin: 0 0 $space-large;
-  border: 0px solid $gray-dark;
+  border: 0px solid $neutral-800;
   border-bottom-width: 2px;
   padding-bottom: s('calc(%s - %s)', $space-medium, @border-bottom-width);
 }
@@ -113,9 +113,9 @@
 }
 
 .demo-footer {
-  outline: 2px solid $gray-light;
-  bg(lighten($gray-light, 30));
-  color: $gray;
+  outline: 2px solid $neutral-200;
+  bg(lighten($neutral-200, 30));
+  color: $neutral-500;
 
   a {
     color: inherit;

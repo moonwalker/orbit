@@ -9,14 +9,14 @@ $component-name = 'progress';
 +root() {
   block(100%, $space-xxsmall);
   relative();
-  bg(lighten($gray-light, 20));
+  bg(lighten($neutral-200, 20));
   overflow: hidden;
 }
 
 +element('bar') {
   absolute(left top);
   block(0, 100%);
-  bg($gray-light);
+  bg($neutral-200);
   min-width: 1px;
   transition: $state-transition-out;
 }
