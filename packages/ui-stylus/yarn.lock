@@ -21,6 +21,11 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@moonwalker/orbit-mixins-stylus@^1.14.20":
+  version "1.14.20"
+  resolved "https://registry.yarnpkg.com/@moonwalker/orbit-mixins-stylus/-/orbit-mixins-stylus-1.14.20.tgz#bc549ef9b311874cd74975cb6b22bcf3bb9a4646"
+  integrity sha512-Qk/GtkAQLl+LaG/qo+ojd3Lk+RcckaLAk6sAYauJ/XhjoW3EG/Pc4CG5nBXhjTRNYoA8CSrCejM6kpdssxALhw==
+
 "@types/babel-types@*", "@types/babel-types@^7.0.0":
   version "7.0.9"
   resolved "https://registry.yarnpkg.com/@types/babel-types/-/babel-types-7.0.9.tgz#01d7b86949f455402a94c788883fe4ba574cad41"
@@ -2050,9 +2055,9 @@ inherits@2.0.3:
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
 
 ini@^1.3.4:
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
-  integrity sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
+  version "1.3.8"
+  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.8.tgz#a29da425b48806f34767a4efce397269af28432c"
+  integrity sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==
 
 interpret@^1.4.0:
   version "1.4.0"
