@@ -30,13 +30,13 @@
   },
   "devDependencies": {
     "autoprefixer": "9.8.6",
-    "browser-sync": "2.26.12",
+    "browser-sync": "2.26.14",
     "gulp": "4.0.2",
     "gulp-postcss": "8.0.0",
     "gulp-print": "5.0.2",
     "gulp-pug": "4.0.1",
     "gulp-stylus": "2.7.0",
-    "pug": "3.0.0",
+    "pug": "3.0.2",
     "stylint": "2.0.0",
     "stylus": "0.54.8",
     "through2": "4.0.2"
