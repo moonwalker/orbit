@@ -47,7 +47,7 @@
     "@relative-ci/agent": "1.6.1",
     "@storybook/addon-actions": "6.1.21",
     "@storybook/addon-info": "5.3.21",
-    "@storybook/addon-knobs": "6.1.21",
+    "@storybook/addon-knobs": "6.2.9",
     "@storybook/addon-storyshots": "6.1.21",
     "@storybook/addons": "6.1.21",
     "@storybook/react": "6.1.21",
