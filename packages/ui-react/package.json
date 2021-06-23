@@ -44,7 +44,7 @@
     "@babel/preset-react": "7.14.5",
     "@moonwalker/orbit-ui": "^1.14.24",
     "@moonwalker/orbit-ui-stylus": "^1.14.24",
-    "@relative-ci/agent": "1.6.1",
+    "@relative-ci/agent": "2.0.0",
     "@storybook/addon-actions": "6.1.21",
     "@storybook/addon-info": "5.3.21",
     "@storybook/addon-knobs": "6.2.9",
