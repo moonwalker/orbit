@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.26](https://github.com/moonwalker/orbit/compare/v1.14.25...v1.14.26) (2021-06-24)
+
+
+### Bug Fixes
+
+* Remove unused script ([03514f1](https://github.com/moonwalker/orbit/commit/03514f11a85beec952899774c5eb5ce4133f0a17))
+
+
+
+
+
 ## [1.14.25](https://github.com/moonwalker/orbit/compare/v1.14.24...v1.14.25) (2021-06-24)
 
 **Note:** Version bump only for package orbit
