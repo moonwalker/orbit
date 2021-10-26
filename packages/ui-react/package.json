@@ -68,7 +68,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-test-renderer": "17.0.2",
-    "regenerator-runtime": "0.13.7",
+    "regenerator-runtime": "0.13.9",
     "stats-webpack-plugin": "0.7.0",
     "style-loader": "2.0.0",
     "stylus": "0.54.8",
