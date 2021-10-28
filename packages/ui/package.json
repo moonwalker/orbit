@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@moonwalker/orbit-ui-stylus": "^1.14.25",
-    "autoprefixer": "9.8.8",
+    "autoprefixer": "10.3.7",
     "cssnano": "4.1.11",
     "gulp": "4.0.2",
     "gulp-postcss": "8.0.0",
