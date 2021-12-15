@@ -634,14 +634,6 @@
     "@babel/helper-remap-async-to-generator" "^7.14.5"
     "@babel/plugin-syntax-async-generators" "^7.8.4"
 
-"@babel/plugin-proposal-class-properties@7.14.5", "@babel/plugin-proposal-class-properties@^7.14.5":
-  version "7.14.5"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.14.5.tgz#40d1ee140c5b1e31a350f4f5eed945096559b42e"
-  integrity sha512-q/PLpv5Ko4dVc1LYMpCY7RVAAO4uk55qPwrIuJ5QJ8c6cVuAmhu7I/49JOppXL6gXf7ZHzpRVEUZdYoPLM04Gg==
-  dependencies:
-    "@babel/helper-create-class-features-plugin" "^7.14.5"
-    "@babel/helper-plugin-utils" "^7.14.5"
-
 "@babel/plugin-proposal-class-properties@^7.12.1":
   version "7.13.0"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.13.0.tgz#146376000b94efd001e57a40a88a525afaab9f37"
@@ -649,6 +641,14 @@
   dependencies:
     "@babel/helper-create-class-features-plugin" "^7.13.0"
     "@babel/helper-plugin-utils" "^7.13.0"
+
+"@babel/plugin-proposal-class-properties@^7.14.5":
+  version "7.14.5"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.14.5.tgz#40d1ee140c5b1e31a350f4f5eed945096559b42e"
+  integrity sha512-q/PLpv5Ko4dVc1LYMpCY7RVAAO4uk55qPwrIuJ5QJ8c6cVuAmhu7I/49JOppXL6gXf7ZHzpRVEUZdYoPLM04Gg==
+  dependencies:
+    "@babel/helper-create-class-features-plugin" "^7.14.5"
+    "@babel/helper-plugin-utils" "^7.14.5"
 
 "@babel/plugin-proposal-class-static-block@^7.14.5":
   version "7.14.5"
@@ -2018,6 +2018,23 @@
   version "1.6.22"
   resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.6.22.tgz#219dfd89ae5b97a8801f015323ffa4b62f45718b"
   integrity sha512-H1rQc1ZOHANWBvPcW+JpGwr+juXSxM8Q8YCkm3GhZd8REu1fHR3z99CErO1p9pkcfcxZnMdIZdIsXkOHY0NilA==
+
+"@moonwalker/orbit-mixins-stylus@^1.14.26":
+  version "1.14.26"
+  resolved "https://registry.yarnpkg.com/@moonwalker/orbit-mixins-stylus/-/orbit-mixins-stylus-1.14.26.tgz#22151df679931de584ded799b6574737f31bc19c"
+  integrity sha512-NI9jVjx88iyuVrsu6j7tyJZ4nliHpuVF1C+jfI9ixDa8gL56wCPg9cUXGgDo76gGwqVKJHzfF8KnY+XMD1Jr9g==
+
+"@moonwalker/orbit-ui-stylus@^1.14.26":
+  version "1.14.26"
+  resolved "https://registry.yarnpkg.com/@moonwalker/orbit-ui-stylus/-/orbit-ui-stylus-1.14.26.tgz#81676b733c5938807a254a124fe0d79e99a2847d"
+  integrity sha512-Pbn/ld9l5JMp247GLJlpz2R66N6FnaHSGo0z+SftlZuE8mA03HuCXkIUyWLpNEr4kBT7p+fv/kuAYPyHDdk0ZA==
+  dependencies:
+    "@moonwalker/orbit-mixins-stylus" "^1.14.26"
+
+"@moonwalker/orbit-ui@^1.14.26":
+  version "1.14.26"
+  resolved "https://registry.yarnpkg.com/@moonwalker/orbit-ui/-/orbit-ui-1.14.26.tgz#ea9b230e28d8bcf06311b0c3525b5bbe0e1408a5"
+  integrity sha512-VINiujZlJjl3JwrPWXo2E1dx1xem5OWEj6HYxEUh6wwWBgNvD/BH0xPtvk0l07USsQfm2csgcLwYVBtiS6ujFQ==
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
