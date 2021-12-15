@@ -45,7 +45,6 @@
     "@moonwalker/orbit-ui-stylus": "^1.14.26",
     "@relative-ci/agent": "2.0.0",
     "@storybook/addon-actions": "6.3.0",
-    "@storybook/addon-info": "5.3.21",
     "@storybook/addon-knobs": "6.2.9",
     "@storybook/addon-storyshots": "6.3.0",
     "@storybook/addons": "6.3.0",

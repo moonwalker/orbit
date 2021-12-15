@@ -2,7 +2,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { select } from '@storybook/addon-knobs';
-import { withInfo } from '@storybook/addon-info';
 
 import { ButtonIcon } from './button-icon';
 import {
@@ -23,12 +22,9 @@ const selectSize = (size = SIZE_MEDIUM) => select('Size', SIZES, size);
 const selectName = (name = 'face') =>
   select('Icon', ['face', 'backup', 'keyboard_arrow_right'], name);
 
-stories.add(
-  'info',
-  withInfo({ inline: true })(() => (
-    <ButtonIcon onClick={action('Click')} kind="primary" size="large" name="home" />
-  ))
-);
+stories.add('info', () => (
+  <ButtonIcon onClick={action('Click')} kind="primary" size="large" name="home" />
+));
 
 stories.add('default', () => (
   <ButtonIcon

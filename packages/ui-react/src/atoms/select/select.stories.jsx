@@ -2,7 +2,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { select } from '@storybook/addon-knobs';
-import { withInfo } from '@storybook/addon-info';
 
 import { Select } from './select';
 import { SIZES, SIZE_MEDIUM, SIZE_LARGE } from './select.constants';
@@ -15,12 +14,7 @@ const selectSize = (size) => select('Size', SIZES, size || SIZE_MEDIUM);
 
 const options = ['Option A', 'Option B', 'Option C'];
 
-stories.add(
-  'info',
-  withInfo({ inline: true })(() => (
-    <Select onChange={action('Change')} size="small" options={options} />
-  ))
-);
+stories.add('info', () => <Select onChange={action('Change')} size="small" options={options} />);
 
 stories.add('default', () => (
   <Select onChange={action('Change')} size={selectSize()} options={options} />
