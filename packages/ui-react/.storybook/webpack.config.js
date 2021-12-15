@@ -1,6 +1,6 @@
 /* globals require, __dirname, process */
 const { resolve } = require('path');
-const webpackMerge = require('webpack-merge');
+const { merge: webpackMerge } = require('webpack-merge');
 const autoprefixer = require('autoprefixer');
 const orbitUI = require('@moonwalker/orbit-ui-stylus');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
