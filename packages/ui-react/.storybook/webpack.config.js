@@ -18,15 +18,15 @@ module.exports = ({ config }) => {
     module: {
       rules: [
         {
-          test: /\.(css|styl)$/,
+          test: /\.(styl)$/,
           enforce: 'post',
           use: process.env.NODE_ENV === 'production' ? MiniCssExtractPlugin.loader : 'style-loader'
         },
         {
-          test: /\.(css|styl)$/,
+          test: /\.(styl)$/,
           oneOf: [
             {
-              test: /modules\.(css|styl)$/,
+              test: /modules\.(styl)$/,
               use: [
                 {
                   loader: 'css-loader',
@@ -40,7 +40,9 @@ module.exports = ({ config }) => {
                   loader: 'postcss-loader',
                   options: {
                     sourceMap: true,
-                    plugins: [autoprefixer]
+                    postcssOptions: {
+                      plugins: [autoprefixer]
+                    }
                   }
                 }
               ]
@@ -52,7 +54,9 @@ module.exports = ({ config }) => {
                   loader: 'postcss-loader',
                   options: {
                     sourceMap: true,
-                    plugins: [autoprefixer]
+                    postcssOptions: {
+                      plugins: [autoprefixer]
+                    }
                   }
                 }
               ]
@@ -64,7 +68,9 @@ module.exports = ({ config }) => {
           enforce: 'pre',
           loader: 'stylus-loader',
           options: {
-            use: orbitUI()
+            stylusOptions: {
+              use: orbitUI()
+            }
           }
         }
       ]
