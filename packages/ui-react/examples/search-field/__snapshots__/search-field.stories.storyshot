@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Examples/SearchField default 1`] = `
+<div
+  style="max-width: 380px; margin: 0px auto; padding: 1rem;"
+>
+  <div
+    aria-expanded="false"
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-0-label"
+    class="search-field"
+    role="combobox"
+  >
+    <input
+      aria-autocomplete="list"
+      aria-labelledby="downshift-0-label"
+      autocomplete="off"
+      class="ui-input search-field__input ui-input--large"
+      id="downshift-0-input"
+      placeholder="Search for something"
+      value=""
+    />
+    <i
+      class="ui-icon search-field__icon search-field__icon--search ui-icon--large"
+    >
+      search
+    </i>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Examples/SearchField with predefined query 1`] = `
+<div
+  style="max-width: 380px; margin: 0px auto; padding: 1rem;"
+>
+  <div
+    aria-expanded="true"
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-1-label"
+    aria-owns="downshift-1-menu"
+    class="search-field"
+    role="combobox"
+  >
+    <input
+      aria-autocomplete="list"
+      aria-controls="downshift-1-menu"
+      aria-labelledby="downshift-1-label"
+      autocomplete="off"
+      class="ui-input search-field__input ui-input--large"
+      id="downshift-1-input"
+      placeholder="Search for something"
+      value=""
+    />
+    <i
+      class="ui-icon search-field__icon search-field__icon--search ui-icon--large"
+    >
+      search
+    </i>
+    <div
+      class="ui-dropdown search-field__results"
+    >
+      <ul
+        class="ui-list-group ui-list-group--medium"
+      >
+        <li
+          aria-selected="false"
+          class="ui-list-group__item"
+          id="downshift-1-item-0"
+          role="option"
+        >
+          Kristine Mckenzie
+        </li>
+        <li
+          aria-selected="false"
+          class="ui-list-group__item"
+          id="downshift-1-item-1"
+          role="option"
+        >
+          Lottie Ramirez
+        </li>
+        <li
+          aria-selected="false"
+          class="ui-list-group__item"
+          id="downshift-1-item-2"
+          role="option"
+        >
+          Wendy Mitchell
+        </li>
+        <li
+          aria-selected="false"
+          class="ui-list-group__item"
+          id="downshift-1-item-3"
+          role="option"
+        >
+          Best Mcfarland
+        </li>
+        <li
+          aria-selected="false"
+          class="ui-list-group__item"
+          id="downshift-1-item-4"
+          role="option"
+        >
+          Barnes Solis
+        </li>
+        <li
+          aria-selected="false"
+          class="ui-list-group__item"
+          id="downshift-1-item-5"
+          role="option"
+        >
+          Kirkland Cook
+        </li>
+        <li
+          aria-selected="false"
+          class="ui-list-group__item"
+          id="downshift-1-item-6"
+          role="option"
+        >
+          Sharpe Townsend
+        </li>
+        <li
+          aria-selected="false"
+          class="ui-list-group__item"
+          id="downshift-1-item-7"
+          role="option"
+        >
+          Marcie Adkins
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

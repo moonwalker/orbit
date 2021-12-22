@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Atoms/Tag default 1`] = `
+<span
+  class="ui-tag ui-tag--default ui-tag--medium"
+>
+  Tag A
+</span>
+`;
+
+exports[`Storyshots Components/Atoms/Tag info 1`] = `
+<span
+  class="ui-tag ui-tag--primary ui-tag--small"
+>
+  Tag A
+</span>
+`;
+
+exports[`Storyshots Components/Atoms/Tag render as a different element 1`] = `
+<a
+  class="ui-tag ui-tag--default ui-tag--medium"
+>
+  Tag A
+</a>
+`;
+
+exports[`Storyshots Components/Atoms/Tag with kind modifer 1`] = `
+<span
+  class="ui-tag ui-tag--danger ui-tag--medium"
+>
+  Tag A
+</span>
+`;
+
+exports[`Storyshots Components/Atoms/Tag with size modifier 1`] = `
+<span
+  class="ui-tag ui-tag--default ui-tag--large"
+>
+  Tag A
+</span>
+`;

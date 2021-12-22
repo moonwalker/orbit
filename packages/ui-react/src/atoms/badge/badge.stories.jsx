@@ -1,6 +1,5 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
 import { action } from '@storybook/addon-actions';
 import { select, text } from '@storybook/addon-knobs';
 
@@ -17,7 +16,7 @@ import {
 const stories = storiesOf('Components/Atoms/Badge', module);
 stories.addDecorator((storyFn) => <div style={{ padding: '10px' }}>{storyFn()}</div>);
 
-stories.add('info', withInfo({ inline: true })(() => <Badge>0</Badge>));
+stories.add('info', () => <Badge>0</Badge>);
 
 const selectKind = (kind = KIND_DEFAULT) => select('Kind', KINDS, kind);
 const selectSize = (size = SIZE_MEDIUM) => select('Size', SIZES, size);

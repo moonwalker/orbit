@@ -2,7 +2,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { boolean, select } from '@storybook/addon-knobs';
-import { withInfo } from '@storybook/addon-info';
 
 import { Icon } from '../icon/icon';
 import { Button } from './button';
@@ -26,21 +25,18 @@ const getClear = (clear = false) => boolean('Clear', clear);
 const getOutline = (outline = false) => boolean('Outline', outline);
 const getInline = (inline = false) => boolean('Inline', inline);
 
-stories.add(
-  'info',
-  withInfo({ inline: true })(() => (
-    <Button
-      onClick={action('Click')}
-      kind="primary"
-      size="small"
-      clear={false}
-      outline={getOutline()}
-      inline={getInline()}
-    >
-      Call to action
-    </Button>
-  ))
-);
+stories.add('info', () => (
+  <Button
+    onClick={action('Click')}
+    kind="primary"
+    size="small"
+    clear={false}
+    outline={getOutline()}
+    inline={getInline()}
+  >
+    Call to action
+  </Button>
+));
 
 stories.add('default', () => (
   <Button

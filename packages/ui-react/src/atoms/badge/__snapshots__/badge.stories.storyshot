@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Atoms/Badge default 1`] = `
+<div
+  style="padding: 10px;"
+>
+  <span
+    class="ui-badge ui-badge--default ui-badge--medium"
+  >
+    5
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Badge info 1`] = `
+<div
+  style="padding: 10px;"
+>
+  <span
+    class="ui-badge ui-badge--default ui-badge--medium"
+  >
+    0
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Badge render as a different element 1`] = `
+<div
+  style="padding: 10px;"
+>
+  <a
+    class="ui-badge ui-badge--default ui-badge--medium"
+  >
+    5
+  </a>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Badge with kind modifer 1`] = `
+<div
+  style="padding: 10px;"
+>
+  <span
+    class="ui-badge ui-badge--danger ui-badge--medium"
+  >
+    5
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Badge with long text 1`] = `
+<div
+  style="padding: 10px;"
+>
+  <span
+    class="ui-badge ui-badge--default ui-badge--medium"
+  >
+    1000
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Badge with size modifier 1`] = `
+<div
+  style="padding: 10px;"
+>
+  <span
+    class="ui-badge ui-badge--default ui-badge--large"
+  >
+    5
+  </span>
+</div>
+`;

@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Molecules/Progress default 1`] = `
+<div
+  style="padding: 10px;"
+>
+  <div
+    class="ui-progress ui-progress--default"
+  >
+    <span
+      class="ui-progress__bar ui-progress__bar--default"
+      style="width: 66%;"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Molecules/Progress info 1`] = `
+<div
+  style="padding: 10px;"
+>
+  <div
+    class="ui-progress ui-progress--default"
+  >
+    <span
+      class="ui-progress__bar ui-progress__bar--default"
+      style="width: 66%;"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Molecules/Progress render as a different element 1`] = `
+<div
+  style="padding: 10px;"
+>
+  <a
+    class="ui-progress ui-progress--default"
+  >
+    <span
+      class="ui-progress__bar ui-progress__bar--default"
+      style="width: 66%;"
+    />
+  </a>
+</div>
+`;
+
+exports[`Storyshots Components/Molecules/Progress with custom bar props 1`] = `
+<div
+  style="padding: 10px;"
+>
+  <div
+    class="ui-progress ui-progress--default"
+  >
+    <span
+      class="ui-progress__bar ui-progress__bar--default"
+      style="width: 66%; background: magenta;"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Molecules/Progress with custom total 1`] = `
+<div
+  style="padding: 10px;"
+>
+  <div
+    class="ui-progress ui-progress--default"
+  >
+    <span
+      class="ui-progress__bar ui-progress__bar--default"
+      style="width: 33%;"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Molecules/Progress with kind modifer 1`] = `
+<div
+  style="padding: 10px;"
+>
+  <div
+    class="ui-progress ui-progress--danger"
+  >
+    <span
+      class="ui-progress__bar ui-progress__bar--danger"
+      style="width: 66%;"
+    />
+  </div>
+</div>
+`;

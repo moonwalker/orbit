@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Atoms/Input default 1`] = `
+<input
+  class="ui-input ui-input--medium"
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Input info 1`] = `
+<input
+  class="ui-input ui-input--large"
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Input with custom css-module class names 1`] = `
+<input
+  class="root medium"
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Input with imported css-module class names 1`] = `
+<input
+  class="root medium"
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Input with invalid state 1`] = `
+<input
+  class="ui-input ui-input--medium ui-input--invalid"
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Input with size modifier 1`] = `
+<input
+  class="ui-input ui-input--large"
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Input with valid state 1`] = `
+<input
+  class="ui-input ui-input--medium ui-input--valid"
+  placeholder="Enter text here"
+/>
+`;

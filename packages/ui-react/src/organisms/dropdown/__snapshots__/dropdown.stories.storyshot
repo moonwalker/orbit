@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Organisms/Dropdown default 1`] = `
+<div
+  style="position: relative;"
+>
+  <p>
+    Dropdown anchor
+  </p>
+  <div
+    class="ui-dropdown"
+  >
+    <p>
+      Content dropdown
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Organisms/Dropdown info 1`] = `
+<div
+  style="position: relative;"
+>
+  <p>
+    Dropdown anchor
+  </p>
+  <div
+    class="ui-dropdown"
+  >
+    <p>
+      Content dropdown
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Organisms/Dropdown with custom css-module class names 1`] = `
+<div
+  style="position: relative;"
+>
+  <p>
+    Dropdown anchor
+  </p>
+  <div
+    class="root"
+  >
+    <p>
+      Content dropdown
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Organisms/Dropdown with imported css-module class names 1`] = `
+<div
+  style="position: relative;"
+>
+  <p>
+    Dropdown anchor
+  </p>
+  <div
+    class="root"
+  >
+    <p>
+      Content dropdown
+    </p>
+  </div>
+</div>
+`;

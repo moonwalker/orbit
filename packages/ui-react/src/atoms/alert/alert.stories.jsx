@@ -1,6 +1,5 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
 import { action } from '@storybook/addon-actions';
 import { boolean, select, text } from '@storybook/addon-knobs';
 
@@ -24,7 +23,7 @@ const selectSize = (size = SIZE_MEDIUM) => select('Size', SIZES, size);
 const getText = (val = TEXT) => text('Text', val);
 const getOutline = (val = false) => boolean('Outline', val);
 
-stories.add('info', withInfo({ inline: true })(() => <Alert>{getText()}</Alert>));
+stories.add('info', () => <Alert>{getText()}</Alert>);
 
 stories.add('default', () => (
   <Alert kind={selectKind()} size={selectSize()} outline={getOutline()}>

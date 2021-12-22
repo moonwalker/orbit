@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Molecules/ButtonIcon default 1`] = `
+<button
+  class="ui-button-icon ui-button-icon--medium ui-button-icon--default"
+  name="face"
+>
+  <i
+    class="ui-icon ui-icon--medium"
+  >
+    face
+  </i>
+</button>
+`;
+
+exports[`Storyshots Components/Molecules/ButtonIcon info 1`] = `
+<button
+  class="ui-button-icon ui-button-icon--large ui-button-icon--primary"
+  name="home"
+>
+  <i
+    class="ui-icon ui-icon--large"
+  >
+    home
+  </i>
+</button>
+`;
+
+exports[`Storyshots Components/Molecules/ButtonIcon with custom css-module class names 1`] = `
+<button
+  class="root medium default"
+  name="backup"
+>
+  <i
+    class="ui-icon ui-icon--medium"
+  >
+    backup
+  </i>
+</button>
+`;
+
+exports[`Storyshots Components/Molecules/ButtonIcon with icon name 1`] = `
+<button
+  class="ui-button-icon ui-button-icon--large ui-button-icon--default"
+  name="backup"
+>
+  <i
+    class="ui-icon ui-icon--large"
+  >
+    backup
+  </i>
+</button>
+`;
+
+exports[`Storyshots Components/Molecules/ButtonIcon with imported css-module class names 1`] = `
+<button
+  class="root medium default"
+  name="backup"
+>
+  <i
+    class="ui-icon ui-icon--medium"
+  >
+    backup
+  </i>
+</button>
+`;
+
+exports[`Storyshots Components/Molecules/ButtonIcon with kind modifier 1`] = `
+<button
+  class="ui-button-icon ui-button-icon--medium ui-button-icon--danger"
+  name="face"
+>
+  <i
+    class="ui-icon ui-icon--medium"
+  >
+    face
+  </i>
+</button>
+`;
+
+exports[`Storyshots Components/Molecules/ButtonIcon with render prop 1`] = `
+<button
+  class="ui-button-icon ui-button-icon--medium ui-button-icon--default"
+  name="backup"
+>
+  <span>
+    backup / medium
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Molecules/ButtonIcon with size modifier 1`] = `
+<button
+  class="ui-button-icon ui-button-icon--large ui-button-icon--default"
+  name="face"
+>
+  <i
+    class="ui-icon ui-icon--large"
+  >
+    face
+  </i>
+</button>
+`;

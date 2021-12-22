@@ -1,0 +1,223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Atoms/Select default 1`] = `
+<select
+  class="ui-select ui-select--medium"
+>
+  <option
+    value="Option A"
+  >
+    Option A
+  </option>
+  <option
+    value="Option B"
+  >
+    Option B
+  </option>
+  <option
+    value="Option C"
+  >
+    Option C
+  </option>
+</select>
+`;
+
+exports[`Storyshots Components/Atoms/Select info 1`] = `
+<select
+  class="ui-select ui-select--small"
+>
+  <option
+    value="Option A"
+  >
+    Option A
+  </option>
+  <option
+    value="Option B"
+  >
+    Option B
+  </option>
+  <option
+    value="Option C"
+  >
+    Option C
+  </option>
+</select>
+`;
+
+exports[`Storyshots Components/Atoms/Select with children 1`] = `
+<select
+  class="ui-select ui-select--medium"
+>
+  <optgroup
+    label="Group A"
+  >
+    <option
+      value="a1"
+    >
+      Option 1
+    </option>
+    <option
+      value="a2"
+    >
+      Option 2
+    </option>
+    <option
+      value="a3"
+    >
+      Option 3
+    </option>
+  </optgroup>
+  <optgroup
+    label="Group b"
+  >
+    <option
+      value="b1"
+    >
+      Option 1
+    </option>
+    <option
+      value="b2"
+    >
+      Option 2
+    </option>
+    <option
+      value="b3"
+    >
+      Option 3
+    </option>
+  </optgroup>
+</select>
+`;
+
+exports[`Storyshots Components/Atoms/Select with custom css-module class names 1`] = `
+<select
+  class="root medium"
+>
+  <option
+    value="Option A"
+  >
+    Option A
+  </option>
+  <option
+    value="Option B"
+  >
+    Option B
+  </option>
+  <option
+    value="Option C"
+  >
+    Option C
+  </option>
+</select>
+`;
+
+exports[`Storyshots Components/Atoms/Select with imported css-module class names 1`] = `
+<select
+  class="root medium"
+>
+  <option
+    value="Option A"
+  >
+    Option A
+  </option>
+  <option
+    value="Option B"
+  >
+    Option B
+  </option>
+  <option
+    value="Option C"
+  >
+    Option C
+  </option>
+</select>
+`;
+
+exports[`Storyshots Components/Atoms/Select with invalid state 1`] = `
+<select
+  class="ui-select ui-select--medium ui-select--invalid"
+>
+  <option
+    value="Option A"
+  >
+    Option A
+  </option>
+  <option
+    value="Option B"
+  >
+    Option B
+  </option>
+  <option
+    value="Option C"
+  >
+    Option C
+  </option>
+</select>
+`;
+
+exports[`Storyshots Components/Atoms/Select with options attributes 1`] = `
+<select
+  class="ui-select ui-select--medium"
+>
+  <option
+    value="0"
+  >
+    Option A
+  </option>
+  <option
+    selected=""
+    value="1"
+  >
+    Option B
+  </option>
+  <option
+    value="2"
+  >
+    Option C
+  </option>
+</select>
+`;
+
+exports[`Storyshots Components/Atoms/Select with size modifier 1`] = `
+<select
+  class="ui-select ui-select--large"
+>
+  <option
+    value="Option A"
+  >
+    Option A
+  </option>
+  <option
+    value="Option B"
+  >
+    Option B
+  </option>
+  <option
+    value="Option C"
+  >
+    Option C
+  </option>
+</select>
+`;
+
+exports[`Storyshots Components/Atoms/Select with valid state 1`] = `
+<select
+  class="ui-select ui-select--medium ui-select--valid"
+>
+  <option
+    value="Option A"
+  >
+    Option A
+  </option>
+  <option
+    value="Option B"
+  >
+    Option B
+  </option>
+  <option
+    value="Option C"
+  >
+    Option C
+  </option>
+</select>
+`;
