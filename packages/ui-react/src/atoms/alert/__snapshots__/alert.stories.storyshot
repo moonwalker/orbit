@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Atoms/Alert default 1`] = `
+<div
+  style="padding: 10px;"
+>
+  <div
+    class="ui-alert ui-alert--default ui-alert--medium"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Alert info 1`] = `
+<div
+  style="padding: 10px;"
+>
+  <div
+    class="ui-alert ui-alert--default ui-alert--medium"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Alert render as a different element 1`] = `
+<div
+  style="padding: 10px;"
+>
+  <a
+    class="ui-alert ui-alert--default ui-alert--medium ui-alert--outline ui-alert--outline--medium undefined"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </a>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Alert with kind modifer 1`] = `
+<div
+  style="padding: 10px;"
+>
+  <div
+    class="ui-alert ui-alert--danger ui-alert--medium"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Alert with outline modifier 1`] = `
+<div
+  style="padding: 10px;"
+>
+  <div
+    class="ui-alert ui-alert--default ui-alert--medium ui-alert--outline ui-alert--outline--medium undefined"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Alert with size modifier 1`] = `
+<div
+  style="padding: 10px;"
+>
+  <div
+    class="ui-alert ui-alert--default ui-alert--large"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </div>
+</div>
+`;

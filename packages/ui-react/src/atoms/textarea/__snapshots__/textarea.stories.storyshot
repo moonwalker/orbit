@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Atoms/Textarea default 1`] = `
+<textarea
+  class="ui-textarea ui-textarea--medium"
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Textarea info 1`] = `
+<textarea
+  class="ui-textarea ui-textarea--small"
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Textarea with custom css-module class names 1`] = `
+<textarea
+  class="root medium"
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Textarea with imported css-module class names 1`] = `
+<textarea
+  class="root medium"
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Textarea with invalid state 1`] = `
+<textarea
+  class="ui-textarea ui-textarea--medium ui-textarea--invalid"
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Textarea with size modifier 1`] = `
+<textarea
+  class="ui-textarea ui-textarea--large"
+  placeholder="Enter text here"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Textarea with valid state 1`] = `
+<textarea
+  class="ui-textarea ui-textarea--medium ui-textarea--valid"
+  placeholder="Enter text here"
+/>
+`;

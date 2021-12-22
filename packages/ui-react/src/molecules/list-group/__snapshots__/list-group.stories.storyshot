@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Molecules/ListGroup default 1`] = `
+<div
+  style="padding: 1rem;"
+>
+  <ul
+    class="ui-list-group ui-list-group--medium"
+  >
+    <li
+      class="ui-list-group__item"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </li>
+    <li
+      class="ui-list-group__item"
+    >
+      Proin at efficitur est.
+    </li>
+    <li
+      class="ui-list-group__item"
+    >
+      Nunc vitae consectetur nibh, at maximus risus.
+    </li>
+    <li
+      class="ui-list-group__item"
+    >
+      Sed sit amet metus id ex fringilla hendrerit non sit amet mauris.
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components/Molecules/ListGroup info 1`] = `
+<ul
+  class="ui-list-group ui-list-group--small"
+>
+  <li
+    class="ui-list-group__item"
+  >
+    Item 1
+  </li>
+  <li
+    class="ui-list-group__item"
+  >
+    Item 2
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Components/Molecules/ListGroup with custom css-module class names 1`] = `
+<div
+  style="padding: 1rem;"
+>
+  <ul
+    class="root medium"
+  >
+    <li
+      class="item"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </li>
+    <li
+      class="item"
+    >
+      Proin at efficitur est.
+    </li>
+    <li
+      class="item"
+    >
+      Nunc vitae consectetur nibh, at maximus risus.
+    </li>
+    <li
+      class="item"
+    >
+      Sed sit amet metus id ex fringilla hendrerit non sit amet mauris.
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components/Molecules/ListGroup with custom render 1`] = `
+<div
+  style="padding: 1rem;"
+>
+  <nav
+    class="ui-list-group ui-list-group--medium"
+  >
+    <a
+      class="ui-list-group__item"
+      href="#0"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </a>
+    <a
+      class="ui-list-group__item"
+      href="#1"
+    >
+      Proin at efficitur est.
+    </a>
+    <a
+      class="ui-list-group__item"
+      href="#2"
+    >
+      Nunc vitae consectetur nibh, at maximus risus.
+    </a>
+    <a
+      class="ui-list-group__item"
+      href="#3"
+    >
+      Sed sit amet metus id ex fringilla hendrerit non sit amet mauris.
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots Components/Molecules/ListGroup with imported css-module class names 1`] = `
+<div
+  style="padding: 1rem;"
+>
+  <ul
+    class="root medium"
+  >
+    <li
+      class="item"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </li>
+    <li
+      class="item"
+    >
+      Proin at efficitur est.
+    </li>
+    <li
+      class="item"
+    >
+      Nunc vitae consectetur nibh, at maximus risus.
+    </li>
+    <li
+      class="item"
+    >
+      Sed sit amet metus id ex fringilla hendrerit non sit amet mauris.
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components/Molecules/ListGroup with size modifier 1`] = `
+<div
+  style="padding: 1rem;"
+>
+  <ul
+    class="ui-list-group ui-list-group--large"
+  >
+    <li
+      class="ui-list-group__item"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </li>
+    <li
+      class="ui-list-group__item"
+    >
+      Proin at efficitur est.
+    </li>
+    <li
+      class="ui-list-group__item"
+    >
+      Nunc vitae consectetur nibh, at maximus risus.
+    </li>
+    <li
+      class="ui-list-group__item"
+    >
+      Sed sit amet metus id ex fringilla hendrerit non sit amet mauris.
+    </li>
+  </ul>
+</div>
+`;

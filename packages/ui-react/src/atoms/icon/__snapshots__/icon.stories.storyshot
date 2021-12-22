@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Atoms/Icon default 1`] = `
+<i
+  class="ui-icon ui-icon--medium"
+>
+  face
+</i>
+`;
+
+exports[`Storyshots Components/Atoms/Icon info 1`] = `
+<i
+  class="ui-icon ui-icon--large"
+>
+  home
+</i>
+`;
+
+exports[`Storyshots Components/Atoms/Icon with custom css-module class names 1`] = `
+<i
+  class="root medium"
+>
+  face
+</i>
+`;
+
+exports[`Storyshots Components/Atoms/Icon with imported css-module class names 1`] = `
+<i
+  class="root medium"
+>
+  face
+</i>
+`;
+
+exports[`Storyshots Components/Atoms/Icon with size modifier 1`] = `
+<i
+  class="ui-icon ui-icon--large"
+>
+  face
+</i>
+`;

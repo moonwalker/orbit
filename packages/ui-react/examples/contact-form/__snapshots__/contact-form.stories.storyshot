@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Examples/Contact Form default 1`] = `
+<div
+  style="max-width: 380px; margin: 0px auto; padding: 1rem;"
+>
+  <form
+    class="contact-form"
+  >
+    <div
+      class="contact-form__field"
+    >
+      <label
+        class="ui-label contact-form__field__label ui-label--medium"
+      >
+        First name
+      </label>
+      <input
+        class="ui-input ui-input--medium"
+        name="firstname"
+        placeholder="First name"
+      />
+    </div>
+    <div
+      class="contact-form__field"
+    >
+      <label
+        class="ui-label contact-form__field__label ui-label--medium"
+      >
+        Last name
+      </label>
+      <input
+        class="ui-input ui-input--medium"
+        name="lastname"
+        placeholder="Last name"
+      />
+    </div>
+    <div
+      class="contact-form__field"
+    >
+      <label
+        class="ui-label contact-form__field__label ui-label--medium"
+      >
+        Country
+      </label>
+      <select
+        class="ui-select ui-select--medium"
+        name="country"
+      >
+        <option
+          value="Afghanistan"
+        >
+          Afghanistan
+        </option>
+        <option
+          value="Albania"
+        >
+          Albania
+        </option>
+        <option
+          value="Algeria"
+        >
+          Algeria
+        </option>
+        <option
+          value="Andorra"
+        >
+          Andorra
+        </option>
+        <option
+          value="Angola"
+        >
+          Angola
+        </option>
+        <option
+          value="Antigua and Barbuda"
+        >
+          Antigua and Barbuda
+        </option>
+        <option
+          value="Argentina"
+        >
+          Argentina
+        </option>
+        <option
+          value="Armenia"
+        >
+          Armenia
+        </option>
+        <option
+          value="Aruba"
+        >
+          Aruba
+        </option>
+        <option
+          value="Australia"
+        >
+          Australia
+        </option>
+        <option
+          value="Austria"
+        >
+          Austria
+        </option>
+        <option
+          value="Azerbaijan"
+        >
+          Azerbaijan
+        </option>
+      </select>
+    </div>
+    <div
+      class="contact-form__field"
+    >
+      <label
+        class="ui-label contact-form__field__label ui-label--medium"
+      >
+        Message
+      </label>
+      <textarea
+        class="ui-textarea ui-textarea--medium"
+        name="message"
+        placeholder="Enter your message"
+        rows="5"
+      />
+    </div>
+    <div
+      class="contact-form__actions"
+    >
+      <button
+        class="ui-button ui-button--medium ui-button--default"
+      >
+        Send
+      </button>
+    </div>
+  </form>
+</div>
+`;

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Atoms/Label default 1`] = `
+<label
+  class="ui-label ui-label--medium"
+>
+  Username
+</label>
+`;
+
+exports[`Storyshots Components/Atoms/Label info 1`] = `
+<label
+  class="ui-label ui-label--large"
+>
+  Username
+</label>
+`;
+
+exports[`Storyshots Components/Atoms/Label with custom css-module class names 1`] = `
+<label
+  class="root medium"
+>
+  Username
+</label>
+`;
+
+exports[`Storyshots Components/Atoms/Label with imported css-module class names 1`] = `
+<label
+  class="root medium"
+>
+  Username
+</label>
+`;
+
+exports[`Storyshots Components/Atoms/Label with size modifier 1`] = `
+<label
+  class="ui-label ui-label--large"
+>
+  Username
+</label>
+`;

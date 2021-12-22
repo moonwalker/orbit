@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Atoms/Spinner default 1`] = `
+<span
+  class="ui-spinner ui-spinner--medium"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Spinner info 1`] = `
+<span
+  class="ui-spinner ui-spinner--small"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Spinner with custom css-module class names 1`] = `
+<span
+  class="root medium"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Spinner with imported css-module class names 1`] = `
+<span
+  class="root medium"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Spinner with size modifier 1`] = `
+<span
+  class="ui-spinner ui-spinner--large"
+/>
+`;
