@@ -16,5 +16,97 @@
     "xlarge": "xlarge",
     "xxlarge": "xxlarge",
     "xxxlarge": "xxxlarge"
+  },
+  "components": {
+    "alert": {
+      "size": {
+        "small": "small",
+        "medium": "medium",
+        "large": "large"
+      }
+    },
+    "badge": {
+      "size": {
+        "small": "small",
+        "medium": "medium",
+        "large": "large"
+      }
+    },
+    "button": {
+      "size": {
+        "xsmall": "xsmall",
+        "small": "small",
+        "medium": "medium",
+        "large": "large",
+        "xlarge": "xlarge"
+      }
+    },
+    "icon": {
+      "size": {
+        "xsmall": "xsmall",
+        "small": "small",
+        "medium": "medium",
+        "large": "large",
+        "xlarge": "xlarge"
+      }
+    },
+    "input": {
+      "size": {
+        "small": "small",
+        "medium": "medium",
+        "large": "large"
+      }
+    },
+    "label": {
+      "size": {
+        "small": "small",
+        "medium": "medium",
+        "large": "large"
+      }
+    },
+    "select": {
+      "size": {
+        "small": "small",
+        "medium": "medium",
+        "large": "large"
+      }
+    },
+    "spinner": {
+      "size": {
+        "small": "small",
+        "medium": "medium",
+        "large": "large"
+      }
+    },
+    "tag": {
+      "size": {
+        "small": "small",
+        "medium": "medium",
+        "large": "large"
+      }
+    },
+    "textarea": {
+      "size": {
+        "small": "small",
+        "medium": "medium",
+        "large": "large"
+      }
+    },
+    "buttonIcon": {
+      "size": {
+        "xsmall": "xsmall",
+        "small": "small",
+        "medium": "medium",
+        "large": "large",
+        "xlarge": "xlarge"
+      }
+    },
+    "listGroup": {
+      "size": {
+        "small": "small",
+        "medium": "medium",
+        "large": "large"
+      }
+    }
   }
 }

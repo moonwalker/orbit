@@ -13,29 +13,40 @@ export default {
     },
     size: {
       control: 'select',
-      options: Object.values(modifiers.size),
-      defaultValue: modifiers.size.medium
+      options: Object.values(modifiers.components.button.size),
+      defaultValue: modifiers.components.button.size.medium
     },
     clear: {
-      value: false
+      control: 'boolean',
+      defaultValue: false
+    },
+    outline: {
+      control: 'boolean',
+      defaultValue: false
+    },
+    inline: {
+      control: 'boolean',
+      defaultValue: false
     },
     onClick: { action: 'onClick' }
   }
 };
 
-const Template = ({ label, kind, size, clear, onClick }) => {
-  const btn = document.createElement('button');
-  btn.type = 'button';
-  btn.innerText = label;
-  btn.addEventListener('click', onClick);
-  btn.className = cx(
+const Template = ({ label, kind, size, clear, outline, inline, onClick }) => {
+  const element = document.createElement('button');
+  element.type = 'button';
+  element.innerText = label;
+  element.addEventListener('click', onClick);
+  element.className = cx(
     'ui-button',
     `ui-button--${kind}`,
     `ui-button--${size}`,
-    clear && `ui-button--clear ui-button--clear--${kind}`
+    clear && `ui-button--clear ui-button--clear--${kind}`,
+    outline && `ui-button--outline ui-button--outline--${size} ui-button--outline--${kind}`,
+    inline && `ui-button--inline ui-button--inline--${kind}`
   );
 
-  return btn;
+  return element;
 };
 
 export const Default = Template.bind();
