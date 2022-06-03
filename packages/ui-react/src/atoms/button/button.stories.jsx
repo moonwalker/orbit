@@ -207,7 +207,7 @@ stories.add('with fragment child', () => (
     outline={getOutline()}
     inline={getInline()}
   >
-    <>Next</>
+    Next
   </Button>
 ));
 
