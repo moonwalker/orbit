@@ -38,7 +38,7 @@
     "gulp-stylus": "2.7.0",
     "pug": "3.0.2",
     "stylint": "2.0.0",
-    "stylus": "0.54.8",
+    "stylus": "0.58.1",
     "through2": "4.0.2"
   }
 }
