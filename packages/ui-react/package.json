@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.10.5",
-    "react-is": "^17.0.0"
+    "react-is": "^18.1.0"
   },
   "peerDependencies": {
     "classnames": "^2.2.6",
