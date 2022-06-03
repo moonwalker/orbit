@@ -87,11 +87,7 @@ exports[`Storyshots Components/Atoms/Button with fragment child 1`] = `
 <button
   class="ui-button ui-button--medium ui-button--default"
 >
-  <span
-    class="ui-button__content ui-button__content--medium"
-  >
-    Next
-  </span>
+  Next
 </button>
 `;
 
