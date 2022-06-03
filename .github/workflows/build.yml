@@ -81,11 +81,6 @@ jobs:
 
       - run: yarn build
 
-      - name: Send webpack stats to relative-ci
-        run: cd packages/ui-react && npx relative-ci-agent
-        env:
-          RELATIVE_CI_KEY: ${{secrets.RELATIVE_CI_KEY}}
-
   publish:
     needs:
       - lint
