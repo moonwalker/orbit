@@ -71,7 +71,7 @@
     "regenerator-runtime": "0.13.7",
     "stats-webpack-plugin": "0.7.0",
     "style-loader": "3.3.1",
-    "stylus": "0.54.8",
+    "stylus": "0.58.1",
     "stylus-loader": "4",
     "webpack": "5.40.0",
     "webpack-bundle-analyzer": "4.5.0",
