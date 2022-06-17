@@ -35,7 +35,7 @@
     "gulp-postcss": "9.0.1",
     "gulp-print": "5.0.2",
     "gulp-pug": "5.0.0",
-    "gulp-stylus": "2.7.0",
+    "gulp-stylus": "2.7.1",
     "pug": "3.0.2",
     "stylint": "2.0.0",
     "stylus": "0.58.1",
