@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.29](https://github.com/moonwalker/orbit/compare/v1.14.28...v1.14.29) (2022-07-29)
+
+**Note:** Version bump only for package @moonwalker/orbit-ui-react
+
+
+
+
+
 ## [1.14.27](https://github.com/moonwalker/orbit/compare/v1.14.26...v1.14.27) (2022-07-29)
 
 **Note:** Version bump only for package @moonwalker/orbit-ui-react
