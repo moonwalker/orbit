@@ -17,38 +17,24 @@
   },
   "scripts": {
     "prebuild": "npm run lint && npm run test",
-    "build": "echo \"Info: nothing to build\" && exit 0",
-    "build-pages": "rm -fr dist && gulp build",
+    "build": "build-storybook",
     "lint": "npm run lint:styl && npm run lint:js",
     "lint:js": "../../node_modules/.bin/eslint lib/**/*.js",
     "lint:styl": "stylint lib",
-    "start": "gulp serve",
     "test": "echo \"Error: no test specified\" && exit 0",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "start": "start-storybook -p 6006"
   },
   "dependencies": {
     "@moonwalker/orbit-mixins-stylus": "^1.14.29",
     "classnames": "^2.3.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.5",
     "@storybook/addon-actions": "6.5.6",
     "@storybook/addon-essentials": "6.5.6",
     "@storybook/addon-links": "6.5.6",
     "@storybook/html": "6.5.6",
-    "autoprefixer": "9.8.6",
-    "babel-loader": "^8.2.3",
-    "browser-sync": "2.26.14",
-    "gulp": "4.0.2",
-    "gulp-postcss": "9.0.1",
-    "gulp-print": "5.0.2",
-    "gulp-pug": "5.0.0",
-    "gulp-stylus": "2.7.1",
-    "pug": "3.0.2",
-    "stylint": "2.0.0",
+    "classnames": "2.3.1",
     "stylus": "0.58.1",
-    "stylus-loader": "4.3.3",
-    "through2": "4.0.2"
+    "stylus-loader": "4.3.3"
   }
 }
