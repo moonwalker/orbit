@@ -56,6 +56,9 @@ jobs:
       - run: yarn test
 
   build:
+    needs:
+      - lint
+      - test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -83,8 +86,6 @@ jobs:
 
   publish:
     needs:
-      - lint
-      - test
       - build
 
     if: contains(github.ref, 'refs/tags/v')

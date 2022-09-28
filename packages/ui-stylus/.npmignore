@@ -1,3 +1,5 @@
 demo
 dist
 gulpfile.js
+**/*.stories.js
+**/*.stories.mdx
