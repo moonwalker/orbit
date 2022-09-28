@@ -1,7 +1,11 @@
 # Orbit UI
 
+Minimal UI component library for :moon: :walking:
+
+---
+
 [![ci](https://github.com/moonwalker/orbit/workflows/ci/badge.svg)](https://github.com/moonwalker/orbit/actions?query=workflow%3Aci)
-[![renovatebot](https://badges.renovateapi.com/github/moonwalker/orbit)](https://renovatebot.com/dashboard#github/moonwalker/orbit)
+![Dependabot Status](https://flat.badgen.net/github/dependabot/moonwalker/orbit)
 
 ## [![](https://img.shields.io/npm/v/@moonwalker/orbit-mixins-stylus.svg)](https://www.npmjs.com/package/@moonwalker/orbit-mixins-stylus) [orbit-mixins-stylus](packages/mixins-stylus)
 Stylus mixins and utilities
