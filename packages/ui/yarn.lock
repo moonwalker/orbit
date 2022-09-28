@@ -2,18 +2,6 @@
 # yarn lockfile v1
 
 
-"@moonwalker/orbit-mixins-stylus@^1.14.26":
-  version "1.14.26"
-  resolved "https://registry.yarnpkg.com/@moonwalker/orbit-mixins-stylus/-/orbit-mixins-stylus-1.14.26.tgz#22151df679931de584ded799b6574737f31bc19c"
-  integrity sha512-NI9jVjx88iyuVrsu6j7tyJZ4nliHpuVF1C+jfI9ixDa8gL56wCPg9cUXGgDo76gGwqVKJHzfF8KnY+XMD1Jr9g==
-
-"@moonwalker/orbit-ui-stylus@^1.14.26":
-  version "1.14.26"
-  resolved "https://registry.yarnpkg.com/@moonwalker/orbit-ui-stylus/-/orbit-ui-stylus-1.14.26.tgz#81676b733c5938807a254a124fe0d79e99a2847d"
-  integrity sha512-Pbn/ld9l5JMp247GLJlpz2R66N6FnaHSGo0z+SftlZuE8mA03HuCXkIUyWLpNEr4kBT7p+fv/kuAYPyHDdk0ZA==
-  dependencies:
-    "@moonwalker/orbit-mixins-stylus" "^1.14.26"
-
 "@types/q@^1.5.1":
   version "1.5.4"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
