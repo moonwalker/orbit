@@ -5,6 +5,7 @@ import { Tabs } from './';
 
 const stories = storiesOf('Components/Organisms/Tabs', module);
 
+/* eslint-disable react/no-unknown-property */
 stories.add('info', () => (
   <Tabs>
     <span>Item 1</span>
@@ -28,3 +29,4 @@ stories.add('with custom render', () => (
     <span>Item 3</span>
   </Tabs>
 ));
+/* eslint-enable react/no-unknown-property */
