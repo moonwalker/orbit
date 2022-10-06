@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.30](https://github.com/moonwalker/orbit/compare/v1.14.29...v1.14.30) (2022-10-06)
+
+
+### Bug Fixes
+
+* Add missing stylint dep ([c62a086](https://github.com/moonwalker/orbit/commit/c62a08691b1bea82881f8a0928daa312aa096137))
+* Lerna - consistent dep version ([1cc22ec](https://github.com/moonwalker/orbit/commit/1cc22ec212e299b8fdf0b8f8b07c540af6da9183))
+
+
+### Reverts
+
+* Revert "chore: Udpate node to v18" ([90dbc47](https://github.com/moonwalker/orbit/commit/90dbc4734019d720c04b34f901d35273d9876188))
+
+
+
+
+
 ## [1.14.29](https://github.com/moonwalker/orbit/compare/v1.14.28...v1.14.29) (2022-07-29)
 
 **Note:** Version bump only for package @moonwalker/orbit-ui-stylus
