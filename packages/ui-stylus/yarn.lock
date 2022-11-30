@@ -1468,11 +1468,6 @@
   resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.6.22.tgz#219dfd89ae5b97a8801f015323ffa4b62f45718b"
   integrity sha512-H1rQc1ZOHANWBvPcW+JpGwr+juXSxM8Q8YCkm3GhZd8REu1fHR3z99CErO1p9pkcfcxZnMdIZdIsXkOHY0NilA==
 
-"@moonwalker/orbit-mixins-stylus@^1.14.30":
-  version "1.14.30"
-  resolved "https://registry.yarnpkg.com/@moonwalker/orbit-mixins-stylus/-/orbit-mixins-stylus-1.14.30.tgz#9fb2eb59d442935211b3135b48bb9d3334afa2df"
-  integrity sha512-vYoVhWDRhuV0V2xtgGzbeVnpupYF2YcQU7nrs7HlXgM6fhJ2ubapSL7WlCU0eVKS57rtilSt8VkTsTrQrcO0rA==
-
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
