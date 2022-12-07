@@ -44,7 +44,7 @@
     "@moonwalker/orbit-ui": "^1.14.31",
     "@moonwalker/orbit-ui-stylus": "^1.14.31",
     "@storybook/addon-actions": "6.5.13",
-    "@storybook/addon-essentials": "6.5.13",
+    "@storybook/addon-essentials": "6.5.14",
     "@storybook/addon-knobs": "6.4.0",
     "@storybook/addon-storyshots": "6.5.13",
     "@storybook/addons": "6.5.13",
