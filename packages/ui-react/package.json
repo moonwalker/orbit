@@ -61,7 +61,7 @@
     "identity-obj-proxy": "3.0.0",
     "jest": "26.6.3",
     "lodash": "4.17.21",
-    "mini-css-extract-plugin": "2.7.0",
+    "mini-css-extract-plugin": "2.7.2",
     "postcss": "8.4.19",
     "postcss-loader": "7",
     "prop-types": "15.8.1",
