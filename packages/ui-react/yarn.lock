@@ -1667,6 +1667,24 @@
   resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.6.22.tgz#219dfd89ae5b97a8801f015323ffa4b62f45718b"
   integrity sha512-H1rQc1ZOHANWBvPcW+JpGwr+juXSxM8Q8YCkm3GhZd8REu1fHR3z99CErO1p9pkcfcxZnMdIZdIsXkOHY0NilA==
 
+"@moonwalker/orbit-mixins-stylus@^1.14.33":
+  version "1.14.33"
+  resolved "https://registry.yarnpkg.com/@moonwalker/orbit-mixins-stylus/-/orbit-mixins-stylus-1.14.33.tgz#b8b08307ed8f0b6ed5f91a297f5cb44535e6e667"
+  integrity sha512-ohQbEliUPCKvrQQ+dSsnKa8z/Iai35G6bh199t332hJvkqQbYMtLR0rOMLoL6t1pRxDwnbjYKDkQlyxEe1mYCA==
+
+"@moonwalker/orbit-ui-stylus@^1.14.33":
+  version "1.14.33"
+  resolved "https://registry.yarnpkg.com/@moonwalker/orbit-ui-stylus/-/orbit-ui-stylus-1.14.33.tgz#e494a7fee0576f74b8b9b8026c8a9b67b6246333"
+  integrity sha512-KXzRlISBuag+EEoeMykwaGQm4T83yOvTw9mVJyp8Hk3uyWP2lP8lcGksNzM7dVyZhky25QNL4z6AI6hfGAQI0g==
+  dependencies:
+    "@moonwalker/orbit-mixins-stylus" "^1.14.33"
+    classnames "2.3.1"
+
+"@moonwalker/orbit-ui@^1.14.33":
+  version "1.14.33"
+  resolved "https://registry.yarnpkg.com/@moonwalker/orbit-ui/-/orbit-ui-1.14.33.tgz#3992a883343ecf6603bcbf86636dc67b22a203d8"
+  integrity sha512-56/xa8fXLnfO4oZuT8BM5bOAuzqxylOFTutXhxDrPSOqZRauVkruwwN6EyvIQBkUFdYlZHAKclA6S+ijjy3F9Q==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -4506,6 +4524,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
+  integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
+
 classnames@2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
@@ -5059,9 +5082,9 @@ decimal.js@^10.2.0:
   integrity sha512-KaL7+6Fw6i5A2XSnsbhm/6B+NuEA7TZ4vqxnd5tXz9sbKtrN9Srj8ab4vKVdK8YAqZO9P1kg45Y6YLoduPf+kw==
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 dedent@^0.7.0:
   version "0.7.0"
