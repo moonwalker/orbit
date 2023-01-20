@@ -1,5 +1,5 @@
 /* globals require, __dirname, process */
-const { resolve } = require('path');
+const path = require('path');
 const { merge: webpackMerge } = require('webpack-merge');
 const autoprefixer = require('autoprefixer');
 const orbitUI = require('@moonwalker/orbit-ui-stylus');
@@ -10,10 +10,12 @@ module.exports = ({ config }) => {
 
   // Remove storybook css rule
   config.module.rules = [...rules.slice(0, 2), ...rules.slice(3)];
+  config.module.rules[0].include = [path.join(__dirname, '../src'), /downshift/];
+  config.module.rules[0].exclude = [];
 
   return webpackMerge(config, {
     resolve: {
-      modules: [resolve(__dirname, '..', 'node_modules')]
+      modules: [path.resolve(__dirname, '..', 'node_modules')]
     },
     module: {
       rules: [
