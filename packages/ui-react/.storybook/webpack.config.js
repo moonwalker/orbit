@@ -5,15 +5,8 @@ const autoprefixer = require('autoprefixer');
 const orbitUI = require('@moonwalker/orbit-ui-stylus');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-module.exports = ({ config }) => {
-  const { rules } = config.module;
-
-  // Remove storybook css rule
-  config.module.rules = [...rules.slice(0, 2), ...rules.slice(3)];
-  config.module.rules[0].include = [path.join(__dirname, '../src'), /downshift/];
-  config.module.rules[0].exclude = [];
-
-  return webpackMerge(config, {
+module.exports = ({ config }) =>
+  webpackMerge(config, {
     resolve: {
       modules: [path.resolve(__dirname, '..', 'node_modules')]
     },
@@ -87,4 +80,3 @@ module.exports = ({ config }) => {
         : [])
     ]
   });
-};
