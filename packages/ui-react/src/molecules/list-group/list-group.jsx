@@ -5,12 +5,14 @@ import cx from 'classnames';
 import { SIZES, SIZE_MEDIUM } from './list-group.constants';
 import { CLASS_NAMES } from './list-group.class-names';
 
-const getDefaultRender = (items) => ({ getListGroupItemProps }) =>
-  items.map((item) => (
-    <li key={item} {...getListGroupItemProps()}>
-      {item}
-    </li>
-  ));
+const getDefaultRender =
+  (items) =>
+  ({ getListGroupItemProps }) =>
+    items.map((item) => (
+      <li key={item} {...getListGroupItemProps()}>
+        {item}
+      </li>
+    ));
 
 export const ListGroup = (props) => {
   const { className, classNames, items, render, as: Component, size } = props;

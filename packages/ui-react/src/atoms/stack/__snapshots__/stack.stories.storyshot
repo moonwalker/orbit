@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Atoms/Stack HStack 1`] = `
+<div
+  class="ui-stack"
+  style="display: flex; flex-direction: row; align-items: flex-start; justify-content: flex-start; row-gap: 10px; column-gap: 10px; flex-wrap: nowrap;"
+>
+  <div>
+    🍜 Eat
+  </div>
+  <div>
+    😴 Sleep
+  </div>
+  <div>
+    🥳 Rave
+  </div>
+  <div>
+    🔁 Repeat
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Stack VStack 1`] = `
+<div
+  class="ui-stack"
+  style="display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; row-gap: 10px; column-gap: 10px; flex-wrap: nowrap;"
+>
+  <div>
+    🍜 Eat
+  </div>
+  <div>
+    😴 Sleep
+  </div>
+  <div>
+    🥳 Rave
+  </div>
+  <div>
+    🔁 Repeat
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Stack custom CSS 1`] = `
+<div
+  class="ui-stack custom"
+  style="display: flex; flex-direction: column; align-items: center; justify-content: center; row-gap: 10px; column-gap: 10px; flex-wrap: nowrap;"
+>
+  <div>
+    🍜 Eat
+  </div>
+  <div>
+    😴 Sleep
+  </div>
+  <div>
+    🥳 Rave
+  </div>
+  <div>
+    🔁 Repeat
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Stack default 1`] = `
+<div
+  class="ui-stack"
+  style="display: flex; flex-direction: row; align-items: flex-start; justify-content: flex-start; row-gap: 10px; column-gap: 10px; flex-wrap: nowrap;"
+>
+  <span>
+    🤖
+  </span>
+  <span>
+    🚀
+  </span>
+  <span>
+    ❤️‍🔥
+  </span>
+  <span>
+    🤟🏽
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Stack direction column 1`] = `
+<div
+  class="ui-stack"
+  style="display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; row-gap: 10px; column-gap: 10px; flex-wrap: nowrap;"
+>
+  <div>
+    🍜 Eat
+  </div>
+  <div>
+    😴 Sleep
+  </div>
+  <div>
+    🥳 Rave
+  </div>
+  <div>
+    🔁 Repeat
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Stack direction row (default) 1`] = `
+<div
+  class="ui-stack"
+  style="display: flex; flex-direction: row; align-items: flex-start; justify-content: flex-start; row-gap: 10px; column-gap: 10px; flex-wrap: nowrap;"
+>
+  <div>
+    🍜 Eat
+  </div>
+  <div>
+    😴 Sleep
+  </div>
+  <div>
+    🥳 Rave
+  </div>
+  <div>
+    🔁 Repeat
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Stack wrap reverse 1`] = `
+<div
+  class="ui-stack fixedWidth"
+  style="display: flex; flex-direction: row; align-items: flex-start; justify-content: flex-start; row-gap: 10px; column-gap: 10px; flex-wrap: wrap-reverse;"
+>
+  <div>
+    🍜 Eat
+  </div>
+  <div>
+    😴 Sleep
+  </div>
+  <div>
+    🥳 Rave
+  </div>
+  <div>
+    🔁 Repeat
+  </div>
+  <div>
+    🍜 Eat
+  </div>
+  <div>
+    😴 Sleep
+  </div>
+  <div>
+    🥳 Rave
+  </div>
+  <div>
+    🔁 Repeat
+  </div>
+</div>
+`;

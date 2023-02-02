@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Atoms/Grid custom CSS 1`] = `
+<div
+  class="ui-flex custom"
+  style="display: grid; grid-auto-flow: row;"
+>
+  <div>
+    🍜 Eat
+  </div>
+  <div>
+    😴 Sleep
+  </div>
+  <div>
+    🥳 Rave
+  </div>
+  <div>
+    🔁 Repeat
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Grid default 1`] = `
+<div
+  class="ui-flex"
+  style="display: grid; grid-auto-flow: row;"
+>
+  <span>
+    🤖
+  </span>
+  <span>
+    🚀
+  </span>
+  <span>
+    ❤️‍🔥
+  </span>
+  <span>
+    🤟🏽
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Grid direction column 1`] = `
+<div
+  class="ui-flex"
+  style="display: grid; grid-auto-flow: row;"
+>
+  <div>
+    🍜 Eat
+  </div>
+  <div>
+    😴 Sleep
+  </div>
+  <div>
+    🥳 Rave
+  </div>
+  <div>
+    🔁 Repeat
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Grid direction row (default) 1`] = `
+<div
+  class="ui-flex"
+  style="display: grid; grid-auto-flow: row;"
+>
+  <div>
+    🍜 Eat
+  </div>
+  <div>
+    😴 Sleep
+  </div>
+  <div>
+    🥳 Rave
+  </div>
+  <div>
+    🔁 Repeat
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Grid rows and columns 1`] = `
+<div
+  class="ui-flex border"
+  style="display: grid; grid-auto-flow: column; grid-template-rows: 1fr 2fr 3fr; grid-template-columns: 50px 100px 130px;"
+>
+  <div>
+    🍜 Eat
+  </div>
+  <div>
+    😴 Sleep
+  </div>
+  <div>
+    🥳 Rave
+  </div>
+  <div>
+    🔁 Repeat
+  </div>
+  <div>
+    🍜 Eat
+  </div>
+  <div>
+    😴 Sleep
+  </div>
+  <div>
+    🥳 Rave
+  </div>
+  <div>
+    🔁 Repeat
+  </div>
+</div>
+`;
