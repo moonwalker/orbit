@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Atoms/Flex custom CSS 1`] = `
+<div
+  class="ui-flex custom"
+>
+  <div>
+    🍜 Eat
+  </div>
+  <div>
+    😴 Sleep
+  </div>
+  <div>
+    🥳 Rave
+  </div>
+  <div>
+    🔁 Repeat
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Flex default 1`] = `
+<div
+  class="ui-flex"
+>
+  <span>
+    🤖
+  </span>
+  <span>
+    🚀
+  </span>
+  <span>
+    ❤️‍🔥
+  </span>
+  <span>
+    🤟🏽
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Flex direction column 1`] = `
+<div
+  class="ui-flex"
+>
+  <div>
+    🍜 Eat
+  </div>
+  <div>
+    😴 Sleep
+  </div>
+  <div>
+    🥳 Rave
+  </div>
+  <div>
+    🔁 Repeat
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Flex direction row (default) 1`] = `
+<div
+  class="ui-flex"
+>
+  <div>
+    🍜 Eat
+  </div>
+  <div>
+    😴 Sleep
+  </div>
+  <div>
+    🥳 Rave
+  </div>
+  <div>
+    🔁 Repeat
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Flex wrap 1`] = `
+<div
+  class="ui-flex fixedWidth"
+>
+  <div>
+    🍜 Eat
+  </div>
+  <div>
+    😴 Sleep
+  </div>
+  <div>
+    🥳 Rave
+  </div>
+  <div>
+    🔁 Repeat
+  </div>
+  <div>
+    🍜 Eat
+  </div>
+  <div>
+    😴 Sleep
+  </div>
+  <div>
+    🥳 Rave
+  </div>
+  <div>
+    🔁 Repeat
+  </div>
+</div>
+`;

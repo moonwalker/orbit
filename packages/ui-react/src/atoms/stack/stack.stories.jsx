@@ -75,7 +75,7 @@ stories.add('HStack', () => (
 ));
 
 stories.add('VStack', () => (
-  <VStack spacing={spacing} reverse>
+  <VStack spacing={spacing}>
     <div>🍜 Eat</div>
     <div>😴 Sleep</div>
     <div>🥳 Rave</div>

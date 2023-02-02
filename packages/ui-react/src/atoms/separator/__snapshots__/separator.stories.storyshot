@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Atoms/Separator custom CSS 1`] = `
+<div
+  class="ui-stack containerHeight"
+  style="display: flex; flex-direction: row; align-items: center; justify-content: flex-start; row-gap: 0px; column-gap: 0px; flex-wrap: nowrap;"
+>
+  <span>
+    🤖 Robo
+  </span>
+  <div
+    aria-orientation="vertical"
+    class="ui-separator custom"
+    data-orientation="vertical"
+    role="separator"
+    style="margin: 0px 15px;"
+  />
+  <span>
+    🚀 Cosmo
+  </span>
+  <div
+    aria-orientation="vertical"
+    class="ui-separator custom"
+    data-orientation="vertical"
+    role="separator"
+    style="margin: 0px 15px;"
+  />
+  <span>
+    🎨 Picasso
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Separator default 1`] = `
+<div
+  class="ui-separator root"
+  data-orientation="horizontal"
+  role="separator"
+  style="margin: 15px 0px;"
+/>
+`;
+
+exports[`Storyshots Components/Atoms/Separator horizontal (default) 1`] = `
+<div
+  class="ui-stack containerWidth"
+  style="display: flex; flex-direction: row; align-items: center; justify-content: flex-start; row-gap: 0px; column-gap: 0px; flex-wrap: nowrap;"
+>
+  <span>
+    🤖 Robo
+  </span>
+  <div
+    class="ui-separator root"
+    data-orientation="horizontal"
+    role="separator"
+    style="margin: 15px 0px;"
+  />
+  <span>
+    🚀 Cosmo
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Separator vertical 1`] = `
+<div
+  class="ui-stack containerHeight"
+  style="display: flex; flex-direction: row; align-items: center; justify-content: flex-start; row-gap: 0px; column-gap: 0px; flex-wrap: nowrap;"
+>
+  <span>
+    🤖 Robo
+  </span>
+  <div
+    aria-orientation="vertical"
+    class="ui-separator root"
+    data-orientation="vertical"
+    role="separator"
+    style="margin: 0px 15px;"
+  />
+  <span>
+    🚀 Cosmo
+  </span>
+</div>
+`;

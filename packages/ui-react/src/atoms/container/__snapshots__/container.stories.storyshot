@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Atoms/Container centerContent & fluid (100% width) 1`] = `
+<div
+  class="ui-container root"
+  style="display: flex; justify-content: center; align-items: center; width: 100%;"
+>
+  <span>
+    🤖 Robo
+  </span>
+    
+  <span>
+    🚀 Cosmo
+  </span>
+    
+  <span>
+    🎨 Picasso
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Container color, bgColor, opacity 1`] = `
+<div
+  class="ui-container root"
+  style="color: purple; background-color: pink; opacity: 0.5;"
+>
+  <div>
+    🤖 Robo
+  </div>
+  <div>
+    🚀 Cosmo
+  </div>
+  <div>
+    🎨 Picasso
+  </div>
+  <div>
+    🐥 Chicken
+  </div>
+  <div>
+    👾 Invaders
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Container default 1`] = `
+<div
+  class="ui-container root"
+>
+  <span>
+    🤖 Robo
+  </span>
+    
+  <span>
+    🚀 Cosmo
+  </span>
+    
+  <span>
+    🎨 Picasso
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Container fancy background with bg 1`] = `
+<div
+  class="ui-container root"
+  style="padding: 15px; color: white;"
+>
+  <div>
+    🤖 Robo
+  </div>
+  <div>
+    🚀 Cosmo
+  </div>
+  <div>
+    🎨 Picasso
+  </div>
+  <div>
+    🐥 Chicken
+  </div>
+  <div>
+    👾 Invaders
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Container margins with mx, my 1`] = `
+<div
+  class="ui-container root"
+  style="margin: 45px 75px 45px 75px;"
+>
+  <div>
+    🤖 Robo
+  </div>
+  <div>
+    🚀 Cosmo
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Atoms/Container padding with pt, pr, pb, pl and width 1`] = `
+<div
+  class="ui-container root"
+  style="width: 150px; padding: 15px 40px 30px 25px;"
+>
+  <div>
+    🤖 Robo
+  </div>
+  <div>
+    🚀 Cosmo
+  </div>
+  <div>
+    🎨 Picasso
+  </div>
+  <div>
+    🐥 Chicken
+  </div>
+  <div>
+    👾 Invaders
+  </div>
+</div>
+`;
