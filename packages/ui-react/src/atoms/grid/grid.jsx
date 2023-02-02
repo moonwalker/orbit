@@ -65,7 +65,9 @@ Grid.propTypes = {
   autoFlow: PropTypes.oneOf(['row', 'column', 'dense', 'row dense', 'column dense']),
   autoRows: PropTypes.string,
   autoColumns: PropTypes.string,
-  isInline: PropTypes.bool
+  isInline: PropTypes.bool,
+  column: PropTypes.string,
+  row: PropTypes.string
 };
 
 Grid.defaultProps = {
@@ -81,5 +83,7 @@ Grid.defaultProps = {
   autoFlow: 'row',
   autoRows: '',
   autoColumns: '',
-  isInline: false
+  isInline: false,
+  column: '',
+  row: ''
 };

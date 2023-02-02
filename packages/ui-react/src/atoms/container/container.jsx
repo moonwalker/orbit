@@ -39,7 +39,7 @@ export const Container = (props) => {
 
   const rootClassName = cx(classNames.root, className);
 
-  let styles = {};
+  const styles = {};
 
   if (maxWidth) {
     styles.maxWidth = maxWidth;
@@ -161,7 +161,7 @@ Container.propTypes = {
     root: PropTypes.string
   }),
 
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
 
   fluid: PropTypes.bool,
   maxWidth: PropTypeStringOrNumber,
@@ -192,5 +192,29 @@ Container.propTypes = {
 Container.defaultProps = {
   children: null,
   className: '',
-  classNames: { root: UI_NAME }
+  classNames: { root: UI_NAME },
+  fluid: false,
+  maxWidth: null,
+  centerContent: false,
+  width: null,
+  margin: null,
+  m: null,
+  mt: null,
+  mr: null,
+  mb: null,
+  ml: null,
+  mx: null,
+  my: null,
+  padding: null,
+  p: null,
+  pt: null,
+  pr: null,
+  pb: null,
+  pl: null,
+  px: null,
+  py: null,
+  color: null,
+  bg: null,
+  bgColor: null,
+  opacity: null
 };

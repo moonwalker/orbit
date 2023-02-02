@@ -40,7 +40,8 @@ Separator.propTypes = {
     root: PropTypes.string
   }),
 
-  /** Decorative separaotr xcarries no semantic meaning, and ensures it is not present in the accessibility tree. */
+  /** Decorative separaotr xcarries no semantic meaning, 
+   * and ensures it is not present in the accessibility tree. */
   decorative: PropTypes.bool,
 
   /** Orientation modifier name */

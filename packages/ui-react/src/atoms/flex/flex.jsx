@@ -66,10 +66,13 @@ Flex.propTypes = {
     root: PropTypes.string
   }),
   children: PropTypes.node,
-  style: PropTypes.object,
+  style: PropTypes.shape({}),
   spacing: PropTypes.number,
   columnGap: PropTypes.number,
-  rowGap: PropTypes.number
+  rowGap: PropTypes.number,
+  basis: PropTypes.string,
+  grow: PropTypes.number,
+  shrink: PropTypes.number
 };
 
 Flex.defaultProps = {
@@ -84,5 +87,8 @@ Flex.defaultProps = {
   style: {},
   spacing: 0,
   columnGap: 0,
-  rowGap: 0
+  rowGap: 0,
+  basis: 'auto',
+  grow: 0,
+  shrink: 1
 };
