@@ -7,39 +7,32 @@ function wrapLoader(loader, options) {
   return [
     {
       loader,
-      options,
-    },
+      options
+    }
   ];
 }
 
 module.exports = {
   webpack: (webpackConfig = {}, options = {}) => {
-    const { module = {} } = webpackConfig;
-    const {
-      styleLoaderOptions,
-      cssLoaderOptions,
-      stylusLoaderOptions,
-      rule = {},
-    } = options;
+    const { styleLoaderOptions, cssLoaderOptions, stylusLoaderOptions, rule = {} } = options;
 
     return {
       ...webpackConfig,
       module: {
-        ...module,
+        ...webpackConfig.module,
         rules: [
-          ...(module.rules || []),
+          ...(webpackConfig.module.rules || []),
           {
-            test: /\.styl$/,
+            test: /\.styl$/i,
             ...rule,
             use: [
-
               ...wrapLoader(require.resolve('style-loader'), styleLoaderOptions),
               ...wrapLoader(require.resolve('css-loader'), cssLoaderOptions),
               ...wrapLoader(require.resolve('stylus-loader'), stylusLoaderOptions)
-            ],
-          },
-        ],
-      },
+            ]
+          }
+        ]
+      }
     };
   }
 };

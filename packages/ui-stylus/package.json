@@ -17,25 +17,28 @@
   },
   "scripts": {
     "prebuild": "npm run lint && npm run test",
-    "build": "build-storybook",
+    "build": "storybook build",
     "lint": "npm run lint:styl && npm run lint:js",
     "lint:js": "../../node_modules/.bin/eslint lib/**/*.js",
     "lint:styl": "stylint lib",
     "test": "echo \"Error: no test specified\" && exit 0",
-    "start": "start-storybook -p 6006"
+    "start": "storybook dev -p 6006"
   },
   "dependencies": {
     "@moonwalker/orbit-mixins-stylus": "^1.14.33",
-    "classnames": "2.3.1"
+    "classnames": "2.3.2"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "6.5.13",
-    "@storybook/addon-essentials": "6.5.13",
-    "@storybook/addon-links": "6.5.13",
-    "@storybook/html": "6.5.13",
-    "classnames": "2.3.1",
+    "@storybook/addon-actions": "7.0.2",
+    "@storybook/addon-essentials": "7.0.2",
+    "@storybook/addon-links": "7.0.2",
+    "@storybook/html-webpack5": "7.0.2",
+    "classnames": "2.3.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "storybook": "7.0.2",
     "stylint": "2.0.0",
     "stylus": "0.59.0",
-    "stylus-loader": "4.3.3"
+    "stylus-loader": "^7.1.0"
   }
 }
