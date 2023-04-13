@@ -1,9 +1,15 @@
-const path = require('path');
+import path from 'path';
 
-const orbitUI = require('../lib');
+import orbitUI from '../lib';
 
-module.exports = {
-  stories: ['../lib/**/*.stories.@(js|mdx)'],
+/** @type {import('@storybook/html-webpack5').StorybookConfig} */
+const config = {
+  stories: [
+    {
+      directory: '../lib',
+      files: '**/*.stories.@(mdx|tsx|ts|jsx|js)'
+    }
+  ],
   addons: [
     {
       name: path.join(__dirname, './preset-stylus'),
@@ -20,9 +26,16 @@ module.exports = {
           }
         }
       }
-    },
-    '@storybook/addon-links',
-    '@storybook/addon-essentials'
+    }
+    // '@storybook/addon-links',
+    // '@storybook/addon-essentials'
   ],
-  framework: '@storybook/html'
+  framework: {
+    name: '@storybook/html-webpack5',
+    options: {
+      builder: { lazyCompilation: true }
+    }
+  }
 };
+
+export default config;
