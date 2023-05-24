@@ -32,7 +32,7 @@
     "@storybook/addon-actions": "6.5.15",
     "@storybook/addon-essentials": "6.5.15",
     "@storybook/addon-links": "6.5.15",
-    "@storybook/html": "6.5.13",
+    "@storybook/html": "7.0.15",
     "classnames": "2.3.2",
     "stylint": "2.0.0",
     "stylus": "0.59.0",
