@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "7.0.22",
-    "@storybook/addon-essentials": "6.5.15",
+    "@storybook/addon-essentials": "7.0.26",
     "@storybook/addon-links": "6.5.15",
     "@storybook/html": "6.5.13",
     "classnames": "2.3.2",
