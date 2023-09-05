@@ -6,7 +6,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # Cache packages when the branch is not update-dependencies or dependabot/*
       - name: Resolve caching
@@ -32,7 +32,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # Cache packages when the branch is not update-dependencies or dependabot/*
       - name: Resolve caching
@@ -61,7 +61,7 @@ jobs:
       - test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # Cache packages when the branch is not update-dependencies or dependabot/*
       - name: Resolve caching
@@ -92,7 +92,7 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # Cache packages when the branch is not update-dependencies or dependabot/*
       - name: Resolve caching
