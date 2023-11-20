@@ -17,7 +17,7 @@
   "devDependencies": {
     "@moonwalker/pre-flight-check": "1.5.8",
     "dotenv": "16.3.1",
-    "gh-pages": "6.0.0",
+    "gh-pages": "6.1.0",
     "lerna": "6.6.1"
   }
 }
