@@ -6,7 +6,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # Cache packages when the branch is not update-dependencies or dependabot/*
       - name: Resolve caching
@@ -15,7 +15,7 @@ jobs:
         run: echo "::set-output name=PACKAGE::yarn"
 
       - name: Use Node.js
-        uses: actions/setup-node@v3.8.1
+        uses: actions/setup-node@v4.0.1
         with:
           node-version-file: ".nvmrc"
           cache: ${{ steps.cache.outputs.PACKAGE }}
@@ -32,7 +32,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # Cache packages when the branch is not update-dependencies or dependabot/*
       - name: Resolve caching
@@ -41,7 +41,7 @@ jobs:
         run: echo "::set-output name=PACKAGE::yarn"
 
       - name: Use Node.js
-        uses: actions/setup-node@v3.8.1
+        uses: actions/setup-node@v4.0.1
         with:
           node-version-file: ".nvmrc"
           cache: ${{ steps.cache.outputs.PACKAGE }}
@@ -61,7 +61,7 @@ jobs:
       - test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # Cache packages when the branch is not update-dependencies or dependabot/*
       - name: Resolve caching
@@ -70,7 +70,7 @@ jobs:
         run: echo "::set-output name=PACKAGE::yarn"
 
       - name: Use Node.js
-        uses: actions/setup-node@v3.8.1
+        uses: actions/setup-node@v4.0.1
         with:
           node-version-file: ".nvmrc"
           cache: ${{ steps.cache.outputs.PACKAGE }}
@@ -92,7 +92,7 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # Cache packages when the branch is not update-dependencies or dependabot/*
       - name: Resolve caching
@@ -101,7 +101,7 @@ jobs:
         run: echo "::set-output name=PACKAGE::yarn"
 
       - name: Use Node.js
-        uses: actions/setup-node@v3.8.1
+        uses: actions/setup-node@v4.0.1
         with:
           node-version-file: ".nvmrc"
           cache: ${{ steps.cache.outputs.PACKAGE }}
