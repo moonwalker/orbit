@@ -1,0 +1,833 @@
+repo_name: moonwalker/orbit
+report_id: 40686db6ca22e4bd4b5b08f5b80fd3e0
+version: 0.1
+repo_type: Public
+timestamp: '2024-04-05T08:29:03+00:00'
+requested_by: vio
+provider: github
+branch: master
+detected_tools_count: 61
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/moonwalker/orbit
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/moonwalker/orbit
+  detection_source: Repo Metadata
+- name: Autoprefixer
+  description: PostCSS plugin to parse CSS and add vendor prefixes to CSS rules
+  website_url: https://github.com/postcss/autoprefixer
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/2202/72d087642cfce6fef6f2dabec5bf49e8_400x400.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/package.json
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2020-09-30 15:19:08.000000000 Z
+- name: PostCSS
+  description: Transform CSS with JS plugins
+  website_url: https://github.com/postcss/postcss
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/3339/rlFcjEdI.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/package.json
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Vio vio@moonwalker.tech
+  last_updated_on: 2018-03-28 09:38:15.000000000 Z
+- name: React
+  description: A JavaScript library for building user interfaces
+  website_url: https://reactjs.org/
+  version: 18.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/1020/OYIaJ1KK.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/examples/contact-form/contact-form.jsx
+  last_updated_by: Vio vio@moonwalker.tech
+  last_updated_on: 2018-04-03 14:09:26.000000000 Z
+- name: Storybook
+  description: Build bulletproof UI components faster
+  website_url: https://storybook.js.org/
+  version: 6.5.15
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: JavaScript Framework Components
+  image_url: https://img.stackshare.io/service/9240/sOct-Txm_400x400.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: Stylus
+  description: Expressive, robust, feature-rich CSS language built for nodejs
+  website_url: http://stylus-lang.com/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/1172/stylus.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/mixins-stylus/package.json
+  detection_source: packages/mixins-stylus/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2022-10-06 15:27:24.000000000 Z
+- name: css-loader
+  description: Helps webpack to collect CSS from all the css files
+  website_url: https://github.com/webpack-contrib/css-loader
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/8074/default_d2b16fd6997fb2e164de645a34f9b8d5a880d999.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/package.json
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: Babel
+  description: Use next generation JavaScript, today.
+  website_url: http://babeljs.io/
+  version: 7.11.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JavaScript Compilers
+  image_url: https://img.stackshare.io/service/2739/-1wfGjNw.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/mixins-stylus/yarn.lock
+  detection_source: packages/ui-react/.babelrc
+  last_updated_by: Vio
+  last_updated_on: 2021-12-15 13:46:02.000000000 Z
+- name: Dotenv
+  description: Loads environment variables from .env for Nodejs projects
+  website_url: https://github.com/motdotla/dotenv
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Server Configuration and Automation
+  image_url: https://img.stackshare.io/service/8067/default_90dcb1286af7685c68df319c764b80704df1155b.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/package.json
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Vio vio@moonwalker.tech
+  last_updated_on: 2018-03-28 09:38:15.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/moonwalker/orbit
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/.github/workflows/build.yml
+  detection_source: ".github/workflows/build.yml"
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-08-29 15:04:59.000000000 Z
+- name: Jest
+  description: Painless JavaScript Unit Testing
+  website_url: http://facebook.github.io/jest/
+  version: 26.6.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/830/jest.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/mixins-stylus/yarn.lock
+  detection_source: packages/mixins-stylus/package.json
+  last_updated_by: Vio
+  last_updated_on: 2018-03-20 15:56:34.000000000 Z
+- name: Webpack
+  description: A bundler for javascript and friends
+  website_url: http://webpack.js.org
+  version: 4.46.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JS Build Tools / JS Task Runners
+  image_url: https://img.stackshare.io/service/1682/IMG_4636.PNG
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/.storybook/webpack.config.js
+  last_updated_by: Vio
+  last_updated_on: 2021-12-15 13:46:23.000000000 Z
+- name: Yarn
+  description: A new package manager for JavaScript
+  website_url: https://yarnpkg.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/5848/44mC-kJ3.jpg
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/mixins-stylus/yarn.lock
+  detection_source: packages/mixins-stylus/yarn.lock
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2020-09-30 15:19:08.000000000 Z
+- name: gulp
+  description: The streaming build system
+  website_url: http://gulpjs.com/
+  version: 4.0.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JS Build Tools / JS Task Runners
+  image_url: https://img.stackshare.io/service/844/iruTC031.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui/yarn.lock
+  detection_source: packages/ui/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui/package.json
+  detection_source: packages/ui/package.json
+  last_updated_by: Vio vio@moonwalker.tech
+  last_updated_on: 2018-03-27 13:46:28.000000000 Z
+- name: Lerna
+  description: A tool for managing JavaScript projects
+  website_url: https://lerna.js.org/
+  version: 6.6.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/6207/OwqAUSQi_400x400.jpg
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: Lodash
+  description: A JavaScript utility library
+  website_url: https://lodash.com
+  version: 4.17.20
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/2438/lodash.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/mixins-stylus/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Viorel Cojocaru
+  last_updated_on: 2021-03-30 09:02:49.000000000 Z
+- name: Shell
+  description: A shell is a text-based terminal, used for manipulating programs and
+    files. Shell scripts typically manage program execution.
+  website_url: https://en.wikipedia.org/wiki/Shell_script
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/moonwalker/orbit
+  detection_source: Repo Metadata
+- name: cssnano
+  description: A modular minifier, based on the PostCSS ecosystem. Created by @ben_eb.
+  website_url: http://cssnano.co/
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/6612/ehMiE-wz_normal.jpg
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui/package.json
+  detection_source: packages/ui/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2021-06-24 08:59:59.000000000 Z
+- name: downshift
+  description: Primitive to build simple, flexible, WAI-ARIA compliant enhanced input
+    React components
+  website_url: https://github.com/paypal/downshift
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/10155/no-img-open-source.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/package.json
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: "@babel/cli"
+  description: Babel command line
+  package_url: https://www.npmjs.com/@babel/cli
+  version: 7.22.10
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15848/default_b71c906aeda030a5e2f1fe40bf12a93be52404ab.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-08-29 15:04:59.000000000 Z
+- name: "@babel/core"
+  description: Babel compiler core
+  package_url: https://www.npmjs.com/@babel/core
+  version: 7.11.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15810/default_004658cda9b38934f2871435e9dc15608c86e8be.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/mixins-stylus/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-08-29 15:04:59.000000000 Z
+- name: "@babel/plugin-transform-runtime"
+  description: Externalise references to helpers and builtins
+  package_url: https://www.npmjs.com/@babel/plugin-transform-runtime
+  version: 7.22.10
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15952/default_4040fefea2f98006727f63d042275b96a275ab2d.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-08-29 15:04:59.000000000 Z
+- name: "@babel/preset-env"
+  description: A Babel preset for each environment
+  package_url: https://www.npmjs.com/@babel/preset-env
+  version: 7.22.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15819/default_98aa227f51aa9d787815ec3fd98d0ab2bfebbb91.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-08-29 15:04:59.000000000 Z
+- name: "@babel/preset-react"
+  description: Babel preset for all React plugins
+  package_url: https://www.npmjs.com/@babel/preset-react
+  version: 7.22.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15890/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-08-29 15:04:59.000000000 Z
+- name: "@babel/runtime"
+  description: Babel's modular runtime helpers
+  package_url: https://www.npmjs.com/@babel/runtime
+  version: 7.22.11
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15934/default_54b691c123fc8979741e800e4dcd3936c0f3b246.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-08-29 15:04:59.000000000 Z
+- name: "@storybook/addon-actions"
+  description: Action Logger addon for storybook
+  package_url: https://www.npmjs.com/@storybook/addon-actions
+  version: 6.5.15
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16126/default_73326c44fbfa7369fd17573edb113e5d849468bc.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: "@storybook/addon-knobs"
+  description: Storybook Addon Prop Editor Component
+  package_url: https://www.npmjs.com/@storybook/addon-knobs
+  version: 6.4.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16279/default_3b7197abc4df3d7fa7c5292f17b2e6fb0cd1c8d4.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: "@storybook/addon-links"
+  description: Story Links addon for storybook
+  package_url: https://www.npmjs.com/@storybook/addon-links
+  version: 6.5.15
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16204/default_41f04716a804e853d5c38a5b81ee0ea8a842ad82.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-stylus/yarn.lock
+  detection_source: packages/ui-stylus/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: "@storybook/addon-storyshots"
+  description: StoryShots is a Jest Snapshot Testing Addon for Storybook
+  package_url: https://www.npmjs.com/@storybook/addon-storyshots
+  version: 6.5.15
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17155/default_fbe883dfc6d978f82179fa11bdf634af1b6751fa.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: "@storybook/addons"
+  description: Storybook addons store
+  package_url: https://www.npmjs.com/@storybook/addons
+  version: 6.5.15
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16200/default_b4f5b6f31c5ab1ffee4bacf20842cd41a8f2658d.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: "@storybook/react"
+  description: 'Storybook for React: Develop React Component in isolation with Hot
+    Reloading'
+  package_url: https://www.npmjs.com/@storybook/react
+  version: 6.5.15
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16042/default_72d4237e6719b7d75d0307bf8b5718584fdc3425.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: "@testing-library/react"
+  description: Simple and complete React DOM testing utilities that encourage good
+    testing practices
+  package_url: https://www.npmjs.com/@testing-library/react
+  version: 14.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16549/default_d522554c6a41cb28d922d6d3ad32ad4afa0e3bb5.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: babel-core
+  description: Babel compiler core
+  package_url: https://www.npmjs.com/babel-core
+  version: 7.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15798/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-08-29 15:04:59.000000000 Z
+- name: babel-jest
+  description: Jest plugin to use babel for transformation
+  package_url: https://www.npmjs.com/babel-jest
+  version: 26.6.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15839/default_4479dbac220be99e50e724b2df6cf415241d71fd.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/mixins-stylus/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-08-29 15:04:59.000000000 Z
+- name: babel-loader
+  description: Babel module loader for webpack
+  package_url: https://www.npmjs.com/babel-loader
+  version: 9.1.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15800/default_4acafe585186b4157fa23322ae7ca89e24b5cdef.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-08-29 15:04:59.000000000 Z
+- name: classnames
+  description: A simple utility for conditionally joining classNames together
+  package_url: https://www.npmjs.com/classnames
+  version: 2.3.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15942/default_4040fefea2f98006727f63d042275b96a275ab2d.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2022-10-06 15:27:24.000000000 Z
+- name: cssnano
+  description: A modular minifier, built on top of the PostCSS ecosystem
+  package_url: https://www.npmjs.com/cssnano
+  version: 4.1.11
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16102/default_efe4f0184d007a28e793d89a59e058b742bc9177.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui/yarn.lock
+  detection_source: packages/ui/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2021-06-24 08:59:59.000000000 Z
+- name: downshift
+  description: A set of primitives to build simple
+  package_url: https://www.npmjs.com/downshift
+  version: 7.6.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18017/default_ab659b5159df20d1c32f07b936d63628134f5b3d.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: gh-pages
+  description: Publish to a gh-pages branch on GitHub
+  package_url: https://www.npmjs.com/gh-pages
+  version: 5.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15967/default_732016a20524708efe7a4c77497fe9bfeea19ba6.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: gulp-postcss
+  description: PostCSS gulp plugin
+  package_url: https://www.npmjs.com/gulp-postcss
+  version: 9.0.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16282/default_5dfc1810d0882ab844578a326bb8bf19e45e7227.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui/yarn.lock
+  detection_source: packages/ui/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: gulp-print
+  description: Prints names of files to the console so that you can see what's going
+    through the the gulp pipe
+  package_url: https://www.npmjs.com/gulp-print
+  version: 5.0.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18397/default_a5bd7c34e133c44df408ea5be09d622c7bbc461c.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui/yarn.lock
+  detection_source: packages/ui/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: gulp-rename
+  description: Rename files
+  package_url: https://www.npmjs.com/gulp-rename
+  version: 2.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15895/default_e4668902f8489350db9b0fb228523a571ef05b26.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui/yarn.lock
+  detection_source: packages/ui/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: gulp-stylus
+  description: Stylus plugin for gulp
+  package_url: https://www.npmjs.com/gulp-stylus
+  version: 3.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16928/default_7b9968788548874538c601457e8dcd9c74bd2051.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui/yarn.lock
+  detection_source: packages/ui/package.json
+  last_updated_by: Vio vio@moonwalker.tech
+  last_updated_on: 2023-08-29 15:30:03.000000000 Z
+- name: identity-obj-proxy
+  description: An identity object using ES6 proxies
+  package_url: https://www.npmjs.com/identity-obj-proxy
+  version: 3.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16206/default_2c2f2c7b016f84c0fad2576cb986cb14a5dbbc2f.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: mini-css-extract-plugin
+  description: Extracts CSS into separate files
+  package_url: https://www.npmjs.com/mini-css-extract-plugin
+  version: 2.7.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15992/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-08-29 15:04:59.000000000 Z
+- name: postcss-loader
+  description: PostCSS loader for webpack
+  package_url: https://www.npmjs.com/postcss-loader
+  version: 7.3.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15876/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: prop-types
+  description: Runtime type checking for React props and similar objects
+  package_url: https://www.npmjs.com/prop-types
+  version: 15.8.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15843/default_b71c906aeda030a5e2f1fe40bf12a93be52404ab.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Viorel Cojocaru
+  last_updated_on: 2022-07-29 15:09:21.000000000 Z
+- name: react-dom
+  description: React package for working with the DOM
+  package_url: https://www.npmjs.com/react-dom
+  version: 18.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15808/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: react-is
+  description: Brand checking of React Elements
+  package_url: https://www.npmjs.com/react-is
+  version: 17.0.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17829/default_2a0f136cfb588dd9053268b73a18a953e8d65590.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/mixins-stylus/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: react-test-renderer
+  description: React package for snapshot testing
+  package_url: https://www.npmjs.com/react-test-renderer
+  version: 18.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15929/default_ac622bc364a601d766b9a6f6039f191492f54d65.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-06-23 10:46:01.000000000 Z
+- name: regenerator-runtime
+  description: Runtime for Regenerator-compiled generator and async functions
+  package_url: https://www.npmjs.com/regenerator-runtime
+  version: 0.13.11
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16148/default_9a7a7dcd69c12c746dc4000dc4d1b75758079c9f.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-08-29 15:04:59.000000000 Z
+- name: stats-webpack-plugin
+  description: Write the stats of a build to a file
+  package_url: https://www.npmjs.com/stats-webpack-plugin
+  version: 0.7.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18616/default_632bbfb948e0ea8f8e1cc2caaa8946b66a13d200.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-08-29 15:04:59.000000000 Z
+- name: style-loader
+  description: Style loader module for webpack
+  package_url: https://www.npmjs.com/style-loader
+  version: 1.3.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15822/default_004658cda9b38934f2871435e9dc15608c86e8be.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Vio vio@moonwalker.tech
+  last_updated_on: 2023-08-29 15:30:03.000000000 Z
+- name: stylus-loader
+  description: Stylus loader for webpack
+  package_url: https://www.npmjs.com/stylus-loader
+  version: 4.3.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16232/default_380ae3d73e22c7ca1f42b96479bcd0095dabc0d3.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Vio vio@moonwalker.tech
+  last_updated_on: 2023-08-29 15:30:03.000000000 Z
+- name: webpack-bundle-analyzer
+  description: Webpack plugin and CLI utility that represents bundle content as convenient
+    interactive zoomable treemap
+  package_url: https://www.npmjs.com/webpack-bundle-analyzer
+  version: 4.9.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15991/default_cbd6c289400672b291755183817e9dd6abe1a612.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-08-29 15:04:59.000000000 Z
+- name: webpack-cli
+  description: CLI for webpack &amp; friends
+  package_url: https://www.npmjs.com/webpack-cli
+  version: 5.1.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15826/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-08-29 15:04:59.000000000 Z
+- name: webpack-merge
+  description: Variant of merge that's useful for webpack configuration
+  package_url: https://www.npmjs.com/webpack-merge
+  version: 5.9.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15925/default_e0a4fb1126d7400f419f0931cf1669947a5bc552.png
+  detection_source_url: https://github.com/moonwalker/orbit/blob/master/packages/ui-react/yarn.lock
+  detection_source: packages/ui-react/package.json
+  last_updated_by: Bot @ Moonwalker
+  last_updated_on: 2023-08-29 15:04:59.000000000 Z
